@@ -1,0 +1,1229 @@
+<!doctype html>
+<meta charset="utf-8" />
+<title>SOP Build Checklist v7 - SOP_Build</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<style>
+  :root{
+    --bg:#f7f7fb;
+    --card:#fff;
+    --text:#111;
+    --muted:#6b7280;
+    --line:#e5e7eb;
+    --brand:#0b5fff;
+    --brand-ink:#fff;
+    --radius:14px;
+    --shadow:0 6px 24px rgba(0,0,0,.06);
+    --maxw:1200px;
+    --mono: ui-monospace, SFMono-Regular, Consolas, monospace;
+  }
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font:15px/1.45 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  header{
+    position:sticky;
+    top:0;left:0;right:0;
+    background:rgba(255,255,255,.9);
+    backdrop-filter:saturate(140%) blur(8px);
+    border-bottom:1px solid var(--line);
+    box-shadow:0 6px 18px rgba(0,0,0,.05);
+    z-index:10;
+  }
+  .bar{
+    max-width:var(--maxw);
+    margin:0 auto;
+    padding:12px 16px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px 12px;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .bar-left{
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+    min-width:0;
+  }
+  .bar-title{
+    font-size:15px;
+    font-weight:600;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  .bar-sub{
+    font-size:12px;
+    color:var(--muted);
+  }
+  .bar-actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+  }
+  button{
+    border-radius:999px;
+    border:1px solid var(--line);
+    background:#fff;
+    padding:6px 12px;
+    font-size:13px;
+    cursor:pointer;
+  }
+  button.brand{
+    background:var(--brand);
+    color:var(--brand-ink);
+    border-color:var(--brand);
+  }
+  button.small{
+    padding:4px 10px;
+    font-size:12px;
+  }
+  main{
+    max-width:var(--maxw);
+    margin:12px auto 24px;
+    padding:0 16px 24px;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+  }
+  section.card{
+    background:var(--card);
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    padding:16px 20px;
+  }
+  section.card h2{
+    font-size:15px;
+    font-weight:600;
+    margin:0 0 6px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:6px;
+  }
+  section.card p{
+    margin:0 0 8px;
+    font-size:13px;
+    color:var(--muted);
+  }
+  .badge{
+    display:inline-flex;
+    align-items:center;
+    gap:4px;
+    border-radius:999px;
+    border:1px solid var(--line);
+    padding:2px 8px;
+    font-size:11px;
+    color:var(--muted);
+    background:#f9fafb;
+  }
+  .badge strong{color:#111;}
+  .tagver{
+    font-size:11px;
+    color:var(--muted);
+  }
+
+  .meta-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:10px 16px;
+    margin-top:6px;
+  }
+  .meta-block label{
+    display:block;
+    font-size:12px;
+    font-weight:500;
+    margin-bottom:4px;
+  }
+  .meta-block input, .meta-block select{
+    width:100%;
+    box-sizing:border-box;
+    padding:6px 8px;
+    border-radius:8px;
+    border:1px solid var(--line);
+    font-size:13px;
+  }
+  .meta-hint{
+    font-size:11px;
+    color:var(--muted);
+    margin-top:6px;
+  }
+
+  .checklist-card{
+    padding-top:12px;
+  }
+  table.checklist{
+    width:100%;
+    border-collapse:collapse;
+    font-size:13px;
+  }
+  table.checklist thead th{
+    text-align:left;
+    padding:6px 4px;
+    border-bottom:1px solid var(--line);
+    font-size:12px;
+    color:var(--muted);
+  }
+  table.checklist tbody td{
+    padding:8px 4px;
+    border-bottom:1px solid #f0f0f5;
+    vertical-align:top;
+  }
+  table.checklist tbody tr:last-child td{
+    border-bottom:0;
+  }
+  .step-block{
+    font-weight:600;
+    font-size:13px;
+    margin-bottom:2px;
+  }
+  .collapse-icon{
+    display:inline-block;
+    width:14px;
+    margin-right:4px;
+    font-size:11px;
+  }
+  .step-notes{
+    color:var(--muted);
+    font-size:12px;
+    white-space:pre-wrap;
+  }
+  .times{
+    font-size:12px;
+    color:var(--muted);
+  }
+  .times span{color:#111;}
+  .attempt-count{
+    font-size:11px;
+    margin-top:4px;
+    color:var(--muted);
+  }
+  .detail-wrap{
+    background:#f9fafb;
+    border-radius:10px;
+    border:1px solid var(--line);
+    padding:8px 10px;
+    margin-top:-4px;
+  }
+  .detail-grid{
+    display:grid;
+    grid-template-columns:minmax(0,2fr) minmax(0,1.5fr);
+    gap:10px 14px;
+  }
+  .cmdlabel{
+    font-size:12px;
+    font-weight:500;
+    margin-bottom:3px;
+  }
+  .cmd-block{
+    background:#111827;
+    color:#e5e7eb;
+    border-radius:8px;
+    padding:8px 10px;
+    font-family:var(--mono);
+    font-size:12px;
+    white-space:pre-wrap;
+    max-height:180px;
+    overflow:auto;
+  }
+  .notesbox{
+    width:100%;
+    box-sizing:border-box;
+    border-radius:8px;
+    border:1px solid var(--line);
+    padding:6px 8px;
+    font-size:12px;
+    min-height:72px;
+    resize:vertical;
+  }
+  .runlog{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:8px;
+    padding:8px 10px;
+    font-size:12px;
+    line-height:1.4;
+    max-height:160px;
+    overflow-y:auto;
+    white-space:pre-wrap;
+  }
+  .runlog strong{color:#111;}
+
+  .enh-list{
+    max-height:240px;
+    overflow-y:auto;
+    border:1px solid var(--line);
+    border-radius:8px;
+    background:#fafafa;
+    padding:8px 10px;
+    font-size:13px;
+    line-height:1.4;
+  }
+  .enh-item{
+    border-bottom:1px solid var(--line);
+    padding:6px 0;
+  }
+  .enh-item:last-child{
+    border-bottom:0;
+  }
+  .enh-head{
+    font-weight:600;
+    font-size:13px;
+  }
+  .enh-cat{
+    font-size:11px;
+    font-weight:500;
+    color:var(--muted);
+    margin-left:6px;
+  }
+  .enh-ts{
+    font-size:11px;
+    color:var(--muted);
+  }
+  .enh-notes{
+    font-size:12px;
+    margin-top:2px;
+  }
+
+  .export-wrap{margin-top:16px;}
+  textarea.export-area{
+    width:100%;
+    min-height:160px;
+    font-family:var(--mono);
+    font-size:12px;
+    background:#f9fafb;
+    border:1px solid var(--line);
+    border-radius:8px;
+    padding:8px 10px;
+    resize:vertical;
+    box-sizing:border-box;
+  }
+  .prog-wrap{
+    padding:0 16px 12px;
+    border-top:1px solid var(--line);
+    margin-top:10px;
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+  }
+  .prog-topline{
+    font-size:12px;
+    font-weight:500;
+  }
+  .prog-bar{
+    width:100%;
+    height:6px;
+    border-radius:999px;
+    background:#e5e7eb;
+    overflow:hidden;
+  }
+  .prog-fill{
+    height:100%;
+    width:0%;
+    background:linear-gradient(90deg,#0b5fff,#22c55e);
+    transition:width .2s ease-out;
+  }
+  .prog-mini{
+    font-size:11px;
+    color:var(--muted);
+  }
+
+  @media (max-width:900px){
+    .detail-grid{
+      grid-template-columns:1fr;
+    }
+  }
+  @media (max-width:640px){
+    main{padding:0 10px 20px;}
+    .bar{padding:10px 10px;}
+  }
+</style>
+
+<header>
+  <div class="bar">
+    <div class="bar-left">
+      <div class="bar-title" id="headerTitle">SOP Build Checklist v7 – SOP_Build</div>
+      <div class="bar-sub">
+        Tracks retries, timestamps each attempt, and keeps a local log. Data stays in this browser (localStorage).
+      </div>
+    </div>
+    <div class="bar-actions">
+      <button class="small" onclick="saveState()">Save State</button>
+      <button class="small" onclick="loadState()">Load State</button>
+      <button class="small" onclick="resetEverything()">Reset</button>
+      <button class="small brand" onclick="exportText()">Export Text</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- SOP Setup / Meta -->
+  <section class="card">
+    <h2>
+      SOP Setup &amp; Info
+      <span class="tagver">v7 – SOP_Build + ENH_UPD/FAQ/Quiz + end-of-path + validate_env + EdxBuild bridge + failure playbook</span>
+    </h2>
+    <p>
+      Fill SOP Name / ID / Entity / Run label so exports &amp; logs carry the correct context.
+      Click <strong>Apply SOP Info</strong> once and then use <strong>Save State</strong> after each working session.
+    </p>
+
+    <div class="meta-grid">
+      <div class="meta-block">
+        <label for="sopName">SOP Name (friendly)</label>
+        <input id="sopName" placeholder="Line Entry Option 2" />
+      </div>
+      <div class="meta-block">
+        <label for="sopId">SOP ID (no spaces/underscores)</label>
+        <input id="sopId" value="" placeholder="LineEnt2" />
+      </div>
+      <div class="meta-block">
+        <label for="sopEntity">Entity / Function / SubEntity</label>
+        <input id="sopEntity" value="" placeholder="SE/Distro/Sales" />
+      </div>
+      <div class="meta-block">
+        <label for="sopImgFolder">Image / slide folder (relative)</label>
+        <input id="sopImgFolder" value="" placeholder="outputs/images/LineEnt2" />
+      </div>
+      <div class="meta-block">
+        <label for="runLabel">Run label (optional)</label>
+        <input id="runLabel" value="" placeholder="LineEnt2" />
+      </div>
+      <div class="meta-block">
+        <label for="metaRepo">Repo / Project</label>
+        <input id="metaRepo" value="/workspaces/SOP_Build" />
+      </div>
+      <div class="meta-block">
+        <label for="webRoot">Web root / base URL (GitHub Pages)</label>
+        <input id="webRoot" value="/EdxBuild" placeholder="/EdxBuild" />
+      </div>
+    </div>
+
+    <p class="meta-hint">
+      SOP Name + SOP ID + Run label drive the page/browser title.
+      Use Enhancements &amp; Notes to capture line-specific issues and future improvements.
+      Save State stores header + steps + notes in this browser only.
+    </p>
+
+    <div style="margin-top:8px;display:flex;gap:8px;flex-wrap:wrap;">
+      <button class="small brand" onclick="applySOPInfo()">Apply SOP Info</button>
+      <button class="small" onclick="populateSOPFieldsFromState()">Reload from saved state</button>
+    </div>
+  </section>
+
+  <!-- Checklist Steps -->
+  <section class="card checklist-card">
+    <h2>
+      SOP Build Steps – SOP_Build → EdxBuild
+      <span class="badge"><strong>Hint:</strong> only one step detail is open at a time.</span>
+    </h2>
+    <p>
+      Steps are grouped as: Local PC (PPT + PowerShell) → SOP_Build (ENH_UPD, ready CSV, story) → EdxBuild (player, menu, git).
+      Use <strong>Start / Done / Redo</strong> to track each attempt. Insert ad-hoc steps with <strong>Insert after</strong>.
+    </p>
+
+    <table class="checklist">
+      <thead>
+        <tr>
+          <th style="width:45%;">Step</th>
+          <th style="width:30%;">Last run / attempts</th>
+          <th style="width:25%;">Actions</th>
+        </tr>
+      </thead>
+      <tbody id="stepsBody"></tbody>
+    </table>
+
+    <div class="prog-wrap">
+      <div class="prog-topline">
+        <span id="progSummary">Done: 0 / 0 (0%)</span>
+      </div>
+      <div class="prog-bar">
+        <div class="prog-fill" id="progFill"></div>
+      </div>
+      <div class="prog-mini">
+        Progress bar counts steps with at least one “Done”.
+        “Redo” adds attempts; “Insert after” adds extra steps that are clearly marked in the export.
+      </div>
+    </div>
+  </section>
+
+  <!-- Failure playbook -->
+  <section class="card">
+    <h2>
+      Failure Playbook – quick triage
+      <span class="badge"><strong>Use when:</strong> JSON or images fail.</span>
+    </h2>
+    <p>
+      When something breaks, start here instead of poking randomly at HTML/JSON.
+    </p>
+    <ul style="font-size:13px;color:var(--muted);padding-left:18px;">
+      <li><strong>validate_env.py fails (missing images / bad paths)</strong><br/>
+        → Check the ENH_UPD / READY CSV <em>Image_sub_url</em> against the actual files in
+        <em>outputs/images/&lt;SOP_ID&gt;</em> in SOP_Build. Fix names or paths, re-run validate_env.
+      </li>
+      <li style="margin-top:6px;"><strong>Local 8080 test: JSON load error</strong><br/>
+        → In EdxBuild, grep the player for <code>story.json</code> and make sure the path is
+        <code>/EdxBuild/story/&lt;SOP_ID&gt;/story.json</code>. If you see any <code>/workspaces/</code> paths,
+        run the sed patch step again and re-test.
+      </li>
+      <li style="margin-top:6px;"><strong>JSON loads but no images in browser</strong><br/>
+        → Confirm GitHub Pages can see the image URL you are using, e.g.
+        <code>https://USERNAME.github.io/EdxBuild/site/BUILD/SOP/images/SE/Distro/LineEnt2/S000.png</code>.
+        If that works, the player’s image path needs adjusting; update Image_sub_url in ENH_UPD/READY, rebuild story and player.
+      </li>
+      <li style="margin-top:6px;"><strong>Everything works locally, fails on GitHub Pages</strong><br/>
+        → Check that you committed the correct files in EdxBuild (story, player, images, index).
+        Run <code>git status</code> to confirm only expected files are staged before push.</li>
+    </ul>
+  </section>
+
+  <!-- Enhancements / Notes -->
+  <section class="card">
+    <h2>
+      Enhancements &amp; Notes
+      <span class="badge"><strong>Category:</strong> Enhancement, Challenges faced, New program Dev.</span>
+    </h2>
+    <p>
+      Log ideas for future enhancement, challenges you faced, and notes about new scripts/programs for this SOP.
+      “Main point” is required; category helps classify the entry. Each note is timestamped and included in Export Text.
+    </p>
+
+    <div style="display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1.1fr);gap:12px;">
+      <div>
+        <label for="enhMain">Main point (required)</label>
+        <input type="text" id="enhMain" placeholder="Tablet view still scrolls vertically" />
+
+        <label for="enhCategory">Category</label>
+        <select id="enhCategory">
+          <option value="Enhancement">Enhancement</option>
+          <option value="Challenges faced">Challenges faced</option>
+          <option value="New program Dev">New program Dev</option>
+        </select>
+
+        <label for="enhNotes">Notes / details (optional)</label>
+        <textarea id="enhNotes" placeholder="On 10&quot; tablet port..."></textarea>
+
+        <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap;">
+          <button class="small brand" onclick="addEnhancement()">Add entry</button>
+          <button class="small" onclick="clearEnhFields()">Clear fields</button>
+        </div>
+      </div>
+
+      <div>
+        <div class="cmdlabel">Enhancements / notes so far</div>
+        <div id="enhList" class="enh-list"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Export -->
+  <section class="card">
+    <h2>
+      Export log (text)
+      <span class="badge"><strong>Tip:</strong> paste into SOP doc / project notes.</span>
+    </h2>
+    <p>
+      Use <strong>Export Text</strong> (top right) after a run to produce a consolidated log:
+      SOP header, each step’s run history (including any inserted steps), and the enhancements log.
+      Copy-paste into a Word/Markdown or project notes document and then update the Excel spec.
+    </p>
+    <div class="export-wrap">
+      <textarea id="exportArea" class="export-area" placeholder="Click 'Export Text' in the header to populate this area."></textarea>
+    </div>
+  </section>
+</main>
+
+<script>
+/*** CONSTANTS ***/
+const TEMPLATE_TAGLINE = "v7 – SOP_Build + ENH_UPD/FAQ/Quiz + end-of-path + validate_env + EdxBuild bridge + failure playbook";
+
+/*** 1. STEPS MODEL – Local PC → SOP_Build → EdxBuild ***/
+let steps = [
+  {
+    id: "LocalPPT1",
+    order: 1,
+    title: "Local PC – create single-slide path view (master)",
+    command: "In PowerPoint on the local PC, create the master single-slide path view for this SOP (overall swim-lane picture, S000). Save as PPS_<SOP_ID>_YYYYMMDD_HHMM.pptx in your SonetLumier Input folder.",
+    reminder: "Inputs: Rough process from SME.\nHints: Use S000 for the opening slide; keep title and subtitle clean so they flow nicely into narration later.",
+    notes: "",
+    runs: []
+  },
+  {
+    id: "LocalPPT2",
+    order: 2,
+    title: "Local PC – build full transition deck with intros and thank-you",
+    command: "Extend the deck into full flow: intro slides, decision nodes (D1, D2, ...), yes/no branches (Y1, N1, ...), path-end slides, and final end-of-SOP slide S999 with end-of-path options text (Restart, Entity Menu, Home).",
+    reminder: "Hints: Make sure each decision slide code is unique (D1, D2, etc.) and each path end hits S999 or a clear terminal node that will later link back via the player UI.",
+    notes: "",
+    runs: []
+  },
+  {
+    id: "LocalVerify",
+    order: 3,
+    title: "Local PC – verify slide numbers are visible and mapped",
+    command: "Run your verify_slide_v1a PowerShell script against PPS_<SOP_ID>_YYYYMMDD_HHMM.pptx to make sure all slides are numbered and discoverable.",
+    reminder: "Hints: Fix missing or duplicate slide numbers here. Bad slide codes here will become bad Code / Next1_Code / Next2_Code later.",
+    notes: "",
+    runs: []
+  },
+  {
+    id: "LocalExtract",
+    order: 4,
+    title: "Local PC – extract images + raw CSV from PPT",
+    command: "Run the exp_slide_n_csv PowerShell script to export slide PNGs and the raw slide map CSV for this SOP. Keep images under a local images/<SOP_ID>/ folder and the CSV under Slide_Map.",
+    reminder: "Outputs: PNG files (S000.png, D1.png, Y1.png, etc.) and a raw slide map CSV.\nHints: Quickly eyeball the CSV to ensure each slide code (Code column) matches your planned flow.",
+    notes: "",
+    runs: []
+  },
+  {
+    id: "LocalEnhUpd",
+    order: 5,
+    title: "Local PC – build ENH_UPD CSV in Excel",
+    command: "Open the raw slide map CSV in Excel. Save as <SOP_ID>_Raw_MMDDYY_HHMM_READYBASE_ENH_UPD.csv. Add and update all enrichment columns (Image_sub_url, UAP URL + label, Start_Here, Entity/Function/SubEntity, Exclude, FAQ/Quiz columns).",
+    reminder: "FAQ/Quiz columns to maintain:\n- FAQ_Loc  (for example: outputs/faq)\n- FAQ_File (for example: LineEnt2_FAQ.html)\n- FAQ_Label (for example: FAQ & Tips)\n- Quiz_Loc (for example: outputs/quiz; usually ONLY on S999)\n- Quiz_File (for example: LineEnt2_Quiz.html; ONLY on S999)\n- Quiz_Label (for example: Knowledge Check; ONLY on S999)\nHints: On non-final slides, Quiz fields are normally blank. FAQ fields can be the same across all slides for this SOP.",
+    notes: "",
+    runs: []
+  },
+  {
+    id: "LocalCopyToRepo",
+    order: 6,
+    title: "Move files into SOP_Build – create folders and upload",
+    command: "In GitHub Codespaces (SOP_Build repo), ensure folders exist: inputs/raw, inputs/images/<SOP_ID>. Upload the ENH_UPD CSV and all slide PNGs into these folders. Create outputs/build_in and outputs/story/<SOP_ID> for downstream steps.",
+    reminder: "Example layout:\n- inputs/raw/<SOP_ID>_Raw_MMDDYY_HHMM_READYBASE_ENH_UPD.csv\n- inputs/images/<SOP_ID>/S000.png etc.\n- outputs/build_in/\n- outputs/story/<SOP_ID>/\nHints: Use a Prev subfolder under inputs/raw and inputs/images/<SOP_ID>/Prev to archive older runs.",
+    notes: "",
+    runs: []
+  },
+  {
+    id: "BuildReadyCSV",
+    order: 7,
+    title: "SOP_Build – convert ENH_UPD into READY CSV (mk_tw_in_READY)",
+    command: "From /workspaces/SOP_Build, run the Python script that converts the ENH_UPD CSV into the mk_tw_in_READY CSV used by csv_to_story.\nCommand placeholder (adjust once script name is finalized):\n\npython src/enh_upd_to_ready.py \\\n  --csv inputs/raw/<SOP_ID>_Raw_MMDDYY_HHMM_READYBASE_ENH_UPD.csv \\\n  --out outputs/build_in/<SOP_ID>_mk_tw_in_READY_MMDDYY_HHMM.csv",
+    reminder: "Hints: This is the one place where ENH_UPD is turned into the single source of truth for the story. If script name or CLI options change, update this step.\nOutputs: outputs/build_in/<SOP_ID>_mk_tw_in_READY_*.csv",
+    notes: "",
+    runs: []
+  },
+  {
+    id: "ValidateEnv",
+    order: 8,
+    title: "SOP_Build – validate images and environment (validate_env.py)",
+    command: "In /workspaces/SOP_Build run:\n\npython src/validate_env.py \\\n  --csv outputs/build_in/<SOP_ID>_mk_tw_in_READY_MMDDYY_HHMM.csv \\\n  --images outputs/images/<SOP_ID>/ \\\n  --check-images \\\n  --log logs/<SOP_ID>_validate_MMDDYY_HHMM.log",
+    reminder: "Hints: Fix bad paths NOW. If a slide references an image that does not exist under outputs/images/<SOP_ID>, either rename the PNG or update Image_sub_url in ENH_UPD and rebuild the READY CSV.\nRe-run validate_env.py until it is clean.",
+    notes: "",
+    runs: []
+  },
+  {
+    id: "MakeStory",
+    order: 9,
+    title: "SOP_Build – create story.json for this SOP (csv_to_story)",
+    command: "Still in /workspaces/SOP_Build run:\n\npython src/csv_to_story.py \\\n  --csv outputs/build_in/<SOP_ID>_mk_tw_in_READY_MMDDYY_HHMM.csv \\\n  --sop-id <SOP_ID> \\\n  --out outputs/story/<SOP_ID>/story.json \\\n  --log logs/csv_to_story_<SOP_ID>_MMDDYY_HHMM.log",
+    reminder: "Inputs: READY CSV from previous step.\nOutputs: outputs/story/<SOP_ID>/story.json plus a log file.\nHints: If csv_to_story complains about missing Codes, Next1/Next2, or Start_Here, go back to ENH_UPD and fix.",
+    notes: "",
+    runs: []
+  },
+  {
+    id: "StorySanity",
+    order: 10,
+    title: "SOP_Build – quick sanity check of story.json",
+    command: "Open outputs/story/<SOP_ID>/story.json in the Codespace viewer. Confirm start node, some sample nodes, and that image paths look correct (no obvious /workspaces paths; they should match what validate_env checked).",
+    reminder: "Hints: Use this step only for quick spot checks. Do not hand-edit story.json; fix ENH_UPD / READY CSV and regenerate instead.",
+    notes: "",
+    runs: []
+  },
+  {
+    id: "PackageForEdxBuild",
+    order: 11,
+    title: "Bridge – package story + artifacts for EdxBuild",
+    command: "From SOP_Build, either zip or manually copy:\n- outputs/story/<SOP_ID>/story.json\n- outputs/build_in/<SOP_ID>_mk_tw_in_READY_*.csv (optional, for traceability)\n- outputs/images/<SOP_ID>/\nThen move or upload them into the matching locations in the EdxBuild repo.",
+    reminder: "Target layout in EdxBuild typically:\n- story/<SOP_ID>/story.json\n- site/BUILD/SOP/images/SE/Distro/<SOP_ID>/S000.png etc.\nHints: Keep a small README or text note in each Prev folder if you need extra provenance.",
+    notes: "",
+    runs: []
+  },
+  {
+    id: "EdxBuildCopy",
+    order: 12,
+    title: "EdxBuild – copy images into web-visible folder",
+    command: "In /workspaces/EdxBuild, ensure image folder exists:\nsite/BUILD/SOP/images/SE/Distro/<SOP_ID>/\nCopy the PNGs from SOP_Build outputs/images/<SOP_ID>/ into this folder.",
+    reminder: "Hints: The browser and GitHub Pages will use this folder. Use the exact same subfolder name that Image_sub_url expects (for example: /SOP/images/SE/Distro/LineEnt2/S000.png).",
+    notes: "",
+    runs: []
+  },
+  {
+    id: "EdxBuildStory",
+    order: 13,
+    title: "EdxBuild – stage story.json",
+    command: "In /workspaces/EdxBuild create (if needed): story/<SOP_ID>/\nCopy SOP_Build outputs/story/<SOP_ID>/story.json into EdxBuild/story/<SOP_ID>/story.json.",
+    reminder: "Hints: story.json in EdxBuild is what the player will ask for. Keep a Prev folder here as well for older variants if needed.",
+    notes: "",
+    runs: []
+  },
+  {
+    id: "EdxBuildPlayer",
+    order: 14,
+    title: "EdxBuild – build player from story.json",
+    command: "From /workspaces/EdxBuild run:\n\npython src/build_player.py \\\n  --story story/<SOP_ID>/story.json \\\n  --out site/BUILD/<SOP_ID>_player.html \\\n  --title \"<SOP_ID> – SOP Player\" \\\n  --mode prod \\\n  --image-width 65 \\\n  --exit \"index.html\"",
+    reminder: "Outputs: site/BUILD/<SOP_ID>_player.html.\nHints: Use <SOP_ID>_player.html (for example LineEnt2_player.html) to keep naming consistent with other SOP players.",
+    notes: "",
+    runs: []
+  },
+  {
+    id: "EdxBuildSanityPaths",
+    order: 15,
+    title: "EdxBuild – sanity check for /workspaces paths in player and story",
+    command: "From /workspaces/EdxBuild run:\n\ngrep -n '/workspaces/' site/BUILD/<SOP_ID>_player.html || echo \"OK: no /workspaces path in player\"\ngrep -n '/workspaces/' story/<SOP_ID>/story.json || echo \"OK: no /workspaces path in story.json\"\n\nIf any /workspaces paths are found, patch with sed so they use /EdxBuild/... instead.",
+    reminder: "Hints: Player should typically refer to /EdxBuild/story/<SOP_ID>/story.json or a relative path. This step prevents the classic “works locally, fails on web” bug.",
+    notes: "",
+    runs: []
+  },
+  {
+    id: "EdxBuildLocalTest",
+    order: 16,
+    title: "EdxBuild – local 8080 test (web-style)",
+    command: "From /workspaces/EdxBuild run:\n\npython -m http.server 8080\n\nThen in the browser open:\nhttp://localhost:8080/EdxBuild/site/BUILD/<SOP_ID>_player.html",
+    reminder: "Hints: Confirm JSON loads, images display, breadcrumb / end-of-path behaviour works, and FAQ/Quiz links (if already created) open the correct HTML pages.\nIf JSON fails to load, use the Failure Playbook card above.",
+    notes: "",
+    runs: []
+  },
+  {
+    id: "EdxBuildMenu",
+    order: 17,
+    title: "EdxBuild – add SOP to landing menu",
+    command: "Edit site/BUILD/index.html (or the chosen landing page) to add a new entry for this SOP that points to <SOP_ID>_player.html under the correct Entity / Function grouping.",
+    reminder: "Hints: Keep the label in the menu consistent with the friendly SOP Name. Use the same grouping as other SE/Distro/Sales SOPs (for example under Sales → Line Entry).",
+    notes: "",
+    runs: []
+  },
+  {
+    id: "EdxBuildGit",
+    order: 18,
+    title: "EdxBuild – git add / commit / push (no git add .)",
+    command: "From /workspaces/EdxBuild run:\n\ngit status\n\ngit add \\\n  story/<SOP_ID>/story.json \\\n  site/BUILD/<SOP_ID>_player.html \\\n  site/BUILD/index.html \\\n  site/BUILD/SOP/images/SE/Distro/<SOP_ID>/*\n\ngit commit -m \"Publish <SOP_ID> SOP (story, player, menu, images)\" \n\ngit push",
+    reminder: "Hints: Avoid git add . so you do not accidentally commit env/, logs/ or temp files. Use git status to double-check exactly what is staged before committing.",
+    notes: "",
+    runs: []
+  }
+];  // end steps
+
+let currentOpenStepId = null;
+
+/*** 2. ENHANCEMENTS MODEL ***/
+let enhancements = []; // {ts, main, notes, category}
+
+/*** 3. SOP / HEADER INFO MODEL ***/
+let sopInfo = {
+  name: "",
+  id: "",
+  entity: "",
+  imgFolder: "",
+  repo: "/workspaces/SOP_Build",
+  webRoot: "/EdxBuild",
+  runLabel: ""
+};
+
+const STORAGE_KEY = "SOP_Build_Checklist_v7_state";
+
+/*** UTILITIES ***/
+function nowStamp(){
+  const d=new Date();
+  const pad=n=>String(n).padStart(2,"0");
+  return (
+    `${pad(d.getMonth()+1)}/${pad(d.getDate())}/${d.getFullYear()} `+
+    `${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}`
+  );
+}
+
+function buildExportStamp(){
+  const d = new Date();
+  const yy = String(d.getFullYear()).slice(-2);
+  const mm = String(d.getMonth()+1).padStart(2,"0");
+  const dd = String(d.getDate()).padStart(2,"0");
+  const hh = String(d.getHours()).padStart(2,"0");
+  const mi = String(d.getMinutes()).padStart(2,"0");
+  return `${yy}${mm}${dd}_${hh}${mi}`;
+}
+
+function escapeHTML(str){
+  return (str||"").replace(/[&<>"']/g, c=>{
+    switch(c){
+      case "&":return "&amp;";
+      case "<":return "&lt;";
+      case ">":return "&gt;";
+      case '"':return "&quot;";
+      case "'":return "&#39;";
+      default:return c;
+    }
+  });
+}
+
+/*** RUN HELPERS ***/
+function ensureRunsArray(st){
+  if(!Array.isArray(st.runs)){
+    st.runs = [];
+  }
+}
+function newestRun(st){
+  if(!st.runs || !st.runs.length) return null;
+  return st.runs[st.runs.length-1];
+}
+
+/*** STATE SAVE / LOAD / RESET ***/
+function saveState(){
+  try{
+    const state = {
+      sopInfo,
+      steps,
+      enhancements
+    };
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    console.log("State saved.");
+  }catch(e){
+    console.warn("Failed to save state:", e);
+    alert("Could not save state (localStorage issue).");
+  }
+}
+
+function loadState(){
+  try{
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if(!raw){
+      alert("No saved state found.");
+      return;
+    }
+    const parsed = JSON.parse(raw);
+    if(parsed.sopInfo) sopInfo = parsed.sopInfo;
+    if(Array.isArray(parsed.steps)) steps = parsed.steps;
+    if(Array.isArray(parsed.enhancements)) enhancements = parsed.enhancements;
+
+    populateSOPFieldsFromState();
+    renderSteps();
+    renderEnhancements();
+    updateHeaderTitle();
+    updateProgress();
+  }catch(e){
+    console.warn("Failed to load state:", e);
+    alert("Could not load state (localStorage issue).");
+  }
+}
+
+function resetEverything(){
+  if(!confirm("Reset all step histories, notes, enhancements and SOP info? This cannot be undone.")){
+    return;
+  }
+  sopInfo = {
+    name:"",
+    id:"",
+    entity:"",
+    imgFolder:"",
+    repo:"/workspaces/SOP_Build",
+    webRoot:"/EdxBuild",
+    runLabel:""
+  };
+  steps.forEach(st=>{
+    st.notes = "";
+    st.runs = [];
+  });
+  enhancements = [];
+  currentOpenStepId = null;
+  populateSOPFieldsFromState();
+  renderSteps();
+  renderEnhancements();
+  updateHeaderTitle();
+  updateProgress();
+  try{localStorage.removeItem(STORAGE_KEY);}catch(e){}
+}
+
+/*** RENDER STEPS & PROGRESS (accordion style) ***/
+function renderRunLog(st){
+  if(!st.runs || !st.runs.length) return "(No runs yet.)";
+  return st.runs.map((r,idx)=>{
+    const mark = r.kind==="redo" ? "[Redo]" : "[Run]";
+    return `${mark} #${idx+1}  Start: ${r.start||"(?)"}  Done: ${r.end||"(not done)"}`;
+  }).join("\n");
+}
+
+function renderSteps(){
+  const tbody = document.getElementById('stepsBody');
+  tbody.innerHTML = "";
+
+  if(!currentOpenStepId && steps.length > 0){
+    currentOpenStepId = steps[0].id;
+  }
+
+  steps.forEach((st, idx)=>{
+    const last = newestRun(st);
+    const lastStart = last ? (last.start||"") : "";
+    const lastEnd   = last ? (last.end||"")   : "";
+    const runCount  = st.runs ? st.runs.length : 0;
+    const isOpen    = (currentOpenStepId === st.id);
+    const arrow     = isOpen ? "▼" : "▶";
+
+    const tr = document.createElement('tr');
+    tr.className = "step-row";
+    tr.addEventListener('click', function(e){
+      const tag = e.target.tagName.toLowerCase();
+      if(tag === "button" || tag === "textarea" || tag === "pre") return;
+      currentOpenStepId = st.id;
+      renderSteps();
+    });
+
+    const tdStep = document.createElement('td');
+    const insertedFlag = st.inserted_during_run ? ' <span style="font-size:11px;color:#b91c1c;">[Inserted during run]</span>' : '';
+    tdStep.innerHTML = `
+      <div class="step-block">
+        <span class="collapse-icon">${arrow}</span>
+        ${idx+1}. ${escapeHTML(st.title)}${insertedFlag}
+      </div>
+      <div class="step-notes">${escapeHTML(st.reminder || "")}</div>
+    `;
+
+    const tdTime = document.createElement('td');
+    tdTime.innerHTML = `
+      <div class="times">
+        <div><strong>Last Start:</strong> <span>${escapeHTML(lastStart)}</span></div>
+        <div><strong>Last Done:</strong> <span>${escapeHTML(lastEnd)}</span></div>
+      </div>
+      <div class="attempt-count">Attempts: ${runCount}</div>
+    `;
+
+    const tdActions = document.createElement('td');
+    tdActions.style.whiteSpace = "nowrap";
+    tdActions.innerHTML = `
+      <button class="small brand" onclick="markStart('${st.id}','start');event.stopPropagation();">Start</button>
+      <button class="small" onclick="markDone('${st.id}');event.stopPropagation();">Done</button>
+      <button class="small" onclick="markStart('${st.id}','redo');event.stopPropagation();">Redo</button>
+      <button class="small" onclick="clearRuns('${st.id}');event.stopPropagation();">Clear Runs</button>
+      <button class="small" onclick="insertStepAfter('${st.id}');event.stopPropagation();">Insert after</button>
+    `;
+
+    tr.appendChild(tdStep);
+    tr.appendChild(tdTime);
+    tr.appendChild(tdActions);
+    tbody.appendChild(tr);
+
+    const trDetail = document.createElement('tr');
+    trDetail.className = "detail-row";
+    if(!isOpen){
+      trDetail.style.display = "none";
+    }
+    const tdDetail = document.createElement('td');
+    tdDetail.colSpan = 3;
+
+    const runLogText = renderRunLog(st);
+    const cmdText = st.command || "";
+
+    tdDetail.innerHTML = `
+      <div class="detail-wrap">
+        <div class="detail-grid">
+          <div>
+            <div class="cmdlabel">Command / reference (copy &amp; adjust paths, timestamps, etc.)</div>
+            <pre class="cmd-block">${escapeHTML(cmdText)}</pre>
+
+            <div class="cmdlabel" style="margin-top:12px;">Notes for this step</div>
+            <textarea class="notesbox" id="notes_${st.id}">${escapeHTML(st.notes||"")}</textarea>
+          </div>
+
+          <div>
+            <div class="cmdlabel">Run log (all attempts)</div>
+            <div class="runlog" id="runlog_${st.id}">${escapeHTML(runLogText)}</div>
+          </div>
+        </div>
+      </div>
+    `;
+
+    trDetail.appendChild(tdDetail);
+    tbody.appendChild(trDetail);
+  });
+
+  steps.forEach(st=>{
+    const ta = document.getElementById('notes_'+st.id);
+    if(ta){
+      ta.onchange = ()=>{
+        st.notes = ta.value;
+        saveState();
+      };
+    }
+  });
+}
+
+function updateProgress(){
+  const summary = document.getElementById('progSummary');
+  const fill = document.getElementById('progFill');
+  const total = steps.length;
+  if(total===0){
+    summary.textContent = "Done: 0 / 0 (0%)";
+    fill.style.width = "0%";
+    return;
+  }
+  let doneCount = 0;
+  steps.forEach(st=>{
+    if(st.runs && st.runs.some(r=>r.end && r.end!=="")){
+      doneCount++;
+    }
+  });
+  const pct = Math.round((doneCount/total)*100);
+  summary.textContent = `Done: ${doneCount} / ${total} (${pct}%)`;
+  fill.style.width = pct+"%";
+}
+
+/*** STEP ACTIONS ***/
+function findStepById(id){
+  return steps.find(s=>s.id===id);
+}
+
+function markStart(stepId, kind){
+  const st = findStepById(stepId);
+  if(!st) return;
+  ensureRunsArray(st);
+  const ts = nowStamp();
+  st.runs.push({
+    kind: kind||"start",
+    start: ts,
+    end: ""
+  });
+  saveState();
+  renderSteps();
+  updateProgress();
+}
+
+function markDone(stepId){
+  const st = findStepById(stepId);
+  if(!st) return;
+  ensureRunsArray(st);
+  if(!st.runs.length){
+    st.runs.push({
+      kind:"start",
+      start: nowStamp(),
+      end: ""
+    });
+  }
+  st.runs[st.runs.length-1].end = nowStamp();
+  saveState();
+  renderSteps();
+  updateProgress();
+}
+
+function clearRuns(stepId){
+  const st = findStepById(stepId);
+  if(!st) return;
+  if(!confirm("Clear all runs for this step?")){
+    return;
+  }
+  st.runs = [];
+  saveState();
+  renderSteps();
+  updateProgress();
+}
+
+function genInsertedStepId(){
+  return "ins_" + Date.now().toString(36);
+}
+
+function insertStepAfter(stepId){
+  const idx = steps.findIndex(s=>s.id===stepId);
+  if(idx === -1) return;
+
+  const title = window.prompt("Title for the new inserted step (required):","");
+  if(!title || !title.trim()){
+    return;
+  }
+  const desc = window.prompt("Optional description / reminder for this inserted step:","") || "";
+
+  const newStep = {
+    id: genInsertedStepId(),
+    title: title.trim(),
+    reminder: desc.trim() || "INSERTED DURING RUN – update Excel spec later.",
+    command: "",
+    notes: "",
+    runs: [],
+    inserted_during_run: true
+  };
+
+  steps.splice(idx+1, 0, newStep);
+  currentOpenStepId = newStep.id;
+  saveState();
+  renderSteps();
+  updateProgress();
+}
+
+/*** ENHANCEMENTS RENDER / ADD ***/
+function renderEnhancements(){
+  const box = document.getElementById('enhList');
+  box.innerHTML = "";
+  enhancements.forEach(e=>{
+    const div = document.createElement('div');
+    div.className = "enh-item";
+    const cat = e.category || "Enhancement";
+    div.innerHTML = `
+      <div class="enh-head">
+        ${escapeHTML(e.main)}
+        <span class="enh-cat">[${escapeHTML(cat)}]</span>
+      </div>
+      <div class="enh-ts">${escapeHTML(e.ts)}</div>
+      ${e.notes ? `<div class="enh-notes">${escapeHTML(e.notes)}</div>`:""}
+    `;
+    box.appendChild(div);
+  });
+}
+
+function addEnhancement(){
+  const mainField = document.getElementById('enhMain');
+  const notesField = document.getElementById('enhNotes');
+  const catField  = document.getElementById('enhCategory');
+
+  const mainTxt = (mainField.value||"").trim();
+  const notesTxt = (notesField.value||"").trim();
+  const catVal  = (catField && catField.value ? catField.value : "Enhancement");
+
+  if(!mainTxt){
+    alert("Main point is required.");
+    return;
+  }
+
+  const tsNow = nowStamp();
+  enhancements.push({
+    ts: tsNow,
+    main: mainTxt,
+    notes: notesTxt,
+    category: catVal
+  });
+
+  mainField.value = "";
+  notesField.value = "";
+  if(catField) catField.value = "Enhancement";
+  renderEnhancements();
+  saveState();
+}
+
+function clearEnhFields(){
+  document.getElementById('enhMain').value="";
+  document.getElementById('enhNotes').value="";
+  const catField = document.getElementById('enhCategory');
+  if(catField) catField.value = "Enhancement";
+}
+
+/*** SOP SETUP ***/
+function applySOPInfo(){
+  sopInfo.name      = (document.getElementById('sopName').value||"").trim();
+  sopInfo.id        = (document.getElementById('sopId').value||"").trim();
+  sopInfo.entity    = (document.getElementById('sopEntity').value||"").trim();
+  sopInfo.imgFolder = (document.getElementById('sopImgFolder').value||"").trim();
+  sopInfo.repo      = (document.getElementById('metaRepo').value||"").trim();
+  sopInfo.webRoot   = (document.getElementById('webRoot').value||"").trim();
+  sopInfo.runLabel  = (document.getElementById('runLabel').value||"").trim();
+  updateHeaderTitle();
+  saveState();
+}
+
+function updateHeaderTitle(){
+  const h = document.getElementById('headerTitle');
+  const base = "SOP Build Checklist v7";
+  if(!h) return;
+
+  if(sopInfo.name || sopInfo.id){
+    const disp = sopInfo.name ? sopInfo.name : sopInfo.id;
+    const idbit = sopInfo.id ? ` (${sopInfo.id})` : "";
+    const runbit = sopInfo.runLabel ? ` - ${sopInfo.runLabel}` : "";
+    const full = `${disp}${idbit} - ${base}${runbit}`;
+    h.textContent = full;
+    document.title = full;
+  } else {
+    h.textContent = base + " – SOP_Build";
+    document.title = base + " – SOP_Build";
+  }
+}
+
+function populateSOPFieldsFromState(){
+  document.getElementById('sopName').value      = sopInfo.name || "";
+  document.getElementById('sopId').value        = sopInfo.id || "";
+  document.getElementById('sopEntity').value    = sopInfo.entity || "";
+  document.getElementById('sopImgFolder').value = sopInfo.imgFolder || "";
+  document.getElementById('metaRepo').value     = sopInfo.repo || "/workspaces/SOP_Build";
+  document.getElementById('webRoot').value      = sopInfo.webRoot || "/EdxBuild";
+  document.getElementById('runLabel').value     = sopInfo.runLabel || "";
+}
+
+/*** EXPORT TEXT (steps + enhancements) ***/
+function exportText(){
+  const lines = [];
+
+  lines.push("=== SOP BUILD CHECKLIST v7 ===");
+  const nm = sopInfo.name||"(not set)";
+  const id = sopInfo.id||"(not set)";
+  lines.push(`SOP Name : ${nm}`);
+  lines.push(`SOP ID   : ${id}`);
+  lines.push(`Entity   : ${sopInfo.entity||"(not set)"}`);
+  lines.push(`Repo     : ${sopInfo.repo||"(not set)"}`);
+  lines.push(`WebRoot  : ${sopInfo.webRoot||"(not set)"}`);
+  lines.push(`RunLabel : ${sopInfo.runLabel||"(not set)"}`);
+  lines.push(`ImgFolder: ${sopInfo.imgFolder||"(not set)"}`);
+  lines.push(`TemplateTag: ${TEMPLATE_TAGLINE}`);
+  lines.push(`Exported   : ${buildExportStamp()}`);
+  lines.push("");
+
+  lines.push("=== STEP RUN HISTORY ===");
+  steps.forEach((st, idx)=>{
+    lines.push(`Step ${idx+1}: ${st.title}`);
+    if(st.inserted_during_run){
+      lines.push("  InsertedDuringRun: yes (not in original spec)");
+    }
+    const rem = (st.reminder||"").replace(/\s+/g," ").trim();
+    if(rem) lines.push(`  Reminder: ${rem}`);
+    if(!st.runs || !st.runs.length){
+      lines.push(`  Runs: (no runs yet)`);
+    } else {
+      st.runs.forEach((r,i)=>{
+        const mark = r.kind==="redo" ? "[Redo]" : "[Run]";
+        lines.push(`  ${mark} #${i+1}: Start=${r.start||"(?)"}   Done=${r.end||"(not done)"}`);
+      });
+    }
+    const n = (st.notes||"").replace(/\s+/g," ").trim();
+    if(n){
+      lines.push(`  Notes: ${n}`);
+    }
+    lines.push("");
+  });
+
+  lines.push("=== Enhancements / Future Enhancements ===");
+  enhancements.forEach((e,i)=>{
+    lines.push(`Enh #${i+1}: ${e.main}`);
+    lines.push(`   When    : ${e.ts}`);
+    if(e.category){
+      lines.push(`   Category: ${e.category}`);
+    }
+    if(e.notes){
+      const flat = e.notes.replace(/\s+/g," ").trim();
+      lines.push(`   Notes   : ${flat}`);
+    }
+    lines.push("");
+  });
+
+  const finalText = lines.join("\n");
+  const outArea = document.getElementById('exportArea');
+  outArea.value = finalText;
+  outArea.focus();
+  outArea.select();
+}
+
+/*** INIT ***/
+(function init(){
+  try{
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if(raw){
+      const parsed = JSON.parse(raw);
+      if(parsed.sopInfo) sopInfo = parsed.sopInfo;
+      if(Array.isArray(parsed.steps)) steps = parsed.steps;
+      if(Array.isArray(parsed.enhancements)) enhancements = parsed.enhancements;
+    }
+  }catch(e){
+    console.warn("Init: could not load prior state.", e);
+  }
+  populateSOPFieldsFromState();
+  renderSteps();
+  renderEnhancements();
+  updateHeaderTitle();
+  updateProgress();
+})();
+</script>

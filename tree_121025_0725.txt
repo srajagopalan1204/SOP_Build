@@ -1,0 +1,48 @@
+3  [error opening dir]
+.
+├── README.md
+├── SOP_Build_Standard_v1.md
+├── build_checklists
+├── config
+├── docs
+│   └── CHANGELOG.md
+├── inputs
+│   ├── ppt_sample
+│   ├── raw
+│   ├── ready_base
+│   └── ready_enh
+├── login
+│   ├── config
+│   └── docs
+├── logs
+│   ├── build_player
+│   ├── ppt_export
+│   └── raw_to_ready
+├── outputs
+│   ├── faq
+│   ├── images
+│   ├── players
+│   ├── quiz
+│   └── story
+├── quiz_faq
+│   ├── specs
+│   └── templates
+├── requirements.txt
+├── src
+│   ├── powershell
+│   │   ├── exp_slide_n_csv.ps1
+│   │   ├── exp_slide_n_csv_prev_worked_1209.PS1
+│   │   ├── raw_add_ready_cols.ps1
+│   │   ├── raw_fill_desc_and_narr.ps1
+│   │   ├── usage_command_verify_slide_v1a.txt
+│   │   └── verify_slide_v1a.ps1
+│   └── python
+│       ├── build_player.py
+│       ├── csv_to_story.py
+│       └── validate_env.py
+├── temp_data
+│   ├── README_orig.md
+│   └── init_sop_build_repo.sh
+└── tree_121025_0725.txt
+
+29 directories, 16 files

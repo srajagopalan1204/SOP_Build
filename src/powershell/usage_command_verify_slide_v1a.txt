@@ -1,0 +1,3 @@
+powershell -ExecutionPolicy Bypass -File "C:\Users\scottuser\Documents\SonetLumier\Code\verify_slide_v1a.ps1" `
+  -Path "C:\Users\scottuser\Documents\SonetLumier\Input\PPS_Service_Warranty102525_1706.pptx" `
+  -Out  "C:\Users\scottuser\Documents\SonetLumier\Logs\verify_Warranty_$(Get-Date -f 'MMddyy_HHmm').txt"

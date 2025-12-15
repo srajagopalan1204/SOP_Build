@@ -1,0 +1,46 @@
+[2025-12-12 21:43:39] [INFO] Starting build_player...
+[2025-12-12 21:43:39] [INFO] Arguments: story=outputs/story/LineEnt2/story.json, out=outputs/players/LineEnt2_player.html, title=None, mode=prod, image_width=70, exit=index.html, template=None
+[2025-12-12 21:43:39] [INFO] Loading story JSON from outputs/story/LineEnt2/story.json
+[2025-12-12 21:43:39] [INFO] Inferred meta from story: {'sop_id': 'LineEnt2', 'entity': 'SE', 'function': 'Distro', 'subentity': 'Sales'}
+[2025-12-12 21:43:39] [INFO] No --title provided; inferred title: LineEnt2 – SE – Distro – Sales – EdxBuild SOP Player
+[2025-12-12 21:43:39] [INFO] Derived story path relative to player: ../story/LineEnt2/story.json
+[2025-12-12 21:43:39] [INFO] Using template: /workspaces/SOP_Build/src/templates/sop_player.html
+[2025-12-12 21:43:39] [INFO] Updated <title> in HTML.
+[2025-12-12 21:43:39] [INFO] Set default story path in input#story to: ../story/LineEnt2/story.json
+[2025-12-12 21:43:39] [INFO] Computed entity menu slug: se-distro-sales
+[2025-12-12 21:43:39] [WARN] Could not find goEntityMenu("...") in HTML to update.
+[2025-12-12 21:43:39] [WARN] Could not find script that sets exit-btn href; no changes made.
+[2025-12-12 21:43:39] [WARN] Could not find #imgbox img { max-width: ... } rule; no width changes made.
+[2025-12-12 21:43:39] [INFO] Mode is set to: prod (currently informational only)
+[2025-12-12 21:43:39] [INFO] Done. Wrote SOP player to outputs/players/LineEnt2_player.html
+[2025-12-12 21:51:33] [INFO] Starting build_player...
+[2025-12-12 21:51:33] [INFO] Arguments: story=outputs/story/LineEnt2/story.json, out=outputs/players/LineEnt2_player.html, title=None, mode=prod, image_width=70, exit=index.html, template=None
+[2025-12-12 21:51:33] [INFO] Loading story JSON from outputs/story/LineEnt2/story.json
+[2025-12-12 21:51:33] [INFO] Inferred meta from story: {'sop_id': 'LineEnt2', 'entity': 'SE', 'function': 'Distro', 'subentity': 'Sales'}
+[2025-12-12 21:51:33] [INFO] No --title provided; inferred title: LineEnt2 – SE – Distro – Sales – EdxBuild SOP Player
+[2025-12-12 21:51:33] [INFO] Derived story path relative to player: ../story/LineEnt2/story.json
+[2025-12-12 21:51:33] [INFO] Using template: /workspaces/SOP_Build/src/templates/sop_player.html
+[2025-12-12 21:51:33] [INFO] Updated <title> in HTML.
+[2025-12-12 21:51:33] [WARN] Could not find <input id="story" ... value="..."> to update.
+[2025-12-12 21:51:33] [INFO] Computed entity menu slug: se-distro-sales
+[2025-12-12 21:51:33] [WARN] Could not find goEntityMenu("...") in HTML to update.
+[2025-12-12 21:51:33] [WARN] Could not find script that sets exit-btn href; no changes made.
+[2025-12-12 21:51:33] [WARN] Could not find #imgbox img { max-width: ... } rule; no width changes made.
+[2025-12-12 21:51:33] [INFO] Mode is set to: prod (currently informational only)
+[2025-12-12 21:51:33] [INFO] Done. Wrote SOP player to outputs/players/LineEnt2_player.html
+[2025-12-12 22:27:24] [INFO] Starting build_player...
+[2025-12-12 22:27:24] [INFO] Arguments: story=outputs/story/LineEnt2/story.json, out=outputs/players/LineEnt2_player.html, title=None, mode=prod, image_width=70, exit=index.html, template=None
+[2025-12-12 22:27:24] [INFO] Loading story JSON from outputs/story/LineEnt2/story.json
+[2025-12-12 22:27:24] [INFO] Inferred meta from story: {'sop_id': 'LineEnt2', 'entity': 'SE', 'function': 'Distro', 'subentity': 'Sales'}
+[2025-12-12 22:27:24] [INFO] No --title provided; inferred title: LineEnt2 – SE – Distro – Sales – EdxBuild SOP Player
+[2025-12-12 22:27:24] [INFO] Derived story path relative to player: ../story/LineEnt2/story.json
+[2025-12-12 22:27:24] [INFO] Using template: /workspaces/SOP_Build/src/templates/sop_player.html
+[2025-12-12 22:27:24] [INFO] Inlined story.json into template (__STORY_JSON__ replaced).
+[2025-12-12 22:27:24] [INFO] Updated <title> in HTML.
+[2025-12-12 22:27:24] [WARN] Could not find <input id="story" ... value="..."> to update (ok for new template).
+[2025-12-12 22:27:24] [INFO] Computed entity menu slug: se-distro-sales
+[2025-12-12 22:27:24] [WARN] Could not find goEntityMenu("...") in HTML to update (ok for new template).
+[2025-12-12 22:27:24] [WARN] Could not find script that sets exit-btn href; no changes made (ok for new template).
+[2025-12-12 22:27:24] [INFO] Updated .imgbox img width to: 70%
+[2025-12-12 22:27:24] [INFO] Mode is set to: prod (currently informational only)
+[2025-12-12 22:27:24] [INFO] Done. Wrote SOP player to outputs/players/LineEnt2_player.html

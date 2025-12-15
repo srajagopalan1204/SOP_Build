@@ -1,0 +1,623 @@
+<!doctype html>
+<!--
+  SOP_player.html
+  Version: v20251213_2315 (America/New_York)
+  Owner: Subi
+  Fixes:
+   - Breadcrumbs clickable (non-current)
+   - Narration pane close button + ESC
+   - Fix FAQ/Quiz href building so loc like "outputs/faq" doesn't become /outputs/outputs/faq
+   - Defensive fix: if story.json image is "/../images/..." we strip the leading "/" before setting src
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>SOP Player – EdxBuild</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+    :root {
+      --card: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+
+      --brand: #0b5fff;
+      --brand-ink: #ffffff;
+
+      --uap: #059669;
+      --uap-hover: #047857;
+
+      --nav-bg: #eff6ff;
+      --nav-hover: #dbeafe;
+      --nav-text: #1e3a8a;
+
+      --faq-bg: #dbeafe;
+      --faq-hover: #bfdbfe;
+      --faq-text: #1e3a8a;
+
+      --read-bg: #dcfce7;
+      --read-hover: #bbf7d0;
+      --read-text: #065f46;
+
+      --hear-bg: #a7f3d0;
+      --hear-hover: #6ee7b7;
+      --hear-text: #065f46;
+
+      --neutral-bg: #f3f4f6;
+      --neutral-hover: #e5e7eb;
+      --neutral-text: #111827;
+
+      --radius: 14px;
+      --shadow: 0 6px 24px rgba(0, 0, 0, .06);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #eef2ff 0, #f7f7fb 45%, #f9fafb 100%);
+      color: var(--text);
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      padding: 18px;
+    }
+
+    .shell {
+      width: 100%;
+      max-width: 1300px;
+      margin: auto;
+    }
+
+    .breadcrumb {
+      font-size: 0.82rem;
+      color: var(--muted);
+      font-weight: 800;
+      margin-bottom: 4px;
+      text-align: center;
+      word-break: break-all;
+      line-height: 1.25;
+      user-select: none;
+    }
+
+    .breadcrumb-label {
+      color: #374151;
+      font-weight: 900;
+      margin-right: 6px;
+    }
+
+    .crumb {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      color: var(--muted);
+      background: transparent;
+      font-weight: 800;
+      outline: none;
+    }
+
+    .crumb-link { cursor: pointer; }
+    .crumb-link:hover {
+      background: #eef2ff;
+      border-color: #c7d2fe;
+      color: #111827;
+      box-shadow: 0 1px 6px rgba(15, 23, 42, 0.08);
+    }
+    .crumb-link:focus {
+      background: #eef2ff;
+      border-color: #a5b4fc;
+      box-shadow: 0 0 0 2px rgba(165, 180, 252, 0.5);
+    }
+
+    .crumb-current {
+      color: #111827;
+      background: #eff6ff;
+      border-color: #bfdbfe;
+      box-shadow: 0 1px 6px rgba(15, 23, 42, 0.08);
+      cursor: default;
+    }
+
+    .crumb-sep {
+      display: inline-block;
+      margin: 0 6px;
+      color: #9ca3af;
+      font-weight: 800;
+    }
+
+    .card {
+      width: 100%;
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 14px 14px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .slide-row { display: flex; flex-direction: column; gap: 8px; }
+
+    .slide-visual {
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      padding: 8px;
+      background: #f9fafb;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .imgbox {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      overflow-x: auto;
+    }
+
+    .imgbox img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: #ffffff;
+      max-height: 55vh;
+      object-fit: contain;
+    }
+
+    .narration-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2px;
+    }
+
+    .narration-row button { font-size: 0.78rem; padding: 6px 10px; }
+
+    .uap-hint { font-size: 0.78rem; color: var(--muted); margin-left: 6px; }
+
+    .narr-text {
+      font-size: 0.78rem;
+      color: var(--text);
+      background: #f9fafb;
+      border-radius: 8px;
+      padding: 8px 10px;
+      border: 1px dashed var(--line);
+      max-height: 120px;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      display: none;
+    }
+
+    .decision-block {
+      margin-top: 6px;
+      padding-top: 6px;
+      border-top: 1px solid var(--line);
+    }
+
+    .decision-question { font-size: 0.85rem; font-weight: 600; margin: 0 0 4px; text-align: left; }
+
+    .decision-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+
+    .decision-hint { font-size: 0.78rem; color: var(--muted); margin-right: 2px; }
+
+    .decision-actions button { font-size: 0.8rem; padding: 6px 10px; }
+
+    .nav-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 6px;
+      margin-top: 6px;
+      padding-top: 6px;
+      border-top: 1px solid var(--line);
+    }
+
+    .nav-row .nav-main-group,
+    .nav-row .nav-secondary-group { display: flex; flex-wrap: wrap; gap: 6px; }
+
+    button {
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: #ffffff;
+      color: var(--text);
+      padding: 6px 14px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: background 0.12s ease, box-shadow 0.12s ease, transform 0.08s ease, border-color 0.12s ease;
+      white-space: nowrap;
+    }
+
+    button:hover { box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08); border-color: #bfdbfe; }
+    button:active { transform: translateY(1px); box-shadow: 0 1px 4px rgba(15, 23, 42, 0.12); }
+
+    button.primary { background: var(--brand); color: var(--brand-ink); border-color: transparent; }
+    button.primary:hover { background: #2563eb; border-color: #1d4ed8; }
+
+    button.uap { background: var(--uap); color: #ffffff; border-color: transparent; }
+    button.uap:hover { background: var(--uap-hover); border-color: transparent; }
+
+    button.btn-nav { background: var(--nav-bg); color: var(--nav-text); border-color: #bfdbfe; }
+    button.btn-nav:hover { background: var(--nav-hover); }
+
+    button.btn-faqquiz { background: var(--faq-bg); color: var(--faq-text); border-color: #93c5fd; }
+    button.btn-faqquiz:hover { background: var(--faq-hover); }
+
+    button.btn-read { background: var(--read-bg); color: var(--read-text); border-color: #86efac; }
+    button.btn-read:hover { background: var(--read-hover); }
+
+    button.btn-hear { background: var(--hear-bg); color: var(--hear-text); border-color: #34d399; }
+    button.btn-hear:hover { background: var(--hear-hover); }
+
+    button.btn-neutral { background: var(--neutral-bg); color: var(--neutral-text); border-color: #e5e7eb; }
+    button.btn-neutral:hover { background: var(--neutral-hover); }
+
+    button:disabled { opacity: 0.5; cursor: default; box-shadow: none; transform: none; }
+
+    @media (max-width: 768px) {
+      .page { padding: 12px; }
+      .card { padding: 12px 10px; }
+      .imgbox img { max-height: 48vh; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <div class="shell">
+
+      <div class="breadcrumb">
+        <span class="breadcrumb-label">Bread Crumb -</span>
+        <span id="breadcrumbTrail"></span>
+      </div>
+
+      <div class="card">
+        <div class="slide-row">
+          <div class="slide-visual">
+            <div class="imgbox">
+              <img id="slideImage" src="" alt="Process step" loading="lazy" />
+            </div>
+          </div>
+
+          <div class="narration-row">
+            <button id="btnHear1" class="btn-hear">Hear me</button>
+            <button id="btnStop" class="btn-neutral">Stop</button>
+            <button id="btnRead1" class="btn-read">Read me</button>
+            <button id="btnRead2" class="btn-read">Read more</button>
+            <button id="btnHear2" class="btn-hear">Hear more</button>
+
+            <button id="btnCloseNarr" class="btn-neutral" style="display:none;">Close</button>
+
+            <span id="uapHint" class="uap-hint" style="display:none;">To learn about, click</span>
+            <button id="btnUap" class="uap" style="display:none;"></button>
+          </div>
+
+          <div class="narr-text" id="narrText"></div>
+
+          <div class="decision-block" id="decisionBlock" style="display:none;">
+            <p class="decision-question" id="decisionQuestion"></p>
+            <div class="decision-actions">
+              <span class="decision-hint" id="decisionHint">Click on the button as appropriate:</span>
+              <button id="choiceBtn1" class="primary"></button>
+              <button id="choiceBtn2" class="primary"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-row">
+          <div class="nav-main-group">
+            <button id="btnBack" class="btn-nav">Back</button>
+            <button id="btnRestart" class="btn-nav">Restart</button>
+            <button id="btnEntityMenu" class="btn-nav">Entity Menu</button>
+            <button id="btnHome" class="btn-nav">Home</button>
+            <button id="btnFaq" class="btn-faqquiz">FAQ &amp; Tips</button>
+            <button id="btnQuiz" class="btn-faqquiz">Knowledge Check</button>
+          </div>
+
+          <div class="nav-secondary-group">
+            <button id="btnNext" class="primary">Next</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script id="story-data" type="application/json">
+__STORY_JSON__
+  </script>
+
+  <script>
+    // Version: v20251213_2315 (America/New_York)
+    const HOME_URL = "index.html";
+    const ENTITY_MENU_URL = "index.html#entity-menu";
+
+    const story = JSON.parse(document.getElementById("story-data").textContent.trim());
+    const framesByCode = new Map();
+    story.frames.forEach(f => framesByCode.set(f.frame_code, f));
+
+    let currentCode = story.start_code || story.frames[0].frame_code;
+    const pathStack = [currentCode];
+
+    const breadcrumbTrailEl = document.getElementById("breadcrumbTrail");
+    const slideImgEl = document.getElementById("slideImage");
+
+    const narrTextEl = document.getElementById("narrText");
+    const btnCloseNarr = document.getElementById("btnCloseNarr");
+
+    const btnHear1 = document.getElementById("btnHear1");
+    const btnHear2 = document.getElementById("btnHear2");
+    const btnRead1 = document.getElementById("btnRead1");
+    const btnRead2 = document.getElementById("btnRead2");
+    const btnStop  = document.getElementById("btnStop");
+
+    const uapHint = document.getElementById("uapHint");
+    const btnUap  = document.getElementById("btnUap");
+
+    const decisionBlock = document.getElementById("decisionBlock");
+    const decisionQuestionEl = document.getElementById("decisionQuestion");
+    const decisionHintEl = document.getElementById("decisionHint");
+    const choiceBtn1 = document.getElementById("choiceBtn1");
+    const choiceBtn2 = document.getElementById("choiceBtn2");
+
+    const btnBack = document.getElementById("btnBack");
+    const btnRestart = document.getElementById("btnRestart");
+    const btnEntityMenu = document.getElementById("btnEntityMenu");
+    const btnHome = document.getElementById("btnHome");
+    const btnFaq = document.getElementById("btnFaq");
+    const btnQuiz = document.getElementById("btnQuiz");
+    const btnNext = document.getElementById("btnNext");
+
+    function currentFrame() { return framesByCode.get(currentCode); }
+
+    function openNarr(text) {
+      const t = (text || "").trim();
+      if (!t) { closeNarr(); return; }
+      narrTextEl.textContent = t;
+      narrTextEl.style.display = "block";
+      btnCloseNarr.style.display = "inline-block";
+    }
+
+    function closeNarr() {
+      narrTextEl.textContent = "";
+      narrTextEl.style.display = "none";
+      btnCloseNarr.style.display = "none";
+    }
+
+    function stopSpeech() {
+      if ("speechSynthesis" in window) window.speechSynthesis.cancel();
+    }
+
+    function speak(text) {
+      if (!("speechSynthesis" in window)) return;
+      stopSpeech();
+      const t = (text || "").trim();
+      if (!t) return;
+      window.speechSynthesis.speak(new SpeechSynthesisUtterance(t));
+    }
+
+    function goToBreadcrumbIndex(idx) {
+      if (idx < 0 || idx >= pathStack.length) return;
+      stopSpeech();
+      closeNarr();
+      currentCode = pathStack[idx];
+      pathStack.length = idx + 1;
+      renderFrame();
+    }
+
+    function updateBreadcrumb() {
+      breadcrumbTrailEl.innerHTML = "";
+      for (let i = 0; i < pathStack.length; i++) {
+        const code = pathStack[i];
+
+        if (i > 0) {
+          const sep = document.createElement("span");
+          sep.className = "crumb-sep";
+          sep.textContent = "›";
+          breadcrumbTrailEl.appendChild(sep);
+        }
+
+        const span = document.createElement("span");
+        const isCurrent = (i === pathStack.length - 1);
+        span.className = "crumb" + (isCurrent ? " crumb-current" : " crumb-link");
+        span.textContent = code;
+
+        if (!isCurrent) {
+          span.setAttribute("role", "button");
+          span.setAttribute("tabindex", "0");
+          span.setAttribute("aria-label", "Go back to " + code);
+
+          span.addEventListener("click", () => goToBreadcrumbIndex(i));
+          span.addEventListener("keydown", (e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              goToBreadcrumbIndex(i);
+            }
+          });
+        }
+
+        breadcrumbTrailEl.appendChild(span);
+      }
+    }
+
+    function normalizeHrefForOutputs(loc, file) {
+      // Goal: open docs relative to /outputs/players
+      // Accepts loc values like: "faq", "outputs/faq", "/outputs/faq"
+      let L = (loc || "").trim().replace(/\\/g, "/");
+      let F = (file || "").trim();
+      if (!L || !F) return "";
+
+      // drop leading /
+      L = L.replace(/^\/+/, "");
+
+      // if it starts with outputs/, strip that
+      if (L.startsWith("outputs/")) L = L.slice("outputs/".length);
+
+      // now resolve relative from players -> ../<loc>/<file>
+      L = L.replace(/\/+$/, "");
+      return "../" + L + "/" + F;
+    }
+
+    function setImage(frame) {
+      let src = (frame.image || "").trim();
+
+      // Defensive: fix legacy "/../images/..." => "../images/..."
+      if (src.startsWith("/../")) src = src.slice(1);
+
+      slideImgEl.src = src;
+      slideImgEl.alt = "Process step";
+    }
+
+    function setUap(frame) {
+      const url = (frame.uap_url || "").trim();
+      const label = (frame.uap_label || "").trim();
+      if (url && label) {
+        uapHint.style.display = "inline";
+        btnUap.style.display = "inline-block";
+        btnUap.textContent = label;
+        btnUap.onclick = () => window.open(url, "_blank", "noopener");
+      } else {
+        uapHint.style.display = "none";
+        btnUap.style.display = "none";
+        btnUap.textContent = "";
+        btnUap.onclick = null;
+      }
+    }
+
+    function setDecisionAndNext(frame) {
+      const choices = frame.choices || [];
+      if (choices.length >= 2) {
+        decisionBlock.style.display = "block";
+        const q = (frame.decision_question || "").trim();
+        decisionQuestionEl.textContent = q || "What would you like to do next?";
+        decisionHintEl.style.display = "inline";
+
+        const c1 = choices[0], c2 = choices[1];
+        choiceBtn1.textContent = c1.label || "Option 1";
+        choiceBtn1.onclick = () => goTo(c1.to);
+
+        choiceBtn2.textContent = c2.label || "Option 2";
+        choiceBtn2.onclick = () => goTo(c2.to);
+
+        btnNext.style.display = "none";
+      } else if (choices.length === 1) {
+        decisionBlock.style.display = "none";
+        decisionHintEl.style.display = "none";
+        choiceBtn1.onclick = null;
+        choiceBtn2.onclick = null;
+
+        const only = choices[0];
+        btnNext.textContent = (only.label || "Next").trim();
+        btnNext.onclick = () => goTo(only.to);
+        btnNext.style.display = "inline-block";
+      } else {
+        decisionBlock.style.display = "none";
+        decisionHintEl.style.display = "none";
+        choiceBtn1.onclick = null;
+        choiceBtn2.onclick = null;
+        btnNext.style.display = "none";
+        btnNext.onclick = null;
+      }
+    }
+
+    function setFaqQuiz(frame) {
+      const faqHref = normalizeHrefForOutputs(frame.FAQ_Loc, frame.FAQ_File);
+      const faqLabel = (frame.FAQ_Label || "FAQ & Tips").trim();
+
+      const quizHref = normalizeHrefForOutputs(frame.Quiz_Loc, frame.Quiz_File);
+      const quizLabel = (frame.Quiz_Label || "Knowledge Check").trim();
+
+      if (faqHref) {
+        btnFaq.disabled = false;
+        btnFaq.textContent = faqLabel || "FAQ & Tips";
+        btnFaq.onclick = () => window.open(faqHref, "_blank", "noopener");
+      } else {
+        btnFaq.disabled = true;
+        btnFaq.onclick = null;
+      }
+
+      if (quizHref) {
+        btnQuiz.disabled = false;
+        btnQuiz.textContent = quizLabel || "Knowledge Check";
+        btnQuiz.onclick = () => window.open(quizHref, "_blank", "noopener");
+      } else {
+        btnQuiz.disabled = true;
+        btnQuiz.onclick = null;
+      }
+    }
+
+    function renderFrame() {
+      const frame = currentFrame();
+      if (!frame) return;
+      setImage(frame);
+      setUap(frame);
+      setDecisionAndNext(frame);
+      setFaqQuiz(frame);
+      updateBreadcrumb();
+      closeNarr();
+    }
+
+    function goTo(nextCode) {
+      if (!framesByCode.has(nextCode)) {
+        console.warn("Unknown frame code:", nextCode);
+        return;
+      }
+      stopSpeech();
+      closeNarr();
+      currentCode = nextCode;
+      pathStack.push(nextCode);
+      renderFrame();
+    }
+
+    function goBack() {
+      if (pathStack.length <= 1) return;
+      stopSpeech();
+      closeNarr();
+      pathStack.pop();
+      currentCode = pathStack[pathStack.length - 1];
+      renderFrame();
+    }
+
+    function restart() {
+      stopSpeech();
+      closeNarr();
+      const startCode = story.start_code || story.frames[0].frame_code;
+      currentCode = startCode;
+      pathStack.length = 0;
+      pathStack.push(startCode);
+      renderFrame();
+    }
+
+    btnBack.addEventListener("click", goBack);
+    btnRestart.addEventListener("click", restart);
+    btnHome.addEventListener("click", () => window.location.href = HOME_URL);
+    btnEntityMenu.addEventListener("click", () => window.location.href = ENTITY_MENU_URL);
+
+    btnHear1.addEventListener("click", () => { const f = currentFrame(); speak(f.narr1 || ""); });
+    btnHear2.addEventListener("click", () => { const f = currentFrame(); speak(f.narr3 || ""); });
+
+    btnRead1.addEventListener("click", () => { const f = currentFrame(); openNarr(f.narr2 || ""); });
+    btnRead2.addEventListener("click", () => { const f = currentFrame(); openNarr(f.narr3 || ""); });
+
+    btnStop.addEventListener("click", stopSpeech);
+
+    btnCloseNarr.addEventListener("click", () => { stopSpeech(); closeNarr(); });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") { stopSpeech(); closeNarr(); }
+    });
+
+    renderFrame();
+  </script>
+</body>
+</html>

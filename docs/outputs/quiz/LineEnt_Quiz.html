@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SLS – Sales Order Line Entry Options – Knowledge Check</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.5rem;
+      line-height: 1.5;
+      background: #f7f7fb;
+    }
+    h1, h2 {
+      color: #111827;
+    }
+    .meta {
+      margin-bottom: 1rem;
+      padding: 0.75rem 1rem;
+      background: #e5e7eb;
+      border-radius: 6px;
+    }
+    .question {
+      margin-bottom: 1.75rem;
+      padding: 1rem 1.25rem;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+    .q-text {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    label {
+      display: block;
+      margin: 0.15rem 0;
+    }
+    button {
+      margin-top: 0.4rem;
+      margin-right: 0.4rem;
+      padding: 0.3rem 0.75rem;
+      border-radius: 4px;
+      border: 1px solid #4b5563;
+      background: #111827;
+      color: #ffffff;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+    button.secondary {
+      background: #ffffff;
+      color: #111827;
+    }
+    button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    .feedback {
+      margin-top: 0.4rem;
+      font-size: 0.85rem;
+      color: #065f46;
+    }
+    .feedback.error {
+      color: #b91c1c;
+    }
+    #scoreSummary {
+      font-weight: 600;
+      margin-top: 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+    .footer-actions {
+      margin-top: 1.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #d1d5db;
+    }
+    input[type="text"], input[type="email"] {
+      padding: 0.25rem 0.4rem;
+      margin-right: 0.5rem;
+      border-radius: 4px;
+      border: 1px solid #9ca3af;
+    }
+  </style>
+</head>
+<body>
+  <h1>SLS – Sales Order Line Entry Options – Knowledge Check</h1>
+
+  <div class="meta">
+    <p>
+      Please complete this quiz after you have gone through the
+      <strong>SLS – Sales Order Line Entry Options</strong> SOP module.
+      You may answer each question up to <strong>two times</strong>. Your attempts and timestamps
+      will be captured in a CSV log you can download at the end.
+    </p>
+    <p>
+      <em>Note:</em> Question 1 is about the background of Scott Electric.
+      Questions 2–10 are about the Sales Order Line Entry Options process
+      (Easy Line Entry, Shopping List Entry, Quick Line Entry, Advanced Line Entry, and key decisions).
+    </p>
+  </div>
+
+  <section>
+    <h2>Learner Information</h2>
+    <p>
+      <label>
+        Your Name:
+        <input type="text" id="learnerName" placeholder="Type your name">
+      </label>
+      <label>
+        Your Email:
+        <input type="email" id="learnerEmail" placeholder="name@example.com">
+      </label>
+    </p>
+  </section>
+
+  <section id="quiz">
+    <h2>Quiz Questions</h2>
+
+    <!-- Q1 – Scott Electric background -->
+    <div class="question" data-qid="q1">
+      <p class="q-text">
+        <strong>Q1.</strong> Which statement best describes Scott Electric’s history and role in the
+        markets it serves?
+      </p>
+      <label><input type="radio" name="q1" value="0">
+        A. Scott Electric is a brand-new startup with one small store and no distribution network.</label>
+      <label><input type="radio" name="q1" value="1">
+        B. Scott Electric is a long-established regional wholesale electrical distributor headquartered in western Pennsylvania, with multiple branches and divisions serving customers in several states.</label>
+      <label><input type="radio" name="q1" value="2">
+        C. Scott Electric is only a software company that provides ERPs to other distributors.</label>
+      <label><input type="radio" name="q1" value="3">
+        D. Scott Electric is a small residential contractor that does not operate any warehouses.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q1')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q1')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q1"></div>
+    </div>
+
+    <!-- Q2 – Purpose of SLS Line Entry Options -->
+    <div class="question" data-qid="q2">
+      <p class="q-text">
+        <strong>Q2.</strong> What is the main purpose of the
+        <em>Sales Order Line Entry Options</em> SOP?
+      </p>
+      <label><input type="radio" name="q2" value="0">
+        A. To control how sales orders are printed in the warehouse.</label>
+      <label><input type="radio" name="q2" value="1">
+        B. To guide users in choosing the most appropriate line entry method (Easy, Shopping List, Quick Line, Advanced) so that products and quantities are added accurately and efficiently to the sales order.</label>
+      <label><input type="radio" name="q2" value="2">
+        C. To decide which customers get credit terms.</label>
+      <label><input type="radio" name="q2" value="3">
+        D. To manage only non-stock product creation.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q2')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q2')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q2"></div>
+    </div>
+
+    <!-- Q3 – When to use Easy Line Entry -->
+    <div class="question" data-qid="q3">
+      <p class="q-text">
+        <strong>Q3.</strong> Which scenario is the best fit for
+        <strong>Easy Line Entry</strong>?
+      </p>
+      <label><input type="radio" name="q3" value="0">
+        A. A large project order with 150+ lines and repeated products across many orders.</label>
+      <label><input type="radio" name="q3" value="1">
+        B. A simple order with a small number of items where you can easily search for product, enter quantity, and add the lines directly to the sales order.</label>
+      <label><input type="radio" name="q3" value="2">
+        C. A very complex kit that you must build on demand.</label>
+      <label><input type="radio" name="q3" value="3">
+        D. Only when creating non-stock items and kits.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q3')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q3')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q3"></div>
+    </div>
+
+    <!-- Q4 – Steps in Easy Line Entry -->
+    <div class="question" data-qid="q4">
+      <p class="q-text">
+        <strong>Q4.</strong> Which sequence matches the basic flow of
+        <strong>Easy Line Entry</strong>?
+      </p>
+      <label><input type="radio" name="q4" value="0">
+        A. S1 – Easy Line Entry → S4 – Add Products to Sales Order → S10 – Quick Line Entry.</label>
+      <label><input type="radio" name="q4" value="1">
+        B. S1 – Easy Line Entry → S2 – Search for Product → S3 – Enter Quantity → S4 – Add Products to Sales Order.</label>
+      <label><input type="radio" name="q4" value="2">
+        C. S1 – Initiate Sales Order → S19 – Create/Add Kit Components → S22 – Add Lines to Sales Order.</label>
+      <label><input type="radio" name="q4" value="3">
+        D. S5 – Shopping List Entry → S9 – Add Products to Sales Order.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q4')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q4')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q4"></div>
+    </div>
+
+    <!-- Q5 – When to use Shopping List Entry -->
+    <div class="question" data-qid="q5">
+      <p class="q-text">
+        <strong>Q5.</strong> When is <strong>Shopping List Entry</strong> the most appropriate option?
+      </p>
+      <label><input type="radio" name="q5" value="0">
+        A. When you only have a single, one-time, unknown product.</label>
+      <label><input type="radio" name="q5" value="1">
+        B. When you don’t know the product number and need to build a non-stock item.</label>
+      <label><input type="radio" name="q5" value="2">
+        C. When the customer regularly orders a group of products (for example “standard truck stock” or “job start list”) and you want to pull multiple lines from a saved list.</label>
+      <label><input type="radio" name="q5" value="3">
+        D. Only when entering kit components.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q5')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q5')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q5"></div>
+    </div>
+
+    <!-- Q6 – Steps in Shopping List Entry -->
+    <div class="question" data-qid="q6">
+      <p class="q-text">
+        <strong>Q6.</strong> Which set of steps belongs to
+        <strong>Shopping List Entry</strong>?
+      </p>
+      <label><input type="radio" name="q6" value="0">
+        A. S11 – Enter Product Number → S12 – Enter Quantity → S13 – Enter Price (optional) → S14 – Add Quick List Lines.</label>
+      <label><input type="radio" name="q6" value="1">
+        B. S16 – Enter Product Info → S17 – Accept Product → S18 – Enter Qty/UOM → S21 – Confirm Pricing.</label>
+      <label><input type="radio" name="q6" value="2">
+        C. S5 – Shopping List Entry → S6 – Select Shopping List Type → S7 – Enter List Criteria → S8 – Enter Quantity → S9 – Add Products to Sales Order.</label>
+      <label><input type="radio" name="q6" value="3">
+        D. S19 – Create/Add Kit Components → S20 – Create Non-Stock Product → S22 – Add Lines to Sales Order.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q6')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q6')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q6"></div>
+    </div>
+
+    <!-- Q7 – When to use Quick Line Entry -->
+    <div class="question" data-qid="q7">
+      <p class="q-text">
+        <strong>Q7.</strong> What is the best use case for
+        <strong>Quick Line Entry</strong>?
+      </p>
+      <label><input type="radio" name="q7" value="0">
+        A. When a user wants a guided, step-by-step process with lots of on-screen help.</label>
+      <label><input type="radio" name="q7" value="1">
+        B. When a power user knows product numbers and wants to enter many lines quickly by typing product, quantity, and optional price in a grid-like format.</label>
+      <label><input type="radio" name="q7" value="2">
+        C. When only kits and non-stock products are involved.</label>
+      <label><input type="radio" name="q7" value="3">
+        D. When you must build the quote for the customer from scratch.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q7')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q7')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q7"></div>
+    </div>
+
+    <!-- Q8 – When to use Advanced Line Entry -->
+    <div class="question" data-qid="q8">
+      <p class="q-text">
+        <strong>Q8.</strong> What is <strong>Advanced Line Entry</strong> mainly designed to handle?
+      </p>
+      <label><input type="radio" name="q8" value="0">
+        A. Simple one-line cash sales with standard stock items.</label>
+      <label><input type="radio" name="q8" value="1">
+        B. Only project quotes that never become orders.</label>
+      <label><input type="radio" name="q8" value="2">
+        C. More complex requirements such as special product info, kits, and non-stock items, where you must enter detailed product information, quantities/UOM, possibly create non-stock items or kit components, confirm pricing, and then add lines to the sales order.</label>
+      <label><input type="radio" name="q8" value="3">
+        D. Only to print the sales order for the customer.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q8')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q8')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q8"></div>
+    </div>
+
+    <!-- Q9 – Decisions: Did you find product? / Build On Demand -->
+    <div class="question" data-qid="q9">
+      <p class="q-text">
+        <strong>Q9.</strong> Why are decisions like
+        <strong>“Did you find product?”</strong> and
+        <strong>“Build On Demand Product?”</strong> important in the line entry options flow?
+      </p>
+      <label><input type="radio" name="q9" value="0">
+        A. They only control whether marketing messages print on the invoice.</label>
+      <label><input type="radio" name="q9" value="1">
+        B. They help you decide whether to continue with a standard stock product, search different ways, or move into creating or adding special/non-stock or kit components when a product cannot be found in the usual way.</label>
+      <label><input type="radio" name="q9" value="2">
+        C. They are just notes for IT and do not affect the process.</label>
+      <label><input type="radio" name="q9" value="3">
+        D. They only apply to quotes, not orders.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q9')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q9')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q9"></div>
+    </div>
+
+    <!-- Q10 – End point of line entry -->
+    <div class="question" data-qid="q10">
+      <p class="q-text">
+        <strong>Q10.</strong> What does the SOP treat as the
+        <strong>end point</strong> of the line-entry portion of the process?
+      </p>
+      <label><input type="radio" name="q10" value="0">
+        A. When the order is fully invoiced and paid.</label>
+      <label><input type="radio" name="q10" value="1">
+        B. When the pick ticket is printed for the order.</label>
+      <label><input type="radio" name="q10" value="2">
+        C. When the last product is added and all selected lines (from Easy, Shopping List, Quick Line, or Advanced Line Entry) have been added to the sales order and are ready for further processing.</label>
+      <label><input type="radio" name="q10" value="3">
+        D. When the quote is first created in the CRM system.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q10')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q10')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q10"></div>
+    </div>
+  </section>
+
+  <section class="footer-actions">
+    <p id="scoreSummary">Score will appear here after you submit at least one question.</p>
+    <button type="button" onclick="calculateScore()">Calculate Score</button>
+    <button type="button" onclick="downloadCsv()">Download Attempt Log (CSV)</button>
+  </section>
+
+  <script>
+    const quizStart = new Date().toISOString();
+    const questionIds = ["q1","q2","q3","q4","q5","q6","q7","q8","q9","q10"];
+    const maxAttempts = 2;
+
+    const correctAnswers = {
+      q1: 1, // B
+      q2: 1, // B
+      q3: 1, // B
+      q4: 1, // B
+      q5: 2, // C
+      q6: 2, // C
+      q7: 1, // B
+      q8: 2, // C
+      q9: 1, // B
+      q10: 2 // C
+    };
+
+    const responseLog = {};
+
+    document.querySelectorAll('input[type="radio"]').forEach(input => {
+      input.addEventListener('change', handleOptionChange);
+    });
+
+    function handleOptionChange(event) {
+      const qid = event.target.name;
+      const answerIndex = parseInt(event.target.value, 10);
+      const now = new Date().toISOString();
+
+      if (!responseLog[qid]) {
+        responseLog[qid] = { attempts: [], currentAttempt: null };
+      }
+      const qEntry = responseLog[qid];
+
+      if (!qEntry.currentAttempt && qEntry.attempts.length >= maxAttempts) {
+        event.target.checked = false;
+        const fb = document.getElementById(`feedback-${qid}`);
+        if (fb) {
+          fb.classList.add("error");
+          fb.textContent = "You have already used both attempts for this question.";
+        }
+        return;
+      }
+
+      if (!qEntry.currentAttempt) {
+        qEntry.currentAttempt = {
+          attemptNumber: qEntry.attempts.length + 1,
+          startedAt: now,
+          finishedAt: null,
+          answerIndex: answerIndex,
+          isCorrect: null
+        };
+      } else {
+        qEntry.currentAttempt.answerIndex = answerIndex;
+      }
+    }
+
+    function submitQuestion(qid) {
+      const now = new Date().toISOString();
+      if (!responseLog[qid]) {
+        responseLog[qid] = { attempts: [], currentAttempt: null };
+      }
+      const qEntry = responseLog[qid];
+      const fb = document.getElementById(`feedback-${qid}`);
+
+      const selected = document.querySelector(`input[name="${qid}"]:checked`);
+      if (!selected) {
+        if (fb) {
+          fb.classList.add("error");
+          fb.textContent = "Please select an answer before submitting.";
+        }
+        return;
+      }
+
+      if (!qEntry.currentAttempt) {
+        if (qEntry.attempts.length >= maxAttempts) {
+          if (fb) {
+            fb.classList.add("error");
+            fb.textContent = "You have already used both attempts for this question.";
+          }
+          return;
+        }
+        qEntry.currentAttempt = {
+          attemptNumber: qEntry.attempts.length + 1,
+          startedAt: now,
+          finishedAt: null,
+          answerIndex: parseInt(selected.value, 10),
+          isCorrect: null
+        };
+      }
+
+      const attempt = qEntry.currentAttempt;
+
+      if (attempt.finishedAt) {
+        if (fb) {
+          fb.classList.add("error");
+          fb.textContent = "This attempt has already been submitted.";
+        }
+        return;
+      }
+
+      attempt.finishedAt = now;
+      attempt.isCorrect = (attempt.answerIndex === correctAnswers[qid]);
+      qEntry.attempts.push(attempt);
+      qEntry.currentAttempt = null;
+
+      if (fb) {
+        fb.classList.remove("error");
+        const attemptLabel = attempt.attemptNumber === 1 ? "First attempt" : "Second attempt";
+        fb.textContent = `${attemptLabel}: ${attempt.isCorrect ? "Correct" : "Incorrect"} (started ${attempt.startedAt}, finished ${attempt.finishedAt}).`;
+        if (qEntry.attempts.length >= maxAttempts) {
+          fb.textContent += " You have used both attempts for this question.";
+        }
+      }
+
+      calculateScore();
+    }
+
+    function redoQuestion(qid) {
+      const qEntry = responseLog[qid];
+      const fb = document.getElementById(`feedback-${qid}`);
+
+      if (!qEntry || qEntry.attempts.length === 0) {
+        if (fb) {
+          fb.classList.add("error");
+          fb.textContent = "You must submit the question once before redoing it.";
+        }
+        return;
+      }
+
+      if (qEntry.attempts.length >= maxAttempts) {
+        if (fb) {
+          fb.classList.add("error");
+          fb.textContent = "You have already used your redo for this question.";
+        }
+        return;
+      }
+
+      document.querySelectorAll(`input[name="${qid}"]`).forEach(input => {
+        input.checked = false;
+      });
+
+      qEntry.currentAttempt = null;
+
+      if (fb) {
+        fb.classList.remove("error");
+        fb.textContent = "You may redo this question now. Make a new selection and click Submit Answer.";
+      }
+    }
+
+    function calculateScore() {
+      let correctCount = 0;
+      let totalCount = questionIds.length;
+
+      questionIds.forEach(qid => {
+        const qEntry = responseLog[qid];
+        if (!qEntry || qEntry.attempts.length === 0) {
+          return;
+        }
+        const lastAttempt = qEntry.attempts[qEntry.attempts.length - 1];
+        if (lastAttempt.isCorrect) {
+          correctCount += 1;
+        }
+      });
+
+      const scoreEl = document.getElementById("scoreSummary");
+      if (scoreEl) {
+        scoreEl.textContent = `Current score (based on your latest attempt for each question): ${correctCount} / ${totalCount}`;
+      }
+    }
+
+    function downloadCsv() {
+      const learnerName = (document.getElementById("learnerName").value || "").replace(/"/g, '""');
+      const learnerEmail = (document.getElementById("learnerEmail").value || "").replace(/"/g, '""');
+      const now = new Date().toISOString();
+
+      const lines = [];
+      lines.push('Quiz Name,"SLS – Sales Order Line Entry Options – Knowledge Check"');
+      lines.push(`Learner Name,"${learnerName}"`);
+      lines.push(`Learner Email,"${learnerEmail}"`);
+      lines.push(`Quiz Start,"${quizStart}"`);
+      lines.push(`Log Generated At,"${now}"`);
+      lines.push("");
+      lines.push("Question ID,Question Text,Attempt #,Started At,Finished At,Answer Index,Answer Text,Correct?");
+
+      questionIds.forEach(qid => {
+        const qEntry = responseLog[qid];
+        if (!qEntry || !qEntry.attempts || qEntry.attempts.length === 0) {
+          return;
+        }
+
+        const qContainer = document.querySelector(`.question[data-qid="${qid}"]`);
+        let qText = "";
+        if (qContainer) {
+          const qTextEl = qContainer.querySelector(".q-text");
+          if (qTextEl) {
+            qText = qTextEl.innerText.trim().replace(/"/g, '""');
+          }
+        }
+
+        qEntry.attempts.forEach(att => {
+          let answerText = "";
+          const radio = document.querySelector(`input[name="${qid}"][value="${att.answerIndex}"]`);
+          if (radio && radio.parentElement) {
+            answerText = radio.parentElement.textContent.trim().replace(/"/g, '""');
+          }
+          const correctLabel = att.isCorrect ? "Yes" : "No";
+          lines.push(
+            `"${qid}","${qText}",${att.attemptNumber},` +
+            `"${att.startedAt || ""}","${att.finishedAt || ""}",` +
+            `${att.answerIndex},"${answerText}",${correctLabel}`
+          );
+        });
+      });
+
+      const csvContent = lines.join("\n");
+      const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "SLS_line_entry_options_Quiz_Attempts.csv";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+  </script>
+</body>
+</html>

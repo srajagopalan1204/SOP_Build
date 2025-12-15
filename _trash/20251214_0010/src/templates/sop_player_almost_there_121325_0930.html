@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>SOP Player – EdxBuild</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+    :root {
+      --bg: #f7f7fb;
+      --card: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+      --brand: #0b5fff;
+      --brand-ink: #ffffff;
+      --radius: 14px;
+      --shadow: 0 6px 24px rgba(0, 0, 0, .06);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      background: radial-gradient(circle at top, #eef2ff 0, #f7f7fb 45%, #f9fafb 100%);
+      color: var(--text);
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .shell {
+      width: 100%;
+      max-width: 1300px;
+      margin: auto;
+    }
+
+    .breadcrumb {
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-weight:600; /* added 121325 */
+      margin-bottom: 3px;
+      text-align: center;
+      word-break: break-all;
+    }
+
+    .frame-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--muted);
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 18px 18px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .slide-row {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .slide-visual {
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      padding: 10px;
+      background: #f9fafb;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .slide-caption {
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .imgbox {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      overflow-x: auto;
+    }
+
+    .imgbox img {
+      width: 65%;            /* builder can override this rule */
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: #ffffff;
+    }
+
+    .narration-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      justify-content: center;
+    }
+
+    .narration-row button {
+      font-size: 0.78rem;
+      padding: 6px 10px;
+    }
+
+    .narr-text {
+      font-size: 0.78rem;
+      color: var(--text);
+      background: #f9fafb;
+      border-radius: 8px;
+      padding: 8px 10px;
+      border: 1px dashed var(--line);
+      max-height: 120px;
+      overflow-y: auto;
+      white-space: pre-wrap;
+    }
+
+    .uap-row {
+      margin-top: 6px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      justify-content: center;
+    }
+
+    .uap-hint {
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    .decision-block {
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px solid var(--line);
+    }
+
+    .decision-question {
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin: 0 0 4px;
+      text-align: left;
+    }
+
+    .decision-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .decision-hint {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-right: 2px;
+    }
+
+    .decision-actions button {
+      font-size: 0.8rem;
+      padding: 6px 10px;
+    }
+
+    .nav-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 6px;
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px solid var(--line);
+    }
+
+    .nav-row .nav-main-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .nav-row .nav-secondary-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    button {
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: #ffffff;
+      padding: 6px 14px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: background 0.12s ease, box-shadow 0.12s ease,
+        transform 0.08s ease, border-color 0.12s ease;
+      white-space: nowrap;
+    }
+
+    button:hover {
+      background: #eff6ff;
+      box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+      border-color: #bfdbfe;
+    }
+
+    button:active {
+      transform: translateY(1px);
+      box-shadow: 0 1px 4px rgba(15, 23, 42, 0.12);
+    }
+
+    button.primary {
+      background: var(--brand);
+      color: var(--brand-ink);
+      border-color: transparent;
+    }
+
+    button.primary:hover {
+      background: #2563eb;
+      border-color: #1d4ed8;
+    }
+
+    button.secondary {
+      background: #f3f4f6;
+    }
+
+    button:disabled {
+      opacity: 0.5;
+      cursor: default;
+      box-shadow: none;
+      transform: none;
+    }
+
+    @media (max-width: 768px) {
+      .page {
+        padding: 12px;
+      }
+      .card {
+        padding: 14px 12px;
+      }
+      .imgbox img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <div class="shell">
+      <div class="breadcrumb" id="breadcrumb"></div>
+      <div class="frame-title" id="frameTitle"></div>
+
+      <div class="card">
+        <div class="slide-row">
+          <div class="slide-visual">
+            <div class="slide-caption" id="slideCaption"></div>
+            <div class="imgbox">
+              <img id="slideImage" src="" alt="Process step" loading="lazy" />
+            </div>
+          </div>
+
+          <div class="narration-row">
+            <button id="btnHear1" class="secondary">Hear me</button>
+            <button id="btnStop" class="secondary">Stop</button>
+            <button id="btnRead1" class="secondary">Read me</button>
+            <button id="btnRead2" class="secondary">Read more</button>
+            <button id="btnHear2" class="secondary">Hear more</button>
+          </div>
+
+          <div class="narr-text" id="narrText"></div>
+
+          <div class="uap-row" id="uapRow" style="display:none;">
+            <span class="uap-hint">To learn about, click</span>
+            <button id="btnUap" class="primary"></button>
+          </div>
+
+          <div class="decision-block" id="decisionBlock" style="display:none;">
+            <p class="decision-question" id="decisionQuestion"></p>
+            <div class="decision-actions">
+              <span class="decision-hint" id="decisionHint">
+                Click on the button as appropriate:
+              </span>
+              <button id="choiceBtn1" class="primary"></button>
+              <button id="choiceBtn2" class="primary"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-row">
+          <div class="nav-main-group">
+            <button id="btnBack" class="secondary">Back</button>
+            <button id="btnRestart" class="secondary">Restart</button>
+            <button id="btnEntityMenu" class="secondary">Entity Menu</button>
+            <button id="btnHome" class="secondary">Home</button>
+            <button id="btnFaq" class="secondary">FAQ &amp; Tips</button>
+            <button id="btnQuiz" class="secondary">Knowledge Check</button>
+          </div>
+
+          <div class="nav-secondary-group">
+            <button id="btnNext" class="primary">Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Builder will replace __STORY_JSON__ with story.json contents -->
+  <script id="story-data" type="application/json">
+__STORY_JSON__
+  </script>
+
+  <script>
+    // Configuration for where Home / Entity Menu go.
+    const HOME_URL = "index.html";
+    const ENTITY_MENU_URL = "index.html#entity-menu";
+
+    const story = JSON.parse(
+      document.getElementById("story-data").textContent.trim()
+    );
+
+    const framesByCode = new Map();
+    story.frames.forEach(f => framesByCode.set(f.frame_code, f));
+
+    let currentCode = story.start_code || story.frames[0].frame_code;
+    const pathStack = [currentCode];
+
+    // DOM elements
+    const breadcrumbEl = document.getElementById("breadcrumb");
+    const frameTitleEl = document.getElementById("frameTitle");
+    const slideCaptionEl = document.getElementById("slideCaption");
+    const slideImgEl = document.getElementById("slideImage");
+    const narrTextEl = document.getElementById("narrText");
+
+    const btnHear1 = document.getElementById("btnHear1");
+    const btnHear2 = document.getElementById("btnHear2");
+    const btnRead1 = document.getElementById("btnRead1");
+    const btnRead2 = document.getElementById("btnRead2");
+    const btnStop = document.getElementById("btnStop");
+
+    const uapRow = document.getElementById("uapRow");
+    const btnUap = document.getElementById("btnUap");
+
+    const decisionBlock = document.getElementById("decisionBlock");
+    const decisionQuestionEl = document.getElementById("decisionQuestion");
+    const decisionHintEl = document.getElementById("decisionHint");
+    const choiceBtn1 = document.getElementById("choiceBtn1");
+    const choiceBtn2 = document.getElementById("choiceBtn2");
+
+    const btnBack = document.getElementById("btnBack");
+    const btnRestart = document.getElementById("btnRestart");
+    const btnEntityMenu = document.getElementById("btnEntityMenu");
+    const btnHome = document.getElementById("btnHome");
+    const btnFaq = document.getElementById("btnFaq");
+    const btnQuiz = document.getElementById("btnQuiz");
+    const btnNext = document.getElementById("btnNext");
+
+    function currentFrame() {
+      return framesByCode.get(currentCode);
+    }
+
+    function updateBreadcrumb() {
+      breadcrumbEl.textContent = pathStack.join(" › ");
+    }
+
+    function setImage(frame) {
+      slideImgEl.src = frame.image || "";
+      slideImgEl.alt = frame.title || "Process step";
+      slideCaptionEl.textContent = frame.title || "";
+    }
+
+    function setNarration(frame) {
+      narrTextEl.textContent = frame.narr1 || "";
+    }
+
+    function setUap(frame) {
+      const url = (frame.uap_url || "").trim();
+      const label = (frame.uap_label || "").trim();
+
+      if (url && label) {
+        uapRow.style.display = "flex";
+        btnUap.textContent = label;
+        btnUap.onclick = () => {
+          window.open(url, "_blank", "noopener");
+        };
+      } else {
+        uapRow.style.display = "none";
+        btnUap.onclick = null;
+      }
+    }
+
+    function setDecisionAndNext(frame) {
+      const choices = frame.choices || [];
+
+      if (choices.length >= 2) {
+        // Multi-exit / decision frames (including non-D codes like S4)
+        decisionBlock.style.display = "block";
+        const q = (frame.decision_question || "").trim();
+        decisionQuestionEl.textContent =
+          q || "What would you like to do next?";
+
+        decisionHintEl.style.display = "inline";
+
+        // First two choices as primary options
+        const c1 = choices[0];
+        const c2 = choices[1];
+
+        choiceBtn1.textContent = c1.label || "Option 1";
+        choiceBtn1.onclick = () => goTo(c1.to);
+
+        choiceBtn2.textContent = c2.label || "Option 2";
+        choiceBtn2.onclick = () => goTo(c2.to);
+
+        // Hide single Next button when there is a decision
+        btnNext.style.display = "none";
+      } else if (choices.length === 1) {
+        // Simple next step
+        decisionBlock.style.display = "none";
+        decisionQuestionEl.textContent = "";
+        decisionHintEl.style.display = "none";
+        choiceBtn1.onclick = null;
+        choiceBtn2.onclick = null;
+
+        const only = choices[0];
+        const label = (only.label || "Next").trim();
+        btnNext.textContent = label;
+        btnNext.onclick = () => goTo(only.to);
+        btnNext.style.display = "inline-block";
+      } else {
+        // Terminal frame – no choices, hide decision and Next
+        decisionBlock.style.display = "none";
+        decisionQuestionEl.textContent = "";
+        decisionHintEl.style.display = "none";
+        choiceBtn1.onclick = null;
+        choiceBtn2.onclick = null;
+        btnNext.style.display = "none";
+        btnNext.onclick = null;
+      }
+    }
+
+    function setFaqQuiz(frame) {
+      const faqLoc = (frame.FAQ_Loc || "").trim();
+      const faqFile = (frame.FAQ_File || "").trim();
+      const faqLabel = (frame.FAQ_Label || "FAQ & Tips").trim();
+
+      const quizLoc = (frame.Quiz_Loc || "").trim();
+      const quizFile = (frame.Quiz_File || "").trim();
+      const quizLabel = (frame.Quiz_Label || "Knowledge Check").trim();
+
+      if (faqLoc && faqFile) {
+        btnFaq.disabled = false;
+        btnFaq.textContent = faqLabel || "FAQ & Tips";
+        const faqHref = faqLoc.replace(/\/+$/, "") + "/" + faqFile;
+        btnFaq.onclick = () => {
+          window.open(faqHref, "_blank", "noopener");
+        };
+      } else {
+        btnFaq.disabled = true;
+        btnFaq.onclick = null;
+      }
+
+      if (quizLoc && quizFile) {
+        btnQuiz.disabled = false;
+        btnQuiz.textContent = quizLabel || "Knowledge Check";
+        const quizHref = quizLoc.replace(/\/+$/, "") + "/" + quizFile;
+        btnQuiz.onclick = () => {
+          window.open(quizHref, "_blank", "noopener");
+        };
+      } else {
+        btnQuiz.disabled = true;
+        btnQuiz.onclick = null;
+      }
+    }
+
+    function renderFrame() {
+      const frame = currentFrame();
+      if (!frame) return;
+
+      frameTitleEl.textContent = frame.title || "";
+      setImage(frame);
+      setNarration(frame);
+      setUap(frame);
+      setDecisionAndNext(frame);
+      setFaqQuiz(frame);
+      updateBreadcrumb();
+    }
+
+    function goTo(nextCode) {
+      if (!framesByCode.has(nextCode)) {
+        console.warn("Unknown frame code:", nextCode);
+        return;
+      }
+      currentCode = nextCode;
+      pathStack.push(nextCode);
+      renderFrame();
+      stopSpeech();
+    }
+
+    function goBack() {
+      if (pathStack.length <= 1) return;
+      pathStack.pop();
+      currentCode = pathStack[pathStack.length - 1];
+      renderFrame();
+      stopSpeech();
+    }
+
+    function restart() {
+      stopSpeech();
+      const startCode = story.start_code || story.frames[0].frame_code;
+      currentCode = startCode;
+      pathStack.length = 0;
+      pathStack.push(startCode);
+      renderFrame();
+    }
+
+    // Speech helpers
+    function stopSpeech() {
+      if ("speechSynthesis" in window) {
+        window.speechSynthesis.cancel();
+      }
+    }
+
+    function speak(text) {
+      if (!("speechSynthesis" in window)) return;
+      stopSpeech();
+      if (!text) return;
+      const utter = new SpeechSynthesisUtterance(text);
+      window.speechSynthesis.speak(utter);
+    }
+
+    // Wire up buttons
+    btnBack.addEventListener("click", goBack);
+    btnRestart.addEventListener("click", restart);
+    btnHome.addEventListener("click", () => {
+      window.location.href = HOME_URL;
+    });
+    btnEntityMenu.addEventListener("click", () => {
+      window.location.href = ENTITY_MENU_URL;
+    });
+
+    btnHear1.addEventListener("click", () => {
+      const f = currentFrame();
+      speak(f.narr1 || "");
+    });
+    btnHear2.addEventListener("click", () => {
+      const f = currentFrame();
+      speak(f.narr2 || f.narr3 || "");
+    });
+    btnRead1.addEventListener("click", () => {
+      const f = currentFrame();
+      narrTextEl.textContent = f.narr1 || "";
+    });
+    btnRead2.addEventListener("click", () => {
+      const f = currentFrame();
+      narrTextEl.textContent = f.narr2 || f.narr3 || "";
+    });
+    btnStop.addEventListener("click", stopSpeech);
+
+    // Initial render
+    renderFrame();
+  </script>
+</body>
+</html>
