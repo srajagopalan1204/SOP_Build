@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>PPS – ISM Setup – FAQ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.5rem;
+      line-height: 1.6;
+      background: #f7f7fb;
+    }
+    h1, h2 {
+      color: #111827;
+    }
+    .intro {
+      margin-bottom: 1rem;
+      padding: 0.75rem 1rem;
+      background: #e5e7eb;
+      border-radius: 6px;
+      font-size: 0.95rem;
+    }
+    details {
+      margin-bottom: 0.75rem;
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+    summary {
+      cursor: pointer;
+      font-weight: 600;
+      color: #111827;
+    }
+    summary::-webkit-details-marker {
+      margin-right: 0.5rem;
+    }
+    p {
+      margin: 0.4rem 0;
+    }
+    ul {
+      margin: 0.4rem 0 0.4rem 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>PPS – ISM Setup – Frequently Asked Questions</h1>
+
+  <div class="intro">
+    <p>
+      This FAQ supports the <strong>M1. ISM Setup – At PPS Service</strong> SOP. It explains how
+      to use the ISM Setup hub to configure partners, schedules, work codes, warranty GL, service
+      order templates, warranty codes, rates, and contract templates before they are used in
+      day-to-day service work.
+    </p>
+  </div>
+
+  <section aria-label="FAQ list">
+    <h2>Questions &amp; Answers</h2>
+
+    <details open>
+      <summary>1. What is the purpose of the ISM Setup SOP at PPS Service?</summary>
+      <p>
+        The ISM Setup SOP provides a single hub for setting up key ISM master data used by PPS
+        Service. It covers:
+      </p>
+      <ul>
+        <li>Partner setup (service partners / vendors).</li>
+        <li>Partner schedule setup.</li>
+        <li>Work codes.</li>
+        <li>Warranty-specific GL accounts.</li>
+        <li>Service order templates (SRO templates).</li>
+        <li>Warranty codes.</li>
+        <li>Rates.</li>
+        <li>Contract templates for rental and service contracts.</li>
+      </ul>
+      <p>
+        Using this SOP helps ensure that all of these elements are set up consistently before they
+        are used in transactional SOPs such as Start-Up, Rental, or PMA.
+      </p>
+    </details>
+
+    <details>
+      <summary>2. Where does this SOP start and end?</summary>
+      <p>
+        The process starts when a user recognizes that a master data element needs to be set up or
+        changed (for example, a new partner, new work code, or new contract template) and navigates
+        into the ISM Setup SOP.
+      </p>
+      <p>
+        It ends after the appropriate setup step (<strong>S1–S9</strong>) is completed and the user
+        either uses <strong>S998. Restart Selection</strong> to perform another setup task or exits
+        back to their transactional SOPs. In this way, ISM Setup functions as a configuration
+        companion to day-to-day service processes.
+      </p>
+    </details>
+
+    <details>
+      <summary>3. How does the SOP help with Partner setup (S1) and Partner schedules (S2)?</summary>
+      <p>
+        The SOP includes distinct steps for partners and their schedules:
+      </p>
+      <ul>
+        <li>
+          <strong>S1. Partner Set Up</strong> – used when PPS needs to add or maintain a
+          <em>partner</em>, such as an external service provider or subcontractor.
+        </li>
+        <li>
+          <strong>S2. Partner Schedule Set Up</strong> – used to define or maintain the
+          <em>schedule / availability</em> for a partner (for example, working days, hours, and
+          other scheduling rules).
+        </li>
+      </ul>
+      <p>
+        The decision steps (D1, D2, etc.) guide the user to the correct path based on the type of
+        setup needed.
+      </p>
+    </details>
+
+    <details>
+      <summary>4. What is the difference between a Work Code (S3) and a Partner Schedule (S2)?</summary>
+      <p>
+        A <strong>partner schedule</strong> (S2) answers “when and how is this partner available?”
+        (calendar and availability).
+      </p>
+      <p>
+        A <strong>work code</strong> (S3. Create A Work Code) answers “what type of work is being
+        performed?” (for example, Start-Up, Inspection, Warranty Service, Rental Return Check).
+      </p>
+      <p>
+        Partner schedules support planning and dispatching; work codes support how work is
+        categorized, quoted, and billed.
+      </p>
+    </details>
+
+    <details>
+      <summary>5. How are warranty-specific GL accounts handled (S4)?</summary>
+      <p>
+        <strong>S4. Warranty Specific GL</strong> is used to define or adjust the General Ledger
+        accounts associated with warranty work. This helps PPS:
+      </p>
+      <ul>
+        <li>Keep warranty revenue and costs separate from normal billable work.</li>
+        <li>Report accurately on warranty exposure and performance.</li>
+        <li>Reduce manual corrections in the financial system.</li>
+      </ul>
+      <p>
+        Having warranty GL correctly configured up front avoids confusion and rework later.
+      </p>
+    </details>
+
+    <details>
+      <summary>6. Why do we need SRO templates (S5)?</summary>
+      <p>
+        <strong>S5. Create an SRO Template</strong> is used to build reusable service order
+        templates. These templates:
+      </p>
+      <ul>
+        <li>Pre-load common lines and defaults for specific job types (for example, standard start-up packages).</li>
+        <li>Reduce keying time and errors for coordinators and dispatchers.</li>
+        <li>Ensure key fields (work codes, warranty codes, rates) are applied consistently.</li>
+      </ul>
+      <p>
+        Templates are especially useful for high-volume or highly standardized service offerings.
+      </p>
+    </details>
+
+    <details>
+      <summary>7. What are Warranty Codes (S6) used for?</summary>
+      <p>
+        <strong>S6. Create A Warranty Code</strong> is used to define or maintain warranty codes
+        that:
+      </p>
+      <ul>
+        <li>Identify the warranty status of work being performed.</li>
+        <li>Drive special billing and GL rules where needed.</li>
+        <li>Support reporting on warranty activity and cost.</li>
+      </ul>
+      <p>
+        Clear warranty codes make it easier to separate warranty work from normal billable service.
+      </p>
+    </details>
+
+    <details>
+      <summary>8. Why are Rates (S7) important in ISM Setup?</summary>
+      <p>
+        <strong>S7. Set Up a Rate</strong> defines the rates that will be used in service work:
+      </p>
+      <ul>
+        <li>Labor rates by technician, skill level, or customer type.</li>
+        <li>Special project or contract-specific rates.</li>
+        <li>Other rate structures required by PPS.</li>
+      </ul>
+      <p>
+        These rates are referenced by work codes, SRO templates, and contracts so that billing
+        calculations are correct and consistent across PPS Service.
+      </p>
+    </details>
+
+    <details>
+      <summary>9. How do Contract Templates (S8 and S9) fit into the process?</summary>
+      <p>
+        The SOP includes two paths for contract templates:
+      </p>
+      <ul>
+        <li>
+          <strong>S8. Create a Contract Rental Template</strong> – for rental-style contracts
+          (for example, generator rentals).
+        </li>
+        <li>
+          <strong>S9. Create a Service Contract Template</strong> – for service or maintenance
+          contracts (for example, PMA-type agreements).
+        </li>
+      </ul>
+      <p>
+        These templates help standardize terms, billing patterns, and included services for
+        contract-based work.
+      </p>
+    </details>
+
+    <details>
+      <summary>10. What is S998 – Restart Selection, and when is it used?</summary>
+      <p>
+        <strong>S998. Restart Selection</strong> is a convenience step that allows the user to:
+      </p>
+      <ul>
+        <li>Return to the ISM Setup decision hub without leaving the SOP.</li>
+        <li>Choose another setup path (for example, after setting up a partner, move on to rates or contract templates).</li>
+      </ul>
+      <p>
+        This reinforces the idea that ISM Setup is a menu-style hub for configuration work, letting
+        you perform multiple related setup tasks in one session.
+      </p>
+    </details>
+  </section>
+</body>
+</html>

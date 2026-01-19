@@ -1,0 +1,1313 @@
+{
+  "sop_id": "BlanketOrder",
+  "start_code": "S000",
+  "frames": [
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "S000",
+      "title": "S000. Opening Slide for PPS – Sales – Blanket Order Processing",
+      "image": "../images/BlanketOrder/S000.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S001",
+          "label": "About Palco Power Systems and Scott Electric and a Welcome to Training"
+        }
+      ],
+      "narr1": "Slide S000. Opening Slide for PPS – Sales – Blanket Order Processing — Opening Slide for PPS – Sales – Blanket Order Processing.",
+      "narr2": "Opening Slide for PPS.",
+      "narr3": "Palco Power Systems is a specialized power solutions provider and an authorized KOHLER distributor, serving customers across western Pennsylvania, West Virginia, and western Maryland. Since 1972, Palco has supplied reliable generator systems and power equipment to industrial, commercial, municipal, healthcare, and residential customers who depend on uninterrupted power.",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "",
+      "FAQ_File": "",
+      "FAQ_Label": "",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": ""
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "S001",
+      "title": "S001. About Palco Power Systems and Scott Electric and a Welcome to Training",
+      "image": "../images/BlanketOrder/S001.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S002",
+          "label": "Palco Power Systems Service to Cash Work Flow – at Palco Power Systems"
+        }
+      ],
+      "narr1": "Slide S001. About Palco Power Systems and Scott Electric and a Welcome to Training — About Palco Power Systems and Scott Electric and a Welcome to Training.",
+      "narr2": "About Palco Power Systems and Scott Electric and a Welcome to Training.",
+      "narr3": "Palco Power Systems is a specialized power solutions provider and an authorized KOHLER distributor, serving customers across western Pennsylvania, West Virginia, and western Maryland. Since 1972, Palco has supplied reliable generator systems and power equipment to industrial, commercial, municipal, healthcare, and residential customers who depend on uninterrupted power.",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "",
+      "FAQ_File": "",
+      "FAQ_Label": "",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": ""
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "S002",
+      "title": "S002. Palco Power Systems Service to Cash Work Flow – at Palco Power Systems",
+      "image": "../images/BlanketOrder/S002.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S003",
+          "label": "Pictorial representation of Quote/ Service Request to Cash similar to Quote to Cash - At PPS Service"
+        }
+      ],
+      "narr1": "Slide S002. Palco Power Systems Service to Cash Work Flow – at Palco Power Systems — Palco Power Systems Service to Cash Work Flow – at Palco Power Systems.",
+      "narr2": "This is the overall Work flow on how a service request is processed at Palco Power System. This covers the business process that starts from a request from a customer or based on a contract the need for a",
+      "narr3": "Palco Power Systems is a specialized power solutions provider and an authorized KOHLER distributor, serving customers across western Pennsylvania, West Virginia, and western Maryland. Since 1972, Palco has supplied reliable generator systems and power equipment to industrial, commercial, municipal, healthcare, and residential customers who depend on uninterrupted power.",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "",
+      "FAQ_File": "",
+      "FAQ_Label": "",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": ""
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "S003",
+      "title": "S003. Pictorial representation of Quote/ Service Request to Cash similar to Quote to Cash - At PPS Service",
+      "image": "../images/BlanketOrder/S003.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "M1",
+          "label": "Blanket Order Creation and Processing SOP - PPS Sales"
+        }
+      ],
+      "narr1": "Slide S003. Pictorial representation of Quote/ Service Request to Cash similar to Quote to Cash - At PPS Service — Pictorial representation of Quote/ Service Request to Cash similar to Quote to Cash - At PPS Service.",
+      "narr2": "Pictorial representation of Quote/ Service Request to Cash similar to Quote to Cash - At PPS Service",
+      "narr3": "This is the overall Work flow on how a service request is processed at Palco Power System. This covers the business process that starts from a request from a customer or based on a contract the need for a routine service that need to be performed. Request from customers could be for a break fix , a warranty question or request for additional work suggest as a nice to perform during the most recent visit by a very well trained and efficient Service technician crea at PPS. This transistions through the various business sections of Service writes Service  , schedulers , technicians , parts department, purchasing , billing and finally collection of payment. Hence the term Service to Cash is ofen used to succinctly name it",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_BlanketOrder_faq.html",
+      "FAQ_Label": "Blanket_Order_FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Sales",
+        "subentity": "BlanketOrder"
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "M1",
+      "title": "M1. Blanket Order Creation and Processing SOP - PPS Sales",
+      "image": "../images/BlanketOrder/M1.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S1",
+          "label": "Contractor places an Order for a Generator- PPS Sales"
+        }
+      ],
+      "narr1": "Slide M1. Blanket Order Creation and Processing SOP - PPS Sales — Blanket Order Creation and Processing SOP - PPS Sales.",
+      "narr2": "Blanket Order Creation and Processing SOP - PPS Sales",
+      "narr3": "This process is used in both Industrial and Residential sales The process handles both sold from stock generators and Special build generators",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_BlanketOrder_faq.html",
+      "FAQ_Label": "Blanket_Order_FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Sales",
+        "subentity": "BlanketOrder"
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "S1",
+      "title": "S1. Contractor places an Order for a Generator- PPS Sales",
+      "image": "../images/BlanketOrder/S1.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S2",
+          "label": "Create a Blanket Order using OPM - PPS Sales"
+        }
+      ],
+      "narr1": "Slide S1. Contractor places an Order for a Generator- PPS Sales — Contractor places an Order for a Generator- PPS Sales.",
+      "narr2": "Contractor places an Order for a Generator- PPS Sales",
+      "narr3": "The contractor places an order for the generator after reviewing our specifications",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_BlanketOrder_faq.html",
+      "FAQ_Label": "Blanket_Order_FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Sales",
+        "subentity": "BlanketOrder"
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "S2",
+      "title": "S2. Create a Blanket Order using OPM - PPS Sales",
+      "image": "../images/BlanketOrder/S2.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "D1",
+          "label": "Decision is the Generator a “Modified Build” ? - PPS Sales"
+        }
+      ],
+      "narr1": "Slide S2. Create a Blanket Order using OPM - PPS Sales — Create a Blanket Order using OPM - PPS Sales.",
+      "narr2": "Create a Blanket Order using OPM - PPS Sales",
+      "narr3": "the process starts with the creation of Blanket Order A blanket order (BL) represents a contract to supply a quantity of goods to be shipped on different dates, and possibly to different locations, over a specified period of time. BLs are automatically converted to blanket releases (BR) when it comes time to ship the products. Use these instructions to create a BL.",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "",
+      "FAQ_File": "",
+      "FAQ_Label": "",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": ""
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "D1",
+      "title": "D1. Decision is the Generator a “Modified Build” ? - PPS Sales",
+      "image": "../images/BlanketOrder/D1.png",
+      "decision_question": "Decision Is the Generator a “Modified Build” ?",
+      "choices": [
+        {
+          "to": "Y1",
+          "label": "Yes the Order is  “Modified Build” Generator - PPS Sales"
+        },
+        {
+          "to": "N1",
+          "label": "No, Generator is not a “Modified Build”"
+        }
+      ],
+      "narr1": "Slide D1. Decision is the Generator a “Modified Build” ? - PPS Sales — Yes Generator a “Modified Build” ? - PPS Sales.",
+      "narr2": "Decision is the Generator a “Modified Build” ? - PPS Sales",
+      "narr3": "A key decision needs to be taken if the order requires a \"modified Generator Build\" or a standard unit",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_BlanketOrder_faq.html",
+      "FAQ_Label": "Blanket_Order_FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Sales",
+        "subentity": "BlanketOrder"
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "Y1",
+      "title": "Y1. Yes, Generator is a “Modified Build” - PPS Sales",
+      "image": "../images/BlanketOrder/Y1.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S3",
+          "label": "Create an order with a “Order as needed Stock Item” OPM - PPS Sales"
+        }
+      ],
+      "narr1": "Slide Y1. Yes, Generator is a “Modified Build” - PPS Sales — Yes, Generator is a “Modified Build” - PPS Sales.",
+      "narr2": "Yes, Generator is a “Modified Build” - PPS Sales",
+      "narr3": "In this path it was determined that a modified generator needs to be created",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_BlanketOrder_faq.html",
+      "FAQ_Label": "Blanket_Order_FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Sales",
+        "subentity": "BlanketOrder"
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "S3",
+      "title": "S3. Create an order with a “Order as needed Stock Item” OPM - PPS Sales",
+      "image": "../images/BlanketOrder/S3.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S4",
+          "label": "Make the OAN item serialized OPM - PPS Sales"
+        }
+      ],
+      "narr1": "Slide S3. Create an order with a “Order as needed Stock Item” OPM - PPS Sales — Create an order with a “Order as needed Stock Item” OPM - PPS Sales.",
+      "narr2": "Create an order with a “Order as needed Stock Item” OPM - PPS Sales",
+      "narr3": "In order to process this order an Item has to be created as with an Order as needed flag set as this is a one of sale",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/bda7b62d-f8c7-4c18-a421-14573b577ab2?contextId=1117d5a4-031c-40fd-bc51-f8d6bb1f1345&bypassGroupFiltering=false",
+      "uap_label": "09_Create Order as Needed Non Stock",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_BlanketOrder_faq.html",
+      "FAQ_Label": "Blanket_Order_FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Sales",
+        "subentity": "BlanketOrder"
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "S4",
+      "title": "S4. Make the OAN item serialized OPM - PPS Sales",
+      "image": "../images/BlanketOrder/S4.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S5",
+          "label": "Add items to the order including Start_Up - OPM - PPS Sales"
+        }
+      ],
+      "narr1": "Slide S4. Make the OAN item serialized OPM - PPS Sales — Make the OAN item serialized OPM - PPS Sales.",
+      "narr2": "Make the OAN item serialized OPM - PPS Sales",
+      "narr3": "since generator have to be serilized and tracked by serial number the item created earlier needs to be serialized. It should be noted in these cases the probability that the serial number is known is very low. However that is entered during the receipt of the unit from the manufacturer",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/675c529d-0457-4345-bb64-367c4424740c?contextId=1117d5a4-031c-40fd-bc51-f8d6bb1f1345&bypassGroupFiltering=false",
+      "uap_label": "08_Make a Product Serialized",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_BlanketOrder_faq.html",
+      "FAQ_Label": "Blanket_Order_FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Sales",
+        "subentity": "BlanketOrder"
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "S5",
+      "title": "S5. Add items to the order including Start_Up - OPM - PPS Sales",
+      "image": "../images/BlanketOrder/S5.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S6",
+          "label": "Add Lump Sum billing- OPM - PPS Sales"
+        }
+      ],
+      "narr1": "Slide S5. Add items to the order including Start_Up - OPM - PPS Sales — Add items to the order including Start_Up - OPM - PPS Sales.",
+      "narr2": "Add items to the order including Start_Up - OPM - PPS Sales",
+      "narr3": "It should be noted the start up service has to be added as part of the sale and on a separate line",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/3da46b27-097b-4391-9a80-c09204643112?contextId=1117d5a4-031c-40fd-bc51-f8d6bb1f1345&bypassGroupFiltering=false",
+      "uap_label": "02_Add Items",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_BlanketOrder_faq.html",
+      "FAQ_Label": "Blanket_Order_FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Sales",
+        "subentity": "BlanketOrder"
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "S6",
+      "title": "S6. Add Lump Sum billing- OPM - PPS Sales",
+      "image": "../images/BlanketOrder/S6.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "D2",
+          "label": "Decision Does the customer want the Gen and ATS shipped separately ? - OPM - PPS Sales"
+        }
+      ],
+      "narr1": "Slide S6. Add Lump Sum billing- OPM - PPS Sales — Add Lump Sum billing- OPM - PPS Sales.",
+      "narr2": "Add Lump Sum billing- OPM - PPS Sales",
+      "narr3": "In most bid jobs the lumpsum bill is used as the individual price (to the customer) is not presented.",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/98b76f20-2e04-48cc-94f6-b98f72177e1f?contextId=1117d5a4-031c-40fd-bc51-f8d6bb1f1345&bypassGroupFiltering=false",
+      "uap_label": "03_Add Lump Sum",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_BlanketOrder_faq.html",
+      "FAQ_Label": "Blanket_Order_FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Sales",
+        "subentity": "BlanketOrder"
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "D2",
+      "title": "D2. Decision Does the customer want the Gen and ATS shipped separately ? - OPM - PPS Sales",
+      "image": "../images/BlanketOrder/D2.png",
+      "decision_question": "Decision Does the customer want the Gen and ATS shipped separately ?",
+      "choices": [
+        {
+          "to": "Y2",
+          "label": "Yes. Customer  wants the Gen and ATS shipped separately"
+        },
+        {
+          "to": "N2",
+          "label": "No, The customer want the Gen and ATS shipped together"
+        }
+      ],
+      "narr1": "Slide D2. Decision Does the customer want the Gen and ATS shipped separately ? - OPM - PPS Sales — Yes the customer want the Gen and ATS shipped separately ? - OPM - PPS Sales.",
+      "narr2": "Decision Does the customer want the Gen and ATS shipped separately ? - OPM - PPS Sales",
+      "narr3": "Due to varaious factors like size , site readiness , mode of operation even fuel require special preparation and handling hence the customer may choose to have the generator and ATS etc shipped separately or in some case all at one time. Hence this question needs to be answered",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_BlanketOrder_faq.html",
+      "FAQ_Label": "Blanket_Order_FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Sales",
+        "subentity": "BlanketOrder"
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "Y2",
+      "title": "Y2. Yes The customer want the Gen and ATS shipped separately - OPM - PPS Sales",
+      "image": "../images/BlanketOrder/Y2.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S7",
+          "label": "Create 3 releases to satisfy the customer’s request - OPM - PPS Sales"
+        }
+      ],
+      "narr1": "Slide Y2. Yes The customer want the Gen and ATS shipped separately - OPM - PPS Sales — Yes The customer want the Gen and ATS shipped separately - OPM - PPS Sales.",
+      "narr2": "Yes The customer want the Gen and ATS shipped separately - OPM - PPS Sales",
+      "narr3": "in this case the customer has opted for separate shipments of the Generator and ATS",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_BlanketOrder_faq.html",
+      "FAQ_Label": "Blanket_Order_FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Sales",
+        "subentity": "BlanketOrder"
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "S7",
+      "title": "S7. Create 3 releases to satisfy the customer’s request - OPM - PPS Sales",
+      "image": "../images/BlanketOrder/S7.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S8",
+          "label": "Run OEEPC and await customer call - OPM - PPS Sales"
+        }
+      ],
+      "narr1": "Slide S7. Create 3 releases to satisfy the customer’s request - OPM - PPS Sales — Create 3 releases to satisfy the customer’s request - OPM - PPS Sales.",
+      "narr2": "Create 3 releases to satisfy the customer’s request - OPM - PPS Sales",
+      "narr3": "As the there are three releases one the generator , two the ats and three the startup service 3 releases need to be added to the blanket orderA blanket release (BR) is a portion of the original blanket order (BL). Each blanket release retains the original BL number, but is assigned a different suffix. You can specify different ship dates and ship to locations for each blanket release.",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "",
+      "FAQ_File": "",
+      "FAQ_Label": "",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": ""
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "S8",
+      "title": "S8. Run OEEPC and await customer call - OPM - PPS Sales",
+      "image": "../images/BlanketOrder/S8.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S9",
+          "label": "Customer call for First release - Single step - PPS Sales"
+        }
+      ],
+      "narr1": "Slide S8. Run OEEPC and await customer call - OPM - PPS Sales — Run OEEPC and await customer call - OPM - PPS Sales.",
+      "narr2": "Run OEEPC and await customer call - OPM - PPS Sales",
+      "narr3": "the order is kept ready by running the OOEEPC or OE Entry Processing Cancel/Convert Orders menu is used",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/1030ffc1-1656-40db-a9d1-de90fa5f2bd0?contextId=1117d5a4-031c-40fd-bc51-f8d6bb1f1345&bypassGroupFiltering=false",
+      "uap_label": "05_Run OEEPC",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_BlanketOrder_faq.html",
+      "FAQ_Label": "Blanket_Order_FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Sales",
+        "subentity": "BlanketOrder"
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "S9",
+      "title": "S9. Customer call for First release - Single step - PPS Sales",
+      "image": "../images/BlanketOrder/S9.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S10",
+          "label": "Print Pick ticket on “01 “ Suffix – OPM - PPS Sales"
+        }
+      ],
+      "narr1": "Slide S9. Customer call for First release - Single step - PPS Sales — Customer call for First release - Single step - PPS Sales.",
+      "narr2": "Customer call for First release - Single step - PPS Sales",
+      "narr3": "Once the custoemr is ready and based on the terms being satisfied a release is requested",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_BlanketOrder_faq.html",
+      "FAQ_Label": "Blanket_Order_FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Sales",
+        "subentity": "BlanketOrder"
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "S10",
+      "title": "S10. Print Pick ticket on “01 “ Suffix – OPM - PPS Sales",
+      "image": "../images/BlanketOrder/S10.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S11",
+          "label": "Do Shipping feedback for the picked items – OPM - PPS Sales"
+        }
+      ],
+      "narr1": "Slide S10. Print Pick ticket on “01 “ Suffix – OPM - PPS Sales — Print Pick ticket on “01 “ Suffix – OPM - PPS Sales.",
+      "narr2": "Print Pick ticket on “01 “ Suffix – OPM - PPS Sales",
+      "narr3": "A pick ticket is printed Sales > Entry > OEE Reports > OEEPP",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "",
+      "FAQ_File": "",
+      "FAQ_Label": "",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": ""
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "S11",
+      "title": "S11. Do Shipping feedback for the picked items – OPM - PPS Sales",
+      "image": "../images/BlanketOrder/S11.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S12",
+          "label": "Goes through the AR billing Process – OPM - PPS Sales"
+        }
+      ],
+      "narr1": "Slide S11. Do Shipping feedback for the picked items – OPM - PPS Sales — Do Shipping feedback for the picked items – OPM - PPS Sales.",
+      "narr2": "Do Shipping feedback for the picked items – OPM - PPS Sales",
+      "narr3": "he same shipping updates that the Sales Shipping Feedback Entry and Transfer Shipping Feedback Entry functions perform are initiated in the WL Entry Batch Shipping Report. This update includes closing the shipping journal and updating General Ledger and Inventory Control. If processing stops before the journal is successfully closed, you must manually close the journal. The journals are not opened by the WL Entry Batch Shipping Report; other functions that open the journals are launched. The report output provides order information and relevant error messages.",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/aca7e7bd-7c49-4f1b-be7d-274cd5333327?contextId=1117d5a4-031c-40fd-bc51-f8d6bb1f1345&bypassGroupFiltering=false",
+      "uap_label": "07_Shipping Feedback",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_BlanketOrder_faq.html",
+      "FAQ_Label": "Blanket_Order_FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Sales",
+        "subentity": "BlanketOrder"
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "S12",
+      "title": "S12. Goes through the AR billing Process – OPM - PPS Sales",
+      "image": "../images/BlanketOrder/S12.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "D3",
+          "label": "Decision, Were (3) Three Releases created for this Order ? - Single step - PPS Sales"
+        }
+      ],
+      "narr1": "Slide S12. Goes through the AR billing Process – OPM - PPS Sales — Goes through the AR billing Process – OPM - PPS Sales.",
+      "narr2": "Goes through the AR billing Process – OPM - PPS Sales",
+      "narr3": "nvoice processing",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "",
+      "FAQ_File": "",
+      "FAQ_Label": "",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": ""
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "D3",
+      "title": "D3. Decision, Were (3) Three Releases created for this Order ? - Single step - PPS Sales",
+      "image": "../images/BlanketOrder/D3.png",
+      "decision_question": "Decision, Were (3) Three Releases created for this Order ?",
+      "choices": [
+        {
+          "to": "Y3",
+          "label": "Yes  (3)  Three Releases  need to be created for this Order"
+        },
+        {
+          "to": "N3",
+          "label": "No Only (2)  Two Releases created for this Order – Single step - PPS Sales"
+        }
+      ],
+      "narr1": "Slide D3. Decision, Were (3) Three Releases created for this Order ? - Single step - PPS Sales — Yes  (3) Three Releases created for this Order  - Single step - PPS Sales.",
+      "narr2": "Decision, Were (3) Three Releases created for this Order ? - Single step - PPS Sales",
+      "narr3": "A decision on whether the customer has requested a the generator and Ats be shipped separately or not will be answered here",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_BlanketOrder_faq.html",
+      "FAQ_Label": "Blanket_Order_FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Sales",
+        "subentity": "BlanketOrder"
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "Y3",
+      "title": "Y3. Yes, (3) Three Releases created for this Order – Single step - PPS Sales",
+      "image": "../images/BlanketOrder/Y3.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S13",
+          "label": "Customer Calls For Second Release (Generator) – Single step - PPS Sales"
+        }
+      ],
+      "narr1": "Slide Y3. Yes, (3) Three Releases created for this Order – Single step - PPS Sales — Yes, (3) Three Releases created for this Order – Single step - PPS Sales.",
+      "narr2": "Yes, (3) Three Releases created for this Order – Single step - PPS Sales",
+      "narr3": "yes separate shipments have been requested hence three releases need to be created for this order",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_BlanketOrder_faq.html",
+      "FAQ_Label": "Blanket_Order_FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Sales",
+        "subentity": "BlanketOrder"
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "S13",
+      "title": "S13. Customer Calls For Second Release (Generator) – Single step - PPS Sales",
+      "image": "../images/BlanketOrder/S13.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S14",
+          "label": "Print Pick Ticket on “02” Suffix - OPM - PPS Sales"
+        }
+      ],
+      "narr1": "Slide S13. Customer Calls For Second Release (Generator) – Single step - PPS Sales — Customer Calls For Second Release (Generator) – Single step - PPS Sales.",
+      "narr2": "Customer Calls For Second Release (Generator) – Single step - PPS Sales",
+      "narr3": "have process the first release the customer has indicated that they are ready for the second release",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_BlanketOrder_faq.html",
+      "FAQ_Label": "Blanket_Order_FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Sales",
+        "subentity": "BlanketOrder"
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "S14",
+      "title": "S14. Print Pick Ticket on “02” Suffix - OPM - PPS Sales",
+      "image": "../images/BlanketOrder/S14.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S15",
+          "label": "Perform Shipping Feedback on “02” Suffix - OPM - PPS Sales"
+        }
+      ],
+      "narr1": "Slide S14. Print Pick Ticket on “02” Suffix - OPM - PPS Sales — Print Pick Ticket on “02” Suffix - OPM - PPS Sales.",
+      "narr2": "Print Pick Ticket on “02” Suffix - OPM - PPS Sales",
+      "narr3": "A pick ticket is printed Sales > Entry > OEE Reports > OEEPP",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "",
+      "FAQ_File": "",
+      "FAQ_Label": "",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": ""
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "S15",
+      "title": "S15. Perform Shipping Feedback on “02” Suffix - OPM - PPS Sales",
+      "image": "../images/BlanketOrder/S15.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S16",
+          "label": "Customer “calls for Startup” - Single Step - PPS Sales"
+        }
+      ],
+      "narr1": "Slide S15. Perform Shipping Feedback on “02” Suffix - OPM - PPS Sales — Perform Shipping Feedback on “02” Suffix - OPM - PPS Sales.",
+      "narr2": "Perform Shipping Feedback on “02” Suffix - OPM - PPS Sales",
+      "narr3": "he same shipping updates that the Sales Shipping Feedback Entry and Transfer Shipping Feedback Entry functions perform are initiated in the WL Entry Batch Shipping Report. This update includes closing the shipping journal and updating General Ledger and Inventory Control. If processing stops before the journal is successfully closed, you must manually close the journal. The journals are not opened by the WL Entry Batch Shipping Report; other functions that open the journals are launched. The report output provides order information and relevant error messages.",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/aca7e7bd-7c49-4f1b-be7d-274cd5333327?contextId=1117d5a4-031c-40fd-bc51-f8d6bb1f1345&bypassGroupFiltering=false",
+      "uap_label": "07_Shipping Feedback",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_BlanketOrder_faq.html",
+      "FAQ_Label": "Blanket_Order_FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Sales",
+        "subentity": "BlanketOrder"
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "S16",
+      "title": "S16. Customer “calls for Startup” - Single Step - PPS Sales",
+      "image": "../images/BlanketOrder/S16.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S17",
+          "label": "Go “Startup SOP” to complete this Order - SOP - PPS Sales"
+        }
+      ],
+      "narr1": "Slide S16. Customer “calls for Startup” - Single Step - PPS Sales — Customer “calls for Startup” - Single Step - PPS Sales.",
+      "narr2": "Customer “calls for Startup” - Single Step - PPS Sales",
+      "narr3": "The generator is installed and ready to be started hence the a request is made by the customer",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_BlanketOrder_faq.html",
+      "FAQ_Label": "Blanket_Order_FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Sales",
+        "subentity": "BlanketOrder"
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "S17",
+      "title": "S17. Go “Startup SOP” to complete this Order - SOP - PPS Sales",
+      "image": "../images/BlanketOrder/S17.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S998a",
+          "label": "You have come to the end of the path selected in the – Rental Process"
+        }
+      ],
+      "narr1": "Slide S17. Go “Startup SOP” to complete this Order - SOP - PPS Sales — Go “Startup SOP” to complete this Order - SOP - PPS Sales.",
+      "narr2": "Go “Startup SOP” to complete this Order - SOP - PPS Sales",
+      "narr3": "",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/folder/3a4b3dad-96fe-4694-a768-791383f32e32?bypassGroupFiltering=false",
+      "uap_label": "01_Service Order Process",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_BlanketOrder_faq.html",
+      "FAQ_Label": "Blanket_Order_FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Sales",
+        "subentity": "BlanketOrder"
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "S998a",
+      "title": "S998a. You have come to the end of the path selected in the – Rental Process",
+      "image": "../images/BlanketOrder/S998a.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "D1a",
+          "label": "Decision is the Generator a “Modified Build” ? - PPS Sales"
+        }
+      ],
+      "narr1": "Slide S998a. You have come to the end of the path selected in the – Rental Process — You have come to the end of the path selected in the – Rental Process.",
+      "narr2": "You have come to the end of the path selected in the – Rental Process",
+      "narr3": "At this point there are two options one to go to another decision point (suggested) or go the end of the SOP",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "",
+      "FAQ_File": "",
+      "FAQ_Label": "",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": ""
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "D1a",
+      "title": "D1a. Decision is the Generator a “Modified Build” ? - PPS Sales",
+      "image": "../images/BlanketOrder/D1a.png",
+      "decision_question": "You have come to this decision on to pursue the No path or go to the end of SOP S999",
+      "choices": [
+        {
+          "to": "N1",
+          "label": "No, Generator is not a “Modified Build”"
+        },
+        {
+          "to": "S999",
+          "label": "If you have finished all paths go to the SOP end"
+        }
+      ],
+      "narr1": "Slide D1a. Decision is the Generator a “Modified Build” ? - PPS Sales — NO  the Generator is not a “Modified Build” - PPS Sales.",
+      "narr2": "Decision is the Generator a “Modified Build” ? - PPS Sales",
+      "narr3": "A key decision needs to be taken if the order requires a \"modified Generator Build\" or a standard unit",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_BlanketOrder_faq.html",
+      "FAQ_Label": "Blanket_Order_FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Sales",
+        "subentity": "BlanketOrder"
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "N1",
+      "title": "N1. No, Generator is not a “Modified Build” - PPS Sales",
+      "image": "../images/BlanketOrder/N1.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S5a",
+          "label": "Add items to the order including Start_Up - OPM - PPS Sales"
+        }
+      ],
+      "narr1": "Slide N1. No, Generator is not a “Modified Build” - PPS Sales — No, Generator is not a “Modified Build” - PPS Sales.",
+      "narr2": "No, Generator is not a “Modified Build” - PPS Sales",
+      "narr3": "No, Generator is not a “Modified Build” - PPS Sales",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_BlanketOrder_faq.html",
+      "FAQ_Label": "Blanket_Order_FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Sales",
+        "subentity": "BlanketOrder"
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "S5a",
+      "title": "S5a. Add items to the order including Start_Up - OPM - PPS Sales",
+      "image": "../images/BlanketOrder/S5a.png",
+      "decision_question": "May we suggest that you traverse all Decision paths with D2 or go to the SOP end Slide",
+      "choices": [
+        {
+          "to": "S998b",
+          "label": "You have come to the end of the path selected in the –BlanketOrder  Process"
+        },
+        {
+          "to": "D2a",
+          "label": "Go Back to D2"
+        }
+      ],
+      "narr1": "Slide S5a. Add items to the order including Start_Up - OPM - PPS Sales — Add items to the order including Start_Up - OPM - PPS Sales.",
+      "narr2": "Add items to the order including Start_Up - OPM - PPS Sales",
+      "narr3": "It should be noted the start up service has to be added as part of the sale and on a separate line",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/3da46b27-097b-4391-9a80-c09204643112?contextId=1117d5a4-031c-40fd-bc51-f8d6bb1f1345&bypassGroupFiltering=false",
+      "uap_label": "02_Add Items",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_BlanketOrder_faq.html",
+      "FAQ_Label": "Blanket_Order_FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Sales",
+        "subentity": "BlanketOrder"
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "S998b",
+      "title": "S998b. You have come to the end of the path selected in the – Rental Process",
+      "image": "../images/BlanketOrder/S998b.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "D2a",
+          "label": "Decision Does the customer want the Gen and ATS shipped separately ? - OPM - PPS Sales"
+        }
+      ],
+      "narr1": "Slide S998b. You have come to the end of the path selected in the – Rental Process — You have come to the end of the path selected in the – Rental Process.",
+      "narr2": "You have come to the end of the path selected in the – Rental Process",
+      "narr3": "At this point there are two options one to go to another decision point (suggested) or go the end of the SOP",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "",
+      "FAQ_File": "",
+      "FAQ_Label": "",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": ""
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "D2a",
+      "title": "D2a. Decision Does the customer want the Gen and ATS shipped separately ? - OPM - PPS Sales",
+      "image": "../images/BlanketOrder/D2a.png",
+      "decision_question": "Do you want Go to (N2) no Separate or to the end of SOP BlanketOrder",
+      "choices": [
+        {
+          "to": "N2",
+          "label": "No, The customer want the Gen and ATS together"
+        },
+        {
+          "to": "S999",
+          "label": "If you have finished all paths go to the SOP end"
+        }
+      ],
+      "narr1": "Slide D2a. Decision Does the customer want the Gen and ATS shipped separately ? - OPM - PPS Sales — Decision Does the customer want the Gen and ATS shipped separately ? - OPM - PPS Sales.",
+      "narr2": "Decision Does the customer want the Gen and ATS shipped separately ? - OPM - PPS Sales",
+      "narr3": "",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_BlanketOrder_faq.html",
+      "FAQ_Label": "Blanket_Order_FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Sales",
+        "subentity": "BlanketOrder"
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "N2",
+      "title": "N2. No, The customer want the Gen and ATS together not separately - Single Step - PPS Sales",
+      "image": "../images/BlanketOrder/N2.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S18",
+          "label": "Create (2) Two Releases - OPM - PPS Sales"
+        }
+      ],
+      "narr1": "Slide N2. No, The customer want the Gen and ATS together separately - Single Step - PPS Sales — No, The customer want the Gen and ATS together separately - Single Step - PPS Sales.",
+      "narr2": "No, The customer want the Gen and ATS together separately - Single Step - PPS Sales",
+      "narr3": "",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_BlanketOrder_faq.html",
+      "FAQ_Label": "Blanket_Order_FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Sales",
+        "subentity": "BlanketOrder"
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "S18",
+      "title": "S18. Create (2) Two Releases - OPM - PPS Sales",
+      "image": "../images/BlanketOrder/S18.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S8a",
+          "label": "Run OEEPC and await customer call - OPM - PPS Sales"
+        }
+      ],
+      "narr1": "Slide S18. Create (2) Two Releases - OPM - PPS Sales — Create (2) Two Releases - OPM - PPS Sales.",
+      "narr2": "Create (2) Two Releases - OPM - PPS Sales",
+      "narr3": "",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/8ee4bf25-b611-4a98-b451-2bbbe6e4785b?contextId=1117d5a4-031c-40fd-bc51-f8d6bb1f1345&bypassGroupFiltering=false",
+      "uap_label": "04_Create a Release",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_BlanketOrder_faq.html",
+      "FAQ_Label": "Blanket_Order_FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Sales",
+        "subentity": "BlanketOrder"
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "S8a",
+      "title": "S8a. Run OEEPC and await customer call - OPM - PPS Sales",
+      "image": "../images/BlanketOrder/S8a.png",
+      "decision_question": "May we suggest that you traverse all Decision paths with D3a or go to the SOP end Slide",
+      "choices": [
+        {
+          "to": "S998c",
+          "label": "You have come to the end of the path selected in the – BlanketOrder Process"
+        },
+        {
+          "to": "D1",
+          "label": "May we suggest going to D1 for modified build"
+        }
+      ],
+      "narr1": "Slide S8a. Run OEEPC and await customer call - OPM - PPS Sales — Run OEEPC and await customer call - OPM - PPS Sales.",
+      "narr2": "Run OEEPC and await customer call - OPM - PPS Sales",
+      "narr3": "",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/1030ffc1-1656-40db-a9d1-de90fa5f2bd0?contextId=1117d5a4-031c-40fd-bc51-f8d6bb1f1345&bypassGroupFiltering=false",
+      "uap_label": "05_Run OEEPC",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_BlanketOrder_faq.html",
+      "FAQ_Label": "Blanket_Order_FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Sales",
+        "subentity": "BlanketOrder"
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "S998c",
+      "title": "S998c. You have come to the end of the path selected in the – Rental Process",
+      "image": "../images/BlanketOrder/S998c.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "D3a",
+          "label": "Decision, Were (3) Three Releases created for this Order ? - Single step - PPS Sales"
+        }
+      ],
+      "narr1": "Slide S998c. You have come to the end of the path selected in the – Rental Process — You have come to the end of the path selected in the – Rental Process.",
+      "narr2": "You have come to the end of the path selected in the – Rental Process",
+      "narr3": "You have come to the end of the path selected in the – Rental Process",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_BlanketOrder_faq.html",
+      "FAQ_Label": "Blanket_Order_FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Sales",
+        "subentity": "BlanketOrder"
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "D3a",
+      "title": "D3a. Decision, Were (3) Three Releases created for this Order ? - Single step - PPS Sales",
+      "image": "../images/BlanketOrder/D3a.png",
+      "decision_question": "Decision, Were (3) Three Releases created for this Order ?",
+      "choices": [
+        {
+          "to": "N3",
+          "label": "No (2) Two Releases created for this Order"
+        },
+        {
+          "to": "S999",
+          "label": "GO to the end of the SOP on Blanket orders"
+        }
+      ],
+      "narr1": "Slide D3a. Decision, Were (3) Three Releases created for this Order ? - Single step - PPS Sales — No only two Releases created for this Order ? - Single step - PPS Sales.",
+      "narr2": "Decision, Were (3) Three Releases created for this Order ? - Single step - PPS Sales",
+      "narr3": "Decision, Were (3) Three Releases created for this Order ? - Single step - PPS Sales",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_BlanketOrder_faq.html",
+      "FAQ_Label": "Blanket_Order_FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Sales",
+        "subentity": "BlanketOrder"
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "N3",
+      "title": "N3. No (2) Two Releases created for this Order ? - Single step - PPS Sales",
+      "image": "../images/BlanketOrder/N3a.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S16a",
+          "label": "Customer Calls for Start up - Single step - PPS Sales"
+        }
+      ],
+      "narr1": "Slide N3. No (2) Two Releases created for this Order ? - Single step - PPS Sales — No (2) Two Releases created for this Order ? - Single step - PPS Sales.",
+      "narr2": "No (2) Two Releases created for this Order ? - Single step - PPS Sales",
+      "narr3": "No (2) Two Releases created for this Order ? - Single step - PPS Sales",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_BlanketOrder_faq.html",
+      "FAQ_Label": "Blanket_Order_FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Sales",
+        "subentity": "BlanketOrder"
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "S16a",
+      "title": "S16a. Customer Calls for Start up - Single step - PPS Sales",
+      "image": "../images/BlanketOrder/S16a.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S17a",
+          "label": "Customer Calls for Start up - Single step - PPS Sales"
+        }
+      ],
+      "narr1": "Slide S16a. Customer Calls for Start up - Single step - PPS Sales — Customer Calls for Start up - Single step - PPS Sales.",
+      "narr2": "Customer Calls for Start up - Single step - PPS Sales",
+      "narr3": "Customer Calls for Start up - Single step - PPS Sales",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_BlanketOrder_faq.html",
+      "FAQ_Label": "Blanket_Order_FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Sales",
+        "subentity": "BlanketOrder"
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "S17a",
+      "title": "S17a. Customer Calls for Start up - Single step - PPS Sales",
+      "image": "../images/BlanketOrder/S17a.png",
+      "decision_question": "May we suggest that you traverse all Decision paths with D2 or go to the SOP end Slide",
+      "choices": [
+        {
+          "to": "S998d",
+          "label": "Go to the end of this path slide"
+        },
+        {
+          "to": "D2",
+          "label": "May we suggest going back to D2 shipped Separate or not decision"
+        }
+      ],
+      "narr1": "Slide S17a. Customer Calls for Start up - Single step - PPS Sales — Go to the end of the Banket Order Path.",
+      "narr2": "Customer Calls for Start up - Single step - PPS Sales",
+      "narr3": "Customer Calls for Start up - Single step - PPS Sales",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_BlanketOrder_faq.html",
+      "FAQ_Label": "Blanket_Order_FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Sales",
+        "subentity": "BlanketOrder"
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "S998d",
+      "title": "S998d. You have come to the end of the path selected in the – Rental Process",
+      "image": "../images/BlanketOrder/S998d.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S999",
+          "label": "You have successfully completed this SOP On PMA’s"
+        }
+      ],
+      "narr1": "Slide S998d. You have come to the end of the path selected in the – Rental Process — You have come to the end of the path selected in the – Blanket orderl Process.",
+      "narr2": "You have come to the end of the path selected in the – Rental Process",
+      "narr3": "You have come to the end of the path selected in the – Rental Process",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_BlanketOrder_faq.html",
+      "FAQ_Label": "Blanket_Order_FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Sales",
+        "subentity": "BlanketOrder"
+      }
+    },
+    {
+      "sop_id": "BlanketOrder",
+      "frame_code": "S999",
+      "title": "S999. You have successfully completed this SOP On PMA’s",
+      "image": "../images/BlanketOrder/S999.png",
+      "decision_question": "",
+      "choices": [],
+      "narr1": "Slide S999. You have successfully completed this SOP On PMA’s — You have successfully completed this SOP On PMA’s.",
+      "narr2": "You have successfully completed this SOP On PMA’s",
+      "narr3": "You have successfully completed this SOP On PMA’s",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "",
+      "FAQ_File": "",
+      "FAQ_Label": "",
+      "Quiz_Loc": "../quiz",
+      "Quiz_File": "PPS_BlanketOrder_quiz.html",
+      "Quiz_Label": "Blanket_Order_Quiz",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Sales",
+        "subentity": "BlanketOrder"
+      }
+    }
+  ]
+}

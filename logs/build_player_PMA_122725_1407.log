@@ -1,0 +1,6 @@
+[2025-12-27 09:07:52] build_player.py SOP_BUILD_build_player_v1.1 (2025-12-27 09:07 EST)
+[2025-12-27 09:07:52] Story: /workspaces/SOP_Build/docs/outputs/story/PMA/story.json
+[2025-12-27 09:07:52] Template: /workspaces/SOP_Build/src/templates/sop_player.html
+[2025-12-27 09:07:52] Out: /workspaces/SOP_Build/docs/outputs/players/PMA_player.html
+[2025-12-27 09:07:52] Wrote: /workspaces/SOP_Build/docs/outputs/players/PMA_player.html (68390 bytes)
+[2025-12-27 09:07:52] Done.

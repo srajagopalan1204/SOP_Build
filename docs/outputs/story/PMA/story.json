@@ -1,0 +1,407 @@
+{
+  "sop_id": "PMA",
+  "start_code": "S000",
+  "frames": [
+    {
+      "sop_id": "PMA",
+      "frame_code": "S000",
+      "title": "S000. Opening Slide for PPS - Service - PMA Process",
+      "image": "../images/PMA/S000.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S001",
+          "label": "About Palco Power Systems and Scott Electric and a Welcome to Training"
+        }
+      ],
+      "narr1": "Slide S000. Opening Slide for PPS — Opening Slide for PPS.",
+      "narr2": "Opening Slide for PPS.",
+      "narr3": "Palco Power Systems is a specialized power solutions provider and an authorized KOHLER distributor, serving customers across western Pennsylvania, West Virginia, and western Maryland. Since 1972, Palco has supplied reliable generator systems and power equipment to industrial, commercial, municipal, healthcare, and residential customers who depend on uninterrupted power.\nAs part of the Scott Electric family since 1993, Palco Power Systems combines deep technical expertise with the broader resources of a leading independent electrical distributor. Our portfolio includes KOHLER industrial, mobile (towable), residential, and portable generator systems; pumps; other power systems and components; Honda portable units; transfer equipment; and related accessories, including ASCO and PSP components.\nOver the years, Palco’s territory and responsibilities have grown along with its reputation:\n• 1972 – Palco becomes an authorized KOHLER distributor in western Pennsylvania.\n• 1984 – Territory expands to include West Virginia and western Maryland.\n• 1989 – Area of responsibility further expands to include western New York State.\n• 1993 – Scott Electric Company acquires Palco.\n• 2001 – Territory is adjusted with the removal of western New York State.\nMost recently, Palco Power Systems was the first Scott Electric division to host a Conference Room Pilot (CRP) for the new Infor CloudSuite software, demonstrating leadership and innovation in how we use technology to support customers and internal operations.",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_PMA_faq.html",
+      "FAQ_Label": "PMA related FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "PMA"
+      }
+    },
+    {
+      "sop_id": "PMA",
+      "frame_code": "S001",
+      "title": "S001. About Palco Power Systems and Scott Electric and a Welcome to Training",
+      "image": "../images/PMA/S001.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S002",
+          "label": "Parts Personnel Technicians Manufacturer's Guide"
+        }
+      ],
+      "narr1": "Slide S001. About Palco Power Systems and Scott Electric and a Welcome to Training — About Palco Power Systems and Scott Electric and a Welcome to Training.",
+      "narr2": "About Palco Power Systems and Scott Electric and a Welcome to Training.",
+      "narr3": "Palco Power Systems is a specialized power solutions provider and an authorized KOHLER distributor, serving customers across western Pennsylvania, West Virginia, and western Maryland. Since 1972, Palco has supplied reliable generator systems and power equipment to industrial, commercial, municipal, healthcare, and residential customers who depend on uninterrupted power.\nAs part of the Scott Electric family since 1993, Palco Power Systems combines deep technical expertise with the broader resources of a leading independent electrical distributor. Our portfolio includes KOHLER industrial, mobile (towable), residential, and portable generator systems; pumps; other power systems and components; Honda portable units; transfer equipment; and related accessories, including ASCO and PSP components.\nOver the years, Palco’s territory and responsibilities have grown along with its reputation:\u000b• 1972 – Palco becomes an authorized KOHLER distributor in western Pennsylvania.\u000b• 1984 – Territory expands to include West Virginia and western Maryland.\u000b• 1989 – Area of responsibility further expands to include western New York State.\u000b• 1993 – Scott Electric Company acquires Palco.\u000b• 2001 – Territory is adjusted with the removal of western New York State.\nMost recently, Palco Power Systems was the first Scott Electric division to host a Conference Room Pilot (CRP) for the new Infor CloudSuite software, demonstrating leadership and innovation in how we use technology to support customers and internal operations. This work reflects the dedication of the Palco team—including Tanner Schwartz, Valerie Markish, Tim Drop, Jen Schlegel, and Subi Rajagopalan—along with support from the broader ERP project, Champions, and Executive Sponsors. The management teams at Palco Power Systems and Scott Electric continue to support these efforts by prioritizing training, process improvement, and the successful adoption of the new system.\n\nWelcome to the Palco Power Systems Training Site.\nThis section of the Scott Electric Training Site is designed to help you build the knowledge and skills needed to support our power systems customers safely, accurately, and efficiently—whether you work in sales, service, parts, rentals, administration, or support. Here you will find guided learning, reference materials, and role-based courses tailored to the work we do every day at Palco: sizing and selecting generators, supporting projects, coordinating installations, servicing equipment, and taking care of customers before, during, and after the sale.\n\nThank you for investing your time in training. Your commitment to learning and continuous improvement helps keep Palco Power Systems—and Scott Electric as a whole—reliable, responsive, and growing as we continue our customer-focused operations.",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_PMA_faq.html",
+      "FAQ_Label": "PMA related FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "PMA"
+      }
+    },
+    {
+      "sop_id": "PMA",
+      "frame_code": "S002",
+      "title": "Palco Power Systems  Service to Cash Work Flow",
+      "image": "../images/PMA/S002.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S003",
+          "label": "Pictorial representation of Quote/ Service Request to Cash similar to Quote to Cash"
+        }
+      ],
+      "narr1": "Slide S002. Parts Personnel Technicians Manufacturer's Guide — Parts Personnel Technicians Manufacturer's Guide.",
+      "narr2": "This is the overall Work flow on how a service request is processed at Palco Power System. This covers the business process that starts from a request from a customer or based on a contract the need for a",
+      "narr3": "This is the overall Work flow on how a service request is processed at Palco Power System. This covers the business process that starts from a request from a customer or based on a contract the need for a routine service that need to be performed. Request from customers could be for a break fix , a warranty question or request for additional work suggest as a nice to perform during the most recent visit by a very well trained and efficient Service technician crea at PPS. This transistions through the various business sections of Service writes Service  , schedulers , technicians , parts department, purchasing , billing and finally collection of payment. Hence the term Service to Cash is ofen used to succinctly name it",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_PMA_faq.html",
+      "FAQ_Label": "PMA related FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "PMA"
+      }
+    },
+    {
+      "sop_id": "PMA",
+      "frame_code": "S003",
+      "title": "S003. Pictorial representation of Quote/ Service Request to Cash similar to Quote to Cash - At PPS Service",
+      "image": "../images/PMA/S003.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "M1",
+          "label": "PMA SOP  The PMA SOP covers the creation of a Preventive Maintenance agreement"
+        }
+      ],
+      "narr1": "Slide S003. Pictorial representation of Quote/ Service Request to Cash similar to Quote to Cash — Pictorial representation of Quote/ Service Request to Cash similar to Quote to Cash.",
+      "narr2": "Hence this pictorial representation cover the Service identification to Cash process or as is commonly reffered to as Quote to Cash. he process begins with either a sales person contacting the owner of newly installed generator or the service tech highlights the advantage of having a PMA to the new generator owner or the owner on their own accord calling PPS to discuss the options for a PMA.",
+      "narr3": "This slide depicts the process from Identifying a need for a new PMA Preventive Maintenance Agreement. In the mid 1900 's it used also go by the name Planned Maintenance Schedule. However that was retired as it did not convey the fact that it is a contractual agreement.  The process begins with either a sales person contacting the owner of newly installed generator or the service tech highlights the advantage of having a PMA to the new generator owner or the owner on their own accord calling PPS to discuss the options for a PMA.\nfrom that point the process traverses the creation of a customized contract for the owner , followed by setting  up schedule that satisfies the customer and our terms of the agreement , followed by creation of the SRO , finally when the time is right scheduling a technician , then the technician services the unit as per the tasks laid out in the SRO, finally an invoice is generated and as per the terms payment is collected. Hence this pictorial representation cover the Service identification to Cash process or as is commonly reffered to as Quote to Cash.",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_PMA_faq.html",
+      "FAQ_Label": "PMA related FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "PMA"
+      }
+    },
+    {
+      "sop_id": "PMA",
+      "frame_code": "M1",
+      "title": "M1. PMA SOP - PPS Service Rental",
+      "image": "../images/PMA/M1.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S004",
+          "label": "PMA start with contact from or to a customer"
+        }
+      ],
+      "narr1": "Slide M1. PMA SOP  The PMA SOP covers the creation of a Preventive Maintenance agreement — PMA SOP.",
+      "narr2": "The PMA SOP covers the creation of a Preventive Maintenance agreement for a newly installed or older unit to take the necessary steps to maintain or improve the reliability of the standby generator.",
+      "narr3": "The PMA SOP covers the creation of a Preventive Maintenance agreement for a newly installed or older unit to take the necessary steps to maintain or improve the reliability of the standby generator.",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_PMA_faq.html",
+      "FAQ_Label": "PMA related FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "PMA"
+      }
+    },
+    {
+      "sop_id": "PMA",
+      "frame_code": "S004",
+      "title": "S004. PMA start with contact from or to a customer - PPS Service Rental",
+      "image": "../images/PMA/S004.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S1",
+          "label": "A Customer and Unit specific contract is Created"
+        }
+      ],
+      "narr1": "Slide S004. PMA start with contact from or to a customer — PMA start with contact from or to a customer.",
+      "narr2": "The process begins with a contact from or two a customer about their recently or previously installed generator",
+      "narr3": "The process begins with a contact from or two a customer about their recently or previously installed generator",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_PMA_faq.html",
+      "FAQ_Label": "PMA related FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "PMA"
+      }
+    },
+    {
+      "sop_id": "PMA",
+      "frame_code": "S1",
+      "title": "S1. A Customer and Unit specific contract is Created - PPS Service Rental",
+      "image": "../images/PMA/S1.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S2",
+          "label": "Contract Maintenance Schedule is prepared"
+        }
+      ],
+      "narr1": "Slide S1. A Customer and Unit specific contract is Created — A Customer and Unit specific contract is Created.",
+      "narr2": "A Customer and Unit specific contract is Created.The PMA contract is tailored to meet many parameterssome which are kind of generator,  its expected use cycle, the criticallity of the need (eg a home with person needing power to support various life sustaining equipment) to a convenience factor etc,",
+      "narr3": "The PMA contract is tailored to meet many parameterssome which are kind of generator,  its expected use cycle, the criticallity of the need (eg a home with person needing power to support various life sustaining equipment) to a convenience factor etc, expected hours of operation and last but not the least the type of fuel and environment of operation. the contract goes through a propose, educated and finalize cycle and an agreement is signed by the customer. The next steps are to structure with billing etc. Finally whne the agreed month of service just around the corner(next month) the service department identifies these contract drvien services and schedules them to meet the customers availability etc.",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/f5d58483-42d2-4082-adb9-84bfd1d465c3?contextId=ca041c51-7d20-4968-a052-7f7139b6e066&bypassGroupFiltering=false",
+      "uap_label": "01_Create PMA Contract",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_PMA_faq.html",
+      "FAQ_Label": "PMA related FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "PMA"
+      }
+    },
+    {
+      "sop_id": "PMA",
+      "frame_code": "S2",
+      "title": "S2. Contract Maintenance Schedule is prepared - PPS Service Rental",
+      "image": "../images/PMA/S2.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S3",
+          "label": "Fixed billing total is entered"
+        }
+      ],
+      "narr1": "Slide S2. Contract Maintenance Schedule is prepared — Contract Maintenance Schedule is prepared.",
+      "narr2": "Contract Maintenance Schedule is prepared.As mentioned eralier based on the identifed actors the sro's scheduled in the following month are identified around the mid of prior month and scheduled. The scheduling has to take into account tyoe of unit type service proosed and certification of the tech.",
+      "narr3": "As mentioned eralier based on the identifed actors the sro's scheduled in the following month are identified around the mid of prior month and scheduled. The scheduling has to take into account tyoe of unit type service proosed and certification of the tech.",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/abeaf4ff-1a17-4505-9a78-411328ab525c?contextId=ca041c51-7d20-4968-a052-7f7139b6e066&bypassGroupFiltering=false",
+      "uap_label": "02_Add PMA Contract Lines",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_PMA_faq.html",
+      "FAQ_Label": "PMA related FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "PMA"
+      }
+    },
+    {
+      "sop_id": "PMA",
+      "frame_code": "S3",
+      "title": "S3. Fixed billing total is entered - PPS Service Rental",
+      "image": "../images/PMA/S3.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S4",
+          "label": "Contract SRO generator is run at mid month"
+        }
+      ],
+      "narr1": "Slide S3. Fixed billing total is entered — Fixed billing total is entered.",
+      "narr2": "The billing based on terms and periodicity is intitiated and an invoice is raised and paid for by the customer",
+      "narr3": "The billing based on terms and periodicity is intitiated and an invoice is raised and paid for by the customer",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/29d79b72-7738-4304-a95e-a4a9ad9c6fa0?contextId=ca041c51-7d20-4968-a052-7f7139b6e066&bypassGroupFiltering=false",
+      "uap_label": "04_Bill Contract",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_PMA_faq.html",
+      "FAQ_Label": "PMA related FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "PMA"
+      }
+    },
+    {
+      "sop_id": "PMA",
+      "frame_code": "S4",
+      "title": "S4. Contract SRO generator is run at mid month - PPS Service Rental",
+      "image": "../images/PMA/S4.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S5",
+          "label": "SRO Service Request Order is generated for all PMA for next month"
+        }
+      ],
+      "narr1": "Slide S4. Contract SRO generator is run at mid month — Contract SRO generator is run at mid month.",
+      "narr2": "The identified SRo is scheduled in this step and this is identified a SOP in itself as there are many steps and many swimlanes in the process",
+      "narr3": "The identified SRo is scheduled in this step and this is identified a SOP in itself as there are many steps and many swimlanes in the process",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/3be0ee78-0a17-437e-b166-e89db8f7b83b?contextId=ca041c51-7d20-4968-a052-7f7139b6e066&bypassGroupFiltering=false",
+      "uap_label": "03_Generate SRO",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_PMA_faq.html",
+      "FAQ_Label": "PMA related FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "PMA"
+      }
+    },
+    {
+      "sop_id": "PMA",
+      "frame_code": "S5",
+      "title": "S5. SRO Service Request Order is generated for all PMA for next month - PPS Service Rental",
+      "image": "../images/PMA/S5.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S6",
+          "label": "SRO or Service Order Processing starts from scheduling to task completion"
+        }
+      ],
+      "narr1": "Slide S5. SRO Service Request Order is generated for all PMA for next month — SRO Service Request Order is generated for all PMA for next month.",
+      "narr2": "SRO Service Request Order is generated for all PMA for next month.this is the process of running the next months SRO so that calls coud be made to the customer and service visit by PPS technicians can be scheduled",
+      "narr3": "this is the process of running the next months SRO so that calls coud be made to the customer and service visit by PPS technicians can be scheduled",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/6bb6bd8c-2c6f-46e0-a3d0-e97eed2f230b?contextId=3a4b3dad-96fe-4694-a768-791383f32e32&bypassGroupFiltering=false",
+      "uap_label": "11_Schedule Service",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_PMA_faq.html",
+      "FAQ_Label": "PMA related FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "PMA"
+      }
+    },
+    {
+      "sop_id": "PMA",
+      "frame_code": "S6",
+      "title": "S6. SRO or Service Order Processing starts from scheduling to task completion - PPS Service Rental",
+      "image": "../images/PMA/S6.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S998",
+          "label": "You have come to the end of the path selected in the"
+        }
+      ],
+      "narr1": "Slide S6. SRO or Service Order Processing starts from scheduling to task completion — SRO or Service Order Processing starts from scheduling to task completion.",
+      "narr2": "SRO or Service Order Processing starts from scheduling to task completion.",
+      "narr3": "As mention earlier the SOP for SRO processing a Service Request Order is very involved and need multiple players within PPS",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/folder/01service-order-process",
+      "uap_label": "01_Service Order Process",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_PMA_faq.html",
+      "FAQ_Label": "PMA related FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "PMA"
+      }
+    },
+    {
+      "sop_id": "PMA",
+      "frame_code": "S998",
+      "title": "S998. You have come to the end of the path selected in the - Rental Process",
+      "image": "../images/PMA/S998.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S999",
+          "label": "You have successfully completed this SOP On PMA's"
+        }
+      ],
+      "narr1": "Slide S998. You have come to the end of the path selected in the — You have come to the end of the path selected in the.",
+      "narr2": "You have come to the end of the path selected . The Management and your project team would like you to practice this and other processes so that the Go live is smooth or if your new to the company or are new to the role you can get proficient in the training environment",
+      "narr3": "You have now come to the end of one path and have choice to pick a decision point of your choice from the bread crumb above or start from the very beginning of the process Ever heard the phrase “Practice makes perfect ? – if you had not then now you have !\n\nThe Management and your project team would like you to practice this and other processes so that the Go live is smooth or if your new to the company or are new to the role you can get proficient in the training environment",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_PMA_faq.html",
+      "FAQ_Label": "PMA related FAQ",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "PMA"
+      }
+    },
+    {
+      "sop_id": "PMA",
+      "frame_code": "S999",
+      "title": "S999. You have successfully completed this SOP On PMA's",
+      "image": "../images/PMA/S999.png",
+      "decision_question": "",
+      "choices": [],
+      "narr1": "Slide S999. You have successfully completed this SOP On PMA's — You have successfully completed this SOP On PMA's.",
+      "narr2": "You have successfully completed this SOP On PMA's.Thank you for completing this module on PMA Creation and Scheduling SOP . The ERP Project Team and Training Group appreciate your time, attention, and commitment to learning our new systems and processes.",
+      "narr3": "Thank you for completing this module on PMA Creation and Scheduling SOP . The ERP Project Team and Training Group appreciate your time, attention, and commitment to learning our new systems and processes.\n\nTo be confident in your day-to-day work—and to avoid surprises at Go Live or when you move into a new role—please set aside time to practice this SOP in the training environment. Working through realistic examples several times will help you:\u000b• Follow the steps in the correct sequence\u000b• Understand what the key fields and options do\u000b• Reduce errors when you work in the live system\u000b• Handle real customer and business situations with confidence\n\nThe training environment is the safest place to practice, ask questions, and learn from mistakes—before they affect real orders, inventory, equipment, or customers. The more you use the training environment now, the smoother your work will be later in the live system.",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "",
+      "FAQ_File": "",
+      "FAQ_Label": "",
+      "Quiz_Loc": "../quiz",
+      "Quiz_File": "PPS_PMA_quiz.html",
+      "Quiz_Label": "Check your understanding of the PMA process",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "PMA"
+      }
+    }
+  ]
+}

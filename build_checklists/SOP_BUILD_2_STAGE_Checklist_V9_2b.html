@@ -1,0 +1,757 @@
+<!doctype html>
+<meta charset="utf-8" />
+<title>SOP Build Checklist v9</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!--
+  SOP_Build_Checklist_v9_robust.html
+  Build: v9.2b_20260101_1700 (America/New_York)
+  Purpose: Template used by checklist_builder_v9.py
+
+  Injection markers (do not delete):
+    {"pageTitle": "<SOP> - SOP_Build- Checklist", "headerTitleVisible": "<SOP>_SOP_Build", "name": "https://srajagopalan1204.github.io/SOP_Stage/players/", "id": "<SOP>", "entity": "<ENTITY>/<SUBENTITY>/<SUBGRP>", "runLabel": "<SOP>", "repo": "/workspaces/SOP_Build", "webRoot": "https://srajagopalan1204.github.io/SOP_Stage/", "imgFolder": "../images/<SOP>/", "templateTag": "v9.2", "entityCode": "<ENTITY>", "entCode": "<ENT>", "faqLocation": "../faq", "quizLocation": "../quiz"}
+    [{"id": "Standardize Slide", "order": 1, "title": "Standardize the master Slide", "command": "PPt Excel", "reminder": "PPT  of SOP and Excel of steps in OPM's", "notes": "Inputs: Rough process from SME.\nHints: Use S000 for the opening slide; keep title/subtitle clean for narration later.", "phase": "", "done": false, "runs": []}, {"id": "Build_Int_Thnk", "order": 2, "title": "Build into and thank you slides", "command": "PPt Excel", "reminder": "Entity specific Intro , Training Intro , Slide of WorkFlow", "notes": "These slides are created for each entity and specific sub entity so Palco (PPS) Service or Palco PPS Sales or SE Distro OPS SE Distro Sales etc ", "phase": "", "done": false, "runs": []}, {"id": "Master_final", "order": 3, "title": "Ensure Master is ready", "command": "PPt Excel", "reminder": "Standardized (structurally)", "notes": "", "phase": "", "done": false, "runs": []}, {"id": "Trans_deck", "order": 4, "title": "Create the PPT Translation Deck", "command": "Build the full transition deck PPT with:\n - S000 intro\n - decision nodes (D1, D2, ...)\n - yes/no branches (Y1, N1, ...)\n - path-end slides (S998 as needed 998a ) and final S999 completion slide", "reminder": "master Final", "notes": "Hints: Each decision code must be unique. Ensure every branch ultimately terminates at S999 (or a clear terminal node that links back via player UI).", "phase": "", "done": false, "runs": []}, {"id": "VeriFy_Slide", "order": 5, "title": "Verify the slide deck to ensure the slides can extracted the slide numbers are unique", "command": "powershell -ExecutionPolicy Bypass -File \"C:\\Users\\scottuser\\Documents\\SonetLumier\\Code\\verify_slide_v1a.ps1\" `\n  -Path \"C:\\Users\\scottuser\\Documents\\SonetLumier\\WIP\\<ENT>\\<ENT>_<SOP>\\<ENT>_<SOP>_YYMMDD_HHMM.pptx\" `\n  -Out  \"C:\\Users\\scottuser\\Documents\\SonetLumier\\Logs\\verify_<ENT>_<SOP>_$(Get-Date -f 'MMddyy_HHmm').txt\"", "reminder": "Full Deck for the SOP ", "notes": "powershell -ExecutionPolicy Bypass -File \"C:\\Users\\scottuser\\Documents\\SonetLumier\\Code\\verify_slide_v1a.ps1\" `\n  -Path \"C:\\Users\\scottuser\\Documents\\SonetLumier\\WIP\\PPS\\PPS_StartUp\\PPS_Service_StrtUp_251228_1147.pptx\" `\n  -Out  \"C:\\Users\\scottuser\\Documents\\SonetLumier\\Logs\\verify_StartUp_$(Get-Date -f 'MMddyy_HHmm').txt\"", "phase": "", "done": false, "runs": []}, {"id": "Extract_Slide", "order": 6, "title": "Extract the slides to create individual images and CSV", "command": "powershell -ExecutionPolicy Bypass -File \"C:\\Users\\scottuser\\Documents\\SonetLumier\\Code\\exp_slide_n_csv_v2.0.ps1\" `\n  -Path \"C:\\Users\\scottuser\\Documents\\SonetLumier\\WIP\\<ENT>\\<ENT>_<SOP>\\<ENT>_<SOP>_251228_1147.pptx\" `\n  -OutDir    \"C:\\Users\\scottuser\\Documents\\SonetLumier\\images\\<SOP>\" `\n  -OutMapDir \"C:\\Users\\scottuser\\Documents\\SonetLumier\\Slide_Map\" `\n  -Sop       \"<SOP>\" `\n  -Width     1600", "reminder": "verified slide deck ", "notes": "watch the terminal during extraction to ensure this program also found all the slides and the slide number assgined to the image is what was expected", "phase": "", "done": false, "runs": []}, {"id": "Verify the raw file", "order": 7, "title": "Key to ensuring what you saw on the terminal was represented in the csv file", "command": "excel", "reminder": "C:\\Users\\scottuser\\Documents\\SonetLumier\\Slide_Map", "notes": "", "phase": "", "done": false, "runs": []}, {"id": "Add_Column", "order": 8, "title": "add READY columns (READYBASE)", "command": "powershell -ExecutionPolicy Bypass -File \"C:\\Users\\scottuser\\Documents\\SonetLumier\\Code\\raw_add_ready_cols.ps1\" `\n  -In \"C:\\Users\\scottuser\\Documents\\SonetLumier\\Slide_Map\\<ENT>_<SOP>_map_YYYYMMDD_HHMM.csv\"", "reminder": "", "notes": "", "phase": "", "done": false, "runs": []}, {"id": "Desc_Narr_fill", "order": 9, "title": "fill Desc + Narr (READYBASE_ENH)", "command": "powershell -ExecutionPolicy Bypass -File \"C:\\Users\\scottuser\\Documents\\SonetLumier\\Code\\raw_fill_desc_and_narr.ps1\" `\n  -In  \"C:\\Users\\scottuser\\Documents\\SonetLumier\\Slide_Map\\StartUp_map_20251229_1104_READYBASE.csv\" `\n  -Out \"C:\\Users\\scottuser\\Documents\\SonetLumier\\Slide_Map\\StartUp_map_20251229_1104_READYBASE_ENH.csv\"", "reminder": "Readybase file ", "notes": "This produces the single source-of-truth READY CSV for story creation.", "phase": "", "done": false, "runs": []}, {"id": "ENH_ENR_UPD", "order": 10, "title": "manual enrich (UAP + FAQ/Quiz + end-of-path)", "command": "In Excel:\n - add UAP columns (uap_url/uap_label as needed)\n - set FAQ_Loc/FAQ_File/FAQ_Label (typically across all slides)\n - set Quiz_* fields (usually ONLY on S999)\n - add end-of-path / terminal transitions (ensure Next codes are correct)\nSave as:\n  StartUp_Raw_MMDDYY_HHMM_READYBASE_ENH_UPD.csv", "reminder": "need READYBASE_ENH", "notes": "Fix bad paths NOW. If a slide references an image that doesn’t exist under docs/outputs/images/StartUp, either rename PNG or update Image_sub_url in ENH_UPD and rebuild.", "phase": "", "done": false, "runs": []}, {"id": "Create_FAQ_Quiz", "order": 11, "title": "Create FAQ and Quiz files", "command": "upload files to chat gpt ", "reminder": "Single slide with the master for that process and the narration above", "notes": "", "phase": "", "done": false, "runs": []}, {"id": "SOP_Build_ENH_UPDr", "order": 12, "title": "This ste is the first in the next phase of building the player", "command": "python src/python/enh_upd_to_ready.py \\\n  --csv \"/workspaces/SOP_Build/inputs/raw/StartUp_map_20251229_1104_READYBASE_ENH_UPD.csv\" \\\n  --out \"outputs/build_in/StartUp_mk_tw_in_READY_$(date +%m%d%y_%H%M).csv\"", "reminder": "", "notes": "", "phase": "", "done": false, "runs": []}, {"id": "SOP_Build – validate", "order": 13, "title": "SOP_Build – validate images and environment (validate_env_sop_build.py)", "command": "python src/python/validate_env_sop_build.py \\\n  --csv    \"/workspaces/SOP_Build/outputs/build_in/StartUp_mk_tw_in_READY_122925_2242.csv\" \\\n  --images \"/workspaces/SOP_Build/docs/outputs/images/StartUp\" \\\n  --log    \"/workspaces/SOP_Build/logs/StartUp_validate_MMDDYY_HHMM.log\"", "reminder": "outputs/build_in/StartUp_mk_tw_in_READY_$(date +%m%d%y_%H%M).csv", "notes": "Fix bad paths NOW. If a slide references an image that doesn’t exist under docs/outputs/images/StartUp, either rename PNG or update Image_sub_url in ENH_UPD and rebuild.", "phase": "", "done": false, "runs": []}, {"id": "SOP_Build – create_story.json", "order": 14, "title": "SOP_Build – create story.json for this SOP (csv_to_story.py)", "command": "python src/python/csv_to_story.py \\\n  --csv    \"/workspaces/SOP_Build/outputs/build_in/<ENT>_<SOP>_mk_tw_in_READY_YYYYMMDD_HHMM.csv\"  \\\n  --sop-id \"<SOP>\" \\\n  --out    \"/workspaces/SOP_Build/docs/outputs/story/<SOP>/story.json\" \\\n  --log    \"logs/csv_to_story_<SOP>_$(date +%m%d%y_%H%M).log\"", "reminder": "SOP_mk_tw_in_READY_122925_2242.csv", "notes": "If csv_to_story complains about missing Codes/Next fields/Start_Here, go back to ENH_UPD and fix.", "phase": "", "done": false, "runs": []}, {"id": "SOP_Build–validate_story.json", "order": 15, "title": "SOP_Build–validate_story.json (validate_story_v1a.py)", "command": "python src/python/validate_story_v1a.py \\\n  --story \"/workspaces/SOP_Build/docs/outputs/story/<SOP>/story.json\"", "reminder": "", "notes": "This catches structural issues and suspicious narration text. If warnings: fix ENH_UPD and regenerate.", "phase": "", "done": false, "runs": []}, {"id": "SOP_Build_Create_Player", "order": 16, "title": "SOP_Build – build player from story.json (build_player.py)", "command": "python src/python/build_player.py \\\n  --story    \"/workspaces/SOP_Build/docs/outputs/story/<SOP>/story.json\" \\\n  --out      \"/workspaces/SOP_Build/docs/outputs/players/<SOP>_player.html\" \\\n  --template \"/workspaces/SOP_Build/src/templates/sop_player.html\" \\\n  --log      \"logs/build_player_<ENT>_<SOP>_$(date +%m%d%y_%H%M).log\"", "reminder": "", "notes": "Local 8080 test should request images like /outputs/images/StartUp/S000.png (or normalized relative paths).", "phase": "", "done": false, "runs": []}, {"id": "Test_local_web", "order": 17, "title": "SOP_Build_open 8080 port to test player", "command": "cd docs \npython -m http.server 8080", "reminder": "", "notes": "ensure to test faq quiz and the transition through the various paths ", "phase": "", "done": false, "runs": []}, {"id": "SOP_Build–export", "order": 18, "title": "SOP_Build – export one SOP bundle for Stage (zip)", "command": "cd /workspaces/SOP_Build\nbash /workspaces/SOP_Build/scripts/export_one_sop_bundle_v1_0.sh StartUp\nls -lt rep_new | head", "reminder": "", "notes": "", "phase": "", "done": false, "runs": []}, {"id": "SOP_Stage-clearOld", "order": 19, "title": "SOP_Stage-park_old_zips", "command": "from repo home \n/workspaces/SOP_Stage/scripts/park_old_zips.sh ", "reminder": "old zip files in the rep_new folder from previous player versions", "notes": " park_old_zips.sh\n# Version: v1a_subi_20251227 (America/New_York)\n# Owner: Subi\n# Purpose: Park old import bundles (zip files) from rep_new/ into rep_new/Prev_import/<timestamp>/", "phase": "", "done": false, "runs": []}, {"id": "SOP_Stage-Import", "order": 20, "title": "SOP_Stage Import zip file using GUI interface", "command": "upload to rep_new/.", "reminder": "", "notes": "", "phase": "", "done": false, "runs": []}, {"id": "SOP_Stage–import", "order": 21, "title": "SOP_Stage – import one SOP bundle (no wipe; keeps other SOPs)", "command": "cd /workspaces/SOP_Stage\nbash /workspaces/SOP_Stage/scripts/import_one_sop_bundle_v1_0.sh \\\n  \"/workspaces/SOP_Stage/rep_new/SOPB_<ENT>_<SOP>_for_STAGE_YYYYMMDD_HHMM.zip\"", "reminder": "", "notes": "This should update ONLY this SOP’s folders under docs/outputs/... leaving other SOPs (like LineEnt2) intact.", "phase": "", "done": false, "runs": []}, {"id": "SOP_Stage-edit_landing", "order": 22, "title": "SOP_Stage – wire landing page menu entry", "command": "", "reminder": "index.html location of new player and faq and quiz etc", "notes": "Add lines to relect the correct entity and sub entity of the new Player \n\n<li>\n              <strong>StartUp – Generator Startup Service Processing</strong><br />\n              <small>Generator Startup Service SOP interactive player.</small><br />\n              <a class=\"btn primary live\" href=\"outputs/players/StartUp_player.html\">Open</a>\n            </li>", "phase": "", "done": false, "runs": []}, {"id": "SOP_Stage_loadPort", "order": 23, "title": "Time to test locally for all functions using 8080", "command": "cd docs \npython -m http.server 8080", "reminder": "", "notes": "", "phase": "", "done": false, "runs": []}, {"id": "SOP_Stage_Test_local_web", "order": 24, "title": "Test the player to ensure the images load and the faq and quiz work", "command": "on browser opened from port screen", "reminder": "", "notes": "", "phase": "", "done": false, "runs": []}, {"id": "SOP_Stage-Publish", "order": 25, "title": "Add the various files and folder to the git and push", "command": "cd /workspaces/SOP_Stage/docs\n\n# Stage EXACT web-served artifacts (avoid 'git add .')\ngit add index.html \\\n  \"outputs/players/<SOP>_player.html\" \\\n  \"outputs/images/<SOP>/\" \\\n  \"outputs/story/<SOP>/\" \\\n  \"outputs/faq/<ENT>_<SOP>_faq.html\" \\\n  \"outputs/quiz/<ENT>_<SOP>_quiz.html\"\n\ngit status\ngit commit -m \"Publish StartUp outputs\"\ngit push", "reminder": "", "notes": "", "phase": "", "done": false, "runs": []}, {"id": "SOP_Stage_Web", "order": 26, "title": "Test the player on the web using the links provided", "command": "https://srajagopalan1204.github.io/SOP_Stage/\n\nhttps://srajagopalan1204.github.io/SOP_Stage/outputs/players/<SOP>_player.html", "reminder": "", "notes": "", "phase": "", "done": false, "runs": []}]
+    []
+
+  What v9 attempts to fix:
+  - Robust steps injection from Excel (5..50+ steps)
+  - Safe JSON embedding to prevent JS syntax errors
+  - Apply SOP Info shows substitutions immediately (v8a behavior)
+  - Keeps Enhancements & Notes + Export log sections (best of both worlds)
+-->
+
+<style>
+  :root{
+    --bg:#f7f7fb;
+    --card:#fff;
+    --text:#111;
+    --muted:#6b7280;
+    --line:#e5e7eb;
+    --brand:#0b5fff;
+    --brand-ink:#fff;
+    --radius:14px;
+    --shadow:0 6px 24px rgba(0,0,0,.06);
+    --maxw:1200px;
+    --mono: ui-monospace, SFMono-Regular, Consolas, monospace;
+  }
+  body{margin:0;background:var(--bg);color:var(--text);font:15px/1.45 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;}
+  header{position:sticky;top:0;left:0;right:0;background:rgba(255,255,255,.95);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line);box-shadow:0 6px 18px rgba(0,0,0,.05);z-index:10;}
+  .bar{max-width:var(--maxw);margin:0 auto;padding:12px 16px;display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;justify-content:space-between;}
+  .bar-left{display:flex;flex-direction:column;gap:4px;min-width:0;}
+  .bar-title{font-size:15px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .bar-sub{font-size:12px;color:var(--muted);}
+  .bar-actions{display:flex;flex-wrap:wrap;gap:6px;align-items:center;}
+  button{border-radius:999px;border:1px solid var(--line);background:#fff;padding:6px 12px;font-size:13px;cursor:pointer;}
+  button.brand{background:var(--brand);color:var(--brand-ink);border-color:var(--brand);}
+  button.small{padding:4px 10px;font-size:12px;}
+  main{max-width:var(--maxw);margin:12px auto 24px;padding:0 16px 24px;display:flex;flex-direction:column;gap:16px;}
+  section.card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px 20px;}
+  section.card h2{font-size:15px;font-weight:600;margin:0 0 6px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+  .tagver{font-size:12px;font-weight:600;color:#0f172a;background:#eef2ff;border:1px solid #c7d2fe;padding:3px 10px;border-radius:999px;}
+  p{margin:6px 0 12px;}
+  .badge{font-size:12px;color:var(--muted);background:#f9fafb;border:1px solid var(--line);padding:3px 10px;border-radius:999px;}
+  .meta-grid{display:grid;grid-template-columns: repeat(2, minmax(0, 1fr));gap:12px;margin-top:10px;}
+  .meta-block label{display:block;font-size:12px;color:var(--muted);margin-bottom:4px;}
+  .meta-block input{width:100%;border:1px solid var(--line);border-radius:10px;padding:8px 10px;font-size:14px;box-sizing:border-box;}
+  .meta-actions{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;}
+  .meta-actions .mini{color:var(--muted);font-size:12px;}
+
+  .steps-wrap{display:flex;flex-direction:column;gap:12px;}
+  .step{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;}
+  .step-top{padding:10px 12px;display:flex;flex-wrap:wrap;gap:8px 10px;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:#fafafa;}
+  .step-title{font-size:14px;font-weight:600;}
+  .step-meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center;}
+  .pill{font-size:11px;color:var(--muted);border:1px solid var(--line);background:#fff;padding:2px 8px;border-radius:999px;}
+  .pill.ok{border-color:#86efac;background:#f0fdf4;color:#166534;}
+  .pill.warn{border-color:#fde68a;background:#fffbeb;color:#92400e;}
+  .step-body{padding:12px;display:grid;grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);gap:12px;}
+  .cmdlabel{font-size:12px;color:var(--muted);margin-bottom:6px;}
+  textarea, pre{width:100%;min-height:92px;font-family:var(--mono);font-size:12px;background:#f9fafb;border:1px solid var(--line);border-radius:10px;padding:8px 10px;box-sizing:border-box;resize:vertical;white-space:pre-wrap;}
+  .step-actions{margin-top:8px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;}
+  .smallnote{font-size:12px;color:var(--muted);}
+  .runs{border-top:1px dashed var(--line);margin-top:10px;padding-top:10px;}
+  .runrow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:6px 0;}
+  .runrow input{border:1px solid var(--line);border-radius:10px;padding:6px 8px;font-size:12px;}
+  .runrow .kind{font-size:11px;color:var(--muted);}
+
+  .enh-list{border:1px solid var(--line);border-radius:10px;padding:10px;background:#f9fafb;max-height:240px;overflow:auto;}
+  .enh-item{padding:8px 8px;border-radius:10px;border:1px solid #e5e7eb;background:#fff;margin-bottom:8px;}
+  .enh-item:last-child{margin-bottom:0;}
+  .enh-top{display:flex;flex-wrap:wrap;gap:8px 10px;align-items:center;justify-content:space-between;}
+  .enh-main{font-weight:600;font-size:13px;}
+  .enh-ts{font-size:11px;color:var(--muted);}
+  .enh-cat{font-size:11px;color:#1d4ed8;background:#eef2ff;border:1px solid #c7d2fe;padding:2px 8px;border-radius:999px;}
+  .enh-notes{font-size:12px;color:#111;margin-top:6px;white-space:pre-wrap;}
+  .export-wrap{margin-top:16px;}
+  textarea.export-area{width:100%;min-height:160px;font-family:var(--mono);font-size:12px;background:#f9fafb;border:1px solid var(--line);border-radius:8px;padding:8px 10px;resize:vertical;box-sizing:border-box;}
+  .prog-wrap{padding:0 16px 12px;border-top:1px solid var(--line);margin-top:10px;display:flex;flex-direction:column;gap:6px;}
+  .prog-topline{font-size:12px;font-weight:500;}
+  .prog-bar{width:100%;height:6px;border-radius:999px;background:#e5e7eb;overflow:hidden;}
+  .prog-fill{height:100%;width:0%;background:linear-gradient(90deg,#0b5fff,#22c55e);transition:width .2s ease-out;}
+  .prog-mini{font-size:11px;color:var(--muted);}
+  #noticeBar{display:none;max-width:var(--maxw);margin:10px auto 0;padding:10px 16px;border:1px solid #c7d2fe;background:#eef2ff;border-radius:12px;color:#1e3a8a;box-shadow:var(--shadow);}
+
+  @media (max-width:900px){.step-body{grid-template-columns:1fr;}.meta-grid{grid-template-columns:1fr;}}
+  @media (max-width:640px){main{padding:0 10px 20px;}.bar{padding:10px 10px;}}
+</style>
+
+<header>
+  <div class="bar">
+    <div class="bar-left">
+      <div class="bar-title" id="headerTitle">SOP Build Checklist</div>
+      <div class="bar-sub">
+        Tracks retries, timestamps each attempt, and keeps a local log. Data stays in this browser (localStorage).
+      </div>
+    </div>
+    <div class="bar-actions">
+      <button class="small" onclick="saveState()">Save State</button>
+      <button class="small" onclick="loadState()">Load State</button>
+      <button class="small" onclick="resetEverything()">Reset</button>
+      <button class="small" onclick="exportText()">Export Text</button>
+      <button class="small" onclick="downloadExportText()">Download .txt</button>
+      <button class="small" onclick="exportStateJson()">Export JSON</button>
+      <button class="small" onclick="triggerImportJson()">Import JSON</button>
+      <input id="importJsonFile" type="file" accept="application/json" style="display:none" onchange="handleImportJsonFile(event)" />
+      <span id="autosavePill" class="pill ok" style="display:none">Autosaved</span>
+    </div>
+  </div>
+</header>
+
+<div id="noticeBar"></div>
+
+<main>
+  <section class="card">
+    <h2>
+      SOP Setup &amp; Info
+      <span class="tagver" id="taglinePill"></span>
+    </h2>
+    <p>
+      Fill SOP Name / ID / Entity / Run label so exports &amp; logs carry the correct context.
+      Click <strong>Apply SOP Info</strong> once and then use <strong>Save State</strong> after each working session.
+    </p>
+
+    <div class="meta-grid">
+      <div class="meta-block" id="field_SOP_NAME">
+        <label for="sopName">SOP Name (friendly)</label>
+        <input id="sopName" placeholder="SOP Friendly Name" />
+      </div>
+      <div class="meta-block" id="field_SOP_ID">
+        <label for="sopId">SOP ID (no spaces/underscores)</label>
+        <input id="sopId" placeholder="SOPID" />
+      </div>
+      <div class="meta-block" id="field_META_ENTITY">
+        <label for="sopEntity">Entity (example: SE/Distro/Sales)</label>
+        <input id="sopEntity" placeholder="SE/Distro/Sales" />
+      </div>
+      
+      <div class="meta-block" id="field_META_ENTITY_CODE">
+        <label for="entityCode">Entity Code (example: PALCO)</label>
+        <input id="entityCode" placeholder="PALCO" />
+      </div>
+      <div class="meta-block" id="field_META_ENT_CODE">
+        <label for="entCode">ENT Code (example: PPS)</label>
+        <input id="entCode" placeholder="PPS" />
+      </div>
+<div class="meta-block" id="field_RUN_LABEL_DEFAULT">
+        <label for="runLabel">Run label (short)</label>
+        <input id="runLabel" placeholder="Run label" />
+      </div>
+      <div class="meta-block" id="field_META_REPO">
+        <label for="metaRepo">Repo path (Codespaces)</label>
+        <input id="metaRepo" placeholder="/workspaces/SOP_Build" />
+      </div>
+      <div class="meta-block" id="field_META_WEBROOT">
+        <label for="webRoot">WebRoot repo (publish target)</label>
+        <input id="webRoot" placeholder="/SOP_Stage" />
+      </div>
+      <div class="meta-block" id="field_META_IMG_FOLDER_DEF">
+        <label for="sopImgFolder">ImgFolder (player expects)</label>
+        <input id="sopImgFolder" placeholder="../images/<SOP_ID>/" />
+      </div>
+      <div class="meta-block" id="field_TEMPLATE_TAG">
+        <label for="templateTag">TemplateTag (free text)</label>
+        <input id="templateTag" placeholder="v9 – excel injected + robust json + v8a sections" />
+      </div>
+    </div>
+
+    <div class="meta-actions">
+      <button class="brand" onclick="applySOPInfo()">Apply SOP Info</button>
+      <div class="mini">
+        Tip: after Apply, each step’s command text gets <code>&lt;SOP_ID&gt;</code> and <code>&lt;TS&gt;</code> replaced (shown in the UI).
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>
+      Build Steps (this run)
+      <span class="badge"><strong>Rule:</strong> don’t hand-edit story.json; fix ENH_UPD/READY and regenerate.</span>
+    </h2>
+
+    <div class="steps-wrap" id="stepsWrap"></div>
+
+    <div class="prog-wrap">
+      <div class="prog-topline"><strong>Progress</strong>: <span id="progText">0%</span></div>
+      <div class="prog-bar"><div class="prog-fill" id="progFill"></div></div>
+      <div class="prog-mini" id="progMini">0 of 0 steps marked done</div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>
+      Enhancements &amp; Notes
+      <span class="badge"><strong>Category:</strong> Enhancement, Challenges faced, New program Dev.</span>
+    </h2>
+    <p>
+      Log ideas for future enhancement, challenges you faced, and notes about new scripts/programs for this SOP.
+      Each note is timestamped and included in Export Text.
+    </p>
+
+    <div style="display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1.1fr);gap:12px;">
+      <div>
+        <label for="enhMain">Main point (required)</label>
+        <input type="text" id="enhMain" placeholder="Stage publish failed because images weren’t committed"
+               style="width:100%;border:1px solid var(--line);border-radius:10px;padding:8px 10px;font-size:14px;" />
+
+        <label for="enhCategory" style="display:block;margin-top:10px;font-size:12px;color:var(--muted);">Category</label>
+        <select id="enhCategory" style="width:100%;border:1px solid var(--line);border-radius:10px;padding:8px 10px;font-size:14px;">
+          <option value="Enhancement">Enhancement</option>
+          <option value="Challenges faced">Challenges faced</option>
+          <option value="New program Dev">New program Dev</option>
+        </select>
+
+        <label for="enhNotes" style="display:block;margin-top:10px;font-size:12px;color:var(--muted);">Notes / details (optional)</label>
+        <textarea id="enhNotes" placeholder="Reminder: in SOP_Stage run git add docs/outputs/images/<SOP_ID>/ ..."></textarea>
+
+        <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap;">
+          <button type="button" class="small brand" onclick="addEnhancement()">Add entry</button>
+          <button type="button" class="small" onclick="clearEnhFields()">Clear fields</button>
+        </div>
+      </div>
+
+      <div>
+        <div class="cmdlabel">Enhancements / notes so far</div>
+        <div id="enhList" class="enh-list"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>
+      Export log (text)
+      <span class="badge"><strong>Tip:</strong> paste into SOP doc / project notes.</span>
+    </h2>
+    <p>
+      Use <strong>Export Text</strong> (top right) after a run to produce a consolidated log:
+      SOP header, each step’s run history, and the enhancements log.
+    </p>
+    <div class="export-wrap">
+      <textarea id="exportArea" class="export-area" placeholder="Click 'Export Text' in the header to populate this area."></textarea>
+    </div>
+  </section>
+</main>
+
+<script>
+/* =========================
+   Injected data (from builder)
+   ========================= */
+let sopInfo = {"pageTitle": "<SOP> - SOP_Build- Checklist", "headerTitleVisible": "<SOP>_SOP_Build", "name": "https://srajagopalan1204.github.io/SOP_Stage/players/", "id": "<SOP>", "entity": "<ENTITY>/<SUBENTITY>/<SUBGRP>", "runLabel": "<SOP>", "repo": "/workspaces/SOP_Build", "webRoot": "https://srajagopalan1204.github.io/SOP_Stage/", "imgFolder": "../images/<SOP>/", "templateTag": "v9.2", "entityCode": "<ENTITY>", "entCode": "<ENT>", "faqLocation": "../faq", "quizLocation": "../quiz"};
+let steps = [{"id": "Standardize Slide", "order": 1, "title": "Standardize the master Slide", "command": "PPt Excel", "reminder": "PPT  of SOP and Excel of steps in OPM's", "notes": "Inputs: Rough process from SME.\nHints: Use S000 for the opening slide; keep title/subtitle clean for narration later.", "phase": "", "done": false, "runs": []}, {"id": "Build_Int_Thnk", "order": 2, "title": "Build into and thank you slides", "command": "PPt Excel", "reminder": "Entity specific Intro , Training Intro , Slide of WorkFlow", "notes": "These slides are created for each entity and specific sub entity so Palco (PPS) Service or Palco PPS Sales or SE Distro OPS SE Distro Sales etc ", "phase": "", "done": false, "runs": []}, {"id": "Master_final", "order": 3, "title": "Ensure Master is ready", "command": "PPt Excel", "reminder": "Standardized (structurally)", "notes": "", "phase": "", "done": false, "runs": []}, {"id": "Trans_deck", "order": 4, "title": "Create the PPT Translation Deck", "command": "Build the full transition deck PPT with:\n - S000 intro\n - decision nodes (D1, D2, ...)\n - yes/no branches (Y1, N1, ...)\n - path-end slides (S998 as needed 998a ) and final S999 completion slide", "reminder": "master Final", "notes": "Hints: Each decision code must be unique. Ensure every branch ultimately terminates at S999 (or a clear terminal node that links back via player UI).", "phase": "", "done": false, "runs": []}, {"id": "VeriFy_Slide", "order": 5, "title": "Verify the slide deck to ensure the slides can extracted the slide numbers are unique", "command": "powershell -ExecutionPolicy Bypass -File \"C:\\Users\\scottuser\\Documents\\SonetLumier\\Code\\verify_slide_v1a.ps1\" `\n  -Path \"C:\\Users\\scottuser\\Documents\\SonetLumier\\WIP\\<ENT>\\<ENT>_<SOP>\\<ENT>_<SOP>_YYMMDD_HHMM.pptx\" `\n  -Out  \"C:\\Users\\scottuser\\Documents\\SonetLumier\\Logs\\verify_<ENT>_<SOP>_$(Get-Date -f 'MMddyy_HHmm').txt\"", "reminder": "Full Deck for the SOP ", "notes": "powershell -ExecutionPolicy Bypass -File \"C:\\Users\\scottuser\\Documents\\SonetLumier\\Code\\verify_slide_v1a.ps1\" `\n  -Path \"C:\\Users\\scottuser\\Documents\\SonetLumier\\WIP\\PPS\\PPS_StartUp\\PPS_Service_StrtUp_251228_1147.pptx\" `\n  -Out  \"C:\\Users\\scottuser\\Documents\\SonetLumier\\Logs\\verify_StartUp_$(Get-Date -f 'MMddyy_HHmm').txt\"", "phase": "", "done": false, "runs": []}, {"id": "Extract_Slide", "order": 6, "title": "Extract the slides to create individual images and CSV", "command": "powershell -ExecutionPolicy Bypass -File \"C:\\Users\\scottuser\\Documents\\SonetLumier\\Code\\exp_slide_n_csv_v2.0.ps1\" `\n  -Path \"C:\\Users\\scottuser\\Documents\\SonetLumier\\WIP\\<ENT>\\<ENT>_<SOP>\\<ENT>_<SOP>_251228_1147.pptx\" `\n  -OutDir    \"C:\\Users\\scottuser\\Documents\\SonetLumier\\images\\<SOP>\" `\n  -OutMapDir \"C:\\Users\\scottuser\\Documents\\SonetLumier\\Slide_Map\" `\n  -Sop       \"<SOP>\" `\n  -Width     1600", "reminder": "verified slide deck ", "notes": "watch the terminal during extraction to ensure this program also found all the slides and the slide number assgined to the image is what was expected", "phase": "", "done": false, "runs": []}, {"id": "Verify the raw file", "order": 7, "title": "Key to ensuring what you saw on the terminal was represented in the csv file", "command": "excel", "reminder": "C:\\Users\\scottuser\\Documents\\SonetLumier\\Slide_Map", "notes": "", "phase": "", "done": false, "runs": []}, {"id": "Add_Column", "order": 8, "title": "add READY columns (READYBASE)", "command": "powershell -ExecutionPolicy Bypass -File \"C:\\Users\\scottuser\\Documents\\SonetLumier\\Code\\raw_add_ready_cols.ps1\" `\n  -In \"C:\\Users\\scottuser\\Documents\\SonetLumier\\Slide_Map\\<ENT>_<SOP>_map_YYYYMMDD_HHMM.csv\"", "reminder": "", "notes": "", "phase": "", "done": false, "runs": []}, {"id": "Desc_Narr_fill", "order": 9, "title": "fill Desc + Narr (READYBASE_ENH)", "command": "powershell -ExecutionPolicy Bypass -File \"C:\\Users\\scottuser\\Documents\\SonetLumier\\Code\\raw_fill_desc_and_narr.ps1\" `\n  -In  \"C:\\Users\\scottuser\\Documents\\SonetLumier\\Slide_Map\\StartUp_map_20251229_1104_READYBASE.csv\" `\n  -Out \"C:\\Users\\scottuser\\Documents\\SonetLumier\\Slide_Map\\StartUp_map_20251229_1104_READYBASE_ENH.csv\"", "reminder": "Readybase file ", "notes": "This produces the single source-of-truth READY CSV for story creation.", "phase": "", "done": false, "runs": []}, {"id": "ENH_ENR_UPD", "order": 10, "title": "manual enrich (UAP + FAQ/Quiz + end-of-path)", "command": "In Excel:\n - add UAP columns (uap_url/uap_label as needed)\n - set FAQ_Loc/FAQ_File/FAQ_Label (typically across all slides)\n - set Quiz_* fields (usually ONLY on S999)\n - add end-of-path / terminal transitions (ensure Next codes are correct)\nSave as:\n  StartUp_Raw_MMDDYY_HHMM_READYBASE_ENH_UPD.csv", "reminder": "need READYBASE_ENH", "notes": "Fix bad paths NOW. If a slide references an image that doesn’t exist under docs/outputs/images/StartUp, either rename PNG or update Image_sub_url in ENH_UPD and rebuild.", "phase": "", "done": false, "runs": []}, {"id": "Create_FAQ_Quiz", "order": 11, "title": "Create FAQ and Quiz files", "command": "upload files to chat gpt ", "reminder": "Single slide with the master for that process and the narration above", "notes": "", "phase": "", "done": false, "runs": []}, {"id": "SOP_Build_ENH_UPDr", "order": 12, "title": "This ste is the first in the next phase of building the player", "command": "python src/python/enh_upd_to_ready.py \\\n  --csv \"/workspaces/SOP_Build/inputs/raw/StartUp_map_20251229_1104_READYBASE_ENH_UPD.csv\" \\\n  --out \"outputs/build_in/StartUp_mk_tw_in_READY_$(date +%m%d%y_%H%M).csv\"", "reminder": "", "notes": "", "phase": "", "done": false, "runs": []}, {"id": "SOP_Build – validate", "order": 13, "title": "SOP_Build – validate images and environment (validate_env_sop_build.py)", "command": "python src/python/validate_env_sop_build.py \\\n  --csv    \"/workspaces/SOP_Build/outputs/build_in/StartUp_mk_tw_in_READY_122925_2242.csv\" \\\n  --images \"/workspaces/SOP_Build/docs/outputs/images/StartUp\" \\\n  --log    \"/workspaces/SOP_Build/logs/StartUp_validate_MMDDYY_HHMM.log\"", "reminder": "outputs/build_in/StartUp_mk_tw_in_READY_$(date +%m%d%y_%H%M).csv", "notes": "Fix bad paths NOW. If a slide references an image that doesn’t exist under docs/outputs/images/StartUp, either rename PNG or update Image_sub_url in ENH_UPD and rebuild.", "phase": "", "done": false, "runs": []}, {"id": "SOP_Build – create_story.json", "order": 14, "title": "SOP_Build – create story.json for this SOP (csv_to_story.py)", "command": "python src/python/csv_to_story.py \\\n  --csv    \"/workspaces/SOP_Build/outputs/build_in/<ENT>_<SOP>_mk_tw_in_READY_YYYYMMDD_HHMM.csv\"  \\\n  --sop-id \"<SOP>\" \\\n  --out    \"/workspaces/SOP_Build/docs/outputs/story/<SOP>/story.json\" \\\n  --log    \"logs/csv_to_story_<SOP>_$(date +%m%d%y_%H%M).log\"", "reminder": "SOP_mk_tw_in_READY_122925_2242.csv", "notes": "If csv_to_story complains about missing Codes/Next fields/Start_Here, go back to ENH_UPD and fix.", "phase": "", "done": false, "runs": []}, {"id": "SOP_Build–validate_story.json", "order": 15, "title": "SOP_Build–validate_story.json (validate_story_v1a.py)", "command": "python src/python/validate_story_v1a.py \\\n  --story \"/workspaces/SOP_Build/docs/outputs/story/<SOP>/story.json\"", "reminder": "", "notes": "This catches structural issues and suspicious narration text. If warnings: fix ENH_UPD and regenerate.", "phase": "", "done": false, "runs": []}, {"id": "SOP_Build_Create_Player", "order": 16, "title": "SOP_Build – build player from story.json (build_player.py)", "command": "python src/python/build_player.py \\\n  --story    \"/workspaces/SOP_Build/docs/outputs/story/<SOP>/story.json\" \\\n  --out      \"/workspaces/SOP_Build/docs/outputs/players/<SOP>_player.html\" \\\n  --template \"/workspaces/SOP_Build/src/templates/sop_player.html\" \\\n  --log      \"logs/build_player_<ENT>_<SOP>_$(date +%m%d%y_%H%M).log\"", "reminder": "", "notes": "Local 8080 test should request images like /outputs/images/StartUp/S000.png (or normalized relative paths).", "phase": "", "done": false, "runs": []}, {"id": "Test_local_web", "order": 17, "title": "SOP_Build_open 8080 port to test player", "command": "cd docs \npython -m http.server 8080", "reminder": "", "notes": "ensure to test faq quiz and the transition through the various paths ", "phase": "", "done": false, "runs": []}, {"id": "SOP_Build–export", "order": 18, "title": "SOP_Build – export one SOP bundle for Stage (zip)", "command": "cd /workspaces/SOP_Build\nbash /workspaces/SOP_Build/scripts/export_one_sop_bundle_v1_0.sh StartUp\nls -lt rep_new | head", "reminder": "", "notes": "", "phase": "", "done": false, "runs": []}, {"id": "SOP_Stage-clearOld", "order": 19, "title": "SOP_Stage-park_old_zips", "command": "from repo home \n/workspaces/SOP_Stage/scripts/park_old_zips.sh ", "reminder": "old zip files in the rep_new folder from previous player versions", "notes": " park_old_zips.sh\n# Version: v1a_subi_20251227 (America/New_York)\n# Owner: Subi\n# Purpose: Park old import bundles (zip files) from rep_new/ into rep_new/Prev_import/<timestamp>/", "phase": "", "done": false, "runs": []}, {"id": "SOP_Stage-Import", "order": 20, "title": "SOP_Stage Import zip file using GUI interface", "command": "upload to rep_new/.", "reminder": "", "notes": "", "phase": "", "done": false, "runs": []}, {"id": "SOP_Stage–import", "order": 21, "title": "SOP_Stage – import one SOP bundle (no wipe; keeps other SOPs)", "command": "cd /workspaces/SOP_Stage\nbash /workspaces/SOP_Stage/scripts/import_one_sop_bundle_v1_0.sh \\\n  \"/workspaces/SOP_Stage/rep_new/SOPB_<ENT>_<SOP>_for_STAGE_YYYYMMDD_HHMM.zip\"", "reminder": "", "notes": "This should update ONLY this SOP’s folders under docs/outputs/... leaving other SOPs (like LineEnt2) intact.", "phase": "", "done": false, "runs": []}, {"id": "SOP_Stage-edit_landing", "order": 22, "title": "SOP_Stage – wire landing page menu entry", "command": "", "reminder": "index.html location of new player and faq and quiz etc", "notes": "Add lines to relect the correct entity and sub entity of the new Player \n\n<li>\n              <strong>StartUp – Generator Startup Service Processing</strong><br />\n              <small>Generator Startup Service SOP interactive player.</small><br />\n              <a class=\"btn primary live\" href=\"outputs/players/StartUp_player.html\">Open</a>\n            </li>", "phase": "", "done": false, "runs": []}, {"id": "SOP_Stage_loadPort", "order": 23, "title": "Time to test locally for all functions using 8080", "command": "cd docs \npython -m http.server 8080", "reminder": "", "notes": "", "phase": "", "done": false, "runs": []}, {"id": "SOP_Stage_Test_local_web", "order": 24, "title": "Test the player to ensure the images load and the faq and quiz work", "command": "on browser opened from port screen", "reminder": "", "notes": "", "phase": "", "done": false, "runs": []}, {"id": "SOP_Stage-Publish", "order": 25, "title": "Add the various files and folder to the git and push", "command": "cd /workspaces/SOP_Stage/docs\n\n# Stage EXACT web-served artifacts (avoid 'git add .')\ngit add index.html \\\n  \"outputs/players/<SOP>_player.html\" \\\n  \"outputs/images/<SOP>/\" \\\n  \"outputs/story/<SOP>/\" \\\n  \"outputs/faq/<ENT>_<SOP>_faq.html\" \\\n  \"outputs/quiz/<ENT>_<SOP>_quiz.html\"\n\ngit status\ngit commit -m \"Publish StartUp outputs\"\ngit push", "reminder": "", "notes": "", "phase": "", "done": false, "runs": []}, {"id": "SOP_Stage_Web", "order": 26, "title": "Test the player on the web using the links provided", "command": "https://srajagopalan1204.github.io/SOP_Stage/\n\nhttps://srajagopalan1204.github.io/SOP_Stage/outputs/players/<SOP>_player.html", "reminder": "", "notes": "", "phase": "", "done": false, "runs": []}];
+let suppressedHeaderKeys = [];
+
+/* =========================
+   State models
+   ========================= */
+/* let enhancements = []; previous command replaced 01012026 sr*/
+let enhancements = [];
+
+/* =========================
+   Utilities
+   ========================= */
+const STORAGE_KEY_BASE = "SOP_BUILD_CHECKLIST_V9_STATE";
+
+function nowStamp(){
+  const d = new Date();
+  const pad = (n)=>String(n).padStart(2,"0");
+  return `${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}_${pad(d.getHours())}${pad(d.getMinutes())}`;
+}
+function safeId(s){ return String(s || "").replace(/[^a-zA-Z0-9_\-]/g,"_"); }
+
+function getStorageKey(){
+  const id = (sopInfo && sopInfo.id) ? String(sopInfo.id).trim() : "";
+  return id ? `${STORAGE_KEY_BASE}__${id}` : STORAGE_KEY_BASE;
+}
+
+function flashNotice(msg){
+  const el = document.getElementById("noticeBar");
+  if(!el) return;
+  el.textContent = msg;
+  el.style.display = "block";
+  clearTimeout(window.__t);
+  window.__t = setTimeout(()=>{ el.style.display="none"; }, 1400);
+}
+
+function substitute(text){
+  let t = String(text || "");
+  const ts = nowStamp();
+
+  // Primary tokens (new standard)
+  t = t.replaceAll("<SOP_ID>", sopInfo.id || "");
+  t = t.replaceAll("<SOP_NAME>", sopInfo.name || "");
+  t = t.replaceAll("<ENTITY>", sopInfo.entity || "");          // full path (e.g., PPS/Service/Rental)
+  t = t.replaceAll("<RUN_LABEL>", sopInfo.runLabel || "");
+  t = t.replaceAll("<REPO>", sopInfo.repo || "");
+  t = t.replaceAll("<WEBROOT>", sopInfo.webRoot || "");
+  t = t.replaceAll("<IMG_FOLDER>", sopInfo.imgFolder || "");
+  t = t.replaceAll("<TS>", ts);
+
+  // Back-compat SOP tokens (older Excel templates)
+  t = t.replaceAll("<SOP>", sopInfo.id || "");
+  t = t.replaceAll("<sop>", sopInfo.id || "");
+
+  // Dual entity codes
+  // <Entity> = entity code (e.g., PALCO)
+  // <ENT>    = short code (e.g., PPS)
+  t = t.replaceAll("<Entity>", sopInfo.entityCode || "");
+  t = t.replaceAll("<entity>", sopInfo.entityCode || "");
+  t = t.replaceAll("<ENT>", sopInfo.entCode || "");
+  t = t.replaceAll("<ent>", sopInfo.entCode || "");
+
+  // Path-safe helper for folder names derived from full <ENTITY>
+  const entityPath = (sopInfo.entity || "").replace(/[\/\\]/g, "_").replace(/\s+/g, "_");
+  t = t.replaceAll("<ENTITY_PATH>", entityPath);
+
+  const sopPath = (sopInfo.id || "").replace(/\s+/g, "_");
+  t = t.replaceAll("<SOP_PATH>", sopPath);
+
+  return t;
+}
+
+/* =========================
+   Suppress header fields (from Excel Header.suppress)
+   ========================= */
+function applySuppressedHeaderFields(){
+  const map = {
+    "META_REPO": "field_META_REPO",
+    "META_WEBROOT": "field_META_WEBROOT",
+    "META_ENTITY": "field_META_ENTITY",
+    "META_ENTITY_CODE": "field_META_ENTITY_CODE",
+    "META_ENT_CODE": "field_META_ENT_CODE",
+    "RUN_LABEL_DEFAULT": "field_RUN_LABEL_DEFAULT",
+    "META_IMG_FOLDER_DEF": "field_META_IMG_FOLDER_DEF",
+    "TEMPLATE_TAG": "field_TEMPLATE_TAG",
+    "SOP_NAME": "field_SOP_NAME",
+    "SOP_ID": "field_SOP_ID",
+  };
+  (suppressedHeaderKeys || []).forEach(k=>{
+    const id = map[k];
+    if(!id) return;
+    const el = document.getElementById(id);
+    if(el) el.style.display = "none";
+  });
+}
+
+/* =========================
+   SOP Apply (v8a style)
+   ========================= */
+function populateSOPFieldsFromState(){
+  const setVal = (id, v)=>{
+    const el = document.getElementById(id);
+    if(el) el.value = (v ?? "");
+  };
+  setVal("sopName", sopInfo.name || "");
+  setVal("sopId", sopInfo.id || "");
+  setVal("sopEntity", sopInfo.entity || "");
+  setVal("entityCode", sopInfo.entityCode || "");
+  setVal("entCode", sopInfo.entCode || "");
+  setVal("runLabel", sopInfo.runLabel || "");
+  setVal("metaRepo", sopInfo.repo || "/workspaces/SOP_Build");
+  setVal("webRoot", sopInfo.webRoot || "/SOP_Stage");
+  setVal("sopImgFolder", sopInfo.imgFolder || "");
+  setVal("templateTag", sopInfo.templateTag || "v9.2");
+
+  const pill = document.getElementById("taglinePill");
+  if(pill) pill.textContent = substitute(sopInfo.templateTag || "v9.2");
+
+  const ht = document.getElementById("headerTitle");
+  if(ht){
+    const visible = sopInfo.headerTitleVisible || sopInfo.pageTitle || "SOP Build Checklist";
+    ht.textContent = substitute(visible);
+  }
+}
+
+function applySOPInfo(){
+  try{
+    const v = (id)=> (document.getElementById(id)?.value || "").trim();
+    sopInfo.name = v("sopName");
+    sopInfo.id = v("sopId");
+    sopInfo.entity = v("sopEntity");
+
+    // NEW: dual entity codes
+    sopInfo.entityCode = v("entityCode") || sopInfo.entityCode;
+    sopInfo.entCode    = v("entCode")    || sopInfo.entCode;
+
+    sopInfo.runLabel = v("runLabel");
+    sopInfo.repo = v("metaRepo") || sopInfo.repo;
+    sopInfo.webRoot = v("webRoot") || sopInfo.webRoot;
+    sopInfo.imgFolder = v("sopImgFolder") || sopInfo.imgFolder;
+    sopInfo.templateTag = v("templateTag") || sopInfo.templateTag || "v9.2";
+
+    // Update header/title pills immediately (and apply token substitution)
+    const pill = document.getElementById("taglinePill");
+    if(pill) pill.textContent = substitute(sopInfo.templateTag || "v9.2");
+    const ht = document.getElementById("headerTitle");
+    if(ht){
+      const visible = sopInfo.headerTitleVisible || sopInfo.pageTitle || "SOP Build Checklist";
+      ht.textContent = substitute(visible);
+    }
+
+    try{ saveState(true); }catch(e){ console.warn("SaveState failed:", e); }
+    renderSteps();
+    flashNotice("Applied SOP Info.");
+  }catch(e){
+    console.error(e);
+    alert("Apply SOP Info failed. Open Console (F12) for details.");
+  }
+}
+
+/* =========================
+   Step runs
+   ========================= */
+function addRun(idx, kind){
+  const step = steps[idx];
+  if(!step.runs) step.runs = [];
+  step.runs.unshift({
+    ts: nowStamp(),
+    kind: kind || "Run",
+    note: ""
+  });
+  saveState(true);
+  renderSteps();
+}
+function toggleDone(idx){
+  steps[idx].done = !steps[idx].done;
+  saveState(true);
+  renderSteps();
+}
+
+/* =========================
+   Render
+   ========================= */
+function renderSteps(){
+  const wrap = document.getElementById("stepsWrap");
+  wrap.innerHTML = "";
+
+  const total = steps.length;
+  const doneCount = steps.filter(s=>s.done).length;
+
+  // progress
+  const pct = total ? Math.round((doneCount/total)*100) : 0;
+  document.getElementById("progText").textContent = `${pct}%`;
+  document.getElementById("progMini").textContent = `${doneCount} of ${total} steps marked done`;
+  document.getElementById("progFill").style.width = `${pct}%`;
+
+  steps.forEach((s, idx)=>{
+    const outer = document.createElement("div");
+    outer.className = "step";
+
+    const top = document.createElement("div");
+    top.className = "step-top";
+
+    const left = document.createElement("div");
+    left.innerHTML = `<div class="step-title"></div>`;
+    left.querySelector(".step-title").textContent = `${s.order}. ${s.title}`;
+
+    const right = document.createElement("div");
+    right.className = "step-meta";
+    const pill = document.createElement("span");
+    pill.className = "pill " + (s.done ? "ok" : "warn");
+    pill.textContent = s.done ? "Done" : "Open";
+    right.appendChild(pill);
+
+    top.appendChild(left);
+    top.appendChild(right);
+
+    const body = document.createElement("div");
+    body.className = "step-body";
+
+    // command box (shows substituted, but underlying stored is original)
+    const cmdCol = document.createElement("div");
+    cmdCol.innerHTML = `<div class="cmdlabel">Command</div>`;
+    const ta = document.createElement("textarea");
+    ta.value = substitute(s.command || "");
+    ta.onchange = ()=>{
+      // store what user edits (store the raw content they edited, not substituted)
+      s.command = ta.value;
+      saveState(true);
+    };
+    cmdCol.appendChild(ta);
+
+    const actions = document.createElement("div");
+    actions.className = "step-actions";
+    const bDone = document.createElement("button");
+    bDone.className = "small brand";
+    bDone.textContent = s.done ? "Mark Not Done" : "Mark Done";
+    bDone.onclick = ()=>toggleDone(idx);
+
+    const bRun = document.createElement("button");
+    bRun.className = "small";
+    bRun.textContent = "Record Run Timestamp";
+    bRun.onclick = ()=>addRun(idx, "Run");
+
+    actions.appendChild(bDone);
+    actions.appendChild(bRun);
+
+    const small = document.createElement("div");
+    small.className = "smallnote";
+    small.textContent = s.reminder ? `Reminder: ${substitute(s.reminder)}` : "";
+
+    cmdCol.appendChild(actions);
+    if(s.reminder) cmdCol.appendChild(small);
+
+    // notes column
+    const noteCol = document.createElement("div");
+    noteCol.innerHTML = `<div class="cmdlabel">Notes / Hints</div>`;
+    const pre = document.createElement("textarea");
+    pre.value = s.notes || "";
+    pre.onchange = ()=>{
+      s.notes = pre.value;
+      saveState(true);
+    };
+    noteCol.appendChild(pre);
+
+    // runs list
+    const runs = document.createElement("div");
+    runs.className = "runs";
+    const rl = document.createElement("div");
+    rl.className = "cmdlabel";
+    rl.textContent = "Run history";
+    runs.appendChild(rl);
+
+    const arr = s.runs || [];
+    if(arr.length === 0){
+      const em = document.createElement("div");
+      em.className = "smallnote";
+      em.textContent = "No runs recorded yet.";
+      runs.appendChild(em);
+    } else {
+      arr.slice(0,10).forEach((r, ridx)=>{
+        const row = document.createElement("div");
+        row.className = "runrow";
+        row.innerHTML = `<span class="kind">${r.kind || "Run"}</span>
+                         <span class="pill">${r.ts || ""}</span>`;
+        runs.appendChild(row);
+      });
+    }
+
+    noteCol.appendChild(runs);
+
+    body.appendChild(cmdCol);
+    body.appendChild(noteCol);
+
+    outer.appendChild(top);
+    outer.appendChild(body);
+
+    wrap.appendChild(outer);
+  });
+}
+
+/* =========================
+   Enhancements
+   ========================= */
+function addEnhancement(){
+  const main = (document.getElementById("enhMain").value || "").trim();
+  if(!main){ alert("Main point is required."); return; }
+  const cat = document.getElementById("enhCategory").value;
+  const notes = (document.getElementById("enhNotes").value || "").trim();
+  enhancements.unshift({ main, category: cat, notes, ts: nowStamp() });
+  clearEnhFields();
+  saveState(true);
+  renderEnhancements();
+}
+function clearEnhFields(){
+  document.getElementById("enhMain").value = "";
+  document.getElementById("enhNotes").value = "";
+  document.getElementById("enhCategory").value = "Enhancement";
+}
+function renderEnhancements(){
+  const el = document.getElementById("enhList");
+  el.innerHTML = "";
+  (enhancements || []).forEach((e, idx)=>{
+    const wrap = document.createElement("div");
+    wrap.className = "enh-item";
+    const top = document.createElement("div");
+    top.className = "enh-top";
+
+    const left = document.createElement("div");
+    left.innerHTML = `<div class="enh-main"></div><div class="enh-ts"></div>`;
+    left.querySelector(".enh-main").textContent = e.main;
+    left.querySelector(".enh-ts").textContent = e.ts;
+
+    const right = document.createElement("div");
+    right.innerHTML = `<span class="enh-cat"></span> <button type="button" class="small">Delete</button>`;
+    right.querySelector(".enh-cat").textContent = e.category || "Enhancement";
+    right.querySelector("button").onclick = ()=>{
+      enhancements.splice(idx,1);
+      saveState(true);
+      renderEnhancements();
+    };
+
+    top.appendChild(left);
+    top.appendChild(right);
+    wrap.appendChild(top);
+
+    if(e.notes){
+      const n = document.createElement("div");
+      n.className = "enh-notes";
+      n.textContent = e.notes;
+      wrap.appendChild(n);
+    }
+    el.appendChild(wrap);
+  });
+}
+
+/* =========================
+   Export
+   ========================= */
+function exportText(){
+  const lines = [];
+  lines.push("=== SOP Build Checklist Export ===");
+  lines.push(`When       : ${nowStamp()}`);
+  lines.push(`SOP Name   : ${sopInfo.name || ""}`);
+  lines.push(`SOP ID     : ${sopInfo.id || ""}`);
+  lines.push(`Entity     : ${sopInfo.entity || ""}`);
+  lines.push(`Run Label  : ${sopInfo.runLabel || ""}`);
+  lines.push(`Repo       : ${sopInfo.repo || ""}`);
+  lines.push(`WebRoot    : ${sopInfo.webRoot || ""}`);
+  lines.push(`ImgFolder  : ${sopInfo.imgFolder || ""}`);
+  lines.push(`TemplateTag: ${sopInfo.templateTag || ""}`);
+  lines.push("");
+
+  lines.push("=== Steps ===");
+  steps.forEach((s,i)=>{
+    lines.push(`#${i+1} [${s.done ? "DONE" : "OPEN"}] ${s.order}. ${s.title} (${s.id})`);
+    if(s.reminder) lines.push(`  Reminder: ${substitute(s.reminder)}`);
+    if(s.command) lines.push(`  Command : ${substitute(s.command).replace(/\n/g,"\n           ")}`);
+    if(s.notes) lines.push(`  Notes   : ${String(s.notes).replace(/\n/g,"\n           ")}`);
+    const arr = s.runs || [];
+    if(arr.length){
+      lines.push(`  Runs    :`);
+      arr.slice(0,20).forEach(r=>{
+        lines.push(`    - ${r.ts} (${r.kind || "Run"})`);
+      });
+    }
+    lines.push("");
+  });
+
+  lines.push("=== Enhancements / Future Enhancements ===");
+  (enhancements || []).forEach((e,i)=>{
+    lines.push(`Enh #${i+1}: ${e.main}`);
+    lines.push(`   When    : ${e.ts}`);
+    if(e.category) lines.push(`   Category: ${e.category}`);
+    if(e.notes){
+      const flat = e.notes.replace(/\s+/g," ").trim();
+      lines.push(`   Notes   : ${flat}`);
+    }
+    lines.push("");
+  });
+
+  const outArea = document.getElementById("exportArea");
+  outArea.value = lines.join("\n");
+  outArea.focus();
+  outArea.select();
+  flashNotice("Export generated.");
+}
+
+function downloadExportText(){
+  exportText();
+  const txt = document.getElementById("exportArea").value || "";
+  const blob = new Blob([txt], {type:"text/plain"});
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = `${safeId(sopInfo.id || "SOP")}_checklist_log_${nowStamp()}.txt`;
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+
+function exportStateJson(){
+  const payload = { sopInfo, steps, enhancements, suppressedHeaderKeys };
+  const blob = new Blob([JSON.stringify(payload, null, 2)], {type:"application/json"});
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = `${safeId(sopInfo.id || "SOP")}_checklist_state_${nowStamp()}.json`;
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+
+function triggerImportJson(){
+  document.getElementById("importJsonFile").click();
+}
+function handleImportJsonFile(event){
+  const file = event.target.files && event.target.files[0];
+  if(!file) return;
+  const reader = new FileReader();
+  reader.onload = ()=>{
+    try{
+      const payload = JSON.parse(reader.result);
+      sopInfo = payload.sopInfo || sopInfo;
+      steps = payload.steps || steps;
+      enhancements = payload.enhancements || enhancements;
+      suppressedHeaderKeys = payload.suppressedHeaderKeys || suppressedHeaderKeys;
+      saveState(true);
+      init();
+      flashNotice("Imported JSON state.");
+    }catch(e){
+      alert("Import failed: " + e);
+    }
+  };
+  reader.readAsText(file);
+}
+
+/* =========================
+   Save / Load
+   ========================= */
+function saveState(silent){
+  const state = { sopInfo, steps, enhancements, suppressedHeaderKeys };
+  localStorage.setItem(getStorageKey(), JSON.stringify(state));
+  const pill = document.getElementById("autosavePill");
+  if(pill){
+    pill.style.display = "inline-block";
+    clearTimeout(window.__autosave);
+    window.__autosave = setTimeout(()=>{ pill.style.display="none"; }, 900);
+  }
+  if(!silent) flashNotice("Saved.");
+}
+function loadState(){
+  const raw = localStorage.getItem(getStorageKey());
+  if(!raw){ alert("No saved state found."); return; }
+  try{
+    const st = JSON.parse(raw);
+    sopInfo = st.sopInfo || sopInfo;
+    steps = st.steps || steps;
+    enhancements = st.enhancements || enhancements;
+    suppressedHeaderKeys = st.suppressedHeaderKeys || suppressedHeaderKeys;
+    init();
+    flashNotice("Loaded.");
+  }catch(e){
+    alert("Failed to load state: " + e);
+  }
+}
+function resetEverything(){
+  if(!confirm("Reset ALL fields, steps, and enhancements?")) return;
+  localStorage.removeItem(getStorageKey());
+  location.reload();
+}
+
+/* =========================
+   Init
+   ========================= */
+function init(){
+  applySuppressedHeaderFields();
+  populateSOPFieldsFromState();
+  document.getElementById("taglinePill").textContent = sopInfo.templateTag || "v9";
+  renderSteps();
+  renderEnhancements();
+}
+init();
+</script>

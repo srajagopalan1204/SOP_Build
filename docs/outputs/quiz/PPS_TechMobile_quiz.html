@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>PPS – Tech Mobile – Knowledge Check</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.5rem;
+      line-height: 1.5;
+      background: #f7f7fb;
+    }
+    h1, h2 {
+      color: #111827;
+    }
+    .meta {
+      margin-bottom: 1rem;
+      padding: 0.75rem 1rem;
+      background: #e5e7eb;
+      border-radius: 6px;
+    }
+    .question {
+      margin-bottom: 1.75rem;
+      padding: 1rem 1.25rem;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+    .q-text {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    label {
+      display: block;
+      margin: 0.15rem 0;
+    }
+    button {
+      margin-top: 0.4rem;
+      margin-right: 0.4rem;
+      padding: 0.3rem 0.75rem;
+      border-radius: 4px;
+      border: 1px solid #4b5563;
+      background: #111827;
+      color: #ffffff;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+    button.secondary {
+      background: #ffffff;
+      color: #111827;
+    }
+    button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    .feedback {
+      margin-top: 0.4rem;
+      font-size: 0.85rem;
+      color: #065f46;
+    }
+    .feedback.error {
+      color: #b91c1c;
+    }
+    #scoreSummary {
+      font-weight: 600;
+      margin-top: 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+    .footer-actions {
+      margin-top: 1.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #d1d5db;
+    }
+    input[type="text"], input[type="email"] {
+      padding: 0.25rem 0.4rem;
+      margin-right: 0.5rem;
+      border-radius: 4px;
+      border: 1px solid #9ca3af;
+    }
+  </style>
+</head>
+<body>
+  <h1>PPS – Tech Mobile – Knowledge Check</h1>
+
+  <div class="meta">
+    <p>
+      Please complete this quiz after you have gone through the
+      <strong>M1. Tech Mobile</strong> SOP module.
+      You may answer each question up to <strong>two times</strong>. Your attempts and timestamps
+      will be captured in a CSV log you can download at the end.
+    </p>
+    <p>
+      <em>Note:</em> Question 1 is about the background of Scott Electric.
+      Questions 2–10 are about the <strong>Tech Mobile field visit process</strong>
+      (S1 appointment, S2 travel to site, S3 on-site work, S4 additional material,
+      S5 new SRO, S6 travel leaving site, S7 callback, S8 closed, S998/S999 end).
+    </p>
+  </div>
+
+  <section>
+    <h2>Learner Information</h2>
+    <p>
+      <label>
+        Your Name:
+        <input type="text" id="learnerName" placeholder="Type your name">
+      </label>
+      <label>
+        Your Email:
+        <input type="email" id="learnerEmail" placeholder="name@example.com">
+      </label>
+    </p>
+  </section>
+
+  <section id="quiz">
+    <h2>Quiz Questions</h2>
+
+    <!-- Q1 – Scott Electric background -->
+    <div class="question" data-qid="q1">
+      <p class="q-text">
+        <strong>Q1.</strong> Which statement best describes Scott Electric’s history and role in the
+        markets it serves?
+      </p>
+      <label><input type="radio" name="q1" value="0">
+        A. Scott Electric is a brand-new startup with one small store and no distribution network.</label>
+      <label><input type="radio" name="q1" value="1">
+        B. Scott Electric is a long-established regional wholesale electrical distributor headquartered in western Pennsylvania, with multiple branches and divisions serving customers in several states.</label>
+      <label><input type="radio" name="q1" value="2">
+        C. Scott Electric is only a software company that provides ERPs to other distributors.</label>
+      <label><input type="radio" name="q1" value="3">
+        D. Scott Electric is a small residential contractor that does not operate any warehouses.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q1')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q1')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q1"></div>
+    </div>
+
+    <!-- Q2 – Purpose of Tech Mobile SOP -->
+    <div class="question" data-qid="q2">
+      <p class="q-text">
+        <strong>Q2.</strong> What is the main purpose of the
+        <strong>Tech Mobile</strong> SOP (M1 – Tech Mobile)?
+      </p>
+      <label><input type="radio" name="q2" value="0">
+        A. To track warehouse inventory adjustments only.</label>
+      <label><input type="radio" name="q2" value="1">
+        B. To guide the end-to-end field technician visit using Tech Mobile – from the time an appointment is scheduled, through travel to site, on-site work, additional material and additional work decisions, travel leaving site, and final status of closed or callback.</label>
+      <label><input type="radio" name="q2" value="2">
+        C. To manage sales order entry at the counter.</label>
+      <label><input type="radio" name="q2" value="3">
+        D. To set up ISM master data for partners and rates.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q2')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q2')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q2"></div>
+    </div>
+
+    <!-- Q3 – SOP start/end -->
+    <div class="question" data-qid="q3">
+      <p class="q-text">
+        <strong>Q3.</strong> Which statement best describes the
+        <strong>start and end</strong> points of the Tech Mobile SOP?
+      </p>
+      <label><input type="radio" name="q3" value="0">
+        A. It starts when the technician clocks in for the day and ends when payroll is processed.</label>
+      <label><input type="radio" name="q3" value="1">
+        B. It starts when the SRO is created in the back office and ends when the invoice is posted.</label>
+      <label><input type="radio" name="q3" value="2">
+        C. It starts when an appointment is scheduled for trouble service (S1) and the technician is dispatched in Tech Mobile, and it ends after travel to site, on-site work, material and extra-work decisions are handled, and the status is set to either Closed (S8) or Call Back service (S7) and/or the process hands off via an end/sub-SOP step (S998 / S999).</label>
+      <label><input type="radio" name="q3" value="3">
+        D. It starts when equipment is shipped from the vendor and ends when a PMA is sold.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q3')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q3')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q3"></div>
+    </div>
+
+    <!-- Q4 – S2 Travel to appointment / site -->
+    <div class="question" data-qid="q4">
+      <p class="q-text">
+        <strong>Q4.</strong> What is the purpose of
+        <strong>S2. Travel to the Appointment / Site</strong>
+        in the Tech Mobile SOP?
+      </p>
+      <label><input type="radio" name="q4" value="0">
+        A. It is only used to record parts usage at the warehouse.</label>
+      <label><input type="radio" name="q4" value="1">
+        B. It is used by the technician to update their status to indicate they are travelling to the site, giving dispatch and the office visibility that they are en route and supporting travel time tracking.</label>
+      <label><input type="radio" name="q4" value="2">
+        C. It is used only by AR to review invoices.</label>
+      <label><input type="radio" name="q4" value="3">
+        D. It is used to cancel the SRO.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q4')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q4')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q4"></div>
+    </div>
+
+    <!-- Q5 – Q1 Additional Material Needed / S4 Add Additional Material -->
+    <div class="question" data-qid="q5">
+      <p class="q-text">
+        <strong>Q5.</strong> A Tech Mobile technician is on-site and discovers parts that are needed
+        but not listed on the original SRO. How should
+        <strong>Q1. Additional Material Needed?</strong> and
+        <strong>S4. Add Additional Material</strong> be used?
+      </p>
+      <label><input type="radio" name="q5" value="0">
+        A. The technician should ignore the extra material to keep the paperwork simple.</label>
+      <label><input type="radio" name="q5" value="1">
+        B. The technician should answer Yes to Q1 and use S4 to add the extra material lines so that usage, inventory, and billing are accurate.</label>
+      <label><input type="radio" name="q5" value="2">
+        C. The technician should close the current SRO and open a new SRO for material only.</label>
+      <label><input type="radio" name="q5" value="3">
+        D. The technician should use S6 Travel Leaving Site instead of adding material.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q5')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q5')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q5"></div>
+    </div>
+
+    <!-- Q6 – Q2 Additional Work Required / S5 Create New SRO -->
+    <div class="question" data-qid="q6">
+      <p class="q-text">
+        <strong>Q6.</strong> What is the purpose of
+        <strong>Q2. Additional Work Required Other Than That Shown in Original SRO?</strong>
+        and
+        <strong>S5. Create New SRO</strong>?
+      </p>
+      <label><input type="radio" name="q6" value="0">
+        A. Q2 should always be answered “No” so that no additional SROs are created.</label>
+      <label><input type="radio" name="q6" value="1">
+        B. When Q2 is Yes, S5 is used to create a separate SRO for the additional work rather than burying it in the original SRO, keeping scope and billing clear.</label>
+      <label><input type="radio" name="q6" value="2">
+        C. When Q2 is Yes, the original SRO must be closed immediately.</label>
+      <label><input type="radio" name="q6" value="3">
+        D. Q2 is only used to adjust travel pay.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q6')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q6')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q6"></div>
+    </div>
+
+    <!-- Q7 – Q3 Can the Additional Work Be Completed At That Time / S7 Call Back -->
+    <div class="question" data-qid="q7">
+      <p class="q-text">
+        <strong>Q7.</strong> How does
+        <strong>Q3. Can The Additional Work Be Completed At That Time?</strong>
+        drive the use of
+        <strong>S7. Change Status to indicate Call Back service</strong>?
+      </p>
+      <label><input type="radio" name="q7" value="0">
+        A. Q3 is only answered by office staff after the technician has left the site.</label>
+      <label><input type="radio" name="q7" value="1">
+        B. If Q3 is Yes, the technician completes the additional work in the same visit and then proceeds to Travel Leaving Site (S6) and Close (S8); if Q3 is No, the technician sets the status to callback using S7 and a follow-up visit is scheduled.</label>
+      <label><input type="radio" name="q7" value="2">
+        C. If Q3 is No, the SRO is cancelled and never billed.</label>
+      <label><input type="radio" name="q7" value="3">
+        D. Q3 is only used to change the GL account for labor.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q7')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q7')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q7"></div>
+    </div>
+
+    <!-- Q8 – S6 Travel Leaving Site -->
+    <div class="question" data-qid="q8">
+      <p class="q-text">
+        <strong>Q8.</strong> When should a technician use
+        <strong>S6. Travel Leaving Site</strong>?
+      </p>
+      <label><input type="radio" name="q8" value="0">
+        A. Only for long-distance calls; not for normal service calls.</label>
+      <label><input type="radio" name="q8" value="1">
+        B. When leaving the job and travelling away from the site, to update Tech Mobile status and support travel time and visibility before the SRO is finally closed.</label>
+      <label><input type="radio" name="q8" value="2">
+        C. Only when the call is a warranty claim.</label>
+      <label><input type="radio" name="q8" value="3">
+        D. Only when a callback is required and before any work is done.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q8')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q8')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q8"></div>
+    </div>
+
+    <!-- Q9 – S7 Call Back vs S8 Closed -->
+    <div class="question" data-qid="q9">
+      <p class="q-text">
+        <strong>Q9.</strong> Which statement best describes when to use
+        <strong>S7. Change Status to indicate Call Back service</strong>
+        versus
+        <strong>S8. Change Status to Closed</strong>?
+      </p>
+      <label><input type="radio" name="q9" value="0">
+        A. Use S7 whenever the customer compliments the technician; use S8 when there is a complaint.</label>
+      <label><input type="radio" name="q9" value="1">
+        B. Use S7 when additional work is still required and will be done in a later visit (callback); use S8 when all work on that SRO is complete and the job is ready for closing and billing.</label>
+      <label><input type="radio" name="q9" value="2">
+        C. Use S7 for PMA work and S8 for rental work.</label>
+      <label><input type="radio" name="q9" value="3">
+        D. S7 and S8 can be used interchangeably.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q9')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q9')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q9"></div>
+    </div>
+
+    <!-- Q10 – S998 / S999 End and Sub-SOP -->
+    <div class="question" data-qid="q10">
+      <p class="q-text">
+        <strong>Q10.</strong> What is the role of
+        <strong>S998 / S999</strong>
+        in the Tech Mobile SOP?
+      </p>
+      <label><input type="radio" name="q10" value="0">
+        A. S999 means the SRO is deleted from the system and all history is lost.</label>
+      <label><input type="radio" name="q10" value="1">
+        B. Reaching S999 via S998 indicates that the Tech Mobile SOP has finished its part of the flow and control passes to another related SOP (a sub or separate SOP), while still preserving traceability of the overall service process.</label>
+      <label><input type="radio" name="q10" value="2">
+        C. S998 is only used in sales, not service.</label>
+      <label><input type="radio" name="q10" value="3">
+        D. S999 is just a decorative label with no process meaning.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q10')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q10')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q10"></div>
+    </div>
+  </section>
+
+  <section class="footer-actions">
+    <p id="scoreSummary">Score will appear here after you submit at least one question.</p>
+    <button type="button" onclick="calculateScore()">Calculate Score</button>
+    <button type="button" onclick="downloadCsv()">Download Attempt Log (CSV)</button>
+  </section>
+
+  <script>
+    const quizStart = new Date().toISOString();
+    const questionIds = ["q1","q2","q3","q4","q5","q6","q7","q8","q9","q10"];
+    const maxAttempts = 2;
+
+    const correctAnswers = {
+      q1: 1,
+      q2: 1,
+      q3: 2,
+      q4: 1,
+      q5: 1,
+      q6: 1,
+      q7: 1,
+      q8: 1,
+      q9: 1,
+      q10: 1
+    };
+
+    const responseLog = {};
+
+    document.querySelectorAll('input[type="radio"]').forEach(input => {
+      input.addEventListener('change', handleOptionChange);
+    });
+
+    function handleOptionChange(event) {
+      const qid = event.target.name;
+      const answerIndex = parseInt(event.target.value, 10);
+      const now = new Date().toISOString();
+
+      if (!responseLog[qid]) {
+        responseLog[qid] = { attempts: [], currentAttempt: null };
+      }
+      const qEntry = responseLog[qid];
+
+      if (!qEntry.currentAttempt && qEntry.attempts.length >= maxAttempts) {
+        event.target.checked = false;
+        const fb = document.getElementById(`feedback-${qid}`);
+        if (fb) {
+          fb.classList.add("error");
+          fb.textContent = "You have already used both attempts for this question.";
+        }
+        return;
+      }
+
+      if (!qEntry.currentAttempt) {
+        qEntry.currentAttempt = {
+          attemptNumber: qEntry.attempts.length + 1,
+          startedAt: now,
+          finishedAt: null,
+          answerIndex: answerIndex,
+          isCorrect: null
+        };
+      } else {
+        qEntry.currentAttempt.answerIndex = answerIndex;
+      }
+    }
+
+    function submitQuestion(qid) {
+      const now = new Date().toISOString();
+      if (!responseLog[qid]) {
+        responseLog[qid] = { attempts: [], currentAttempt: null };
+      }
+      const qEntry = responseLog[qid];
+      const fb = document.getElementById(`feedback-${qid}`);
+
+      const selected = document.querySelector(`input[name="${qid}"]:checked`);
+      if (!selected) {
+        if (fb) {
+          fb.classList.add("error");
+          fb.textContent = "Please select an answer before submitting.";
+        }
+        return;
+      }
+
+      if (!qEntry.currentAttempt) {
+        if (qEntry.attempts.length >= maxAttempts) {
+          if (fb) {
+            fb.classList.add("error");
+            fb.textContent = "You have already used both attempts for this question.";
+          }
+          return;
+        }
+        qEntry.currentAttempt = {
+          attemptNumber: qEntry.attempts.length + 1,
+          startedAt: now,
+          finishedAt: null,
+          answerIndex: parseInt(selected.value, 10),
+          isCorrect: null
+        };
+      }
+
+      const attempt = qEntry.currentAttempt;
+
+      if (attempt.finishedAt) {
+        if (fb) {
+          fb.classList.add("error");
+          fb.textContent = "This attempt has already been submitted.";
+        }
+        return;
+      }
+
+      attempt.finishedAt = now;
+      attempt.isCorrect = (attempt.answerIndex === correctAnswers[qid]);
+      qEntry.attempts.push(attempt);
+      qEntry.currentAttempt = null;
+
+      if (fb) {
+        fb.classList.remove("error");
+        const attemptLabel = attempt.attemptNumber === 1 ? "First attempt" : "Second attempt";
+        fb.textContent = `${attemptLabel}: ${attempt.isCorrect ? "Correct" : "Incorrect"} (started ${attempt.startedAt}, finished ${attempt.finishedAt}).`;
+        if (qEntry.attempts.length >= maxAttempts) {
+          fb.textContent += " You have used both attempts for this question.";
+        }
+      }
+
+      calculateScore();
+    }
+
+    function redoQuestion(qid) {
+      const qEntry = responseLog[qid];
+      const fb = document.getElementById(`feedback-${qid}`);
+
+      if (!qEntry || qEntry.attempts.length === 0) {
+        if (fb) {
+          fb.classList.add("error");
+          fb.textContent = "You must submit the question once before redoing it.";
+        }
+        return;
+      }
+
+      if (qEntry.attempts.length >= maxAttempts) {
+        if (fb) {
+          fb.classList.add("error");
+          fb.textContent = "You have already used your redo for this question.";
+        }
+        return;
+      }
+
+      document.querySelectorAll(`input[name="${qid}"]`).forEach(input => {
+        input.checked = false;
+      });
+
+      qEntry.currentAttempt = null;
+
+      if (fb) {
+        fb.classList.remove("error");
+        fb.textContent = "You may redo this question now. Make a new selection and click Submit Answer.";
+      }
+    }
+
+    function calculateScore() {
+      let correctCount = 0;
+      let totalCount = questionIds.length;
+
+      questionIds.forEach(qid => {
+        const qEntry = responseLog[qid];
+        if (!qEntry || qEntry.attempts.length === 0) {
+          return;
+        }
+        const lastAttempt = qEntry.attempts[qEntry.attempts.length - 1];
+        if (lastAttempt.isCorrect) {
+          correctCount += 1;
+        }
+      });
+
+      const scoreEl = document.getElementById("scoreSummary");
+      if (scoreEl) {
+        scoreEl.textContent = `Current score (based on your latest attempt for each question): ${correctCount} / ${totalCount}`;
+      }
+    }
+
+    function downloadCsv() {
+      const learnerName = (document.getElementById("learnerName").value || "").replace(/"/g, '""');
+      const learnerEmail = (document.getElementById("learnerEmail").value || "").replace(/"/g, '""');
+      const now = new Date().toISOString();
+
+      const lines = [];
+      lines.push('Quiz Name,"PPS – Tech Mobile – Knowledge Check"');
+      lines.push(`Learner Name,"${learnerName}"`);
+      lines.push(`Learner Email,"${learnerEmail}"`);
+      lines.push(`Quiz Start,"${quizStart}"`);
+      lines.push(`Log Generated At,"${now}"`);
+      lines.push("");
+      lines.push("Question ID,Question Text,Attempt #,Started At,Finished At,Answer Index,Answer Text,Correct?");
+
+      questionIds.forEach(qid => {
+        const qEntry = responseLog[qid];
+        if (!qEntry || !qEntry.attempts || qEntry.attempts.length === 0) {
+          return;
+        }
+
+        const qContainer = document.querySelector(`.question[data-qid="${qid}"]`);
+        let qText = "";
+        if (qContainer) {
+          const qTextEl = qContainer.querySelector(".q-text");
+          if (qTextEl) {
+            qText = qTextEl.innerText.trim().replace(/"/g, '""');
+          }
+        }
+
+        qEntry.attempts.forEach(att => {
+          let answerText = "";
+          const radio = document.querySelector(`input[name="${qid}"][value="${att.answerIndex}"]`);
+          if (radio && radio.parentElement) {
+            answerText = radio.parentElement.textContent.trim().replace(/"/g, '""');
+          }
+          const correctLabel = att.isCorrect ? "Yes" : "No";
+          lines.push(
+            `"${qid}","${qText}",${att.attemptNumber},` +
+            `"${att.startedAt || ""}","${att.finishedAt || ""}",` +
+            `${att.answerIndex},"${answerText}",${correctLabel}`
+          );
+        });
+      });
+
+      const csvContent = lines.join("\n");
+      const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "PPS_TechMobile_Quiz_Attempts.csv";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+  </script>
+</body>
+</html>

@@ -13,4 +13,5 @@ It is not the public training site. It is the "engine room" used to:
 
 See `SOP_Build_Standard_v1.md` for the full folder and process standard.
 bash scripts/publish_test_sync.sh
-bash scripts/publish_test_serve.sh
+ /workspaces/SOP_Build/docs/outputsbash scripts/publish_test_serve.sh
+/workspaces/SOP_Build/inputs/raw/TechMobile_map_20260112_1450_READYBASE_ENH_UPD.csv 

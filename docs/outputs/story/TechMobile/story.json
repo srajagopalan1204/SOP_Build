@@ -1,0 +1,927 @@
+{
+  "sop_id": "TechMobile",
+  "start_code": "S000",
+  "frames": [
+    {
+      "sop_id": "TechMobile",
+      "frame_code": "S000",
+      "title": "S000. Opening Slide for PPS – Service – Tech Mobile Deck",
+      "image": "../images/TechMobile/S000.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S001",
+          "label": "About Palco Power Systems and Scott Electric and a Welcome to Training"
+        }
+      ],
+      "narr1": "Slide S000. Opening Slide for PPS – Service – Tech Mobile Deck — Opening Slide for PPS – Service – Tech Mobile Deck.",
+      "narr2": "Opening Slide for PPS.",
+      "narr3": "Palco Power Systems is a specialized power solutions provider and an authorized KOHLER distributor, serving customers across western Pennsylvania, West Virginia, and western Maryland. Since 1972, Palco has supplied reliable generator systems and power equipment to industrial, commercial, municipal, healthcare, and residential customers who depend on uninterrupted power.\nAs part of the Scott Electric family since 1993, Palco Power Systems combines deep technical expertise with the broader resources of a leading independent electrical distributor. Our portfolio includes KOHLER industrial, mobile (towable), residential, and portable generator systems; pumps; other power systems and components; Honda portable units; transfer equipment; and related accessories, including ASCO and PSP components.\nOver the years, Palco’s territory and responsibilities have grown along with its reputation:\n• 1972 – Palco becomes an authorized KOHLER distributor in western Pennsylvania.\n• 1984 – Territory expands to include West Virginia and western Maryland.\n• 1989 – Area of responsibility further expands to include western New York State.\n• 1993 – Scott Electric Company acquires Palco.\n• 2001 – Territory is adjusted with the removal of western New York State.\nMost recently, Palco Power Systems was the first Scott Electric division to host a Conference Room Pilot (CRP) for the new Infor CloudSuite software, demonstrating leadership and innovation in how we use technology to support customers and internal operations.",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_TechMobile_faq.html",
+      "FAQ_Label": "FAQ For Tech Mobile",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Service",
+        "subentity": "TechMobile"
+      }
+    },
+    {
+      "sop_id": "TechMobile",
+      "frame_code": "S001",
+      "title": "S001. About Palco Power Systems and Scott Electric and a Welcome to Training",
+      "image": "../images/TechMobile/S001.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S002",
+          "label": "Palco Power Systems – Service to Cash Work Flow"
+        }
+      ],
+      "narr1": "Slide S001. About Palco Power Systems and Scott Electric and a Welcome to Training — About Palco Power Systems and Scott Electric and a Welcome to Training.",
+      "narr2": "About Palco Power Systems and Scott Electric and a Welcome to Training.",
+      "narr3": "Palco Power Systems is a specialized power solutions provider and an authorized KOHLER distributor, serving customers across western Pennsylvania, West Virginia, and western Maryland. Since 1972, Palco has supplied reliable generator systems and power equipment to industrial, commercial, municipal, healthcare, and residential customers who depend on uninterrupted power.\nAs part of the Scott Electric family since 1993, Palco Power Systems combines deep technical expertise with the broader resources of a leading independent electrical distributor. Our portfolio includes KOHLER industrial, mobile (towable), residential, and portable generator systems; pumps; other power systems and components; Honda portable units; transfer equipment; and related accessories, including ASCO and PSP components.\nOver the years, Palco’s territory and responsibilities have grown along with its reputation:\u000b• 1972 – Palco becomes an authorized KOHLER distributor in western Pennsylvania.\u000b• 1984 – Territory expands to include West Virginia and western Maryland.\u000b• 1989 – Area of responsibility further expands to include western New York State.\u000b• 1993 – Scott Electric Company acquires Palco.\u000b• 2001 – Territory is adjusted with the removal of western New York State.\nMost recently, Palco Power Systems was the first Scott Electric division to host a Conference Room Pilot (CRP) for the new Infor CloudSuite software, demonstrating leadership and innovation in how we use technology to support customers and internal operations. This work reflects the dedication of the Palco team—including Tanner Schwartz, Valerie Markish, Tim Drop, Jen Schlegel, and Subi Rajagopalan—along with support from the broader ERP project, Champions, and Executive Sponsors. The management teams at Palco Power Systems and Scott Electric continue to support these efforts by prioritizing training, process improvement, and the successful adoption of the new system.\n\nWelcome to the Palco Power Systems Training Site.\nThis section of the Scott Electric Training Site is designed to help you build the knowledge and skills needed to support our power systems customers safely, accurately, and efficiently—whether you work in sales, service, parts, rentals, administration, or support. Here you will find guided learning, reference materials, and role-based courses tailored to the work we do every day at Palco: sizing and selecting generators, supporting projects, coordinating installations, servicing equipment, and taking care of customers before, during, and after the sale.\n\nThank you for investing your time in training. Your commitment to learning and continuous improvement helps keep Palco Power Systems—and Scott Electric as a whole—reliable, responsive, and growing as we continue our customer-focused operations.",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_TechMobile_faq.html",
+      "FAQ_Label": "FAQ For Tech Mobile",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Service",
+        "subentity": "TechMobile"
+      }
+    },
+    {
+      "sop_id": "TechMobile",
+      "frame_code": "S002",
+      "title": "S002. Palco Power Systems – Service to Cash Work Flow",
+      "image": "../images/TechMobile/S002.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S003",
+          "label": "Pictorial representation of Quote/ Service Request to Cash similar to Quote to Cash - At PPS Service"
+        }
+      ],
+      "narr1": "Slide S002. Palco Power Systems – Service to Cash Work Flow — Palco Power Systems – Service to Cash Work Flow.",
+      "narr2": "This is the overall Work flow on how a service request is processed at Palco Power System. This covers the business process that starts from a request from a customer or based on a contract the need for a",
+      "narr3": "This is the overall Work flow on how a service request is processed at Palco Power System. This covers the business process that starts from a request from a customer or based on a contract the need for a routine service that need to be performed. Request from customers could be for a break fix , a warranty question or request for additional work suggest as a nice to perform during the most recent visit by a very well trained and efficient Service technician crea at PPS. This transistions through the various business sections of Service writes Service  , schedulers , technicians , parts department, purchasing , billing and finally collection of payment. Hence the term Service to Cash is ofen used to succinctly name it Quote to cash",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_TechMobile_faq.html",
+      "FAQ_Label": "FAQ For Tech Mobile",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Service",
+        "subentity": "TechMobile"
+      }
+    },
+    {
+      "sop_id": "TechMobile",
+      "frame_code": "S003",
+      "title": "S003. Pictorial representation of Quote/ Service Request to Cash similar to Quote to Cash - At PPS Service",
+      "image": "../images/TechMobile/S003.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "M1",
+          "label": "Tech Mobile"
+        }
+      ],
+      "narr1": "Slide S003. Pictorial representation of Quote/ Service Request to Cash similar to Quote to Cash - At PPS Service — Pictorial representation of Quote/ Service Request to Cash similar to Quote to Cash - At PPS Service.",
+      "narr2": "Hence this pictorial representation cover the Service identification to Cash process or as is commonly reffered to as Quote to Cash. he process begins with either a sales person contacting the owner of newly installed generator or the service tech highlights the advantage of having a PMA to the new generator owner or the owner on their own accord calling PPS to discuss the options for a PMA.",
+      "narr3": "This slide depicts the process from Identifying a need for a new PMA Preventive Maintenance Agreement. In the mid 1900 's it used also go by the name Planned Maintenance Schedule. However that was retired as it did not convey the fact that it is a contractual agreement.  The process begins with either a sales person contacting the owner of newly installed generator or the service tech highlights the advantage of having a PMA to the new generator owner or the owner on their own accord calling PPS to discuss the options for a PMA.\nfrom that point the process traverses the creation of a customized contract for the owner , followed by setting  up schedule that satisfies the customer and our terms of the agreement , followed by creation of the SRO , finally when the time is right scheduling a technician , then the technician services the unit as per the tasks laid out in the SRO, finally an invoice is generated and as per the terms payment is collected. Hence this pictorial representation cover the Service identification to Cash process or as is commonly reffered to as Quote to Cash.",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_TechMobile_faq.html",
+      "FAQ_Label": "FAQ For Tech Mobile",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Service",
+        "subentity": "TechMobile"
+      }
+    },
+    {
+      "sop_id": "TechMobile",
+      "frame_code": "M1",
+      "title": "M1.   Tech Mobile",
+      "image": "../images/TechMobile/M1.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S1",
+          "label": "Appoint Scheduled for Technician - Tech Mobile – at PPS"
+        }
+      ],
+      "narr1": "Slide M1. Tech Mobile — Tech Mobile.",
+      "narr2": "",
+      "narr3": "",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/folder/c1248d71-51e1-4a15-abad-767d693ec39b?bypassGroupFiltering=false",
+      "uap_label": "07_Tech Mobile",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_TechMobile_faq.html",
+      "FAQ_Label": "FAQ For Tech Mobile",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Service",
+        "subentity": "TechMobile"
+      }
+    },
+    {
+      "sop_id": "TechMobile",
+      "frame_code": "S1",
+      "title": "S1. Appoint Scheduled for Technician - Tech Mobile – at PPS",
+      "image": "../images/TechMobile/S1.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S2",
+          "label": "Technician clocks in and travels to Site- Tech Mobile – at PPS"
+        }
+      ],
+      "narr1": "Slide S1. Appoint Scheduled for Technician - Tech Mobile – at PPS — Appoint Scheduled for Technician - Tech Mobile – at PPS.",
+      "narr2": "The technician is scheduled by the service department. These tasks could be a Startup, a break fix , a routine maintenance based on a PMA contract and everything in between. At this point the technician gets a list of the various jobs scheduled for him and pick the appropriate one",
+      "narr3": "The technician is scheduled by the service department. These tasks could be a Startup, a break fix , a routine maintenance based on a PMA contract and everything in between. At this point the technician gets a list of the various jobs scheduled for him and pick the appropriate one",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/6bb6bd8c-2c6f-46e0-a3d0-e97eed2f230b?contextId=3a4b3dad-96fe-4694-a768-791383f32e32&bypassGroupFiltering=false",
+      "uap_label": "11_Schedule Service",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_TechMobile_faq.html",
+      "FAQ_Label": "FAQ For Tech Mobile",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Service",
+        "subentity": "TechMobile"
+      }
+    },
+    {
+      "sop_id": "TechMobile",
+      "frame_code": "S2",
+      "title": "S2. Technician clocks in and travels to Site- Tech Mobile – at PPS",
+      "image": "../images/TechMobile/S2.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S3",
+          "label": "Technician starts the on-site service - Tech Mobile – at PPS"
+        }
+      ],
+      "narr1": "Slide S2. Technician clocks in and travels to Site- Tech Mobile – at PPS — Technician clocks in and travels to Site- Tech Mobile – at PPS.",
+      "narr2": "Having selected the scheduled service call the technican clocks into trave to site to let the system record his travel time upon arrival at the site a clock out from travel and clock into the next step would be performed",
+      "narr3": "Having selected the scheduled service call the technican clocks into trave to site to let the system record his travel time upon arrival at the site a clock out from travel and clock into the next step would be performed",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/3b0b3eee-f689-4abc-9bfe-ec15d7d34539?contextId=c1248d71-51e1-4a15-abad-767d693ec39b&bypassGroupFiltering=false",
+      "uap_label": "01_Travel to Site",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_TechMobile_faq.html",
+      "FAQ_Label": "FAQ For Tech Mobile",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Service",
+        "subentity": "TechMobile"
+      }
+    },
+    {
+      "sop_id": "TechMobile",
+      "frame_code": "S3",
+      "title": "S3. Technician starts the on-site service - Tech Mobile – at PPS",
+      "image": "../images/TechMobile/S3.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "D1",
+          "label": "A Decision, Is additional material needed ?- Tech Mobile – at PPS"
+        }
+      ],
+      "narr1": "Slide S3. Technician starts the on-site service - Tech Mobile – at PPS — Technician starts the on-site service - Tech Mobile – at PPS.",
+      "narr2": "as mentioned earlier the technicial has entered the fact that he has begun the service of the Generator",
+      "narr3": "as mentioned earlier the technicial has entered the fact that he has begun the service of the Generator",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/e47949fc-cfa3-4307-a14b-2ba02a5f0593?contextId=c1248d71-51e1-4a15-abad-767d693ec39b&bypassGroupFiltering=false",
+      "uap_label": "02_Perform Site Work",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_TechMobile_faq.html",
+      "FAQ_Label": "FAQ For Tech Mobile",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Service",
+        "subentity": "TechMobile"
+      }
+    },
+    {
+      "sop_id": "TechMobile",
+      "frame_code": "D1",
+      "title": "D1. A Decision, Is additional material needed ?- Tech Mobile – at PPS",
+      "image": "../images/TechMobile/D1.png",
+      "decision_question": "A Decision, Is additional material needed ?- Tech Mobile – at PPS?",
+      "choices": [
+        {
+          "to": "Y1",
+          "label": "Yes, Additional material is needed - Tech Mobile – at PPS"
+        },
+        {
+          "to": "N1",
+          "label": "No, Additional material is needed - Tech Mobile – at PPS"
+        }
+      ],
+      "narr1": "Slide D1. A Decision, Is additional material needed ?- Tech Mobile – at PPS — A Decision, Is additional material needed ?- Tech Mobile – at PPS.",
+      "narr2": "To accommodate for changes at the site and to respond appropriately the question is asked if additional (not part of the plan ) is needed to complete this service.",
+      "narr3": "To accommodate for changes at the site and to respond appropriately the question is asked if additional (not part of the plan ) is needed to complete this service.",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_TechMobile_faq.html",
+      "FAQ_Label": "FAQ For Tech Mobile",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Service",
+        "subentity": "TechMobile"
+      }
+    },
+    {
+      "sop_id": "TechMobile",
+      "frame_code": "Y1",
+      "title": "Y1. Yes, Additional material is needed - Tech Mobile – at PPS",
+      "image": "../images/TechMobile/Y1.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S4",
+          "label": "Additional material is added OPM - Tech Mobile – at PPS"
+        }
+      ],
+      "narr1": "Slide Y1. Yes, Additional material is needed - Tech Mobile – at PPS — Yes, Additional material is needed - Tech Mobile – at PPS.",
+      "narr2": "In this scenario the technician feels he needs additional material - fortunately it is available on his truck and cn be \"issued to the Job\"",
+      "narr3": "In this scenario the technician feels he needs additional material - fortunately it is available on his truck and cn be \"issued to the Job\"",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_TechMobile_faq.html",
+      "FAQ_Label": "FAQ For Tech Mobile",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Service",
+        "subentity": "TechMobile"
+      }
+    },
+    {
+      "sop_id": "TechMobile",
+      "frame_code": "S4",
+      "title": "S4. Additional material is added OPM - Tech Mobile – at PPS",
+      "image": "../images/TechMobile/S4.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "D2",
+          "label": "Decision is Additional work needed ?- Tech Mobile – at PPS"
+        }
+      ],
+      "narr1": "Slide S4. Additional material is added OPM - Tech Mobile – at PPS — Additional material is added OPM - Tech Mobile – at PPS.",
+      "narr2": "The process of adding material to the SRo is an OPM and has a few steps that need to be performed so that the changes are documented",
+      "narr3": "The process of adding material to the SRo is an OPM and has a few steps that need to be performed so that the changes are documented",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/6d341c8f-1b8b-4f29-8b26-cb414d4b1ccf?contextId=c1248d71-51e1-4a15-abad-767d693ec39b&bypassGroupFiltering=false",
+      "uap_label": "03_Add Material",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_TechMobile_faq.html",
+      "FAQ_Label": "FAQ For Tech Mobile",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Service",
+        "subentity": "TechMobile"
+      }
+    },
+    {
+      "sop_id": "TechMobile",
+      "frame_code": "D2",
+      "title": "D2. Decision is Additional work needed ?- Tech Mobile – at PPS",
+      "image": "../images/TechMobile/D2.png",
+      "decision_question": "Decision is Additional work needed ?- Tech Mobile – at PPS?",
+      "choices": [
+        {
+          "to": "Y2",
+          "label": "Yes, Additional Work needs to be performed- Tech Mobile – at PPS"
+        },
+        {
+          "to": "N2",
+          "label": "No, Additional Work needs to be performed- Tech Mobile – at PPS"
+        }
+      ],
+      "narr1": "Slide D2. Decision is Additional work needed ?- Tech Mobile – at PPS — Decision is Additional work needed ?- Tech Mobile – at PPS.",
+      "narr2": "As is common the technician finds that some additional work needs to be performed on the generator that was not scheduled however it is deemed necessary for the safe and reliable operation of the unit. So a decision if such a work is needed needs to be taken",
+      "narr3": "As is common the technician finds that some additional work needs to be performed on the generator that was not scheduled however it is deemed necessary for the safe and reliable operation of the unit. So a decision if such a work is needed needs to be taken",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_TechMobile_faq.html",
+      "FAQ_Label": "FAQ For Tech Mobile",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Service",
+        "subentity": "TechMobile"
+      }
+    },
+    {
+      "sop_id": "TechMobile",
+      "frame_code": "Y2",
+      "title": "Y2. Yes, Additional Work needs to be performed- Tech Mobile – at PPS",
+      "image": "../images/TechMobile/Y2.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "D3",
+          "label": "Decision, Can the additional work be performed during this visit? - Tech Mobile – at PPS"
+        }
+      ],
+      "narr1": "Slide Y2. Yes, Additional Work needs to be performed- Tech Mobile – at PPS — Yes, Additional Work needs to be performed- Tech Mobile – at PPS.",
+      "narr2": "The technician determines that additional work needs to be performed and choose to follow that path",
+      "narr3": "The technician determines that additional work needs to be performed and choose to follow that path",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_TechMobile_faq.html",
+      "FAQ_Label": "FAQ For Tech Mobile",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Service",
+        "subentity": "TechMobile"
+      }
+    },
+    {
+      "sop_id": "TechMobile",
+      "frame_code": "D3",
+      "title": "D3. Decision, Can the additional work be performed during this visit? - Tech Mobile – at PPS",
+      "image": "../images/TechMobile/D3.png",
+      "decision_question": "Decision, Can the additional work be performed during this visit?",
+      "choices": [
+        {
+          "to": "Y3",
+          "label": "Yes the Additional work can be performed during this visit - Tech Mobile – at PPS"
+        },
+        {
+          "to": "N3",
+          "label": "No, the Additional work can not be performed during this visit - Tech Mobile – at PPS"
+        }
+      ],
+      "narr1": "Slide D3. Decision, Can the additional work be performed during this visit? - Tech Mobile – at PPS — Decision, Can the additional work be performed during this visit? - Tech Mobile – at PPS.",
+      "narr2": "Having determined the scope and nature of the work yet another decision needs to be taken, that is can this additonal work be performed during this visit ?",
+      "narr3": "Having determined the scope and nature of the work yet another decision needs to be taken, that is can this additonal work be performed during this visit ?",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_TechMobile_faq.html",
+      "FAQ_Label": "FAQ For Tech Mobile",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Service",
+        "subentity": "TechMobile"
+      }
+    },
+    {
+      "sop_id": "TechMobile",
+      "frame_code": "Y3",
+      "title": "Y3. Yes the Additional work can be performed during this visit - Tech Mobile – at PPS",
+      "image": "../images/TechMobile/Y3.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S5",
+          "label": "Create a new SRO OPM - Tech Mobile – at PPS"
+        }
+      ],
+      "narr1": "Slide Y3. Yes the Additional work can be performed during this visit - Tech Mobile – at PPS — Yes the Additional work can be performed during this visit - Tech Mobile – at PPS.",
+      "narr2": "In this path the technician has determined that this additional work can be done during this visit",
+      "narr3": "In this path the technician has determined that this additional work can be done during this visit",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_TechMobile_faq.html",
+      "FAQ_Label": "FAQ For Tech Mobile",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Service",
+        "subentity": "TechMobile"
+      }
+    },
+    {
+      "sop_id": "TechMobile",
+      "frame_code": "S5",
+      "title": "S5. Create a new SRO OPM - Tech Mobile – at PPS",
+      "image": "../images/TechMobile/S5.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S6",
+          "label": "Travel (from) Leaving Site OPM - Tech Mobile – at PPS"
+        }
+      ],
+      "narr1": "Slide S5. Create a new SRO OPM - Tech Mobile – at PPS — Create a new SRO OPM - Tech Mobile – at PPS.",
+      "narr2": "The process to do the additional work is to create a new SRO which would have the details of the planned activites and material",
+      "narr3": "The process to do the additional work is to create a new SRO which would have the details of the planned activites and material",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/116036b4-ca1f-4c52-9ca5-544f66d3ee29?contextId=3a4b3dad-96fe-4694-a768-791383f32e32&bypassGroupFiltering=false",
+      "uap_label": "04_Quick Create SRO",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_TechMobile_faq.html",
+      "FAQ_Label": "FAQ For Tech Mobile",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Service",
+        "subentity": "TechMobile"
+      }
+    },
+    {
+      "sop_id": "TechMobile",
+      "frame_code": "S6",
+      "title": "S6. Travel (from) Leaving Site OPM - Tech Mobile – at PPS",
+      "image": "../images/TechMobile/S6.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S8",
+          "label": "Close the SRO OPM - Tech Mobile – at PPS"
+        }
+      ],
+      "narr1": "Slide S6. Travel (from) Leaving Site OPM - Tech Mobile – at PPS — Travel (from) Leaving Site OPM - Tech Mobile – at PPS.",
+      "narr2": "upon completing the service call the techician clock out of the work and clocks into the travel from the site OPM",
+      "narr3": "upon completing the service call the techician clock out of the work and clocks into the travel from the site OPM",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/0c07f2be-edd8-4fd3-9019-7cd98e03d831?contextId=c1248d71-51e1-4a15-abad-767d693ec39b&bypassGroupFiltering=false",
+      "uap_label": "04_Travel Leaving Site",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_TechMobile_faq.html",
+      "FAQ_Label": "FAQ For Tech Mobile",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Service",
+        "subentity": "TechMobile"
+      }
+    },
+    {
+      "sop_id": "TechMobile",
+      "frame_code": "S8",
+      "title": "S8. Close the SRO OPM - Tech Mobile – at PPS",
+      "image": "../images/TechMobile/S8.png",
+      "decision_question": "Would you like to go to D3 \"Can Additional  Work be completed during this visit \" or to the end of the Path  slide ?",
+      "choices": [
+        {
+          "to": "D3a",
+          "label": "Go to \"Can Additional Work be done During this visit?\""
+        },
+        {
+          "to": "S998a",
+          "label": "Go to the end of the path slide S998a"
+        }
+      ],
+      "narr1": "Slide S8. Close the SRO OPM - Tech Mobile – at PPS — Close the SRO OPM - Tech Mobile – at PPS.",
+      "narr2": "The call having been completed and technician Is either headed to another call is back to base the original SRO and any other additional SRO created and completed are marked appropriately",
+      "narr3": "The call having been completed and technician Is either headed to another call is back to base the original SRO and any other additional SRO created and completed are marked appropriately",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/0b3e9194-e7e0-497b-8225-aa1d5635d30d?contextId=c1248d71-51e1-4a15-abad-767d693ec39b&bypassGroupFiltering=false",
+      "uap_label": "05_Close Appointment",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_TechMobile_faq.html",
+      "FAQ_Label": "FAQ For Tech Mobile",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Service",
+        "subentity": "TechMobile"
+      }
+    },
+    {
+      "sop_id": "TechMobile",
+      "frame_code": "S998a",
+      "title": "S998a. You have come to the end of the path selected in the – Tech Mobile Process",
+      "image": "../images/TechMobile/S998a.png",
+      "decision_question": "Would you like to restart S1 or go to the end of the SOP S999",
+      "choices": [
+        {
+          "to": "S1",
+          "label": "Go to the beginning of the SOP S1"
+        },
+        {
+          "to": "S999",
+          "label": "Go to the end of SOP S999"
+        }
+      ],
+      "narr1": "Slide S998a. You have come to the end of the path selected in the – Tech Mobile Process — You have come to the end of the path selected in the – Tech Mobile Process.",
+      "narr2": "While you have reached the end of a path it would be beneficial to follow an alternate path by selecting one of decision points from the Bread Crumb above however if you have traversed all the paths and would like to go to the end of this SOP do so by Clicking on S999, indicating you have completed this simulation for the Tech Mobile SOP \n\nEver heard the phrase “Practice makes perfect ? – if you had not then now you have !\n\nThe Management and your project team would like you to practice this and other processes so that the Go live is smooth or if your new to the company or are new to the role you can get proficient in the training environment \u000bAs one becomes more proficient in this system it behooves us to share that knowledge and help other so the Company can  achieve its destiny",
+      "narr3": "While you have reached the end of a path it would be beneficial to follow an alternate path by selecting one of decision points from the Bread Crumb above however if you have traversed all the paths and would like to go to the end of this SOP do so by Clicking on S999, indicating you have completed this simulation for the Tech Mobile SOP \n\nEver heard the phrase “Practice makes perfect ? – if you had not then now you have !\n\nThe Management and your project team would like you to practice this and other processes so that the Go live is smooth or if your new to the company or are new to the role you can get proficient in the training environment \u000bAs one becomes more proficient in this system it behooves us to share that knowledge and help other so the Company can  achieve its destiny",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_TechMobile_faq.html",
+      "FAQ_Label": "FAQ For Tech Mobile",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Service",
+        "subentity": "TechMobile"
+      }
+    },
+    {
+      "sop_id": "TechMobile",
+      "frame_code": "D3a",
+      "title": "D3a. Decision, Can the additional work be performed during this visit? - Tech Mobile – at PPS",
+      "image": "../images/TechMobile/D3a.png",
+      "decision_question": "Decision, Can the additional work be performed during this visit?",
+      "choices": [
+        {
+          "to": "N3",
+          "label": "No, the Additional work can not be performed during this visit - Tech Mobile – at PPS"
+        },
+        {
+          "to": "Y3",
+          "label": "Yes the Additional work can be performed during this visit - Tech Mobile – at PPS"
+        }
+      ],
+      "narr1": "Slide D3a. Decision, Can the additional work be performed during this visit? - Tech Mobile – at PPS — Decision, Can the additional work be performed during this visit? - Tech Mobile – at PPS.",
+      "narr2": "Earlier this question of whether the additional service could be performed during this visit was asked, however the posibility that it could not completed during the visit needs to be investigated hence the question is reasked",
+      "narr3": "Earlier this question of whether the additional service could be performed during this visit was asked, however the posibility that it could not completed during the visit needs to be investigated hence the question is reasked",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_TechMobile_faq.html",
+      "FAQ_Label": "FAQ For Tech Mobile",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Service",
+        "subentity": "TechMobile"
+      }
+    },
+    {
+      "sop_id": "TechMobile",
+      "frame_code": "N3",
+      "title": "N3. No, the Additional work can not be performed during this visit - Tech Mobile – at PPS",
+      "image": "../images/TechMobile/N3.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S7",
+          "label": "Change the status of SRO Indicating “ Call Back” OPM - Tech Mobile – at PPS"
+        }
+      ],
+      "narr1": "Slide N3. No, the Additional work can not be performed during this visit - Tech Mobile – at PPS — No, the Additional work can not be performed during this visit - Tech Mobile – at PPS.",
+      "narr2": "The technican has determined that while the additional service is needed he /she feels it is not possible to complete it during this visit. This could be due to various resource constraints - part , time skill level are some examples",
+      "narr3": "The technican has determined that while the additional service is needed he /she feels it is not possible to complete it during this visit. This could be due to various resource constraints - part , time skill level are some examples",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_TechMobile_faq.html",
+      "FAQ_Label": "FAQ For Tech Mobile",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Service",
+        "subentity": "TechMobile"
+      }
+    },
+    {
+      "sop_id": "TechMobile",
+      "frame_code": "S7",
+      "title": "S7. Change the status of SRO Indicating “ Call Back” OPM - Tech Mobile – at PPS",
+      "image": "../images/TechMobile/S7.png",
+      "decision_question": "Would you like to go to S6 \"to see the natural progression  \" or to the end of the path slide S998b ?",
+      "choices": [
+        {
+          "to": "S6",
+          "label": "Go to the Travel Leaving step"
+        },
+        {
+          "to": "S998b",
+          "label": "Go to the End of path Slide S998b"
+        }
+      ],
+      "narr1": "Slide S7. Change the status of SRO Indicating “ Call Back” OPM - Tech Mobile – at PPS — Change the status of SRO Indicating “ Call Back” OPM - Tech Mobile – at PPS.",
+      "narr2": "Since the additional work or the original work could not be performed the situlation warrants a \"Call back \"",
+      "narr3": "Since the additional work or the original work could not be performed the situlation warrants a \"Call back \"",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/4d5d0110-6fad-4e83-8aa5-cf8324299109?contextId=c1248d71-51e1-4a15-abad-767d693ec39b&bypassGroupFiltering=false",
+      "uap_label": "06_Change Status to Call Back",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_TechMobile_faq.html",
+      "FAQ_Label": "FAQ For Tech Mobile",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Service",
+        "subentity": "TechMobile"
+      }
+    },
+    {
+      "sop_id": "TechMobile",
+      "frame_code": "S998b",
+      "title": "S998b. You have come to the end of the path selected in the – Tech Mobile Process",
+      "image": "../images/TechMobile/S998b.png",
+      "decision_question": "Would you like to restart at D2a \"Additional work needed\" or go to the end of sop",
+      "choices": [
+        {
+          "to": "D2a",
+          "label": "Go to \"Decision is Additional work needed ?\""
+        },
+        {
+          "to": "S999",
+          "label": "Go to the end of the SOP S999"
+        }
+      ],
+      "narr1": "Slide S998b. You have come to the end of the path selected in the – Tech Mobile Process — You have come to the end of the path selected in the – Tech Mobile Process.",
+      "narr2": "While you have reached the end of a path it would be beneficial to follow an alternate path by selecting one of decision points from the Bread Crumb above however if you have traversed all the paths and would like to go to the end of this SOP do so by Clicking on S999, indicating you have completed this simulation for the Tech Mobile SOP \n\nEver heard the phrase “Practice makes perfect ? – if you had not then now you have !\n\nThe Management and your project team would like you to practice this and other processes so that the Go live is smooth or if your new to the company or are new to the role you can get proficient in the training environment \u000bAs one becomes more proficient in this system it behooves us to share that knowledge and help other so the Company can  achieve its destiny",
+      "narr3": "While you have reached the end of a path it would be beneficial to follow an alternate path by selecting one of decision points from the Bread Crumb above however if you have traversed all the paths and would like to go to the end of this SOP do so by Clicking on S999, indicating you have completed this simulation for the Tech Mobile SOP \n\nEver heard the phrase “Practice makes perfect ? – if you had not then now you have !\n\nThe Management and your project team would like you to practice this and other processes so that the Go live is smooth or if your new to the company or are new to the role you can get proficient in the training environment \u000bAs one becomes more proficient in this system it behooves us to share that knowledge and help other so the Company can  achieve its destiny",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_TechMobile_faq.html",
+      "FAQ_Label": "FAQ For Tech Mobile",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Service",
+        "subentity": "TechMobile"
+      }
+    },
+    {
+      "sop_id": "TechMobile",
+      "frame_code": "D2a",
+      "title": "D2a. Decision is Additional work needed ?- Tech Mobile – at PPS",
+      "image": "../images/TechMobile/D2a.png",
+      "decision_question": "Decision is Additional work needed ?",
+      "choices": [
+        {
+          "to": "N2",
+          "label": "No, Additional Work needs to be performed- Tech Mobile – at PPS"
+        },
+        {
+          "to": "Y2",
+          "label": "Yes, Additional Work needs to be performed- Tech Mobile – at PPS"
+        }
+      ],
+      "narr1": "Slide D2a. Decision is Additional work needed ?- Tech Mobile – at PPS — Decision is Additional work needed ?- Tech Mobile – at PPS.",
+      "narr2": "Earlier this question about additional work was asked but it need to be asked again to investigate the other possiblility of no",
+      "narr3": "Earlier this question about additional work was asked but it need to be asked again to investigate the other possiblility of no",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_TechMobile_faq.html",
+      "FAQ_Label": "FAQ For Tech Mobile",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Service",
+        "subentity": "TechMobile"
+      }
+    },
+    {
+      "sop_id": "TechMobile",
+      "frame_code": "N2",
+      "title": "N2. No, Additional Work needs to be performed- Tech Mobile – at PPS",
+      "image": "../images/TechMobile/N2.png",
+      "decision_question": "Would you like to go to S6 \"to see the natural progression  \" or to the end of the path slide S998c ?",
+      "choices": [
+        {
+          "to": "S6",
+          "label": "Go to to then Next step Trave leaving"
+        },
+        {
+          "to": "S998c",
+          "label": "Go to the end of Path slide S998c"
+        }
+      ],
+      "narr1": "Slide N2. No, Additional Work needs to be performed- Tech Mobile – at PPS — No, Additional Work needs to be performed- Tech Mobile – at PPS.",
+      "narr2": "in this path it is determined that no additional work is needed",
+      "narr3": "in this path it is determined that no additional work is needed",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_TechMobile_faq.html",
+      "FAQ_Label": "FAQ For Tech Mobile",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Service",
+        "subentity": "TechMobile"
+      }
+    },
+    {
+      "sop_id": "TechMobile",
+      "frame_code": "S998c",
+      "title": "S998c. You have come to the end of the path selected in the – Tech Mobile Process",
+      "image": "../images/TechMobile/S998c.png",
+      "decision_question": "You could go to the Previous decision or to the end of the SOP S999",
+      "choices": [
+        {
+          "to": "D1a",
+          "label": "Go to  Decision, Is additional material needed ?- Tech Mobile – at PPS"
+        },
+        {
+          "to": "S999",
+          "label": "Go to the end of the SOP S999"
+        }
+      ],
+      "narr1": "Slide S998c. You have come to the end of the path selected in the – Tech Mobile Process — You have come to the end of the path selected in the – Tech Mobile Process.",
+      "narr2": "While you have reached the end of a path it would be beneficial to follow an alternate path by selecting one of decision points from the Bread Crumb above however if you have traversed all the paths and would like to go to the end of this SOP do so by Clicking on S999, indicating you have completed this simulation for the Tech Mobile SOP \n\nEver heard the phrase “Practice makes perfect ? – if you had not then now you have !\n\nThe Management and your project team would like you to practice this and other processes so that the Go live is smooth or if your new to the company or are new to the role you can get proficient in the training environment \u000bAs one becomes more proficient in this system it behooves us to share that knowledge and help other so the Company can  achieve its destiny",
+      "narr3": "While you have reached the end of a path it would be beneficial to follow an alternate path by selecting one of decision points from the Bread Crumb above however if you have traversed all the paths and would like to go to the end of this SOP do so by Clicking on S999, indicating you have completed this simulation for the Tech Mobile SOP \n\nEver heard the phrase “Practice makes perfect ? – if you had not then now you have !\n\nThe Management and your project team would like you to practice this and other processes so that the Go live is smooth or if your new to the company or are new to the role you can get proficient in the training environment \u000bAs one becomes more proficient in this system it behooves us to share that knowledge and help other so the Company can  achieve its destiny",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_TechMobile_faq.html",
+      "FAQ_Label": "FAQ For Tech Mobile",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Service",
+        "subentity": "TechMobile"
+      }
+    },
+    {
+      "sop_id": "TechMobile",
+      "frame_code": "D1a",
+      "title": "D1a. A Decision, Is additional material needed ?- Tech Mobile – at PPS",
+      "image": "../images/TechMobile/D1a.png",
+      "decision_question": "A Decision, Is additional material needed ?- Tech Mobile – at PPS?",
+      "choices": [
+        {
+          "to": "N1",
+          "label": "No, Additional material is needed - Tech Mobile – at PPS"
+        },
+        {
+          "to": "Y1",
+          "label": "Yes, Additional material is needed - Tech Mobile – at PPS"
+        }
+      ],
+      "narr1": "Slide D1a. A Decision, Is additional material needed ?- Tech Mobile – at PPS — A Decision, Is additional material needed ?- Tech Mobile – at PPS.",
+      "narr2": "A Decision, Is additional material needed ?- Tech Mobile – at PPS",
+      "narr3": "A Decision, Is additional material needed ?- Tech Mobile – at PPS",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_TechMobile_faq.html",
+      "FAQ_Label": "FAQ For Tech Mobile",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Service",
+        "subentity": "TechMobile"
+      }
+    },
+    {
+      "sop_id": "TechMobile",
+      "frame_code": "N1",
+      "title": "N1. No, Additional material is needed - Tech Mobile – at PPS",
+      "image": "../images/TechMobile/N1.png",
+      "decision_question": "Would you like to go to D2 \"to the decision on additional work \" or to the end of the path slide S998d ?",
+      "choices": [
+        {
+          "to": "D2",
+          "label": "You have come to the end of the path selected in the – Tech Mobile Process"
+        },
+        {
+          "to": "S998d",
+          "label": "Decision is Additional work needed ?- Tech Mobile – at PPS"
+        }
+      ],
+      "narr1": "Slide N1. No, Additional material is needed - Tech Mobile – at PPS — No, Additional material is needed - Tech Mobile – at PPS.",
+      "narr2": "No, Additional material is needed - Tech Mobile – at PPS",
+      "narr3": "No, Additional material is needed - Tech Mobile – at PPS",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_TechMobile_faq.html",
+      "FAQ_Label": "FAQ For Tech Mobile",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Service",
+        "subentity": "TechMobile"
+      }
+    },
+    {
+      "sop_id": "TechMobile",
+      "frame_code": "S998d",
+      "title": "S998d. You have come to the end of the path selected in the – Tech Mobile Process",
+      "image": "../images/TechMobile/S998d.png",
+      "decision_question": "Would you like to restart or go to the end of the SOP",
+      "choices": [
+        {
+          "to": "S1",
+          "label": "Would you like to restart"
+        },
+        {
+          "to": "S999",
+          "label": "Would you like to go to the end of the SOP"
+        }
+      ],
+      "narr1": "Slide S998d. You have come to the end of the path selected in the – Tech Mobile Process — You have come to the end of the path selected in the – Tech Mobile Process.",
+      "narr2": "While you have reached the end of a path it would be beneficial to follow an alternate path by selecting one of decision points from the Bread Crumb above however if you have traversed all the paths and would like to go to the end of this SOP do so by Clicking on S999, indicating you have completed this simulation for the Tech Mobile SOP \n\nEver heard the phrase “Practice makes perfect ? – if you had not then now you have !\n\nThe Management and your project team would like you to practice this and other processes so that the Go live is smooth or if your new to the company or are new to the role you can get proficient in the training environment \u000bAs one becomes more proficient in this system it behooves us to share that knowledge and help other so the Company can  achieve its destiny",
+      "narr3": "While you have reached the end of a path it would be beneficial to follow an alternate path by selecting one of decision points from the Bread Crumb above however if you have traversed all the paths and would like to go to the end of this SOP do so by Clicking on S999, indicating you have completed this simulation for the Tech Mobile SOP \n\nEver heard the phrase “Practice makes perfect ? – if you had not then now you have !\n\nThe Management and your project team would like you to practice this and other processes so that the Go live is smooth or if your new to the company or are new to the role you can get proficient in the training environment \u000bAs one becomes more proficient in this system it behooves us to share that knowledge and help other so the Company can  achieve its destiny",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_TechMobile_faq.html",
+      "FAQ_Label": "FAQ For Tech Mobile",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Service",
+        "subentity": "TechMobile"
+      }
+    },
+    {
+      "sop_id": "TechMobile",
+      "frame_code": "S999",
+      "title": "S999. You have successfully completed this SOP",
+      "image": "../images/TechMobile/S999.png",
+      "decision_question": "",
+      "choices": [],
+      "narr1": "Slide S999. You have successfully completed this SOP — You have successfully completed this SOP.",
+      "narr2": "Thank you for completing this module on Generator Startup Procedure SOP . The ERP Project Team and Training Group appreciate your time, attention, and commitment to learning our new systems and processes.\n. More help is available at https://docs.infor.com/ism/2025.x/en-us/ismolh/default.html  \nTo be confident in your day-to-day work—and to avoid surprises at Go Live or when you move into a new role—please set aside time to practice this SOP in the training environment. Working through realistic examples several times will help you:\u000b• Follow the steps in the correct sequence\u000b• Understand what the key fields and options do\u000b• Reduce errors when you work in the live system\u000b• Handle real customer and business situations with confidence\n\nThe training environment is the safest place to practice, ask questions, and learn from mistakes—before they affect real orders, inventory, equipment, or customers. The more you use the training environment now, the smoother your work will be later in the live system.\n\nAbout the Help\nDownloading the Latest Help\nThe latest help for this product is always available on www.docs.infor.com. If you are using this product on-premises and you need to have the help on-premises, see your product's installation guide for instructions.\n\nCopyrights and Trademarks\nAll topics, screens, and code are protected by U.S. copyright laws and international treaties.\n\nCopyright Infor. All Rights Reserved. The word and design marks set forth herein are trademarks and/or registered trademarks of Infor and/or related affiliates and subsidiaries. All rights reserved. All other trademarks listed herein are the property of their respective owners. www.infor.com\n\nThe fonts in C39Tools are copyright 2002 Jerry Whiting. Portions copyright 2002 Azalea Software, Inc. Seattle WA. All rights reserved. The fonts in C128Tools are copyright 2002 Azalea Software, Inc. Seattle WA. All rights reserved.\n\nRestricted Rights Legend\nUse, duplication, or disclosure by the Government is subject to restrictions as set forth in subparagraph (c)(1)(ii) of the Rights in Technical Data and Computer Software clause at DFARS 252.227-7013, and Rights in Data-General at FAR 52.227.14, as applicable. Name of Contractor: Infor, 13560 Morris Road, Suite 4100, Alpharetta, GA 30004 USA.\n\nRelated topics\nGetting help on a form\nGetting help on a component of a form\nGetting general help\nSearching for a topic in the Help\nGetting form information\nPrinting single help topics\nPrinting help guides to PDF\nUsing the Help",
+      "narr3": "Thank you for completing this module on Generator Startup Procedure SOP . The ERP Project Team and Training Group appreciate your time, attention, and commitment to learning our new systems and processes.\n. More help is available at https://docs.infor.com/ism/2025.x/en-us/ismolh/default.html  \nTo be confident in your day-to-day work—and to avoid surprises at Go Live or when you move into a new role—please set aside time to practice this SOP in the training environment. Working through realistic examples several times will help you:\u000b• Follow the steps in the correct sequence\u000b• Understand what the key fields and options do\u000b• Reduce errors when you work in the live system\u000b• Handle real customer and business situations with confidence\n\nThe training environment is the safest place to practice, ask questions, and learn from mistakes—before they affect real orders, inventory, equipment, or customers. The more you use the training environment now, the smoother your work will be later in the live system.\n\nAbout the Help\nDownloading the Latest Help\nThe latest help for this product is always available on www.docs.infor.com. If you are using this product on-premises and you need to have the help on-premises, see your product's installation guide for instructions.\n\nCopyrights and Trademarks\nAll topics, screens, and code are protected by U.S. copyright laws and international treaties.\n\nCopyright Infor. All Rights Reserved. The word and design marks set forth herein are trademarks and/or registered trademarks of Infor and/or related affiliates and subsidiaries. All rights reserved. All other trademarks listed herein are the property of their respective owners. www.infor.com\n\nThe fonts in C39Tools are copyright 2002 Jerry Whiting. Portions copyright 2002 Azalea Software, Inc. Seattle WA. All rights reserved. The fonts in C128Tools are copyright 2002 Azalea Software, Inc. Seattle WA. All rights reserved.\n\nRestricted Rights Legend\nUse, duplication, or disclosure by the Government is subject to restrictions as set forth in subparagraph (c)(1)(ii) of the Rights in Technical Data and Computer Software clause at DFARS 252.227-7013, and Rights in Data-General at FAR 52.227.14, as applicable. Name of Contractor: Infor, 13560 Morris Road, Suite 4100, Alpharetta, GA 30004 USA.\n\nRelated topics\nGetting help on a form\nGetting help on a component of a form\nGetting general help\nSearching for a topic in the Help\nGetting form information\nPrinting single help topics\nPrinting help guides to PDF\nUsing the Help",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "",
+      "FAQ_File": "",
+      "FAQ_Label": "",
+      "Quiz_Loc": "../quiz",
+      "Quiz_File": "PPS_TechMobile_quiz.html",
+      "Quiz_Label": "Check your understanding on Tech Mobile",
+      "meta": {
+        "entity": "PALCO",
+        "function": "Service",
+        "subentity": "TechMobile"
+      }
+    }
+  ]
+}

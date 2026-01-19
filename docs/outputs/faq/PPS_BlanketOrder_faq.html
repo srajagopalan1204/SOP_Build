@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>PPS – Blanket Order Creation & Processing – FAQ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.5rem;
+      line-height: 1.6;
+      background: #f7f7fb;
+    }
+    h1, h2 {
+      color: #111827;
+    }
+    .intro {
+      margin-bottom: 1rem;
+      padding: 0.75rem 1rem;
+      background: #e5e7eb;
+      border-radius: 6px;
+      font-size: 0.95rem;
+    }
+    details {
+      margin-bottom: 0.75rem;
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+    summary {
+      cursor: pointer;
+      font-weight: 600;
+      color: #111827;
+    }
+    summary::-webkit-details-marker {
+      margin-right: 0.5rem;
+    }
+    p {
+      margin: 0.4rem 0;
+    }
+    ul {
+      margin: 0.4rem 0 0.4rem 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>PPS – Blanket Order Creation & Processing – Frequently Asked Questions</h1>
+
+  <div class="intro">
+    <p>
+      This FAQ supports the <strong>PPS Blanket Order Creation and Processing</strong> SOP
+      (M1 – Blanket Order Creation and Processing – PPS Sales). It explains the main decisions and
+      steps from the contractor’s initial order request through the final handoff to the Start-Up SOP.
+    </p>
+  </div>
+
+  <section aria-label="FAQ list">
+    <h2>Questions &amp; Answers</h2>
+
+    <details open>
+      <summary>1. What is the purpose of the PPS Blanket Order SOP?</summary>
+      <p>
+        The PPS Blanket Order SOP defines the end-to-end process for handling blanket orders for
+        generator projects in PPS Sales. It covers:
+      </p>
+      <ul>
+        <li>The contractor’s initial request for a generator (with or without a transfer switch).</li>
+        <li>Creation of the blanket order in the system.</li>
+        <li>Handling non-stock / modified-build generators and serialization.</li>
+        <li>Creating and managing releases (01, 02, etc.).</li>
+        <li>Shipping feedback and AR for each release.</li>
+        <li>Handoff to the Start-Up SOP once the generator is ready for start-up.</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>2. Where does this SOP start and end?</summary>
+      <p>
+        The process starts at <strong>S1. Contractor Places an Order for a Generator</strong>, including
+        the decision about whether the generator and transfer switch will be shipped together or
+        separately.
+      </p>
+      <p>
+        It ends after the planned releases have been shipped and invoiced (for example 01 and 02
+        suffixes), and the process hands off to <strong>S17. Start-Up SOP</strong> when the customer
+        calls for start-up (S16).
+      </p>
+    </details>
+
+    <details>
+      <summary>3. Why is the decision about separate shipment (D1) important?</summary>
+      <p>
+        The decision <strong>“Do they want the generator and transfer switch shipped separate?” (D1)</strong>
+        drives how the blanket order and releases are structured:
+      </p>
+      <ul>
+        <li>
+          If separate shipment is requested, additional releases may be created
+          (for example, via <strong>S7. Create 3 Releases</strong>) so that the generator,
+          transfer switch, and related work can move on different suffixes.
+        </li>
+        <li>
+          If combined shipment is acceptable, fewer releases may be used
+          (for example, via <strong>S18. Create 2 Releases</strong>).
+        </li>
+      </ul>
+      <p>
+        Getting this decision right up front reduces confusion around pick tickets and invoices
+        later in the process.
+      </p>
+    </details>
+
+    <details>
+      <summary>4. How are modified-build generators handled (D3, S3, S4)?</summary>
+      <p>
+        When the answer to <strong>D3 – Is the generator a modified build ordered from vendor?</strong>
+        is <strong>Yes</strong>:
+      </p>
+      <ul>
+        <li>
+          <strong>S3. Create Order as Needed Non-Stock</strong> is used to set up the needed
+          non-stock order for the generator.
+        </li>
+        <li>
+          <strong>S4. Make a Product Serialized</strong> ensures the generator is treated as a
+          serialized item, supporting warranty, service history, and start-up tracking.
+        </li>
+      </ul>
+      <p>
+        This ensures that modified-build units are properly tracked from vendor order through
+        installation and start-up.
+      </p>
+    </details>
+
+    <details>
+      <summary>5. What do S5 (Add Items) and S6 (Add Lump Sum) do on the blanket order?</summary>
+      <p>
+        On the blanket order:
+      </p>
+      <ul>
+        <li>
+          <strong>S5. Add Items (Including Start-Up)</strong> is used to add item lines such as the
+          generator, transfer switch, start-up SKU, and any other related products.
+        </li>
+        <li>
+          <strong>S6. Add Lump Sum</strong> is used to add any lump-sum lines (for example, agreed
+          package prices or additional charges that are not tied to a single item).
+        </li>
+      </ul>
+      <p>
+        Together, these steps ensure that the blanket order accurately reflects what was sold to the
+        customer, both in quantities and in dollars.
+      </p>
+    </details>
+
+    <details>
+      <summary>6. How do S7 and S18 (Create Releases) fit into the process?</summary>
+      <p>
+        The steps <strong>S7. Create 3 Releases</strong> and
+        <strong>S18. Create 2 Releases</strong> control how the blanket order is broken into releases:
+      </p>
+      <ul>
+        <li>
+          <strong>S7. Create 3 Releases</strong> can be used when multiple distinct releases are
+          needed (for example, to separate transfer switch, generator, and other components).
+        </li>
+        <li>
+          <strong>S18. Create 2 Releases</strong> can be used when fewer releases are sufficient
+          (for example, one for initial materials and one for the generator).
+        </li>
+      </ul>
+      <p>
+        These releases drive which suffixes (such as 01 and 02) show up on pick tickets, shipping
+        feedback, and AR documents.
+      </p>
+    </details>
+
+    <details>
+      <summary>7. What is the role of S8 – Run OEEPC?</summary>
+      <p>
+        <strong>S8. Run OEEPC</strong> processes the blanket order through the order engine before
+        the first release moves forward. Depending on configuration, it can:
+      </p>
+      <ul>
+        <li>Validate pricing and any engineered configuration rules.</li>
+        <li>Update order lines and release structures.</li>
+        <li>Help ensure that subsequent pick tickets and shipments run cleanly.</li>
+      </ul>
+      <p>
+        Running OEEPC at the right time reduces rework and exceptions during release processing.
+      </p>
+    </details>
+
+    <details>
+      <summary>8. How does the first release (01 suffix) flow work?</summary>
+      <p>
+        The first release typically uses the <strong>01 suffix</strong> and follows this flow:
+      </p>
+      <ul>
+        <li><strong>S9. Customer Calls For First Release</strong> – the customer requests the first part of the order.</li>
+        <li><strong>S8. Run OEEPC</strong> (if not already run) – to ensure the release is valid.</li>
+        <li><strong>S10. Print Pick Ticket on 01 Suffix</strong> – the warehouse picks and stages material.</li>
+        <li><strong>S11. Shipping Feedback</strong> – actual shipped quantities are recorded.</li>
+        <li><strong>S12. “01 Suffix” Goes Through AR Process</strong> – the first release is invoiced.</li>
+      </ul>
+      <p>
+        This creates a clean chain from request to shipment to invoice for the first portion of the blanket order.
+      </p>
+    </details>
+
+    <details>
+      <summary>9. What happens in the second release and how does it link to Start-Up?</summary>
+      <p>
+        After the first release is complete:
+      </p>
+      <ul>
+        <li><strong>S13. Customer Calls For Second Release (Generator)</strong> – the generator is now ready to be delivered.</li>
+        <li>A check is made on whether the expected number of releases were created (for example via D2 – “Were 3 Releases Created?”).</li>
+        <li><strong>S14. Print Pick Ticket on 02 Suffix</strong> – the generator is picked.</li>
+        <li><strong>S15. Shipping Feedback</strong> – the generator shipment is recorded.</li>
+        <li><strong>S16. Customer Calls For Start-Up</strong> – once the generator is installed or ready.</li>
+        <li><strong>S17. Start-Up SOP</strong> – the process hands off to the Start-Up SOP for the field start-up work.</li>
+      </ul>
+      <p>
+        This creates a clean bridge between sales / blanket order processing and PPS Service’s start-up activities.
+      </p>
+    </details>
+
+    <details>
+      <summary>10. How does the Blanket Order SOP fit into the broader PPS / Scott Electric process?</summary>
+      <p>
+        The Blanket Order SOP is one part of the overall generator project lifecycle:
+      </p>
+      <ul>
+        <li><strong>Upstream:</strong> PPS Sales works with the contractor to define and price a solution (generator, transfer switch, start-up, etc.).</li>
+        <li><strong>This SOP:</strong> The blanket order is created, configured, released, shipped, and invoiced in a controlled way.</li>
+        <li><strong>Downstream:</strong> Once the generator has been shipped and the customer is ready, the Start-Up SOP handles field start-up, and future PMA or service work may follow.</li>
+      </ul>
+      <p>
+        A well-managed blanket order process keeps shipments, invoices, and start-up timing aligned, reducing surprises for both PPS and the customer.
+      </p>
+    </details>
+  </section>
+</body>
+</html>

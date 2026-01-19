@@ -1,0 +1,867 @@
+{
+  "sop_id": "StartUp",
+  "start_code": "S000",
+  "frames": [
+    {
+      "sop_id": "StartUp",
+      "frame_code": "S000",
+      "title": "S000. Opening Slide for PPS – Service – Generator Startup Deck",
+      "image": "../images/StartUp/S000.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S001",
+          "label": "About Palco Power Systems and Scott Electric -and a Welcome to Training"
+        }
+      ],
+      "narr1": "Slide S000. Opening Slide for PPS – Service – Generator Startup Deck — Opening Slide for PPS.",
+      "narr2": "Opening Slide for PPS.",
+      "narr3": "Palco Power Systems is a specialized power solutions provider and an authorized KOHLER distributor, serving customers across western Pennsylvania, West Virginia, and western Maryland. Since 1972, Palco has supplied reliable generator systems and power equipment to industrial, commercial, municipal, healthcare, and residential customers who depend on uninterrupted power.\nAs part of the Scott Electric family since 1993, Palco Power Systems combines deep technical expertise with the broader resources of a leading independent electrical distributor. Our portfolio includes KOHLER industrial, mobile (towable), residential, and portable generator systems; pumps; other power systems and components; Honda portable units; transfer equipment; and related accessories, including ASCO and PSP components.\nOver the years, Palco’s territory and responsibilities have grown along with its reputation:\n• 1972 – Palco becomes an authorized KOHLER distributor in western Pennsylvania.\n• 1984 – Territory expands to include West Virginia and western Maryland.\n• 1989 – Area of responsibility further expands to include western New York State.\n• 1993 – Scott Electric Company acquires Palco.\n• 2001 – Territory is adjusted with the removal of western New York State.\nMost recently, Palco Power Systems was the first Scott Electric division to host a Conference Room Pilot (CRP) for the new Infor CloudSuite software, demonstrating leadership and innovation in how we use technology to support customers and internal operations.",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_StartUp_faq.html",
+      "FAQ_Label": "StartUp related FAQ's",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "StartUp"
+      }
+    },
+    {
+      "sop_id": "StartUp",
+      "frame_code": "S001",
+      "title": "S001. About Palco Power Systems and Scott Electric -and a Welcome to Training",
+      "image": "../images/StartUp/S001.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S002",
+          "label": "Palco Power Systems – Service to Cash Work Flow"
+        }
+      ],
+      "narr1": "Slide S001. About Palco Power Systems and Scott Electric -and a Welcome to Training — About Palco Power Systems and Scott Electric and a Welcome to Training.",
+      "narr2": "About Palco Power Systems and Scott Electric and a Welcome to Training.",
+      "narr3": "Palco Power Systems is a specialized power solutions provider and an authorized KOHLER distributor, serving customers across western Pennsylvania, West Virginia, and western Maryland. Since 1972, Palco has supplied reliable generator systems and power equipment to industrial, commercial, municipal, healthcare, and residential customers who depend on uninterrupted power.\nAs part of the Scott Electric family since 1993, Palco Power Systems combines deep technical expertise with the broader resources of a leading independent electrical distributor. Our portfolio includes KOHLER industrial, mobile (towable), residential, and portable generator systems; pumps; other power systems and components; Honda portable units; transfer equipment; and related accessories, including ASCO and PSP components.\nOver the years, Palco’s territory and responsibilities have grown along with its reputation:\u000b• 1972 – Palco becomes an authorized KOHLER distributor in western Pennsylvania.\u000b• 1984 – Territory expands to include West Virginia and western Maryland.\u000b• 1989 – Area of responsibility further expands to include western New York State.\u000b• 1993 – Scott Electric Company acquires Palco.\u000b• 2001 – Territory is adjusted with the removal of western New York State.\nMost recently, Palco Power Systems was the first Scott Electric division to host a Conference Room Pilot (CRP) for the new Infor CloudSuite software, demonstrating leadership and innovation in how we use technology to support customers and internal operations. This work reflects the dedication of the Palco team—including Tanner Schwartz, Valerie Markish, Tim Drop, Jen Schlegel, and Subi Rajagopalan—along with support from the broader ERP project, Champions, and Executive Sponsors. The management teams at Palco Power Systems and Scott Electric continue to support these efforts by prioritizing training, process improvement, and the successful adoption of the new system.\n\nWelcome to the Palco Power Systems Training Site.\nThis section of the Scott Electric Training Site is designed to help you build the knowledge and skills needed to support our power systems customers safely, accurately, and efficiently—whether you work in sales, service, parts, rentals, administration, or support. Here you will find guided learning, reference materials, and role-based courses tailored to the work we do every day at Palco: sizing and selecting generators, supporting projects, coordinating installations, servicing equipment, and taking care of customers before, during, and after the sale.\n\nThank you for investing your time in training. Your commitment to learning and continuous improvement helps keep Palco Power Systems—and Scott Electric as a whole—reliable, responsive, and growing as we continue our customer-focused operations.",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_StartUp_faq.html",
+      "FAQ_Label": "StartUp related FAQ's",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "StartUp"
+      }
+    },
+    {
+      "sop_id": "StartUp",
+      "frame_code": "S002",
+      "title": "S002. Palco Power Systems – Service to Cash Work Flow",
+      "image": "../images/StartUp/S002.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S003",
+          "label": "Pictorial representation of   Service  to Cash"
+        }
+      ],
+      "narr1": "Slide S002. Palco Power Systems – Service to Cash Work Flow — Parts Personnel Technicians Manufacturer's Guide.",
+      "narr2": "This is the overall Work flow on how a service request is processed at Palco Power System. This covers the business process that starts from a request from a customer or based on a contract the need for a",
+      "narr3": "This is the overall Work flow on how a service request is processed at Palco Power System. This covers the business process that starts from a request from a customer or based on a contract the need for a routine service that need to be performed. Request from customers could be for a break fix , a warranty question or request for additional work suggest as a nice to perform during the most recent visit by a very well trained and efficient Service technician crea at PPS. This transistions through the various business sections of Service writes Service  , schedulers , technicians , parts department, purchasing , billing and finally collection of payment. Hence the term Service to Cash is ofen used to succinctly name it",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_StartUp_faq.html",
+      "FAQ_Label": "StartUp related FAQ's",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "StartUp"
+      }
+    },
+    {
+      "sop_id": "StartUp",
+      "frame_code": "S003",
+      "title": "S003. Pictorial representation of Quote/ Service Request to Cash similar to Quote to Cash - At PPS Service",
+      "image": "../images/StartUp/S003.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "M1",
+          "label": "Generator Startup -"
+        }
+      ],
+      "narr1": "Slide S003. Pictorial representation of Quote/ Service Request to Cash similar to Quote to Cash - At PPS Service — Pictorial representation of Quote/ Service Request to Cash similar to Quote to Cash.",
+      "narr2": "Hence this pictorial representation cover the Service identification to Cash process or as is commonly reffered to as Quote to Cash. he process begins with either a sales person contacting the owner of newly installed generator or the service tech highlights the advantage of having a PMA to the new generator owner or the owner on their own accord calling PPS to discuss the options for a PMA.",
+      "narr3": "This slide depicts the process from Identifying a need for a new PMA Preventive Maintenance Agreement. In the mid 1900 's it used also go by the name Planned Maintenance Schedule. However that was retired as it did not convey the fact that it is a contractual agreement.  The process begins with either a sales person contacting the owner of newly installed generator or the service tech highlights the advantage of having a PMA to the new generator owner or the owner on their own accord calling PPS to discuss the options for a PMA.\nfrom that point the process traverses the creation of a customized contract for the owner , followed by setting  up schedule that satisfies the customer and our terms of the agreement , followed by creation of the SRO , finally when the time is right scheduling a technician , then the technician services the unit as per the tasks laid out in the SRO, finally an invoice is generated and as per the terms payment is collected. Hence this pictorial representation cover the Service identification to Cash process or as is commonly reffered to as Quote to Cash.",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_StartUp_faq.html",
+      "FAQ_Label": "StartUp related FAQ's",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "StartUp"
+      }
+    },
+    {
+      "sop_id": "StartUp",
+      "frame_code": "M1",
+      "title": "M1. Generator Startup - At PPS Service",
+      "image": "../images/StartUp/M1.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S1",
+          "label": "Customer Calls For Start Up"
+        }
+      ],
+      "narr1": "Slide M1. Generator Startup - At PPS Service — Generator Startup - At PPS Service.",
+      "narr2": "The Start up Service provided by PPS is both essencial and key to starting the Warranty coverage",
+      "narr3": "The Start up Service provided by PPS is both essencial and key to starting the Warranty coverage",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_StartUp_faq.html",
+      "FAQ_Label": "StartUp related FAQ's",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "StartUp"
+      }
+    },
+    {
+      "sop_id": "StartUp",
+      "frame_code": "S1",
+      "title": "S1. Customer Calls For Start Up– Startup SOP",
+      "image": "../images/StartUp/S1.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "D1",
+          "label": "Decision Genset Sold by Palco ?"
+        }
+      ],
+      "narr1": "Slide S1. Customer Calls For Start Up– Startup SOP — Customer Calls For Start Up– Startup SOP.",
+      "narr2": "Either a customer calls or we contact a customer to determine if the unit is ready for startup",
+      "narr3": "Either a customer calls or we contact a customer to determine if the unit is ready for startup",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/ec6be92c-71ab-4130-99f8-8d6cc102b0ed?contextId=677cdca2-0d11-473d-8841-348a363b3d1e&bypassGroupFiltering=false",
+      "uap_label": "04_Create a Start Up Incident",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_StartUp_faq.html",
+      "FAQ_Label": "StartUp related FAQ's",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "StartUp"
+      }
+    },
+    {
+      "sop_id": "StartUp",
+      "frame_code": "D1",
+      "title": "D1. Genset Sold by Palco – Startup SOP",
+      "image": "../images/StartUp/D1.png",
+      "decision_question": "Genset Sold by Palco – Startup SOP?",
+      "choices": [
+        {
+          "to": "Y1",
+          "label": "Yes Genset Sold by Palco"
+        },
+        {
+          "to": "N1",
+          "label": "No , Generator was not Sold by PPS"
+        }
+      ],
+      "narr1": "Slide D1. Genset Sold by Palco – Startup SOP — Genset Sold by Palco – Startup SOP.",
+      "narr2": "While Palco in its creed to serve the customer would accommodate any startup requests it has to determined if the unit is sold by PPS as startup is then covered if it is not sold by PPS then PPS would have to charge for the startup. Hence it has to be determined that the unit was actually sold by PPS and its resellers.",
+      "narr3": "While Palco in its creed to serve the customer would accommodate any startup requests it has to determined if the unit is sold by PPS as startup is then covered if it is not sold by PPS then PPS would have to charge for the startup. Hence it has to be determined that the unit was actually sold by PPS and its resellers.",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_StartUp_faq.html",
+      "FAQ_Label": "StartUp related FAQ's",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "StartUp"
+      }
+    },
+    {
+      "sop_id": "StartUp",
+      "frame_code": "Y1",
+      "title": "Y1. Yes Genset Sold by Palco – Startup SOP",
+      "image": "../images/StartUp/Y1.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "D2",
+          "label": "Decision Is Original Order Known?"
+        }
+      ],
+      "narr1": "Slide Y1. Yes Genset Sold by Palco – Startup SOP — Yes Genset Sold by Palco – Startup SOP.",
+      "narr2": "In this case it was assertained that the unit was indeed sold by PPS",
+      "narr3": "In this case it was assertained that the unit was indeed sold by PPS",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_StartUp_faq.html",
+      "FAQ_Label": "StartUp related FAQ's",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "StartUp"
+      }
+    },
+    {
+      "sop_id": "StartUp",
+      "frame_code": "D2",
+      "title": "D2. Is Original Order Known– Startup SOP",
+      "image": "../images/StartUp/D2.png",
+      "decision_question": "Is Original Order Known– Startup SOP?",
+      "choices": [
+        {
+          "to": "Y2",
+          "label": "Yes Order Number is known"
+        },
+        {
+          "to": "N2",
+          "label": "No Original orger info is not known"
+        }
+      ],
+      "narr1": "Slide D2. Is Original Order Known– Startup SOP — Is Original Order Known– Startup SOP.",
+      "narr2": "It is now time to get to the Sales order linked to this Unit. So the question is asked if the called / owner has the original Sales order and Invoice ?",
+      "narr3": "It is now time to get to the Sales order linked to this Unit. So the question is asked if the called / owner has the original Sales order and Invoice ?",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_StartUp_faq.html",
+      "FAQ_Label": "StartUp related FAQ's",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "StartUp"
+      }
+    },
+    {
+      "sop_id": "StartUp",
+      "frame_code": "Y2",
+      "title": "Y2. Order Number is known– Startup SOP",
+      "image": "../images/StartUp/Y2.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S2",
+          "label": "Perform Order Enquiry"
+        }
+      ],
+      "narr1": "Slide Y2. Order Number is known– Startup SOP — Order Number is known– Startup SOP.",
+      "narr2": "since the order number is known and in this Infor system the order number is the same as the invoice number it becomes easy to find",
+      "narr3": "since the order number is known and in this Infor system the order number is the same as the invoice number it becomes easy to find",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_StartUp_faq.html",
+      "FAQ_Label": "StartUp related FAQ's",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "StartUp"
+      }
+    },
+    {
+      "sop_id": "StartUp",
+      "frame_code": "S2",
+      "title": "S2. Perform Order Enquiry – Startup SOP",
+      "image": "../images/StartUp/S2.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S3",
+          "label": "Verify Payment Status"
+        }
+      ],
+      "narr1": "Slide S2. Perform Order Enquiry – Startup SOP — Perform Order Enquiry – Startup SOP.",
+      "narr2": "Look up the order by performing an order inquiry to determined if the payment has been receied in full and if there are any add on that were purchased by the customer",
+      "narr3": "Look up the order by performing an order inquiry to determined if the payment has been receied in full and if there are any add on that were purchased by the customer",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/b2be844f-cc50-4661-a4c1-8b36f22cc2dd?contextId=677cdca2-0d11-473d-8841-348a363b3d1e&bypassGroupFiltering=false",
+      "uap_label": "09_Order Inquiry Using a Serial Number",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_StartUp_faq.html",
+      "FAQ_Label": "StartUp related FAQ's",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "StartUp"
+      }
+    },
+    {
+      "sop_id": "StartUp",
+      "frame_code": "S3",
+      "title": "S3. Verify Payment Status – Startup SOP",
+      "image": "../images/StartUp/S3.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S4",
+          "label": "Create Startup Incident"
+        }
+      ],
+      "narr1": "Slide S3. Verify Payment Status – Startup SOP — Verify Payment Status – Startup SOP.",
+      "narr2": "As mentioned earlier the order inquiry screen provides details on the payment status",
+      "narr3": "As mentioned earlier the order inquiry screen provides details on the payment status",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/2c01fcf6-0aac-4a6d-9dfe-d97f89ba9a22?contextId=18854d62-7553-4002-8b0f-5364ebb21ad0&bypassGroupFiltering=false",
+      "uap_label": "02_Review Taxes, Totals, Payments for Stock Customer Sales Order",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_StartUp_faq.html",
+      "FAQ_Label": "StartUp related FAQ's",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "StartUp"
+      }
+    },
+    {
+      "sop_id": "StartUp",
+      "frame_code": "S4",
+      "title": "S4. Create Startup Incident – Startup SOP",
+      "image": "../images/StartUp/S4.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S8",
+          "label": "Add Startup Notes"
+        }
+      ],
+      "narr1": "Slide S4. Create Startup Incident – Startup SOP — Create Startup Incident – Startup SOP.",
+      "narr2": "It is now time to create a startup Incident",
+      "narr3": "It is now time to create a startup Incident",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/ec6be92c-71ab-4130-99f8-8d6cc102b0ed?contextId=677cdca2-0d11-473d-8841-348a363b3d1e&bypassGroupFiltering=false",
+      "uap_label": "04_Create a Start Up Incident",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_StartUp_faq.html",
+      "FAQ_Label": "StartUp related FAQ's",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "StartUp"
+      }
+    },
+    {
+      "sop_id": "StartUp",
+      "frame_code": "S8",
+      "title": "S8. Add Startup Notes– Startup SOP",
+      "image": "../images/StartUp/S8.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S9",
+          "label": "Add Lines"
+        }
+      ],
+      "narr1": "Slide S8. Add Startup Notes– Startup SOP — Add Startup Notes– Startup SOP.",
+      "narr2": "In order to serve our customer better the service folks at PPS add notes about the customer the premise and expectation of the customer in the notes",
+      "narr3": "In order to serve our customer better the service folks at PPS add notes about the customer the premise and expectation of the customer in the notes",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/df93e4ab-0e8b-4df6-abe8-267fdd49903f?contextId=677cdca2-0d11-473d-8841-348a363b3d1e&bypassGroupFiltering=false",
+      "uap_label": "05_Add Start Up Notes",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_StartUp_faq.html",
+      "FAQ_Label": "StartUp related FAQ's",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "StartUp"
+      }
+    },
+    {
+      "sop_id": "StartUp",
+      "frame_code": "S9",
+      "title": "S9. Add Lines",
+      "image": "../images/StartUp/S9.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S10",
+          "label": "Schedule startup"
+        }
+      ],
+      "narr1": "Slide S9. Add Lines– Startup SOP — Add Lines– Startup SOP.",
+      "narr2": "In ISM a line is a generator or other unit that is being started in this case or serviced",
+      "narr3": "In ISM a line is a generator or other unit that is being started in this case or serviced",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/82ed7343-6770-4287-a84b-48f2dc253e44?contextId=677cdca2-0d11-473d-8841-348a363b3d1e&bypassGroupFiltering=false",
+      "uap_label": "06_Add Line",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_StartUp_faq.html",
+      "FAQ_Label": "StartUp related FAQ's",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "StartUp"
+      }
+    },
+    {
+      "sop_id": "StartUp",
+      "frame_code": "S10",
+      "title": "S10. Schedule startup – Startup SOP",
+      "image": "../images/StartUp/S10.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S11",
+          "label": "Print Pick ticket"
+        }
+      ],
+      "narr1": "Slide S10. Schedule startup – Startup SOP — Schedule startup – Startup SOP.",
+      "narr2": "As we know an incident has to be converted to an SRO and it carries with it all the information provided up till this point",
+      "narr3": "As we know an incident has to be converted to an SRO and it carries with it all the information provided up till this point",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/6bb6bd8c-2c6f-46e0-a3d0-e97eed2f230b?contextId=3a4b3dad-96fe-4694-a768-791383f32e32&bypassGroupFiltering=false",
+      "uap_label": "11_Schedule Service",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_StartUp_faq.html",
+      "FAQ_Label": "StartUp related FAQ's",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "StartUp"
+      }
+    },
+    {
+      "sop_id": "StartUp",
+      "frame_code": "S11",
+      "title": "S11. Print Pick ticket– Startup SOP",
+      "image": "../images/StartUp/S11.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S12",
+          "label": "Shipping Feed back"
+        }
+      ],
+      "narr1": "Slide S11. Print Pick ticket– Startup SOP — Print Pick ticket– Startup SOP.",
+      "narr2": "A start up may need some items that are are not shipped with a generator, for example the carb heater is bought as part of package but is not sent out at the time of the delivery of the generator so this and other parts need to allocated and put on the service truck",
+      "narr3": "A start up may need some items that are are not shipped with a generator, for example the carb heater is bought as part of package but is not sent out at the time of the delivery of the generator so this and other parts need to allocated and put on the service truck",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/55285afa-2994-4201-893f-3a4f2973c82b?contextId=677cdca2-0d11-473d-8841-348a363b3d1e&bypassGroupFiltering=false",
+      "uap_label": "02_Print Pick Ticket",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_StartUp_faq.html",
+      "FAQ_Label": "StartUp related FAQ's",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "StartUp"
+      }
+    },
+    {
+      "sop_id": "StartUp",
+      "frame_code": "S12",
+      "title": "S12. Shipping Feed back – Startup SOP",
+      "image": "../images/StartUp/S12.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S13",
+          "label": "Assigned Tech Performs Start-up"
+        }
+      ],
+      "narr1": "Slide S12. Shipping Feed back – Startup SOP — Shipping Feed back – Startup SOP.",
+      "narr2": "Shipping feed back is the way to process this pick ticket with components etc",
+      "narr3": "Shipping feed back is the way to process this pick ticket with components etc",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/e046d76e-0ee2-4771-ae37-f9758c1bce84?contextId=677cdca2-0d11-473d-8841-348a363b3d1e&bypassGroupFiltering=false",
+      "uap_label": "03_Shipping Feedback for Start Up",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_StartUp_faq.html",
+      "FAQ_Label": "StartUp related FAQ's",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "StartUp"
+      }
+    },
+    {
+      "sop_id": "StartUp",
+      "frame_code": "S13",
+      "title": "S13. Assigned Tech Performs Start-up– Startup SOP",
+      "image": "../images/StartUp/S13.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S14",
+          "label": "Register Unit"
+        }
+      ],
+      "narr1": "Slide S13. Assigned Tech Performs Start-up– Startup SOP — Assigned Tech Performs Start-up– Startup SOP.",
+      "narr2": "Based on the size , fuel. Environment in which the unit has to operator a certified start up technician is selected and scheduled",
+      "narr3": "Based on the size , fuel. Environment in which the unit has to operator a certified start up technician is selected and scheduled",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/6bb6bd8c-2c6f-46e0-a3d0-e97eed2f230b?contextId=3a4b3dad-96fe-4694-a768-791383f32e32&bypassGroupFiltering=false",
+      "uap_label": "11_Schedule Service",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_StartUp_faq.html",
+      "FAQ_Label": "StartUp related FAQ's",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "StartUp"
+      }
+    },
+    {
+      "sop_id": "StartUp",
+      "frame_code": "S14",
+      "title": "S14. Register Unit– Startup SOP",
+      "image": "../images/StartUp/S14.png",
+      "decision_question": "You've reached the end of this path. What would you like to do next?",
+      "choices": [
+        {
+          "to": "S998a",
+          "label": "You have come to the end of the path selected in the – Generator Startup Process"
+        },
+        {
+          "to": "S999",
+          "label": "Go to end of SIP slide"
+        }
+      ],
+      "narr1": "Slide S14. Register Unit– Startup SOP — Register Unit– Startup SOP.",
+      "narr2": "once the startup has been successfully completed by a highly skilled and customer focused technician the generator has to Registered as started with KHOLER so as to have it covered by either the standard or other special warranty for which the unit qualifies",
+      "narr3": "once the startup has been successfully completed by a highly skilled and customer focused technician the generator has to Registered as started with KHOLER so as to have it covered by either the standard or other special warranty for which the unit qualifies",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/44897267-c9a9-4ab1-854a-14b2054b8547?contextId=677cdca2-0d11-473d-8841-348a363b3d1e&bypassGroupFiltering=false",
+      "uap_label": "08_Register Unit",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_StartUp_faq.html",
+      "FAQ_Label": "StartUp related FAQ's",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "StartUp"
+      }
+    },
+    {
+      "sop_id": "StartUp",
+      "frame_code": "S998a",
+      "title": "S998a. You have come to the end of the path selected in the – Generator Startup Process",
+      "image": "../images/StartUp/S998a.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "N2",
+          "label": "Original Sale Order Not Known"
+        }
+      ],
+      "narr1": "Slide S998a. You have come to the end of the path selected in the – Generator Startup Process — Ever heard the phrase “Practice makes perfect ? – if you had not then now you have !\n\nThe Management and your project team would like you to practice this and other processes so that the Go live is smooth or if your new to the company or are new to the role you can get proficient in the training environment \u000bAs one becomes more proficient in this system it behooves us to share that knowledge and help other so the Company can  achieve its destiny.",
+      "narr2": "Ever heard the phrase “Practice makes perfect ? – if you had not then now you have !",
+      "narr3": "At this point you have reach the end of this logical path While it is quite possible and likely there are other paths you as the tranee would like to explore and learn about the unique process that come into play under those cirumstances",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_StartUp_faq.html",
+      "FAQ_Label": "StartUp related FAQ's",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "StartUp"
+      }
+    },
+    {
+      "sop_id": "StartUp",
+      "frame_code": "N2",
+      "title": "N2. Original Sale Order Not Known – Startup SOP",
+      "image": "../images/StartUp/N2.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S5",
+          "label": "Order Enquiry Using Serial Number"
+        }
+      ],
+      "narr1": "Slide N2. Original Sale Order Not Known – Startup SOP — Original Sale Order Not Known – Startup SOP.",
+      "narr2": "In this case you as the trainee have selected a situation where the generator was sold by us however the person calling to schedule a startup does  not know or have the order number handy so a hunt for a pertinent order needs to be found",
+      "narr3": "In this case you as the trainee have selected a situation where the generator was sold by us however the person calling to schedule a startup does  not know or have the order number handy so a hunt for a pertinent order needs to be found",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_StartUp_faq.html",
+      "FAQ_Label": "StartUp related FAQ's",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "StartUp"
+      }
+    },
+    {
+      "sop_id": "StartUp",
+      "frame_code": "S5",
+      "title": "S5. Order Enquiry Using Serial Number– Startup SOP",
+      "image": "../images/StartUp/S5.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S3a",
+          "label": "Verify Payment Status"
+        }
+      ],
+      "narr1": "Slide S5. Order Enquiry Using Serial Number– Startup SOP — Order Enquiry Using Serial Number– Startup SOP.",
+      "narr2": "The infor system provides multiple ways to find a sales order linked to a particular unit the serial number is by far the easiest as all serialized products are traced through the Infor system",
+      "narr3": "The infor system provides multiple ways to find a sales order linked to a particular unit the serial number is by far the easiest as all serialized products are traced through the Infor system",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/b2be844f-cc50-4661-a4c1-8b36f22cc2dd?contextId=677cdca2-0d11-473d-8841-348a363b3d1e&bypassGroupFiltering=false",
+      "uap_label": "09_Order Inquiry Using a Serial Number",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_StartUp_faq.html",
+      "FAQ_Label": "StartUp related FAQ's",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "StartUp"
+      }
+    },
+    {
+      "sop_id": "StartUp",
+      "frame_code": "S3a",
+      "title": "S3a. Verify Payment Status – Startup SOP",
+      "image": "../images/StartUp/S3a.png",
+      "decision_question": "You've reached the end of this path. What would you like to do next?",
+      "choices": [
+        {
+          "to": "S998b",
+          "label": "You have come to the end of the path selected in the – Generator Startup Process"
+        },
+        {
+          "to": "S999",
+          "label": "Go to end of SIP slide"
+        }
+      ],
+      "narr1": "Slide S3a. Verify Payment Status – Startup SOP — Verify Payment Status – Startup SOP.",
+      "narr2": "once an order has been identied the next is to make sure that the payment has been received in full",
+      "narr3": "once an order has been identied the next is to make sure that the payment has been received in full",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/34c69ec2-473e-408c-b4ac-ca2d8f3da53d?contextId=677cdca2-0d11-473d-8841-348a363b3d1e&bypassGroupFiltering=false",
+      "uap_label": "01_Order Inquiry",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_StartUp_faq.html",
+      "FAQ_Label": "StartUp related FAQ's",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "StartUp"
+      }
+    },
+    {
+      "sop_id": "StartUp",
+      "frame_code": "S998b",
+      "title": "S998b. You have come to the end of the path selected in the – Generator Startup Process",
+      "image": "../images/StartUp/S998b.png",
+      "decision_question": "",
+      "choices": [],
+      "narr1": "Slide S998b. You have come to the end of the path selected in the – Generator Startup Process — Ever heard the phrase “Practice makes perfect ? – if you had not then now you have !\n\nThe Management and your project team would like you to practice this and other processes so that the Go live is smooth or if your new to the company or are new to the role you can get proficient in the training environment \u000bAs one becomes more proficient in this system it behooves us to share that knowledge and help other so the Company can  achieve its destiny.",
+      "narr2": "Ever heard the phrase “Practice makes perfect ? – if you had not then now you have !",
+      "narr3": "At this point you have reach the end of this logical path While it is quite possible and likely there are other paths you as the tranee would like to explore and learn about the unique process that come into play under those cirumstances",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_StartUp_faq.html",
+      "FAQ_Label": "StartUp related FAQ's",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "StartUp"
+      }
+    },
+    {
+      "sop_id": "StartUp",
+      "frame_code": "N1",
+      "title": "N1. No Gen Set Not sold by Palco – Startup SOP",
+      "image": "../images/StartUp/N1.png",
+      "decision_question": "",
+      "choices": [],
+      "narr1": "Slide N1. No Gen Set Not sold by Palco – Startup SOP — No Gen Set Not sold by Palco – Startup SOP.",
+      "narr2": "Early in this SOP the question was asked if the Generator was sold by PPS and you the trainee had indicated that the unit was not bought from PPS",
+      "narr3": "Early in this SOP the question was asked if the Generator was sold by PPS and you the trainee had indicated that the unit was not bought from PPS",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_StartUp_faq.html",
+      "FAQ_Label": "StartUp related FAQ's",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "StartUp"
+      }
+    },
+    {
+      "sop_id": "StartUp",
+      "frame_code": "S6",
+      "title": "S6. Create New Unit – Startup SOP",
+      "image": "../images/StartUp/S6.png",
+      "decision_question": "",
+      "choices": [],
+      "narr1": "Slide S6. Create New Unit – Startup SOP — Create New Unit – Startup SOP.",
+      "narr2": "Since the unit was not bought from PPS the startup cost is not covered or paid to PPS. Being a customer focused organization PPS can still and will offer the start up service as abillable service. And a Unit (needs to be created ) so that it can be added to an SRO",
+      "narr3": "Since the unit was not bought from PPS the startup cost is not covered or paid to PPS. Being a customer focused organization PPS can still and will offer the start up service as abillable service. And a Unit (needs to be created ) so that it can be added to an SRO",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_StartUp_faq.html",
+      "FAQ_Label": "StartUp related FAQ's",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "StartUp"
+      }
+    },
+    {
+      "sop_id": "StartUp",
+      "frame_code": "S7",
+      "title": "S7. Create Chargeable SRO – Startup SOP",
+      "image": "../images/StartUp/S7.png",
+      "decision_question": "",
+      "choices": [],
+      "narr1": "Slide S7. Create Chargeable SRO – Startup SOP — Create Chargeable SRO – Startup SOP.",
+      "narr2": "Create achargable SRO this is an SOP in its own right and is covered elsewhere",
+      "narr3": "Create achargable SRO this is an SOP in its own right and is covered elsewhere",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/folder/3a4b3dad-96fe-4694-a768-791383f32e32?bypassGroupFiltering=false",
+      "uap_label": "01_Service Order Process",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_StartUp_faq.html",
+      "FAQ_Label": "StartUp related FAQ's",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "StartUp"
+      }
+    },
+    {
+      "sop_id": "StartUp",
+      "frame_code": "S998",
+      "title": "S998. You have come to the end of the path selected in the – Generator Startup Process",
+      "image": "../images/StartUp/S998.png",
+      "decision_question": "You've reached the end of this path. What would you like to do next?",
+      "choices": [
+        {
+          "to": "S999",
+          "label": "Go to end of SIP slide"
+        }
+      ],
+      "narr1": "Slide S998. You have come to the end of the path selected in the – Generator Startup Process — Ever heard the phrase “Practice makes perfect ? – if you had not then now you have !\n\nThe Management and your project team would like you to practice this and other processes so that the Go live is smooth or if your new to the company or are new to the role you can get proficient in the training environment \u000bAs one becomes more proficient in this system it behooves us to share that knowledge and help other so the Company can  achieve its destiny.",
+      "narr2": "Ever heard the phrase “Practice makes perfect ? – if you had not then now you have !",
+      "narr3": "At this point you have reach the end of this logical path While it is quite possible and likely there are other paths you as the tranee would like to explore and learn about the unique process that come into play under those cirumstances",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_StartUp_faq.html",
+      "FAQ_Label": "StartUp related FAQ's",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "StartUp"
+      }
+    },
+    {
+      "sop_id": "StartUp",
+      "frame_code": "S999",
+      "title": "S999. You have successfully completed this SOP on Generator Startup at PPS",
+      "image": "../images/StartUp/S999.png",
+      "decision_question": "",
+      "choices": [],
+      "narr1": "Slide S999. You have successfully completed this SOP on Generator Startup at PPS — You have successfully completed this SOP on Generator Startup at PPS.",
+      "narr2": "Thank you for completing this module on Generator Startup Procedure SOP .",
+      "narr3": "Thank you for completing this module on Generator Startup Procedure SOP .",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "",
+      "FAQ_File": "",
+      "FAQ_Label": "",
+      "Quiz_Loc": "../quiz",
+      "Quiz_File": "PPS_StartUp_quiz.html",
+      "Quiz_Label": "Check your Startup Knowledge",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "StartUp"
+      }
+    }
+  ]
+}

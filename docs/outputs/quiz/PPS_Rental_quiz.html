@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>PPS – Service Rental – Generator Rental Process – Knowledge Check</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.5rem;
+      line-height: 1.5;
+      background: #f7f7fb;
+    }
+    h1, h2 {
+      color: #111827;
+    }
+    .meta {
+      margin-bottom: 1rem;
+      padding: 0.75rem 1rem;
+      background: #e5e7eb;
+      border-radius: 6px;
+    }
+    .question {
+      margin-bottom: 1.75rem;
+      padding: 1rem 1.25rem;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+    .q-text {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    label {
+      display: block;
+      margin: 0.15rem 0;
+    }
+    button {
+      margin-top: 0.4rem;
+      margin-right: 0.4rem;
+      padding: 0.3rem 0.75rem;
+      border-radius: 4px;
+      border: 1px solid #4b5563;
+      background: #111827;
+      color: #ffffff;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+    button.secondary {
+      background: #ffffff;
+      color: #111827;
+    }
+    button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    .feedback {
+      margin-top: 0.4rem;
+      font-size: 0.85rem;
+      color: #065f46;
+    }
+    .feedback.error {
+      color: #b91c1c;
+    }
+    #scoreSummary {
+      font-weight: 600;
+      margin-top: 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+    .footer-actions {
+      margin-top: 1.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #d1d5db;
+    }
+    input[type="text"], input[type="email"] {
+      padding: 0.25rem 0.4rem;
+      margin-right: 0.5rem;
+      border-radius: 4px;
+      border: 1px solid #9ca3af;
+    }
+  </style>
+</head>
+<body>
+  <h1>PPS – Service Rental – Generator Rental Process – Knowledge Check</h1>
+
+  <div class="meta">
+    <p>
+      Please complete this quiz after you have gone through the
+      <strong>PPS Service Rental – Rental Generator</strong> SOP module.
+      You may answer each question up to <strong>two times</strong>. Your attempts and timestamps
+      will be captured in a CSV log you can download at the end.
+    </p>
+    <p>
+      <em>Note:</em> Question 1 is about the background of Scott Electric.
+      Questions 2–10 are about the <strong>Rental Generator process</strong>
+      (Customer Order, Rental Contract, Fleet vs Re-Rent, Re-Rent PO, Freight,
+      Check-Out/Check-In, Vendor Return, Close Rental).
+    </p>
+  </div>
+
+  <section>
+    <h2>Learner Information</h2>
+    <p>
+      <label>
+        Your Name:
+        <input type="text" id="learnerName" placeholder="Type your name">
+      </label>
+      <label>
+        Your Email:
+        <input type="email" id="learnerEmail" placeholder="name@example.com">
+      </label>
+    </p>
+  </section>
+
+  <section id="quiz">
+    <h2>Quiz Questions</h2>
+
+    <!-- Q1 – Scott Electric background -->
+    <div class="question" data-qid="q1">
+      <p class="q-text">
+        <strong>Q1.</strong> Which statement best describes Scott Electric’s history and role in the
+        markets it serves?
+      </p>
+      <label><input type="radio" name="q1" value="0">
+        A. Scott Electric is a brand-new startup with one small store and no distribution network.</label>
+      <label><input type="radio" name="q1" value="1">
+        B. Scott Electric is a long-established regional wholesale electrical distributor headquartered in western Pennsylvania, with multiple branches and divisions serving customers in several states.</label>
+      <label><input type="radio" name="q1" value="2">
+        C. Scott Electric is only a software company that provides ERPs to other distributors.</label>
+      <label><input type="radio" name="q1" value="3">
+        D. Scott Electric is a small residential contractor that does not operate any warehouses.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q1')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q1')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q1"></div>
+    </div>
+
+    <!-- Q2 – Purpose of Rental SOP -->
+    <div class="question" data-qid="q2">
+      <p class="q-text">
+        <strong>Q2.</strong> What is the main purpose of the
+        <strong>PPS Service Rental – Rental Generator</strong> SOP?
+      </p>
+      <label><input type="radio" name="q2" value="0">
+        A. To only maintain maintenance records for generators in the shop.</label>
+      <label><input type="radio" name="q2" value="1">
+        B. To manage the end-to-end process for renting a generator to a customer, including whether it is from our fleet or a re-rent, adding rental/re-rent items, handling freight and billing details, processing any vendor returns, and closing the rental.</label>
+      <label><input type="radio" name="q2" value="2">
+        C. To set up new generator products in the item master only.</label>
+      <label><input type="radio" name="q2" value="3">
+        D. To manage capital purchasing of new generators from vendors.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q2')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q2')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q2"></div>
+    </div>
+
+    <!-- Q3 – SOP start/end -->
+    <div class="question" data-qid="q3">
+      <p class="q-text">
+        <strong>Q3.</strong> Which statement best describes the
+        <strong>start and end</strong> points of this Rental SOP?
+      </p>
+      <label><input type="radio" name="q3" value="0">
+        A. It starts when the generator is shipped and ends when the customer pays the final invoice.</label>
+      <label><input type="radio" name="q3" value="1">
+        B. It starts when the rental contract is closed and ends when the generator is scrapped.</label>
+      <label><input type="radio" name="q3" value="2">
+        C. It starts when the customer places an order for a rental generator and a rental contract is created, and ends when the rental is checked in, any re-rent vendor return has been processed, and the rental is closed.</label>
+      <label><input type="radio" name="q3" value="3">
+        D. It starts when a vendor return is needed and ends when the PO is paid.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q3')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q3')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q3"></div>
+    </div>
+
+    <!-- Q4 – D1 Fleet vs Re-Rent -->
+    <div class="question" data-qid="q4">
+      <p class="q-text">
+        <strong>Q4.</strong> Why is the decision
+        <strong>“Is this a rental generator in our fleet?”</strong> important?
+      </p>
+      <label><input type="radio" name="q4" value="0">
+        A. It only determines which salesperson gets commission on the rental.</label>
+      <label><input type="radio" name="q4" value="1">
+        B. It decides whether the generator is supplied from our own rental fleet or as a re-rent, which then drives whether we Add Rental Items (fleet) or Add Re-Rent Items and raise a Re-Rent PO.</label>
+      <label><input type="radio" name="q4" value="2">
+        C. It is only used to decide which warehouse prints the pick ticket.</label>
+      <label><input type="radio" name="q4" value="3">
+        D. It only controls whether freight will be charged.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q4')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q4')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q4"></div>
+    </div>
+
+    <!-- Q5 – Re-Rent PO sequence -->
+    <div class="question" data-qid="q5">
+      <p class="q-text">
+        <strong>Q5.</strong> When the rental is a re-rent from a vendor, which sequence
+        best matches the <strong>Re-Rent PO</strong> part of the process?
+      </p>
+      <label><input type="radio" name="q5" value="0">
+        A. S5. Raise Re Rent PO → S3. Add Re Rent Items → S7. Receive Re Rent PO → S6. Print Re Rent PO.</label>
+      <label><input type="radio" name="q5" value="1">
+        B. S3. Add Re Rent Items → S7. Receive Re Rent PO → S6. Print Re Rent PO → S5. Raise Re Rent PO.</label>
+      <label><input type="radio" name="q5" value="2">
+        C. S3. Add Re Rent Items → S5. Raise Re Rent PO → S6. Print Re Rent PO → S7. Receive Re Rent PO.</label>
+      <label><input type="radio" name="q5" value="3">
+        D. S1. Customer Places an Order → S15. Close Rental → S5. Raise Re Rent PO → S7. Receive Re Rent PO.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q5')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q5')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q5"></div>
+    </div>
+
+    <!-- Q6 – Add Rental Items vs Add Re-Rent Items -->
+    <div class="question" data-qid="q6">
+      <p class="q-text">
+        <strong>Q6.</strong> How should you decide between
+        <strong>S3. Add Re Rent Items</strong> and
+        <strong>S4. Add Rental Items</strong>?
+      </p>
+      <label><input type="radio" name="q6" value="0">
+        A. Always use Add Re Rent Items; Add Rental Items is no longer used.</label>
+      <label><input type="radio" name="q6" value="1">
+        B. Always use Add Rental Items; Add Re Rent Items is only for emergencies.</label>
+      <label><input type="radio" name="q6" value="2">
+        C. Use Add Rental Items when supplying a generator from our own rental fleet; use Add Re Rent Items (and then the Re-Rent PO steps) when the generator is being re-rented from a vendor.</label>
+      <label><input type="radio" name="q6" value="3">
+        D. Both are the same; it doesn’t matter which one you pick.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q6')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q6')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q6"></div>
+    </div>
+
+    <!-- Q7 – D2 Freight decision -->
+    <div class="question" data-qid="q7">
+      <p class="q-text">
+        <strong>Q7.</strong> How does the decision
+        <strong>“Are we Charging freight?”</strong> affect the process?
+      </p>
+      <label><input type="radio" name="q7" value="0">
+        A. If Yes, the rental must be converted to a sale, and no rental steps are needed.</label>
+      <label><input type="radio" name="q7" value="1">
+        B. If Yes, you skip S9. Add Freight and handle freight later on the invoice.</label>
+      <label><input type="radio" name="q7" value="2">
+        C. If Yes, you use S9. Add Freight to add or review freight charges after S8. Change/Check Billing Details; if No, you move past freight without adding it.</label>
+      <label><input type="radio" name="q7" value="3">
+        D. It only controls whether tax prints on the invoice and does not affect freight lines.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q7')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q7')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q7"></div>
+    </div>
+
+    <!-- Q8 – Billing, Rental Agreement, Check Out -->
+    <div class="question" data-qid="q8">
+      <p class="q-text">
+        <strong>Q8.</strong> Which sequence best describes the steps from final billing review to
+        sending the generator out to the customer?
+      </p>
+      <label><input type="radio" name="q8" value="0">
+        A. S10. Print Rental Agreement → S11. Check Out Rental → S8. Change/Check Billing Details → S9. Add Freight.</label>
+      <label><input type="radio" name="q8" value="1">
+        B. S8. Change/Check Billing Details → S9. Add Freight (if applicable) → S10. Print Rental Agreement → S11. Check Out Rental.</label>
+      <label><input type="radio" name="q8" value="2">
+        C. S9. Add Freight → S8. Change/Check Billing Details → S11. Check Out Rental → S10. Print Rental Agreement.</label>
+      <label><input type="radio" name="q8" value="3">
+        D. S11. Check Out Rental → S10. Print Rental Agreement → S8. Change/Check Billing Details → S9. Add Freight.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q8')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q8')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q8"></div>
+    </div>
+
+    <!-- Q9 – D3 Re-Rent at Check-In -->
+    <div class="question" data-qid="q9">
+      <p class="q-text">
+        <strong>Q9.</strong> What happens when the rental is a re-rent and the generator
+        is checked back in at S12?
+      </p>
+      <label><input type="radio" name="q9" value="0">
+        A. Nothing special; you always go straight from Check In Rental to Close Rental.</label>
+      <label><input type="radio" name="q9" value="1">
+        B. You skip any vendor return steps and just write off the generator.</label>
+      <label><input type="radio" name="q9" value="2">
+        C. The decision “Is this a Re-Rent?” guides you to print a Return Merchandise PO and then Receive Vendor Return Merchandise PO so the vendor return is recorded correctly before closing the rental.</label>
+      <label><input type="radio" name="q9" value="3">
+        D. You cancel the original rental contract and start a new one.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q9')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q9')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q9"></div>
+    </div>
+
+    <!-- Q10 – Close Rental -->
+    <div class="question" data-qid="q10">
+      <p class="q-text">
+        <strong>Q10.</strong> When is it appropriate to complete
+        <strong>S15. Close Rental</strong> for a generator rental?
+      </p>
+      <label><input type="radio" name="q10" value="0">
+        A. As soon as the rental contract is created, even before the generator leaves the yard.</label>
+      <label><input type="radio" name="q10" value="1">
+        B. Immediately after printing the Rental Agreement, before Check Out.</label>
+      <label><input type="radio" name="q10" value="2">
+        C. After the rental has been checked in and, for re-rents, after any required vendor return steps have been completed, so that all rental activity and returns are properly recorded.</label>
+      <label><input type="radio" name="q10" value="3">
+        D. Only when the generator is sold to the customer instead of being returned.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q10')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q10')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q10"></div>
+    </div>
+  </section>
+
+  <section class="footer-actions">
+    <p id="scoreSummary">Score will appear here after you submit at least one question.</p>
+    <button type="button" onclick="calculateScore()">Calculate Score</button>
+    <button type="button" onclick="downloadCsv()">Download Attempt Log (CSV)</button>
+  </section>
+
+  <script>
+    const quizStart = new Date().toISOString();
+    const questionIds = ["q1","q2","q3","q4","q5","q6","q7","q8","q9","q10"];
+    const maxAttempts = 2;
+
+    const correctAnswers = {
+      q1: 1, // B
+      q2: 1, // B
+      q3: 2, // C
+      q4: 1, // B
+      q5: 2, // C
+      q6: 2, // C
+      q7: 2, // C
+      q8: 1, // B
+      q9: 2, // C
+      q10: 2 // C
+    };
+
+    const responseLog = {};
+
+    document.querySelectorAll('input[type="radio"]').forEach(input => {
+      input.addEventListener('change', handleOptionChange);
+    });
+
+    function handleOptionChange(event) {
+      const qid = event.target.name;
+      const answerIndex = parseInt(event.target.value, 10);
+      const now = new Date().toISOString();
+
+      if (!responseLog[qid]) {
+        responseLog[qid] = { attempts: [], currentAttempt: null };
+      }
+      const qEntry = responseLog[qid];
+
+      if (!qEntry.currentAttempt && qEntry.attempts.length >= maxAttempts) {
+        event.target.checked = false;
+        const fb = document.getElementById(`feedback-${qid}`);
+        if (fb) {
+          fb.classList.add("error");
+          fb.textContent = "You have already used both attempts for this question.";
+        }
+        return;
+      }
+
+      if (!qEntry.currentAttempt) {
+        qEntry.currentAttempt = {
+          attemptNumber: qEntry.attempts.length + 1,
+          startedAt: now,
+          finishedAt: null,
+          answerIndex: answerIndex,
+          isCorrect: null
+        };
+      } else {
+        qEntry.currentAttempt.answerIndex = answerIndex;
+      }
+    }
+
+    function submitQuestion(qid) {
+      const now = new Date().toISOString();
+      if (!responseLog[qid]) {
+        responseLog[qid] = { attempts: [], currentAttempt: null };
+      }
+      const qEntry = responseLog[qid];
+      const fb = document.getElementById(`feedback-${qid}`);
+
+      const selected = document.querySelector(`input[name="${qid}"]:checked`);
+      if (!selected) {
+        if (fb) {
+          fb.classList.add("error");
+          fb.textContent = "Please select an answer before submitting.";
+        }
+        return;
+      }
+
+      if (!qEntry.currentAttempt) {
+        if (qEntry.attempts.length >= maxAttempts) {
+          if (fb) {
+            fb.classList.add("error");
+            fb.textContent = "You have already used both attempts for this question.";
+          }
+          return;
+        }
+        qEntry.currentAttempt = {
+          attemptNumber: qEntry.attempts.length + 1,
+          startedAt: now,
+          finishedAt: null,
+          answerIndex: parseInt(selected.value, 10),
+          isCorrect: null
+        };
+      }
+
+      const attempt = qEntry.currentAttempt;
+
+      if (attempt.finishedAt) {
+        if (fb) {
+          fb.classList.add("error");
+          fb.textContent = "This attempt has already been submitted.";
+        }
+        return;
+      }
+
+      attempt.finishedAt = now;
+      attempt.isCorrect = (attempt.answerIndex === correctAnswers[qid]);
+      qEntry.attempts.push(attempt);
+      qEntry.currentAttempt = null;
+
+      if (fb) {
+        fb.classList.remove("error");
+        const attemptLabel = attempt.attemptNumber === 1 ? "First attempt" : "Second attempt";
+        fb.textContent = `${attemptLabel}: ${attempt.isCorrect ? "Correct" : "Incorrect"} (started ${attempt.startedAt}, finished ${attempt.finishedAt}).`;
+        if (qEntry.attempts.length >= maxAttempts) {
+          fb.textContent += " You have used both attempts for this question.";
+        }
+      }
+
+      calculateScore();
+    }
+
+    function redoQuestion(qid) {
+      const qEntry = responseLog[qid];
+      const fb = document.getElementById(`feedback-${qid}`);
+
+      if (!qEntry || qEntry.attempts.length === 0) {
+        if (fb) {
+          fb.classList.add("error");
+          fb.textContent = "You must submit the question once before redoing it.";
+        }
+        return;
+      }
+
+      if (qEntry.attempts.length >= maxAttempts) {
+        if (fb) {
+          fb.classList.add("error");
+          fb.textContent = "You have already used your redo for this question.";
+        }
+        return;
+      }
+
+      document.querySelectorAll(`input[name="${qid}"]`).forEach(input => {
+        input.checked = false;
+      });
+
+      qEntry.currentAttempt = null;
+
+      if (fb) {
+        fb.classList.remove("error");
+        fb.textContent = "You may redo this question now. Make a new selection and click Submit Answer.";
+      }
+    }
+
+    function calculateScore() {
+      let correctCount = 0;
+      let totalCount = questionIds.length;
+
+      questionIds.forEach(qid => {
+        const qEntry = responseLog[qid];
+        if (!qEntry || qEntry.attempts.length === 0) {
+          return;
+        }
+        const lastAttempt = qEntry.attempts[qEntry.attempts.length - 1];
+        if (lastAttempt.isCorrect) {
+          correctCount += 1;
+        }
+      });
+
+      const scoreEl = document.getElementById("scoreSummary");
+      if (scoreEl) {
+        scoreEl.textContent = `Current score (based on your latest attempt for each question): ${correctCount} / ${totalCount}`;
+      }
+    }
+
+    function downloadCsv() {
+      const learnerName = (document.getElementById("learnerName").value || "").replace(/"/g, '""');
+      const learnerEmail = (document.getElementById("learnerEmail").value || "").replace(/"/g, '""');
+      const now = new Date().toISOString();
+
+      const lines = [];
+      lines.push('Quiz Name,"PPS – Service Rental – Generator Rental Process – Knowledge Check"');
+      lines.push(`Learner Name,"${learnerName}"`);
+      lines.push(`Learner Email,"${learnerEmail}"`);
+      lines.push(`Quiz Start,"${quizStart}"`);
+      lines.push(`Log Generated At,"${now}"`);
+      lines.push("");
+      lines.push("Question ID,Question Text,Attempt #,Started At,Finished At,Answer Index,Answer Text,Correct?");
+
+      questionIds.forEach(qid => {
+        const qEntry = responseLog[qid];
+        if (!qEntry || !qEntry.attempts || qEntry.attempts.length === 0) {
+          return;
+        }
+
+        const qContainer = document.querySelector(`.question[data-qid="${qid}"]`);
+        let qText = "";
+        if (qContainer) {
+          const qTextEl = qContainer.querySelector(".q-text");
+          if (qTextEl) {
+            qText = qTextEl.innerText.trim().replace(/"/g, '""');
+          }
+        }
+
+        qEntry.attempts.forEach(att => {
+          let answerText = "";
+          const radio = document.querySelector(`input[name="${qid}"][value="${att.answerIndex}"]`);
+          if (radio && radio.parentElement) {
+            answerText = radio.parentElement.textContent.trim().replace(/"/g, '""');
+          }
+          const correctLabel = att.isCorrect ? "Yes" : "No";
+          lines.push(
+            `"${qid}","${qText}",${att.attemptNumber},` +
+            `"${att.startedAt || ""}","${att.finishedAt || ""}",` +
+            `${att.answerIndex},"${answerText}",${correctLabel}`
+          );
+        });
+      });
+
+      const csvContent = lines.join("\n");
+      const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "PPS_Rental_Quiz_Attempts.csv";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+  </script>
+</body>
+</html>

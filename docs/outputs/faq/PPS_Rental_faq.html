@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>PPS – Service Rental – Generator Rental Process – FAQ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.5rem;
+      line-height: 1.6;
+      background: #f7f7fb;
+    }
+    h1, h2 {
+      color: #111827;
+    }
+    .intro {
+      margin-bottom: 1rem;
+      padding: 0.75rem 1rem;
+      background: #e5e7eb;
+      border-radius: 6px;
+      font-size: 0.95rem;
+    }
+    details {
+      margin-bottom: 0.75rem;
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+    summary {
+      cursor: pointer;
+      font-weight: 600;
+      color: #111827;
+    }
+    summary::-webkit-details-marker {
+      margin-right: 0.5rem;
+    }
+    p {
+      margin: 0.4rem 0;
+    }
+    ul {
+      margin: 0.4rem 0 0.4rem 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>PPS – Service Rental – Generator Rental Process – Frequently Asked Questions</h1>
+
+  <div class="intro">
+    <p>
+      This FAQ supports the <strong>PPS Service Rental – Rental Generator</strong> SOP.
+      It explains the key steps and decisions in the process, including fleet vs re-rent,
+      Re-Rent POs, freight, check-out/check-in, vendor returns, and closing the rental.
+    </p>
+  </div>
+
+  <section aria-label="FAQ list">
+    <h2>Questions &amp; Answers</h2>
+
+    <details open>
+      <summary>1. What is the purpose of the PPS Service Rental SOP?</summary>
+      <p>
+        The PPS Service Rental SOP defines the end-to-end process of renting a generator to
+        a customer. It covers taking the customer’s order, creating the rental contract,
+        deciding whether the generator comes from our own fleet or as a re-rent from a vendor,
+        adding rental/re-rent items, handling freight and billing, checking the unit out and
+        back in, processing any vendor returns for re-rents, and finally closing the rental.
+      </p>
+    </details>
+
+    <details>
+      <summary>2. Where does this SOP start and end?</summary>
+      <p>
+        The process starts at <strong>S1. Customer Places an Order for a Rental Generator</strong>
+        and <strong>S2. Create Rental Contract</strong>.
+      </p>
+      <p>
+        It ends at <strong>S15. Close Rental</strong>, after the generator has been checked in
+        and, for re-rent situations, any required vendor return steps have been completed.
+      </p>
+    </details>
+
+    <details>
+      <summary>3. What is the difference between fleet rentals and re-rents?</summary>
+      <p>
+        The decision <strong>“Is this a rental generator in our fleet?”</strong> (D1) splits
+        the flow into:
+      </p>
+      <ul>
+        <li>
+          <strong>Fleet rentals:</strong> The generator is supplied from our own rental fleet.
+          You use <strong>S4. Add Rental Items</strong> to add the unit and any related lines.
+        </li>
+        <li>
+          <strong>Re-rents:</strong> The generator is supplied by a vendor. You use
+          <strong>S3. Add Re Rent Items</strong> and then follow the Re-Rent PO steps
+          (S5–S7) to manage the vendor side of the transaction.
+        </li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>4. How are Re-Rent POs handled?</summary>
+      <p>
+        For <strong>re-rented</strong> generators, the Re-Rent PO flow is:
+      </p>
+      <ul>
+        <li><strong>S3. Add Re Rent Items</strong> – Add the items being re-rented from a vendor.</li>
+        <li><strong>S5. Raise Re Rent PO</strong> – Create the purchase order to the vendor.</li>
+        <li><strong>S6. Print Re Rent PO</strong> – Print or otherwise issue the PO.</li>
+        <li><strong>S7. Receive Re Rent PO</strong> – Record receipt of the generator into the system.</li>
+      </ul>
+      <p>
+        Only after this flow is complete is the rental ready for billing review, printing the
+        Rental Agreement, and Check Out.
+      </p>
+    </details>
+
+    <details>
+      <summary>5. When do we add or review freight charges?</summary>
+      <p>
+        Freight is controlled by the decision <strong>“Are we Charging freight?”</strong> (D2)
+        and handled at <strong>S9. Add Freight</strong>, after
+        <strong>S8. Change/Check Billing Details</strong>.
+      </p>
+      <p>
+        If freight should be charged, you add or confirm it at S9 so the rental billing is
+        accurate. If no freight is charged, you move past S9 without adding freight lines.
+      </p>
+    </details>
+
+    <details>
+      <summary>6. What is the sequence around billing, the Rental Agreement, and Check Out?</summary>
+      <p>
+        Before the generator leaves the yard, the typical sequence is:
+      </p>
+      <ul>
+        <li><strong>S8. Change/Check Billing Details</strong> – Review or update billing information.</li>
+        <li><strong>S9. Add Freight</strong> – Add freight charges if applicable.</li>
+        <li><strong>S10. Print Rental Agreement</strong> – Print the Rental Agreement for the customer.</li>
+        <li><strong>S11. Check Out Rental</strong> – Check the generator out to the customer.</li>
+      </ul>
+      <p>
+        This ensures that billing and paperwork are correct at the moment the generator leaves.
+      </p>
+    </details>
+
+    <details>
+      <summary>7. What happens at Check In for fleet rentals vs re-rents?</summary>
+      <p>
+        At <strong>S12. Check In Rental</strong>, the generator is returned from the customer:
+      </p>
+      <ul>
+        <li>
+          For <strong>fleet rentals</strong>, Check In records that our own unit has returned,
+          and you move toward closing the rental once billing is complete.
+        </li>
+        <li>
+          For <strong>re-rents</strong>, the decision <strong>“Is this a Re-Rent?”</strong> (D3)
+          determines whether a vendor return is needed before closing the rental.
+        </li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>8. What is the role of the Return Merchandise PO?</summary>
+      <p>
+        For re-rented generators, you use a <strong>Return Merchandise PO</strong> to return the
+        unit to the vendor:
+      </p>
+      <ul>
+        <li><strong>S13. Print Return Merchandise PO</strong> – Creates and prints the vendor return document.</li>
+        <li><strong>S14. Receive Vendor Return Merchandise PO</strong> – Records the vendor receiving the unit back.</li>
+      </ul>
+      <p>
+        This keeps vendor inventory and financials aligned with the actual return of the re-rented
+        generator.
+      </p>
+    </details>
+
+    <details>
+      <summary>9. When is it appropriate to close the rental?</summary>
+      <p>
+        You should complete <strong>S15. Close Rental</strong> only when:
+      </p>
+      <ul>
+        <li>The generator has been <strong>checked in</strong> at S12.</li>
+        <li>For <strong>re-rents</strong>, the vendor return steps (S13–S14) have been completed as needed.</li>
+        <li>Billing details are correct and any outstanding rental activity has been captured.</li>
+      </ul>
+      <p>
+        Closing too early can cause missing charges or incomplete return tracking; closing too late
+        can clutter open rental lists.
+      </p>
+    </details>
+
+    <details>
+      <summary>10. How does this Rental SOP fit into the larger PPS / Scott Electric process?</summary>
+      <p>
+        The Rental SOP is one piece of the broader PPS / Scott Electric service offering:
+      </p>
+      <ul>
+        <li><strong>Upstream:</strong> A customer need is identified, and a rental is chosen as the solution (for example, project power, temporary backup, or outage support).</li>
+        <li><strong>This SOP:</strong> Manages the rental lifecycle – contract creation, fleet vs re-rent decision, Re-Rent PO if needed, freight and billing details, check-out, check-in, vendor return for re-rents, and close rental.</li>
+        <li><strong>Downstream:</strong> Information from this SOP supports accurate billing, P&amp;L reporting for rental business, and decisions on when to buy additional fleet units versus relying on re-rents.</li>
+      </ul>
+      <p>
+        Getting this process right reduces disputes, improves financial accuracy, and improves
+        decisions about fleet investment versus vendor re-rent.
+      </p>
+    </details>
+  </section>
+</body>
+</html>

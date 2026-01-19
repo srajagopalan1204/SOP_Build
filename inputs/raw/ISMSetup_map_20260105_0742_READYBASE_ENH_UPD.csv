@@ -1,0 +1,817 @@
+﻿Source_PPT,SlideIndex,SelectionTitle,Title,Code,Title_short,Image_sub_url,Deci_Question,Next1_Code,Next2_Code,Image_web,Narr1_seed,Desc_Next1,Desc_Next2,Desi_Ques,Narr2_seed,Narr3_seed,UAP_Label,UAP_URL,Start_Here,Entity,Function,SubEntity,Exclude,FAQ_Loc,FAQ_File,FAQ_Label,Quiz_Loc,Quiz_File,Quiz_Label
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,1,S000. Opening Slide for PPS – Service – ISM Setup,S000. Opening Slide for PPS – Service – ISM Setup,S000,Opening Slide for PPS – Service – ISM Setup,../images/ISMSetup/S000.png,,S001,,../images/ISMSetup/S000.png,,About Palco Power Systems and Scott Electric -,,,Opening Slide for PPS.,"Palco Power Systems is a specialized power solutions provider and an authorized KOHLER distributor, serving customers across western Pennsylvania, West Virginia, and western Maryland. Since 1972, Palco has supplied reliable generator systems and power equipment to industrial, commercial, municipal, healthcare, and residential customers who depend on uninterrupted power.
+As part of the Scott Electric family since 1993, Palco Power Systems combines deep technical expertise with the broader resources of a leading independent electrical distributor. Our portfolio includes KOHLER industrial, mobile (towable), residential, and portable generator systems; pumps; other power systems and components; Honda portable units; transfer equipment; and related accessories, including ASCO and PSP components.
+Over the years, Palco’s territory and responsibilities have grown along with its reputation:
+• 1972 – Palco becomes an authorized KOHLER distributor in western Pennsylvania.
+• 1984 – Territory expands to include West Virginia and western Maryland.
+• 1989 – Area of responsibility further expands to include western New York State.
+• 1993 – Scott Electric Company acquires Palco.
+• 2001 – Territory is adjusted with the removal of western New York State.
+Most recently, Palco Power Systems was the first Scott Electric division to host a Conference Room Pilot (CRP) for the new Infor CloudSuite software, demonstrating leadership and innovation in how we use technology to support customers and internal operations. ",,,Yes,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,2,S001. About Palco Power Systems and Scott Electric -and a Welcome to Training,S001. About Palco Power Systems and Scott Electric -and a Welcome to Training,S001,About Palco Power Systems and Scott Electric -and a Welcome to Training,../images/ISMSetup/S001.png,,S002,,../images/ISMSetup/S001.png,About Palco Power Systems and Scott Electric -and a Welcome to Training,Palco Power Systems – Service to Cash Work Flow,,,About Palco Power Systems and Scott Electric and a Welcome to Training.,"Palco Power Systems is a specialized power solutions provider and an authorized KOHLER distributor, serving customers across western Pennsylvania, West Virginia, and western Maryland. Since 1972, Palco has supplied reliable generator systems and power equipment to industrial, commercial, municipal, healthcare, and residential customers who depend on uninterrupted power.
+As part of the Scott Electric family since 1993, Palco Power Systems combines deep technical expertise with the broader resources of a leading independent electrical distributor. Our portfolio includes KOHLER industrial, mobile (towable), residential, and portable generator systems; pumps; other power systems and components; Honda portable units; transfer equipment; and related accessories, including ASCO and PSP components.
+Over the years, Palco’s territory and responsibilities have grown along with its reputation:• 1972 – Palco becomes an authorized KOHLER distributor in western Pennsylvania.• 1984 – Territory expands to include West Virginia and western Maryland.• 1989 – Area of responsibility further expands to include western New York State.• 1993 – Scott Electric Company acquires Palco.• 2001 – Territory is adjusted with the removal of western New York State.
+Most recently, Palco Power Systems was the first Scott Electric division to host a Conference Room Pilot (CRP) for the new Infor CloudSuite software, demonstrating leadership and innovation in how we use technology to support customers and internal operations. This work reflects the dedication of the Palco team—including Tanner Schwartz, Valerie Markish, Tim Drop, Jen Schlegel, and Subi Rajagopalan—along with support from the broader ERP project, Champions, and Executive Sponsors. The management teams at Palco Power Systems and Scott Electric continue to support these efforts by prioritizing training, process improvement, and the successful adoption of the new system.
+
+Welcome to the Palco Power Systems Training Site.
+This section of the Scott Electric Training Site is designed to help you build the knowledge and skills needed to support our power systems customers safely, accurately, and efficiently—whether you work in sales, service, parts, rentals, administration, or support. Here you will find guided learning, reference materials, and role-based courses tailored to the work we do every day at Palco: sizing and selecting generators, supporting projects, coordinating installations, servicing equipment, and taking care of customers before, during, and after the sale.
+
+Thank you for investing your time in training. Your commitment to learning and continuous improvement helps keep Palco Power Systems—and Scott Electric as a whole—reliable, responsive, and growing as we continue our customer-focused operations.",,,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,3,S002. Palco Power Systems – Service to Cash Work Flow,S002. Palco Power Systems – Service to Cash Work Flow,S002,Palco Power Systems – Service to Cash Work Flow,../images/ISMSetup/S002.png,,S003,,../images/ISMSetup/S002.png,Palco Power Systems – Service to Cash Work Flow,Pictorial representation of Quote/ Service Request to Cash similar to Quote to Cash -,,,This is the overall Work flow on how a service request is processed at Palco Power System. This covers the business process that starts from a request from a customer or based on a contract the need for a,"This is the overall Work flow on how a service request is processed at Palco Power System. This covers the business process that starts from a request from a customer or based on a contract the need for a routine service that need to be performed. Request from customers could be for a break fix , a warranty question or request for additional work suggest as a nice to perform during the most recent visit by a very well trained and efficient Service technician crea at PPS. This transistions through the various business sections of Service writes Service  , schedulers , technicians , parts department, purchasing , billing and finally collection of payment. Hence the term Service to Cash is ofen used to succinctly name it ",,,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,4,S003. Pictorial representation of Quote/ Service Request to Cash similar to Quote to Cash - At PPS Service,S003. Pictorial representation of Quote/ Service Request to Cash similar to Quote to Cash - At PPS Service,S003,Pictorial representation of Quote/ Service Request to Cash similar to Quote to Cash - At PPS Service,../images/ISMSetup/S003.png,,M1,,../images/ISMSetup/S003.png,Pictorial representation of Quote/ Service Request to Cash similar to Quote to Cash - At PPS Service,ISM Setup -,,,Hence this pictorial representation cover the Service identification to Cash process or as is commonly reffered to as Quote to Cash. he process begins with either a sales person contacting the owner of newly installed generator or the service tech highlights the advantage of having a PMA to the new generator owner or the owner on their own accord calling PPS to discuss the options for a PMA.,"This slide depicts the process from Identifying a need for a new PMA Preventive Maintenance Agreement. In the mid 1900 's it used also go by the name Planned Maintenance Schedule. However that was retired as it did not convey the fact that it is a contractual agreement.  The process begins with either a sales person contacting the owner of newly installed generator or the service tech highlights the advantage of having a PMA to the new generator owner or the owner on their own accord calling PPS to discuss the options for a PMA.
+from that point the process traverses the creation of a customized contract for the owner , followed by setting  up schedule that satisfies the customer and our terms of the agreement , followed by creation of the SRO , finally when the time is right scheduling a technician , then the technician services the unit as per the tasks laid out in the SRO, finally an invoice is generated and as per the terms payment is collected. Hence this pictorial representation cover the Service identification to Cash process or as is commonly reffered to as Quote to Cash.",,,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,5,M1. ISM Setup - At PPS Service,M1. ISM Setup - At PPS Service,M1,ISM Setup - At PPS Service,../images/ISMSetup/M1.png,,D1,,../images/ISMSetup/M1.png,ISM Setup - At PPS Service,Are you setting up a Partner ? -,,,ISM Setup - At PPS Service,"
+
+here is a link to documentation on Service Management (ISM)  https://docs.infor.com/ism/2025.x/en-us/ismolh/default.html ",04_ISM Set Up,https://scottelectricusa.uap.infor.com/#/folder/32c52f39-d0ad-49be-8b2d-96cc0281c86d?bypassGroupFiltering=false,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,6,D1. Are you setting up a Partner ? - ISM Setup - At PPS Service,D1. Are you setting up a Partner ? - ISM Setup - At PPS Service,D1,Are you setting up a Partner ? - ISM Setup - At PPS Service,../images/ISMSetup/D1.png,Are you setting up a Partner ?,Y1,N1,../images/ISMSetup/D1.png,Are you setting up a Partner ? - ISM Setup - At PPS Service,Partner Setup Option chosen -,No not setting up a Partner - ISM Setup - At PPS Service,Are you setting up a Partner ?,Are you setting up a Partner ? - ISM Setup - At PPS Service,Are you setting up a Partner ? - ISM Setup - At PPS Service,,,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,7,Y1. Partner Setup Option chosen - ISM Setup - At PPS Service,Y1. Partner Setup Option chosen - ISM Setup - At PPS Service,Y1,Partner Setup Option chosen - ISM Setup - At PPS Service,../images/ISMSetup/Y1.png,,S1,,../images/ISMSetup/Y1.png,Partner Setup Option chosen - ISM Setup - At PPS Service,Partner Setup OPM -,,,Partner Setup Option chosen - ISM Setup - At PPS Service,Partner Setup Option chosen - ISM Setup - At PPS Service,,,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,8,S1. Partner Setup OPM - ISM Setup - At PPS Service,S1. Partner Setup OPM - ISM Setup - At PPS Service,S1,Partner Setup OPM - ISM Setup - At PPS Service,../images/ISMSetup/S1.png,,S2,,../images/ISMSetup/S1.png,Partner Setup OPM - ISM Setup - At PPS Service,Partner Schedule Setup OPM -,,,"Setting Up Partners
+Open the Partners form.
+Specify this information:
+Partner
+Specify an abbreviated version of the name of the partner.
+Type
+Select the category that a partner belongs to:
+Employee
+Customer
+Vendor
+Ref Num
+Select the partner reference number. This is the associated customer or vendor. This field is not available if partner type Employee is selected.
+Ship To
+Select the ship to location to associate with the partner. This field is enabled only for partners with the type Customer.
+Name
+Specify the name of the partner.
+Active
+Select this check box if the partner is currently active.
+Supervisor
+Select the supervisor of the partner.
+Schedules Button
+Click this button to open the Calendar Scheduling form.
+On the General tab, specify this information:
+Email
+Specify the email address.
+Warehouse
+Select the warehouse that a partner may issue inventory out of while working on a SRO.
+Labor Cost
+Specify the hourly cost for a partner.
+Hourly Rate
+Specify the hourly rate of a partner for the type of work being performed.
+Default Misc Code
+Select the unique alphanumeric code that represents a particular type of expense that is charged to a SRO. These codes can be used to ensure that the expenses are charged to the proper general ledger account. These codes are set up on the Miscellaneous Codes form.
+Default Work Code
+Select the code used to represent the type of work that is being recorded to a SRO. Codes are set up and maintained on the Work Codes form.
+Default Payment Type
+Specify the payment type to be used by default for miscellaneous SRO transactions that are submitted from the Service Portal. Available selections are set up and maintained on the Payment Types form.
+Department
+Select the department out of which the partner works.
+User
+Select a user ID from the list. The list is populated from the Users form.
+Reimbursement Method
+Select the method to be used or the type of payment to be included for partner reimbursements. Valid options are voucher, credit memo, and other.
+Reimburse Material
+Select this check box to reimburse the partner for material transactions on incidents that the partner is assigned to. If this field is not selected, costing is not affected for associated transactions.
+Reimburse Labor
+Select this check box to reimburse the partner for labor transactions on incidents that the partner is assigned to. If this field is cleared, costing for the associated transactions is not affected.
+Currency
+Select a default currency code to associate with the partner. This will be used for reimbursement currency conversion.
+Primary Picture
+Use this field to associate an image with a partner. To upload a new picture, right-click in the Primary Picture field and select Select Picture. See Storing Pictures for Key Data for more information.
+On the Scheduling tab, specify the availability and location of this partner:
+Weekly Available Hours
+Specify the maximum block of time that a partner is to be scheduled for a task or tasks on any given day.
+Display On Schedule Board
+Select this check box to display the partner on the board within the Calendar Scheduling form.
+Last Known Location
+In the Last Known Location section of this tab:
+Click History to open the Partner Location History form.
+Click Map Current to send the current partner location to the Map form.
+Click Map Last 24 Hours to display the GPS coordinates of the partner's location over the last 24 hours as a trail of pushpins on the Map form.
+Last Timestamp shows the date and time that the last GPS coordinates were collected.
+Latitude and Longitude show the values from the last time a coordinate was collected.
+In the GPS Polling Interval field, specify how often, in minutes, the GPS resources on the partner's mobile device will be queried for the device's current latitude and longitude.
+On the Payroll tab, specify this information for use with a payroll interface:
+Daily Hours Until Overtime
+For each day of the week, specify the number of hours the partner can work before reaching overtime.
+Company ID
+Specify company ID for the partner.
+Payroll ID
+Specify the payroll ID for the partner.
+Last Payroll Start/End Date
+The dates of the last time the payroll process was started and ended is displayed by default from the Payroll Interface Process SRO Transactions form.
+Pay Period Hours Until Overtime
+Specify the number of hours in a pay period before the partner reaches overtime.
+Overtime Multiplier
+Specify the amount by which to multiply the base pay to determine overtime pay.
+Holiday Multiplier
+Specify the amount by which to multiply the base pay to determine holiday pay.
+On the Certifications tab, select any certifications acquired by the partner. (Certification codes are defined on the Certifications/Licenses form.) These certifications are matched with any required certifications for a certain item (in the Items form) to determine if a partner has the necessary qualifications to work on a SRO or on an incident involving a particular item. The description of the certification displays after you select the code.
+On the Skills tab,select any skills acquired by the partner. (Skill codes are defined on the Skills form.) These skills are matched with any required skills for a certain item (in the Items form) to determine if a partner has the necessary qualifications to work on a SRO or on an incident involving a particular item. The description of the skill displays after you select the code.
+On the Areas tab, specify the area in which this partner can be used. Specify the address information and the description and region:
+Region
+Select the region code for the partner. A region is the coverage area of a partner. These codes are maintained on the Regions form.
+Description
+Specify a description for the area.
+Country, State, County, City, Postal Code
+In these fields, specify or select the address information for the partner's area.: This information is used when dispatching a partner.
+On the Team tab, set up partners as teams. Service scheduling uses this information to dispatch partners as a group. The system creates individual appointments for each team member as new appointments are created and assigned to the team. Specify this information:
+Partner
+For partner records that are set up as a team, select the partners that make up the team. Partners can be members of more than one team.
+Name
+The partner name is displayed.
+Team
+Select any team(s) to which the partner belongs. A team record is set up in the same way as a partner record using the Partners form.
+Name
+The partner name is displayed.
+Team Substitutions Button
+Click this button to open the Partner Substitutions form, filtered for the selected partner/team record and the current system date.
+Refresh Skills Button
+Click this button to delete all the skills currently associated with a team and rebuild the list by adding skills currently held by any partner on the team. The new skill set is stored on the Skills tab of the team record.
+Refresh Certifications Button
+Click this button to open the Quotes form, linked for the current SRO.
+Save the record.
+Click Schedules to display the Calendar Scheduling form, where you can see scheduled appointments related to service work.","Setting Up Partners
+Open the Partners form.
+Specify this information:
+Partner
+Specify an abbreviated version of the name of the partner.
+Type
+Select the category that a partner belongs to:
+Employee
+Customer
+Vendor
+Ref Num
+Select the partner reference number. This is the associated customer or vendor. This field is not available if partner type Employee is selected.
+Ship To
+Select the ship to location to associate with the partner. This field is enabled only for partners with the type Customer.
+Name
+Specify the name of the partner.
+Active
+Select this check box if the partner is currently active.
+Supervisor
+Select the supervisor of the partner.
+Schedules Button
+Click this button to open the Calendar Scheduling form.
+On the General tab, specify this information:
+Email
+Specify the email address.
+Warehouse
+Select the warehouse that a partner may issue inventory out of while working on a SRO.
+Labor Cost
+Specify the hourly cost for a partner.
+Hourly Rate
+Specify the hourly rate of a partner for the type of work being performed.
+Default Misc Code
+Select the unique alphanumeric code that represents a particular type of expense that is charged to a SRO. These codes can be used to ensure that the expenses are charged to the proper general ledger account. These codes are set up on the Miscellaneous Codes form.
+Default Work Code
+Select the code used to represent the type of work that is being recorded to a SRO. Codes are set up and maintained on the Work Codes form.
+Default Payment Type
+Specify the payment type to be used by default for miscellaneous SRO transactions that are submitted from the Service Portal. Available selections are set up and maintained on the Payment Types form.
+Department
+Select the department out of which the partner works.
+User
+Select a user ID from the list. The list is populated from the Users form.
+Reimbursement Method
+Select the method to be used or the type of payment to be included for partner reimbursements. Valid options are voucher, credit memo, and other.
+Reimburse Material
+Select this check box to reimburse the partner for material transactions on incidents that the partner is assigned to. If this field is not selected, costing is not affected for associated transactions.
+Reimburse Labor
+Select this check box to reimburse the partner for labor transactions on incidents that the partner is assigned to. If this field is cleared, costing for the associated transactions is not affected.
+Currency
+Select a default currency code to associate with the partner. This will be used for reimbursement currency conversion.
+Primary Picture
+Use this field to associate an image with a partner. To upload a new picture, right-click in the Primary Picture field and select Select Picture. See Storing Pictures for Key Data for more information.
+On the Scheduling tab, specify the availability and location of this partner:
+Weekly Available Hours
+Specify the maximum block of time that a partner is to be scheduled for a task or tasks on any given day.
+Display On Schedule Board
+Select this check box to display the partner on the board within the Calendar Scheduling form.
+Last Known Location
+In the Last Known Location section of this tab:
+Click History to open the Partner Location History form.
+Click Map Current to send the current partner location to the Map form.
+Click Map Last 24 Hours to display the GPS coordinates of the partner's location over the last 24 hours as a trail of pushpins on the Map form.
+Last Timestamp shows the date and time that the last GPS coordinates were collected.
+Latitude and Longitude show the values from the last time a coordinate was collected.
+In the GPS Polling Interval field, specify how often, in minutes, the GPS resources on the partner's mobile device will be queried for the device's current latitude and longitude.
+On the Payroll tab, specify this information for use with a payroll interface:
+Daily Hours Until Overtime
+For each day of the week, specify the number of hours the partner can work before reaching overtime.
+Company ID
+Specify company ID for the partner.
+Payroll ID
+Specify the payroll ID for the partner.
+Last Payroll Start/End Date
+The dates of the last time the payroll process was started and ended is displayed by default from the Payroll Interface Process SRO Transactions form.
+Pay Period Hours Until Overtime
+Specify the number of hours in a pay period before the partner reaches overtime.
+Overtime Multiplier
+Specify the amount by which to multiply the base pay to determine overtime pay.
+Holiday Multiplier
+Specify the amount by which to multiply the base pay to determine holiday pay.
+On the Certifications tab, select any certifications acquired by the partner. (Certification codes are defined on the Certifications/Licenses form.) These certifications are matched with any required certifications for a certain item (in the Items form) to determine if a partner has the necessary qualifications to work on a SRO or on an incident involving a particular item. The description of the certification displays after you select the code.
+On the Skills tab,select any skills acquired by the partner. (Skill codes are defined on the Skills form.) These skills are matched with any required skills for a certain item (in the Items form) to determine if a partner has the necessary qualifications to work on a SRO or on an incident involving a particular item. The description of the skill displays after you select the code.
+On the Areas tab, specify the area in which this partner can be used. Specify the address information and the description and region:
+Region
+Select the region code for the partner. A region is the coverage area of a partner. These codes are maintained on the Regions form.
+Description
+Specify a description for the area.
+Country, State, County, City, Postal Code
+In these fields, specify or select the address information for the partner's area.: This information is used when dispatching a partner.
+On the Team tab, set up partners as teams. Service scheduling uses this information to dispatch partners as a group. The system creates individual appointments for each team member as new appointments are created and assigned to the team. Specify this information:
+Partner
+For partner records that are set up as a team, select the partners that make up the team. Partners can be members of more than one team.
+Name
+The partner name is displayed.
+Team
+Select any team(s) to which the partner belongs. A team record is set up in the same way as a partner record using the Partners form.
+Name
+The partner name is displayed.
+Team Substitutions Button
+Click this button to open the Partner Substitutions form, filtered for the selected partner/team record and the current system date.
+Refresh Skills Button
+Click this button to delete all the skills currently associated with a team and rebuild the list by adding skills currently held by any partner on the team. The new skill set is stored on the Skills tab of the team record.
+Refresh Certifications Button
+Click this button to open the Quotes form, linked for the current SRO.
+Save the record.
+Click Schedules to display the Calendar Scheduling form, where you can see scheduled appointments related to service work.",01_Partner Set Up,https://scottelectricusa.uap.infor.com/#/content/7b03a3c1-071e-4214-9c01-0ea2a0fdfc5d?contextId=58339ccd-8448-4ebc-8bc3-3fcd6743df21&bypassGroupFiltering=false,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,9,S2. Partner Schedule Setup OPM - ISM Setup - At PPS Service,S2. Partner Schedule Setup OPM - ISM Setup - At PPS Service,S2,Partner Schedule Setup OPM - ISM Setup - At PPS Service,../images/ISMSetup/S2.png,,S998a,,../images/ISMSetup/S2.png,Partner Schedule Setup OPM - ISM Setup - At PPS Service,You have come to the end of the path selected in the – ISM Setup Process,,,"On the Scheduling tab, specify the availability and location of this partner:
+Weekly Available Hours
+Specify the maximum block of time that a partner is to be scheduled for a task or tasks on any given day.
+Display On Schedule Board
+Select this check box to display the partner on the board within the Calendar Scheduling form.
+Last Known Location
+In the Last Known Location section of this tab:
+Click History to open the Partner Location History form.
+Click Map Current to send the current partner location to the Map form.
+Click Map Last 24 Hours to display the GPS coordinates of the partner's location over the last 24 hours as a trail of pushpins on the Map form.
+Last Timestamp shows the date and time that the last GPS coordinates were collected.
+Latitude and Longitude show the values from the last time a coordinate was collected.
+In the GPS Polling Interval field, specify how often, in minutes, the GPS resources on the partner's mobile device will be queried for the device's current latitude and longitude.
+On the Payroll tab, specify this information for use with a payroll interface:
+Daily Hours Until Overtime
+For each day of the week, specify the number of hours the partner can work before reaching overtime.
+Company ID
+Specify company ID for the partner.
+Payroll ID
+Specify the payroll ID for the partner.
+Last Payroll Start/End Date
+The dates of the last time the payroll process was started and ended is displayed by default from the Payroll Interface Process SRO Transactions form.
+Pay Period Hours Until Overtime","On the Scheduling tab, specify the availability and location of this partner:
+Weekly Available Hours
+Specify the maximum block of time that a partner is to be scheduled for a task or tasks on any given day.
+Display On Schedule Board
+Select this check box to display the partner on the board within the Calendar Scheduling form.
+Last Known Location
+In the Last Known Location section of this tab:
+Click History to open the Partner Location History form.
+Click Map Current to send the current partner location to the Map form.
+Click Map Last 24 Hours to display the GPS coordinates of the partner's location over the last 24 hours as a trail of pushpins on the Map form.
+Last Timestamp shows the date and time that the last GPS coordinates were collected.
+Latitude and Longitude show the values from the last time a coordinate was collected.
+In the GPS Polling Interval field, specify how often, in minutes, the GPS resources on the partner's mobile device will be queried for the device's current latitude and longitude.
+On the Payroll tab, specify this information for use with a payroll interface:
+Daily Hours Until Overtime
+For each day of the week, specify the number of hours the partner can work before reaching overtime.
+Company ID
+Specify company ID for the partner.
+Payroll ID
+Specify the payroll ID for the partner.
+Last Payroll Start/End Date
+The dates of the last time the payroll process was started and ended is displayed by default from the Payroll Interface Process SRO Transactions form.
+Pay Period Hours Until Overtime",02_Partners Schedule Set Up,https://scottelectricusa.uap.infor.com/#/content/6045fcf0-fc97-4c12-ae1a-fca8ee1b9a40?contextId=58339ccd-8448-4ebc-8bc3-3fcd6743df21&bypassGroupFiltering=false ,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,10,S998a. You have come to the end of the path selected in the – ISM Setup Process,S998a. You have come to the end of the path selected in the – ISM Setup Process,S998a,You have come to the end of the path selected in the – ISM Setup Process,../images/ISMSetup/S998a.png,May we suggest going to Decision 2 (Are you setting up a work Code via N1) or if you have completed all paths end of the SOP slide S999. ,N1,S999,../images/ISMSetup/S998a.png,You have come to the end of the path selected in the – ISM Setup Process,No not setting up a Partner -,You have successfully completed this SOP on ISM Setup at PPS,May we suggest going to Decision 2 (Are you setting up a work Code via N1) or if you have completed all paths end of the SOP slide S999. , You have come to the end of the path selected in the you have two choices to click on the link below or click on D1 in the Bread crumb and follow  N1 path now ,You have come to the end of the path selected in the – ISM Setup Process,,,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,11,N1. No not setting up a Partner - ISM Setup - At PPS Service,N1. No not setting up a Partner - ISM Setup - At PPS Service,N1,No not setting up a Partner - ISM Setup - At PPS Service,../images/ISMSetup/N1.png,,D2,,../images/ISMSetup/N1.png,No not setting up a Partner - ISM Setup - At PPS Service,Are you setting up a Work Code ?-,,,No not setting up a Partner - ISM Setup - At PPS Service,No not setting up a Partner - ISM Setup - At PPS Service,,,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,12,D2. Are you setting up a Work Code ?- ISM Setup - At PPS Service,D2. Are you setting up a Work Code ?- ISM Setup - At PPS Service,D2,Are you setting up a Work Code ?- ISM Setup - At PPS Service,../images/ISMSetup/D2.png,Are you setting up a Work Code ? ,Y2,N2,../images/ISMSetup/D2.png,Are you setting up a Work Code ?- ISM Setup - At PPS Service,Yes setting up a Work Code -,No not setting up a Work Codes - ISM Setup - At PPS Service,Are you setting up a Work Code ? ,Are you setting up a Work Code ?- ISM Setup - At PPS Service,Are you setting up a Work Code ?- ISM Setup - At PPS Service,,,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,13,Y2. Yes setting up a Work Code - ISM Setup - At PPS Service,Y2. Yes setting up a Work Code - ISM Setup - At PPS Service,Y2,Yes setting up a Work Code - ISM Setup - At PPS Service,../images/ISMSetup/Y2.png,,S3,,../images/ISMSetup/Y2.png,Yes setting up a Work Code - ISM Setup - At PPS Service,Setting up a Work Code OPM -,,,Yes setting up a Work Code - ISM Setup - At PPS Service,Yes setting up a Work Code - ISM Setup - At PPS Service, , ,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,14,S3. Setting up a Work Code OPM - ISM Setup - At PPS Service,S3. Setting up a Work Code OPM - ISM Setup - At PPS Service,S3,Setting up a Work Code OPM - ISM Setup - At PPS Service,../images/ISMSetup/S3.png,,S998b,,../images/ISMSetup/S3.png,Setting up a Work Code OPM - ISM Setup - At PPS Service,You have come to the end of the path selected in the – ISM Setup Process,,,Setting Up Service Operation Codes,"Setting Up Service Operation Codes
+Operation codes are used to specify the type of work that the SRO operation represents.
+Setting Up Miscellaneous Codes
+Miscellaneous codes are used to represent a particular type of expense that is charged to a service order.
+
+On the Miscellaneous Codes form, specify this information in the header area:
+Misc Code
+Specify a unique alphanumeric code to represent a particular type of expense that is charged to a SRO.
+Description
+Specify an explanation of what the miscellaneous code represents. This description is used by default when selecting a miscellaneous code on a form that also has a Description field.
+
+Active
+This field is selected by default. To deactivate an miscellaneous code, clear the Active check box. Deactivated codes are not displayed in drop-down lists on all applicable forms.
+Specify this information on the General tab:
+Project Cost Code
+Select a project cost code. These codes are used to group project costs into labor, material, or other classes. The codes define which general ledger accounts are debited with specific project expenses. Use the codes to define whether overhead and G & A expenses and revenue should be calculated as a percentage of the costs.
+Cost
+Specify the default cost for the code. This cost is used when entering miscellaneous transactions against a SRO.
+Price
+Specify the default price for the code. This price is used when entering miscellaneous transactions against a SRO.
+Miscellaneous
+Select the general ledger accounts to associate with the particular SRO miscellaneous expense.
+Sales Discount
+Select the general ledger accounts for any sales discount associated with the miscellaneous code.
+Revenue
+Select the general ledger accounts for posting of revenue.
+https://docs.infor.com/ism/2025.x/en-us/ismolh/default.html 
+Open the Service Operation Codes form.
+Specify this information:
+Operation Code
+Specify a code for the type of work performed on an operation.
+Description
+Specify a description for the type of work represented by the code.
+Active
+This field is selected by default. To deactivate an operation code, clear the Active check box. Deactivated codes are not displayed in drop-down lists on all applicable forms.
+Related topics
+Using Service Orders to Track Service Requests, Transactions, and Billing",03_Create a New Work Code,https://scottelectricusa.uap.infor.com/#/content/13c5ff25-a3f8-4ef1-82f7-faf79f238617?contextId=58339ccd-8448-4ebc-8bc3-3fcd6743df21&bypassGroupFiltering=false,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,15,S998b. You have come to the end of the path selected in the – ISM Setup Process,S998b. You have come to the end of the path selected in the – ISM Setup Process,S998b,You have come to the end of the path selected in the – ISM Setup Process,../images/ISMSetup/S998b.png,May we suggest going to Decision 3 (Are you setting up warranty via N2) or if you have completed all paths end of the SOP slide S999. ,N2,S999,../images/ISMSetup/S998b.png,You have come to the end of the path selected in the – ISM Setup Process,No not setting up a Work Codes -,You have successfully completed this SOP on ISM Setup at PPS,May we suggest going to Decision 3 (Are you setting up warranty via N2) or if you have completed all paths end of the SOP slide S999. ,While you have reached the end of this path it would be beneficial to follow all the possible paths in this SOP on IS Setup May we suggest going to Decision 3 (Are you setting up warranty via N2) or if you have completed all paths end of the SOP slide S999. ,"While you have reached the end of this path it would be beneficial to follow all the possible paths in this SOP on IS Setup May we suggest going to Decision 3 (Are you setting up warranty via N2) or if you have completed all paths end of the SOP slide S999. 
+
+Ever heard the phrase “Practice makes perfect ? – if you had not then now you have !
+
+The Management and your project team would like you to practice this and other processes so that the Go live is smooth or if your new to the company or are new to the role you can get proficient in the training environment As one becomes more proficient in this system it behooves us to share that knowledge and help other so the Company can  achieve its destiny ",,,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,16,N2. No not setting up a Work Codes - ISM Setup - At PPS Service,N2. No not setting up a Work Codes - ISM Setup - At PPS Service,N2,No not setting up a Work Codes - ISM Setup - At PPS Service,../images/ISMSetup/N2.png,,D3,,../images/ISMSetup/N2.png,No not setting up a Work Codes - ISM Setup - At PPS Service,Are you looking to Setup Warranty GL accounts ? -,,,No not setting up a Work Codes - ISM Setup - At PPS Service,No not setting up a Work Codes - ISM Setup - At PPS Service,,,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,17,D3. Are you looking to Setup Warranty GL accounts ? - ISM Setup - At PPS Service,D3. Are you looking to Setup Warranty GL accounts ? - ISM Setup - At PPS Service,D3,Are you looking to Setup Warranty GL accounts ? - ISM Setup - At PPS Service,../images/ISMSetup/D3.png,Are you looking to Setup Warranty GL accounts ?,Y3,N3,../images/ISMSetup/D3.png,Are you looking to Setup Warranty GL accounts ? - ISM Setup - At PPS Service,"Yes, looking to Setup Warranty GL accounts -",No Do not want to create a warranty GL account but some thing else - ISM Setup - At PPS Service,Are you looking to Setup Warranty GL accounts ?,Are you looking to Setup Warranty GL accounts ? - ISM Setup - At PPS Service,Are you looking to Setup Warranty GL accounts ? - ISM Setup - At PPS Service, , ,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,18,"Y3. Yes, looking to Setup Warranty GL accounts - ISM Setup - At PPS Service","Y3. Yes, looking to Setup Warranty GL accounts - ISM Setup - At PPS Service",Y3,"Yes, looking to Setup Warranty GL accounts - ISM Setup - At PPS Service",../images/ISMSetup/Y3.png,,S4,,../images/ISMSetup/Y3.png,"Yes, looking to Setup Warranty GL accounts - ISM Setup - At PPS Service",Warranty Specific GL accounts -,,,"Yes, looking to Setup Warranty GL accounts - ISM Setup - At PPS Service","  Yes, looking to Setup Warranty GL accounts  ",,,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,19,S4. Warranty Specific GL accounts - ISM Setup - At PPS Service,S4. Warranty Specific GL accounts - ISM Setup - At PPS Service,S4,Warranty Specific GL accounts - ISM Setup - At PPS Service,../images/ISMSetup/S4.png,,S998c,,../images/ISMSetup/S4.png,Warranty Specific GL accounts - ISM Setup - At PPS Service,You have come to the end of the path selected in the – ISM Setup Process,,,Warranty Specific GL accounts - ISM Setup - At PPS Service,Warranty Specific GL accounts - ISM Setup - At PPS Service,02-Accounting - Controller from Infor not PPS or SE specific,https://scottelectricusa.uap.infor.com/#/folder/8908eb9b-8cbc-476a-a1bd-d32ff05b1488?bypassGroupFiltering=false,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,20,S998c. You have come to the end of the path selected in the – ISM Setup Process,S998c. You have come to the end of the path selected in the – ISM Setup Process,S998c,You have come to the end of the path selected in the – ISM Setup Process,../images/ISMSetup/S998c.png,May we suggest going to Decision 4 (Are you setting up Service Order Template   via N3) or if you have completed all paths end of the SOP slide S999. ,N3,S999,../images/ISMSetup/S998c.png,You have come to the end of the path selected in the – ISM Setup Process,No Do not want to create a warranty GL account but some thing else -,You have successfully completed this SOP on ISM Setup at PPS,May we suggest going to Decision 4 (Are you setting up Service Order Template   via N3) or if you have completed all paths end of the SOP slide S999. ,"While you have reached the end of this path it would be beneficial to follow all the possible paths in this SOP on IS Setup May we suggest going to Decision 4 (Are you setting up Service Order Template   via N3) or if you have completed all paths end of the SOP slide S999. 
+
+Ever heard the phrase “Practice makes perfect ? – if you had not then now you have !
+
+The Management and your project team would like you to practice this and other processes so that the Go live is smooth or if your new to the company or are new to the role you can get proficient in the training environment ","While you have reached the end of this path it would be beneficial to follow all the possible paths in this SOP on IS Setup May we suggest going to Decision 4 (Are you setting up Service Order Template   via N3) or if you have completed all paths end of the SOP slide S999. 
+
+Ever heard the phrase “Practice makes perfect ? – if you had not then now you have !
+
+The Management and your project team would like you to practice this and other processes so that the Go live is smooth or if your new to the company or are new to the role you can get proficient in the training environment As one becomes more proficient in this system it behooves us to share that knowledge and help other so the Company can  achieve its destiny ",,,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,21,N3. No Do not want to create a warranty GL account but some thing else - ISM Setup - At PPS Service,N3. No Do not want to create a warranty GL account but some thing else - ISM Setup - At PPS Service,N3,No Do not want to create a warranty GL account but some thing else - ISM Setup - At PPS Service,../images/ISMSetup/N3.png,,D4,,../images/ISMSetup/N3.png,No Do not want to create a warranty GL account but some thing else - ISM Setup - At PPS Service,Do you want to set up a Service order Template ? -,,,No Do not want to create a warranty GL account but some thing else - ISM Setup - At PPS Service,No Do not want to create a warranty GL account but some thing else - ISM Setup - At PPS Service,,,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,22,D4. Do you want to set up a Service order Template ? - ISM Setup - At PPS Service,D4. Do you want to set up a Service order Template ? - ISM Setup - At PPS Service,D4,Do you want to set up a Service order Template ? - ISM Setup - At PPS Service,../images/ISMSetup/D4.png,Do you want to set up a Service order Template ?,Y4,N4,../images/ISMSetup/D4.png,Do you want to set up a Service order Template ? - ISM Setup - At PPS Service,"Yes, user wants to set up a Service order Template -",No not setting up an SRO Template OPM but looking for something else - ISM Setup - At PPS Service,Do you want to set up a Service order Template ?,Do you want to set up a Service order Template ? - ISM Setup - At PPS Service," Do you want to set up a Service order since Setting Up Service Order Templates
+Use service order templates to specify the type of work a service order represents. You can build templates for handling different types of service calls.",,,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,23,"Y4. Yes, user wants to set up a Service order Template - ISM Setup - At PPS Service","Y4. Yes, user wants to set up a Service order Template - ISM Setup - At PPS Service",Y4,"Yes, user wants to set up a Service order Template - ISM Setup - At PPS Service",../images/ISMSetup/Y4.png,,S5,,../images/ISMSetup/Y4.png,"Yes, user wants to set up a Service order Template - ISM Setup - At PPS Service",Create an SRO Template OPM -,,,"Yes, user wants to set up a Service order Template - ISM Setup - At PPS Service","Yes the user wants to setup Service codes Setting Up Service Order Templates
+Use service order templates to specify the type of work a service order represents. You can build templates for handling different types of service calls.",,,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,24,S5. Create an SRO Template OPM - ISM Setup - At PPS Service,S5. Create an SRO Template OPM - ISM Setup - At PPS Service,S5,Create an SRO Template OPM - ISM Setup - At PPS Service,../images/ISMSetup/S5.png,,S998d,,../images/ISMSetup/S5.png,Create an SRO Template OPM - ISM Setup - At PPS Service,You have come to the end of the path selected in the – ISM Setup Process,,,Create an SRO Template OPM - ISM Setup - At PPS Service,"Setting Up Service Order Templates
+Use service order templates to specify the type of work a service order represents. You can build templates for handling different types of service calls. The templates include all the tools required to service a particular item. When a service order is created by copying from a template, the information on the Service Order Templates form provides the default values for the service order.
+
+On the Service Order Templates form, specify this information in the header section:
+SRO
+Select the unique alphanumeric used to identify the service order.
+Incident
+Select the incident number. In some cases, the incident number is displayed.
+Partial Billing
+Select this check box if you want the SRO Invoice Print/Post program to bill a service order or service order transaction with a status of bill hold. If the check box is selected at the header level, the system ignores the entire service order. If the check box is selected at the transaction level, only the transaction is ignored and all other transactions not on hold are invoiced.",05_Create an SRO Template,https://scottelectricusa.uap.infor.com/#/content/393acbed-d6db-4a83-9d6d-0328c52db88a?contextId=58339ccd-8448-4ebc-8bc3-3fcd6743df21&bypassGroupFiltering=false,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,25,S998d. You have come to the end of the path selected in the – ISM Setup Process,S998d. You have come to the end of the path selected in the – ISM Setup Process,S998d,You have come to the end of the path selected in the – ISM Setup Process,../images/ISMSetup/S998d.png,May we suggest going to Decision 5 (Are you setting up Warranty Code   via N4 ) or if you have completed all paths end of the SOP slide S999. ,N4,S999,../images/ISMSetup/S998d.png,You have come to the end of the path selected in the – ISM Setup Process,No not setting up an SRO Template OPM but looking for something else -,You have successfully completed this SOP on ISM Setup at PPS,May we suggest going to Decision 5 (Are you setting up Warranty Code   via N4 ) or if you have completed all paths end of the SOP slide S999. ,You have come to the end of the path selected in the – ISM Setup Process,"While you have reached the end of this path it would be beneficial to follow all the possible paths in this SOP on IS Setup May we suggest going to Decision 5 (Are you setting up Warranty Code   via N4 ) or if you have completed all paths end of the SOP slide S999. 
+
+Ever heard the phrase “Practice makes perfect ? – if you had not then now you have !
+
+The Management and your project team would like you to practice this and other processes so that the Go live is smooth or if your new to the company or are new to the role you can get proficient in the training environment As one becomes more proficient in this system it behooves us to share that knowledge and help other so the Company can  achieve its destiny ",,,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,26,N4. No not setting up an SRO Template OPM but looking for something else - ISM Setup - At PPS Service,N4. No not setting up an SRO Template OPM but looking for something else - ISM Setup - At PPS Service,N4,No not setting up an SRO Template OPM but looking for something else - ISM Setup - At PPS Service,../images/ISMSetup/N4.png,,D5,,../images/ISMSetup/N4.png,No not setting up an SRO Template OPM but looking for something else - ISM Setup - At PPS Service,Are you looking to Setup Warranty Code/s ? -,,,No not setting up an SRO Template OPM but looking for something else - ISM Setup - At PPS Service,No not setting up an SRO Template OPM but looking for something else - ISM Setup - At PPS Service,,,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,27,D5. Are you looking to Setup Warranty Code/s ? - ISM Setup - At PPS Service,D5. Are you looking to Setup Warranty Code/s ? - ISM Setup - At PPS Service,D5,Are you looking to Setup Warranty Code/s ? - ISM Setup - At PPS Service,../images/ISMSetup/D5.png,Are you looking to Setup Warranty Code/s ?,Y5,N5,../images/ISMSetup/D5.png,Are you looking to Setup Warranty Code/s ? - ISM Setup - At PPS Service,"Yes, Looking to Setup Warranty Code -",No not setting up a Warranty code but looking for something else - ISM Setup - At PPS Service,Are you looking to Setup Warranty Code/s ?,Are you looking to Setup Warranty Code/s ? - ISM Setup - At PPS Service,Are you looking to Setup Warranty Code/s ? Operation codes are used to specify the type of work that the SRO operation represents and miscellaneous codes are used to represent a particular type of expense that is charged to a service order.,,,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,28,"Y5. Yes, Looking to Setup Warranty Code - ISM Setup - At PPS Service","Y5. Yes, Looking to Setup Warranty Code - ISM Setup - At PPS Service",Y5,"Yes, Looking to Setup Warranty Code - ISM Setup - At PPS Service",../images/ISMSetup/Y5.png,,S6,,../images/ISMSetup/Y5.png,"Yes, Looking to Setup Warranty Code - ISM Setup - At PPS Service",Setting up Warranty Codes Using OPM -,,,"Yes, Looking to Setup Warranty Code - ISM Setup - At PPS Service",Warranty codes like 10Yr Ext - RESI 10 YEAR EXTENDED WARRANTY are used classify,,,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,29,S6. Setting up Warranty Codes Using OPM - ISM Setup - At PPS Service,S6. Setting up Warranty Codes Using OPM - ISM Setup - At PPS Service,S6,Setting up Warranty Codes Using OPM - ISM Setup - At PPS Service,../images/ISMSetup/S6.png,,S998e,,../images/ISMSetup/S6.png,Setting up Warranty Codes Using OPM - ISM Setup - At PPS Service,You have come to the end of the path selected in the – ISM Setup Process,,,Setting up Warranty Codes Using OPM - ISM Setup - At PPS Service,"This includes the steps 
+Setting Up Service Operation Codes
+Operation codes are used to specify the type of work that the SRO operation represents.
+
+Open the Service Operation Codes form.
+Specify this information:
+Operation Code
+Specify a code for the type of work performed on an operation.
+Description
+Specify a description for the type of work represented by the code.
+Active
+This field is selected by default. To deactivate an operation code, clear the Active check box. Deactivated codes are not displayed in drop-down lists on all applicable forms.",06_Create a Warranty Code,https://scottelectricusa.uap.infor.com/#/content/11763baf-c465-4898-8a5b-bd8b6040afb6?contextId=58339ccd-8448-4ebc-8bc3-3fcd6743df21&bypassGroupFiltering=false,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,30,S998e. You have come to the end of the path selected in the – ISM Setup Process,S998e. You have come to the end of the path selected in the – ISM Setup Process,S998e,You have come to the end of the path selected in the – ISM Setup Process,../images/ISMSetup/S998e.png,May we suggest going to Decision 6 (Are you setting up a Rate   via N5 ) or if you have completed all paths end of the SOP slide S999. ,N5,S999,../images/ISMSetup/S998e.png,You have come to the end of the path selected in the – ISM Setup Process,No not setting up a Warranty code but looking for something else -,You have successfully completed this SOP on ISM Setup at PPS,May we suggest going to Decision 6 (Are you setting up a Rate   via N5 ) or if you have completed all paths end of the SOP slide S999. ,While you have reached the end of this path it would be beneficial to follow all the possible paths in this SOP on IS Setup. May we suggest going to Decision 6 (Are you setting up a Rate   via N5 ) or if you have completed all paths end of the SOP slide S999. ,"While you have reached the end of this path it would be beneficial to follow all the possible paths in this SOP on IS Setup. May we suggest going to Decision 6 (Are you setting up a Rate   via N5 ) or if you have completed all paths end of the SOP slide S999. 
+
+Ever heard the phrase “Practice makes perfect ? – if you had not then now you have !
+
+The Management and your project team would like you to practice this and other processes so that the Go live is smooth or if your new to the company or are new to the role you can get proficient in the training environment As one becomes more proficient in this system it behooves us to share that knowledge and help other so the Company can  achieve its destiny ",,,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,31,N5. No not setting up a Warranty code but looking for something else - ISM Setup - At PPS Service,N5. No not setting up a Warranty code but looking for something else - ISM Setup - At PPS Service,N5,No not setting up a Warranty code but looking for something else - ISM Setup - At PPS Service,../images/ISMSetup/N5.png,,D6,,../images/ISMSetup/N5.png,No not setting up a Warranty code but looking for something else - ISM Setup - At PPS Service,Are you looking to Setup Rate ? -,,,  No not setting up a Warranty code but looking for something else ,  No not setting up a Warranty code but looking for something else ,,,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,32,D6. Are you looking to Setup Rate ? - ISM Setup - At PPS Service,D6. Are you looking to Setup Rate ? - ISM Setup - At PPS Service,D6,Are you looking to Setup Rate ? - ISM Setup - At PPS Service,../images/ISMSetup/D6.png,Are you looking to Setup Rate ?,Y6,N6,../images/ISMSetup/D6.png,Are you looking to Setup Rate ? - ISM Setup - At PPS Service,"Yes, ready to Setup Rate -",No not setting up a Rate but looking for something else - ISM Setup - At PPS Service,Are you looking to Setup Rate ?,Are you looking to Setup Rate ? - ISM Setup - At PPS Service,"When determining the rate to use, the order of precedence is as follows:
+SRO
+Customer
+Partner and Work Code, based on the setting of the Default Labor Rate field on the Service Parameters form
+Operation Warehouse",,,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,33,"Y6. Yes, ready to Setup Rate - ISM Setup - At PPS Service","Y6. Yes, ready to Setup Rate - ISM Setup - At PPS Service",Y6,"Yes, ready to Setup Rate - ISM Setup - At PPS Service",../images/ISMSetup/Y6.png,,S7,,../images/ISMSetup/Y6.png,"Yes, ready to Setup Rate - ISM Setup - At PPS Service",Setup Rate -,,,"Yes, ready to Setup Rate - ISM Setup - At PPS Service","Yes the user has indicated that they would like learn about seeting up rates When determining the rate to use, the order of precedence is as follows:
+SRO
+Customer
+Partner and Work Code, based on the setting of the Default Labor Rate field on the Service Parameters form
+Operation Warehouse",,,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,34,S7. Setup Rate - ISM Setup - At PPS Service,S7. Setup Rate - ISM Setup - At PPS Service,S7,Setup Rate - ISM Setup - At PPS Service,../images/ISMSetup/S7.png,,S998f,,../images/ISMSetup/S7.png,Setup Rate - ISM Setup - At PPS Service,You have come to the end of the path selected in the – ISM Setup Process,,,Setup Rate - ISM Setup - At PPS Service,"Setting Up Service Order Labor Rates
+Open the Service Order Labor Rates form.
+Select Actions > New.
+Specify this information:
+SRO
+Select the unique alphanumeric code used to identify the SRO.
+Customer
+Select the customer.
+Ship To
+The Customer Ship To location is displayed.
+Partner
+Select the partner associated with the SRO.
+Work Code
+Select the code used to represent the type of work that is being recorded to a SRO. Codes are set up and maintained on the Work Codes form.
+Operation Warehouse
+Select the warehouse for which you want to set a labor rate.
+When a service order transaction is created, the system checks the Service Order Labor Rates form for a warehouse entry that matches the warehouse on the service order operation. The labor rate set for that warehouse is used.
+
+Rate
+Specify the hourly rate of a partner for the type of work being performed.
+Use Customer Currency
+Select this check box to use the customer currency instead of the domestic currency.",None Found,,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,35,S998f. You have come to the end of the path selected in the – ISM Setup Process,S998f. You have come to the end of the path selected in the – ISM Setup Process,S998f,You have come to the end of the path selected in the – ISM Setup Process,../images/ISMSetup/S998f.png,May we suggest going to Decision 7 (Are you setting up Rental contract Template   via N6) or if you have completed all paths end of the SOP slide S999. ,N6,S999,../images/ISMSetup/S998f.png,You have come to the end of the path selected in the – ISM Setup Process,No not setting up a Rate but looking for something else -,You have successfully completed this SOP on ISM Setup at PPS,May we suggest going to Decision 7 (Are you setting up Rental contract Template   via N6) or if you have completed all paths end of the SOP slide S999. ,While you have reached the end of this path it would be beneficial to follow all the possible paths in this SOP on IS Setup May we suggest going to Decision 7 (Are you setting up Rental contract Template   via N6) or if you have completed all paths end of the SOP slide S999. ,"While you have reached the end of this path it would be beneficial to follow all the possible paths in this SOP on IS Setup May we suggest going to Decision 7 (Are you setting up Rental contract Template   via N6) or if you have completed all paths end of the SOP slide S999. 
+
+Ever heard the phrase “Practice makes perfect ? – if you had not then now you have !
+
+The Management and your project team would like you to practice this and other processes so that the Go live is smooth or if your new to the company or are new to the role you can get proficient in the training environment As one becomes more proficient in this system it behooves us to share that knowledge and help other so the Company can  achieve its destiny ",,,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,36,N6. No not setting up a Rate but looking for something else - ISM Setup - At PPS Service,N6. No not setting up a Rate but looking for something else - ISM Setup - At PPS Service,N6,No not setting up a Rate but looking for something else - ISM Setup - At PPS Service,../images/ISMSetup/N6.png,,D7,,../images/ISMSetup/N6.png,No not setting up a Rate but looking for something else - ISM Setup - At PPS Service,Are you looking to Setup a Rental Contract Template ? -,,,No not setting up a Rate but looking for something else - ISM Setup - At PPS Service,The user has indicated that they are not setting up a rate and are looking to do something else not yet presented ,,,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,37,D7. Are you looking to Setup a Rental Contract Template ? - ISM Setup - At PPS Service,D7. Are you looking to Setup a Rental Contract Template ? - ISM Setup - At PPS Service,D7,Are you looking to Setup a Rental Contract Template ? - ISM Setup - At PPS Service,../images/ISMSetup/D7.png,Are you looking to Setup a Rental Contract Template ?,Y7,N7,../images/ISMSetup/D7.png,Are you looking to Setup a Rental Contract Template ? - ISM Setup - At PPS Service,"Yes, want to Setup a Rental Contract Template -",No not setting up a Rental Contract Template but looking for something else - ISM Setup - At PPS Service,Are you looking to Setup a Rental Contract Template ?,Are you looking to Setup a Rental Contract Template ? - ISM Setup - At PPS Service,"D7.  Are you looking to Setup a Rental Contract Template ? As Setting Up Service Order Templates
+Use service order templates to specify the type of work a service order represents. You can build templates for handling different types of service calls. The templates include all the tools required to service a particular item. When a service order is created by copying from a template, the information on the Service Order Templates form provides the default values for the service order.
+
+On the Service Order Templates form, specify this information in the header section:
+SRO
+Select the unique alphanumeric used to identify the service order.
+Incident
+Select the incident number. In some cases, the incident number is displayed.
+Partial Billing
+Select this check box if you want the SRO Invoice Print/Post program to bill a service order or service order transaction with a status of bill hold. If the check box is selected at the header level, the system ignores the entire service order. If the check box is selected at the transaction level, only the transaction is ignored and all other transactions not on hold are invoiced.
+Note: A default value for new service orders can be set on the Service Order tab of the Service Parameters form.",,,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,38,"Y7. Yes, want to Setup a Rental Contract Template - ISM Setup - At PPS Service","Y7. Yes, want to Setup a Rental Contract Template - ISM Setup - At PPS Service",Y7,"Yes, want to Setup a Rental Contract Template - ISM Setup - At PPS Service",../images/ISMSetup/Y7.png,,S8,,../images/ISMSetup/Y7.png,"Yes, want to Setup a Rental Contract Template - ISM Setup - At PPS Service",Create a Rental Contract Template -,,,"Yes, want to Setup a Rental Contract Template - ISM Setup - At PPS Service","The user has indicated  Yes, want to Setup a Rental Contract Template    As Setting Up Service Order Templates
+Use service order templates to specify the type of work a service order represents",,,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,39,S8. Create a Rental Contract Template - ISM Setup - At PPS Service,S8. Create a Rental Contract Template - ISM Setup - At PPS Service,S8,Create a Rental Contract Template - ISM Setup - At PPS Service,../images/ISMSetup/S8.png,,S998g,,../images/ISMSetup/S8.png,Create a Rental Contract Template - ISM Setup - At PPS Service,You have come to the end of the path selected in the – ISM Setup Process,,,Create a Rental Contract Template - ISM Setup - At PPS Service,"Using the Rental Counter
+Use the Rental Counter form to create and maintain contracts for walk up customers or requests made over the phone. It is intended to be the primary form used during rental creation and the check out and check in process.
+Upon opening the form, you can either create a new contract or load an existing contract. You can initiate either option in one of these ways:
+
+Drag the information from the search grids in the left pane onto one of the action icons on the form.
+See Creating a Contract Using Drag and Drop Functionality for more information.
+
+Use the standard toolbar Filter-in-Place or Add buttons.
+Maintaining or Completing an Existing Contract
+When a customer returns to check in rental equipment or a user wants to see information about an existing rental contract, these two options are available for locating the desired rental contract:
+
+Use the Previous tab to locate the rental contract and drag and drop it onto the Maintain Existing Contract icon.
+Use the standard Filter-in-Place functionality.
+If the customer is on credit hold, a red X is displayed, otherwise a green check mark is displayed.
+
+The system checks the Credit Hold field on the Customers form to determine if the customer is on credit hold. If you are integrated with SX.e, the system performs an SX.e API call to retrieve the customer credit hold and period hold information from CloudSuite Distribution.
+
+If a credit card has been authorized for the current contract, then Active Authorization is selected and the last four digits of the credit card are displayed in the Card Authorized field. You can right-click on the Card Authorized field and select Credit Card Transactions to open the Credit Card Transactions form, filtered for the associated card.",08_Contract Rental Template,https://scottelectricusa.uap.infor.com/#/content/31dc4557-9bec-4d6d-8c9c-4bb0d83a1d4b?contextId=58339ccd-8448-4ebc-8bc3-3fcd6743df21&bypassGroupFiltering=false,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,40,S998g. You have come to the end of the path selected in the – ISM Setup Process,S998g. You have come to the end of the path selected in the – ISM Setup Process,S998g,You have come to the end of the path selected in the – ISM Setup Process,../images/ISMSetup/S998g.png,May we suggest going to Decision 8 (Are you setting up Service contract Template   via N7) or if you have completed all paths end of the SOP slide S999. ,N7,S999,../images/ISMSetup/S998g.png,You have come to the end of the path selected in the – ISM Setup Process,No not setting up a Rental Contract Template but looking for something else -,You have successfully completed this SOP on ISM Setup at PPS,May we suggest going to Decision 8 (Are you setting up Service contract Template   via N7) or if you have completed all paths end of the SOP slide S999. ,While you have reached the end of this path it would be beneficial to follow all the possible paths in this SOP on IS Setup May we suggest going to Decision 8 (Are you setting up Service contract Template   via N7) or if you have completed all paths end of the SOP slide S999. ,"While you have reached the end of this path it would be beneficial to follow all the possible paths in this SOP on IS Setup May we suggest going to Decision 8 (Are you setting up Service contract Template   via N7) or if you have completed all paths end of the SOP slide S999. 
+
+Ever heard the phrase “Practice makes perfect ? – if you had not then now you have !
+
+The Management and your project team would like you to practice this and other processes so that the Go live is smooth or if your new to the company or are new to the role you can get proficient in the training environment As one becomes more proficient in this system it behooves us to share that knowledge and help other so the Company can  achieve its destiny ",,,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,41,N7. No not setting up a Rental Contract Template but looking for something else - ISM Setup - At PPS Service,N7. No not setting up a Rental Contract Template but looking for something else - ISM Setup - At PPS Service,N7,No not setting up a Rental Contract Template but looking for something else - ISM Setup - At PPS Service,../images/ISMSetup/N7.png,,D8,,../images/ISMSetup/N7.png,No not setting up a Rental Contract Template but looking for something else - ISM Setup - At PPS Service,Are you looking to setup Service Contract template ?-,,,No not setting up a Rental Contract Template but looking for something else - ISM Setup - At PPS Service,No not setting up a Rental Contract Template but looking for something else - ISM Setup - At PPS Service,,,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,42,D8. Are you looking to setup Service Contract template ?- ISM Setup - At PPS Service,D8. Are you looking to setup Service Contract template ?- ISM Setup - At PPS Service,D8,Are you looking to setup Service Contract template ?- ISM Setup - At PPS Service,../images/ISMSetup/D8.png,Are you looking to setup Service Contract template ?- ISM Setup?,Y8,N8,../images/ISMSetup/D8.png,Are you looking to setup Service Contract template ?- ISM Setup - At PPS Service,"Yes, you are looking to setup Service Contract template -",No not setting up a Service Template but looking for something else - ISM Setup - At PPS Service,Are you looking to setup Service Contract template ?- ISM Setup?,Are you looking to setup Service Contract template ?- ISM Setup - At PPS Service,"Setting Up Service Order Templates
+Use service order templates to specify the type of work a service order represents. You can build templates for handling different types of service calls. The templates include all the tools required to service a particular item. When a service order is created by copying from a template, the information on the Service Order Templates form provides the default values for the service order.
+
+On the Service Order Templates form, specify this information in the header section:
+SRO
+Select the unique alphanumeric used to identify the service order.
+Incident
+Select the incident number. In some cases, the incident number is displayed.
+Partial Billing
+Select this check box if you want the SRO Invoice Print/Post program to bill a service order or service order transaction with a status of bill hold. If the check box is selected at the header level, the system ignores the entire service order. If the check box is selected at the transaction level, only the transaction is ignored and all other transactions not on hold are invoiced.
+Note: A default value for new service orders can be set on the Service Order tab of the Service Parameters form.
+Bill Manager
+Specify the billing manager.
+SRO Type
+Select the type of the service request order. These types are set up and maintained on the Service Order Types form.
+Salesperson
+Select the salesperson associated with the service order or contract.
+Price Code
+Select the price code for this customer.
+Ship Via
+Specify the ship via code to use for this SRO. The ship via code is used to identify the preferred shipping method of the customer. The default value is based on the customer selected but can be overwritten. The codes are set up and maintained on the Ship Via Codes form.
+End User Type
+Select the end user type for the service order.",,,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,43,"Y8. Yes, you are looking to setup Service Contract template - ISM Setup - At PPS Service","Y8. Yes, you are looking to setup Service Contract template - ISM Setup - At PPS Service",Y8,"Yes, you are looking to setup Service Contract template - ISM Setup - At PPS Service",../images/ISMSetup/Y8.png,,S9,,../images/ISMSetup/Y8.png,"Yes, you are looking to setup Service Contract template - ISM Setup - At PPS Service",Create Service Contract template -,,,"Yes, you are looking to setup Service Contract template - ISM Setup - At PPS Service","Yes the user has indicated that they would like to create SRO Template and Setting Up Service Order Templates
+Use service order templates to specify the type of work a service order represents. You can build templates for handling different types of service calls. The templates include all the tools required to service a particular item. When a service order is created by copying from a template, the information on the Service Order Templates form provides the default values for the service order.",,,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,44,S9. Create Service Contract template - ISM Setup - At PPS Service,S9. Create Service Contract template - ISM Setup - At PPS Service,S9,Create Service Contract template - ISM Setup - At PPS Service,../images/ISMSetup/S9.png,,S998h,,../images/ISMSetup/S9.png,Create Service Contract template - ISM Setup - At PPS Service,You have come to the end of the path selected in the – ISM Setup Process,,,Create Service Contract template - ISM Setup - At PPS Service,"Setting Up Service Order Templates
+here are some in the system already 10RESV PMA 12RESV PMA 1-PMA 1-WARRANTY 2-PMA CAMC RENTAL STARTUP020 T&M TRBL
+
+Use service order templates to specify the type of work a service order represents. You can build templates for handling different types of service calls. The templates include all the tools required to service a particular item. When a service order is created by copying from a template, the information on the Service Order Templates form provides the default values for the service order. 
+On the Service Order Templates form, specify this information in the header section:
+SRO
+Select the unique alphanumeric used to identify the service order.
+Incident
+Select the incident number. In some cases, the incident number is displayed.
+Partial Billing
+Select this check box if you want the SRO Invoice Print/Post program to bill a service order or service order transaction with a status of bill hold. If the check box is selected at the header level, the system ignores the entire service order. If the check box is selected at the transaction level, only the transaction is ignored and all other transactions not on hold are invoiced.
+Note: A default value for new service orders can be set on the Service Order tab of the Service Parameters form.
+Bill Manager
+Specify the billing manager.
+SRO Type
+Select the type of the service request order. These types are set up and maintained on the Service Order Types form.
+Salesperson
+Select the salesperson associated with the service order or contract.
+Price Code
+Select the price code for this customer.
+Ship Via
+Specify the ship via code to use for this SRO. The ship via code is used to identify the preferred shipping method of the customer. The default value is based on the customer selected but can be overwritten. The codes are set up and maintained on the Ship Via Codes form.
+End User Type
+Select the end user type for the service order.
+Disposition",09_Contract Service Template PMA,https://scottelectricusa.uap.infor.com/#/content/9597f145-11d8-41d1-b4d4-826fdf3d96b2?contextId=58339ccd-8448-4ebc-8bc3-3fcd6743df21&bypassGroupFiltering=false,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,45,S998h. You have come to the end of the path selected in the – ISM Setup Process,S998h. You have come to the end of the path selected in the – ISM Setup Process,S998h,You have come to the end of the path selected in the – ISM Setup Process,../images/ISMSetup/S998h.png,Setup May we suggest going to go to restart via N8 no not setting up a Service template or if you have completed all paths end of the SOP slide S999. ,N8,S999,../images/ISMSetup/S998h.png,You have come to the end of the path selected in the – ISM Setup Process,No not setting up a Service Template but looking for something else -,You have successfully completed this SOP on ISM Setup at PPS,Setup May we suggest going to go to restart via N8 no not setting up a Service template or if you have completed all paths end of the SOP slide S999. ,While you have reached the end of this path it would be beneficial to follow all the possible paths in this SOP on IS Setup May we suggest going to go to restart via N8 no not setting up a Service template or if you have completed all paths end of the SOP slide S999. ,"While you have reached the end of this path it would be beneficial to follow all the possible paths in this SOP on IS Setup May we suggest going to go to restart via N8 no not setting up a Service template or if you have completed all paths end of the SOP slide S999. 
+
+Ever heard the phrase “Practice makes perfect ? – if you had not then now you have !
+
+The Management and your project team would like you to practice this and other processes so that the Go live is smooth or if your new to the company or are new to the role you can get proficient in the training environment As one becomes more proficient in this system it behooves us to share that knowledge and help other so the Company can  achieve its destiny ",,,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,46,N8. No not setting up a Service Template but looking for something else - ISM Setup - At PPS Service,N8. No not setting up a Service Template but looking for something else - ISM Setup - At PPS Service,N8,No not setting up a Service Template but looking for something else - ISM Setup - At PPS Service,../images/ISMSetup/N8.png,,S998,,../images/ISMSetup/N8.png,No not setting up a Service Template but looking for something else - ISM Setup - At PPS Service,You have come to the end of the path selected in the – ISM Setup Process,,,No not setting up a Service Template but looking for something else - ISM Setup - At PPS Service,No not setting up a Service Template but looking for something else - ISM Setup - At PPS Service,,,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,47,S998. You have come to the end of the path selected in the – ISM Setup Process,S998. You have come to the end of the path selected in the – ISM Setup Process,S998,You have come to the end of the path selected in the – ISM Setup Process,../images/ISMSetup/S998.png,,S999,,../images/ISMSetup/S998.png,You have come to the end of the path selected in the – ISM Setup Process,You have successfully completed this SOP on ISM Setup at PPS,,,"While you have reached the end of this path it would be beneficial to follow all the possible paths in this SOP on IS Setup
+
+Ever heard the phrase “Practice makes perfect ? – if you had not then now you have !
+
+The Management and your project team would like you to practice this and other processes so that the Go live is smooth or if your new to the company or are new to the role you can get proficient in the training environment As one becomes more proficient in this system it behooves us to share that knowledge and help other so the Company can  achieve its destiny ","While you have reached the end of this path it would be beneficial to follow all the possible paths in this SOP on IS Setup
+
+Ever heard the phrase “Practice makes perfect ? – if you had not then now you have !
+
+Setting Service Parameters
+Open the Service Parameters form.
+Specify this information on the Call Center tab:
+Incident Prefix
+Specify a default prefix to use for all new incident numbers. The system uses this value, along with the standard expand key logic, to automatically generate the next available incident number.
+Status Code
+Specify the default value to use as the status of any new incident.
+Priority Code
+Specify the default priority code to use for any new incident.
+To Be Scheduled
+Select this check box to indicate that the current incident or SRO is to be included in the scheduling process for partner assignment. If selected, the incident or SRO is displayed on the Schedules form when you do select a task and click All To Be Scheduled. If cleared, the incident or SRO can still be manually scheduled but is not automatically displayed on the Schedules form.
+Add Customer Contacts
+Specify whether customer contacts are created automatically:
+Always: A contact record is created for each new contact added on the Incidents or Service Orders forms.
+Prompt: A message asks if a new contact record should be created.
+Never: Contact records are not created when you save an incident or SRO.
+Update Customer Contacts
+Specify whether customer contacts are updated automatically:
+Always: The contact record is updated each time contact information is updated on the Incidents or Service Orders forms.
+Prompt: A message asks if the contact record should be updated.
+Never: Contact records are not updated when you save an incident or SRO.
+Service on Holidays
+Select this check box to include holidays in the days that are counted in the follow up, due date, and warning values that are associated with the priority code.
+Check for Service Bulletin on Incident Entry
+Select this check box if you want the system to check if a relevant service bulletin exists when an incident is created.
+Use the Incident/SRO Sync Settings fields on this tab indicate how fields should be synchronized for SROs and Incidents that are cross-referenced.
+For more information, see Using an Incident to Create a Service Order.
+
+Specify this information for the warranty claims settings:
+Warranty Incident Prefix
+Specify a prefix to use when an incident is created and the Warranty Claims check box is selected.
+Warranty Authorized Status
+Select the working status to use by default when a warranty claim incident is authorized.
+Warranty Rejected Status
+Select the working status to use by default when a warranty claim incident is rejected.
+Warranty Reimbursed Status
+Select the working status to use by default when all expenses have been reimbursed or rejected for a warranty claim incident.
+Default Warranty SRO Template
+Select the SRO template to use by default when a warranty claim incident is authorized and converted to a service order.
+Specify this information on the Service Order (1) tab:
+SRO Prefix
+Specify a default prefix to use for all new service order numbers. The system uses this value, along with the standard expand key logic, to automatically generate the next available SRO number.
+SRO Type
+Select the default type to use for new service orders. The types are defined on the Service Order Types form.
+SRO Product Code
+Select the default product code to use for new service orders. The product code encompasses all of the general ledger accounts that are used for posting material, labor, and miscellaneous expenses to a SRO. The product code also includes the accounts that are used by SRO invoicing to post Cost of Goods Sold and revenue amounts. Product codes are defined on the Product Codes form.
+Default Operation Status
+Select whether new operations have a default status of Open, Invoice, or Closed.
+Billing Type
+Select the default value to use for the billing type, which is used to determine the total price for a service request order:
+Calculated/Time and Material: Price is calculated as the sum of all material, labor, and miscellaneous items issued.
+Project/Fixed: Price is based on the manually entered fixed amount.
+Billing Code
+Select the default billing code to use on service orders. This code determines the amount to billed for SRO material and labor transactions.
+Note: When integrated to SX.e and the billing code for service orders is set to Recover, instead of the journal cost, the replacement cost from SX.e is used as the price for service order transactions.
+To use this feature, select the Use Replacement Cost For Recover Billing Code option on the SX.e BODs tab on the Integration Parameters form.
+
+For more information, see Billing Code.
+
+Warehouse
+Select the default warehouse to use for service orders. Warehouses are set up and maintained through the Warehouses form.
+Default SRO Template
+Select the SRO template to use by default when creating new service request orders.
+Material Transaction Type
+Select a value to use as the default when you add planned or actual material transactions through the Service Order Transactions form.
+Purchasing Misc Code
+Select a value to use as the default miscellaneous code. Miscellaneous codes are unique, alphanumeric codes that represent a type of expense charged to an SRO. Use these codes to ensure that the expenses are charged to the proper general ledger account.
+Purchasing Pay Type
+Select a default payment type to use for service orders. Only payment types that do not reimburse the partner can be assigned. This field is referenced when users create manual checks for service orders on the A/P Check Writer Workbench.
+Demand Consumption Method
+Select a method to use to consume demand:
+Service Order: Consume demand across the whole SRO based on the item only.
+Service Order Line: Consume demand across each SRO line based on the item only. Use this option in situations where planning occurs on one operation but materials are issued on another operation.
+Service Order Operation: Consume demand by matching planned transactions created for an item on a SRO operation, regardless of the planned warehouse. Use this option when you do not know which warehouse or partner will be assigned to the service order.
+Warehouse: This is the default setting. Consume demand by matching on the SRO, line, operation, item, and warehouse.
+Status Code
+Select the working status code to use by default for service orders.
+Note: The selected code must have the Available For Service Orders check box selected.
+Partial Billing
+Select this check box if you want the SRO Invoice Print/Post program to bill an SRO or SRO transaction with a status of bill hold. If the check box is selected at the header level, the system ignores the entire SRO. If the check box is selected at the transaction level, only the transaction is ignored and all other transactions not on hold are invoiced.
+A default value for new SROs can be set on the Service Order tab of the Service Parameters form.
+
+Consider Planned for Partial Billing
+Select this check box if you want to prevent service orders from invoicing when unposted planned transactions exist, where the reference type and number are not blank.
+When selected, the system checks if any unposted planned transaction exists that has a linked cross-reference. If such a transaction is found, invoicing is not allowed.
+
+Use this parameter when you have not enabled Partial Billing.
+
+Suppress Warranty Claim Invoice Printout
+Select this parameter to stop warranty claim invoices from printing when invoicing is completed.
+Accumulate WIP
+Specify a default value to use for this field on new service orders. If this field is selected, costs issued to the SRO are stored in WIP accounts. Otherwise, costs are posted directly to cost of goods (COGS) accounts.
+Planned Transaction Required
+Specify a default value to use for this field on new service orders. If this field is selected, then a planned transaction must exist before the line or operation can be invoiced.
+Use Planned Pricing
+Specify a default value to use for this field on new service orders. If this field is selected, the SRO uses planned pricing. Otherwise pricing is based on partner, codes, and customer.
+Use End User Types
+Select this check box if you want to use end user types for service orders or sales orders. If selected, a new field is displayed on the Customer tab of the Service Orders form or on the Details tab of the Sales Orders form to hold the end user type. The default value for this field is from the end user type specified on the Codes tab of the Customers form. This value can be changed for each individual service order. As material, labor, and miscellaneous transactions are posted against the service order, the system uses the end user type, if it is not blank, to acquire the sales and cost of goods sold account numbers.
+This option can be defaulted for new service orders on the Service Order tab of the Service Parameters form.
+
+Work Entry Auto Post Labor
+Select this check box if transactions entered through the SRO Labor Clock Off form are added to the service order as posted actual transactions. Otherwise, they are added as unposted actual transactions.
+Work Entry Auto Post Material
+Select this check box if transactions entered through the SRO Labor Entry form are added to the service order as posted actual transactions. Otherwise, they are added as unposted actual transactions.
+Work Entry Auto Post Miscellaneous
+Select this check box to automatically post a transaction when a miscellaneous transaction is saved on the SRO Miscellaneous Entry form.
+Include SRO Allocations
+Select this check box to include the outstanding demand quantity for service orders in the Alloc Order field of the Item/Warehouse form
+Auto Dispatch SRO on Quick SRO Create
+Use this check box to set the default value for the Auto Dispatch SRO on Copy/Create field on the Service Order Quick Create form. That field determines whether a schedule record is automatically added to a service order created using the SRO Copy/Create Utility, when the SRO Lead Partner is assigned. The dispatch record is displayed in the grid section of the Schedules tab on the Service Orders form when this feature is enabled.
+Allow SPA Pricing
+Select this check box if special pricing agreements (SPAs) should be in effect for service orders.
+Auto Close SRO After Invoicing
+Select this check box to set the SRO status to Closed when invoicing is complete (regardless of the Close Date value). If you do not select this check box, manually populating the Close Date field of the SRO causes it to close after invoicing. The default value of the Service Order field comes from the template if created through the SRO Template, and if not, from the Service Parameters.
+Lock Estimate on Approval
+Use this check box to set the default value for the Estimate Lock field on the Service Orders form. When this field is selected, users cannot change (add/update/delete) Estimate SRO Transactions for the service order.
+Check for Service Bulletin on SRO Line Entry
+Select this check box if you want the system to check if a relevant service bulletin exists when a service order line is created.
+Default Consumed On Planned Transactions
+The field is selected by default. When selected, new planned transactions, by default, are marked as consumed in the Consumed column on the grid section of planned transactions, on the Service Order Transactions form. To mark by default new planned transactions as not consumed, clear the Default Consumed on Planned Transactions check box.
+You can use the Consumed column on the grid section of planned transactions, on the Service Order Transactions form, to manually indicate whether a planned transaction is consumed or not, without drilling into the transaction. This feature is also available in the ISM mobile application.
+
+Loaner Warehouse and Loaner Location
+Select the default warehouse and location to use for the material and line material transaction types Loaner Shipment and Loaner Return.
+Standard Repair Times
+Use these two fields to specify default synchronization of Repair Time and Hours to Bill, and what happens when the hours to bill are greater then the approved repair time.
+Default Repair Time: Specify one of these default options:
+None: Do not default Hours to Bill nor Hours Worked.
+Hours to Bill: Default Hours to Bill but not Hours Worked.
+Hours Worked: Default Hours Worked but not Hours to Bill.
+Both: Default Hours Worked and Hours to Bill.
+Repair Time Exceeded Action: Specify one of these actions:
+Warn: Display a message, when the labor transaction is created, that hours to bill are greater than the approved repair time.
+Ignore: Do nothing – allow the labor transaction to be posted
+Prevent: Display warning on entry, and then don’t allow the Labor Transaction to be posted without a Reason (suggestion is require a note to be created)
+Specify this information on the Service Order (2) tab:
+Invoice Text
+Specify the default text that displays at the bottom of every SRO invoice.
+Account Location information
+In this area, set the default values to use for these fields on new service orders. For each field, specify whether the accounts used are assigned at the operation or transaction level.
+Not To Exceed information
+Use these fields to determine how to handle overages when a Not To Exceed (NTE) amount is exceeded for a service order.  
+Post Action: Specify the action the system takes when a transaction surpasses the Not To Exceed amount specified on a SRO. Available options are:
+Allow: Allows posting of the transaction and issues a warning message that the NTE amount has been surpassed.
+Prevent: Does not allow the user to post the transaction.
+Assign to Zero: Allows posting of the transaction, but the entered price is overridden and set to zero.
+Bill Hold Action: Specify the level of billing hold to be assigned by the system if the Not To Exceed amount of an SRO is surpassed. Available options are:
+Transactions: Places the SRO transaction on billing hold.
+Operation: Places the SRO operation on billing hold.
+Both: Places both the SRO operation and transaction on billing hold.
+None: Nothing is put on billing hold as a result of surpassing the NTE amount.
+Allow Bill Hold Override: If this field is selected, users can remove the billing hold from transactions or operations that caused an SRO to surpass the Not To Exceed amount.
+Auto Calculate Misc Charges
+This check box determines whether misc charges are auto calculated during order invoicing. This sets the default when creating a new service order or template. When this check box is selected, these fields are enabled: %, Include Material, Include Labor, Include Miscellaneous, Minimum Amount, and Maximum Amount. Add the percentage to use to calculate misc charges, select whether to include material, labor, and/or miscellaneous, and set a minimum and maximum amount.
+Include in NTE Calculation
+Select the charges to include in the calculation that determines whether the Not To Exceed amount has been surpassed for a SRO. Available options are Freight, Misc Charges, Taxes and Discount.
+AIA Tax Code
+Specify the tax code to be used by default on service orders with a Billing Type of AIA.
+Impact Inventory Defaults
+Use the check boxes to specify default impact inventory settings for each transaction type.
+Specify this information on the Parts Fulfillment tab:
+The setting of the Mode field determines whether the rest of the fields on this tab are enabled.
+
+Mode
+This field controls how the Awaiting Parts check box behaves throughout the system.
+
+These are the valid options:
+
+Manual: The Awaiting Parts field on Incident, SRO, SRO Line, and SRO Operation is enabled. This allows the user to select and clear the field at each level to signify the service order is awaiting receipt of parts.
+Automatic: The Awaiting Parts field on Incident, SRO, SRO Line, and SRO Operation is disabled. The system selects and clears the field based on whether or not there is an associated planned SRO material transaction associated to an outstanding purchase order or not. This option also enables the Awaiting Parts and Parts Received Actions functionality.
+Awaiting Parts Actions
+Change Working Status To
+Change Priority Code To
+Update To Be Scheduled Flag
+Parts Received Actions
+Change Working Status To
+Change Priority Code To
+Update To Be Scheduled Flag
+Email SRO Lead Partner
+Email Incident Owner
+Email Content
+Specify this information on the Partner tab:
+Partner Prefix
+Specify a default prefix to use for all new partner ID numbers. The system uses this value, along with the standard expand key logic, to automatically generate the next available partner number.
+Auto Approve Non-Warranty Reimbursement
+Select this check box if all reimbursable material, labor, and miscellaneous transactions should created as approved. This lets you skip the Expense Approval form.
+Auto Approve Warranty Reimbursement
+Select this check box to automatically approve expenses logged to a SRO that has a warranty claim SRO type.
+Default Labor Rate and Default Labor Cost
+Specify values that are used to calculate the default rate and cost for an SRO labor transaction. If a rate or cost is not determined from the SRO, customer or partner/work code combination, these fields determine whether the rate and cost are defaulted from the partner or from the work code.
+Partner Reimbursement Accounts
+Specify the Voucher, Credit, and Other accounts where expenses for SRO material, labor and miscellaneous transactions are posted for any transaction that is reimbursed to the partner. The amount is held in these accounts until moved out by reimbursing the partner. The account that is used depends on the method by which the partner is set up to be reimbursed. These accounts are considered control accounts and are locked down accordingly.
+Number of Hours Per Day
+Specify the maximum number of hours per day a partner can be scheduled.
+Schedule Board Read Only
+Select this check box if you want to make the schedule board on the Schedules form read-only.
+Specify this information on the Amortization Control tab:
+Total Periods
+Specify the number of periods that the amortization amount is divided between. Each month end date designates the end of a period.
+Journal
+Select the accounting journal to use for the amortization. Journals are defined on the Journals form.
+Select Trans Date From
+Specify whether amortizations occur at the start or the end of the period.
+Amortize Contracts
+Select this field if contracts are included in the amortization process.
+Amortization Accounts
+Select the appropriate accounts to use for prepaid expenses and deferred revenue.
+Specify this information on the Unit tab:
+Auto Build Unit Configuration on Shipment
+If you select this field, the complete unit configuration is created as the item is shipped. Both the installation and ship date are set to the date when the shipment occurred. The Auto Build process runs through the default configuration of serial-tracked items to be built. This may add time to the shipping process if the bill of materials is several levels deep.
+Auto Build Unit Configuration on Receipt
+If you select this field, the complete unit configuration is created as the item is received. During the posting of a PO receipt of a serial-tracked item, a new unit is automatically created (inventory status set to ""In Inventory"") and the purchase order information is associated with the unit. If the Auto Build Configuration on Receipt field is selected, the configuration is created. If a warranty that is based on the Receive Date is associated with the unit or any of its components, the start date of each warranty is set to the day the unit was received. The Auto Build process runs through the default configuration of serial-tracked items to be built. This may add time to the receiving process if the item configuration is several levels deep.
+Set Install Date on Shipment
+If you select this check box, the system sets the Install Date on the unit and its components to the date the unit is shipped. If the unit is shipped and then installed by a field technician at a later time, do not select this check box.
+Initial Configuration Display
+Specify the number of levels the unit configuration expands by default.
+Configuration Update Method
+Specify how the system updates the unit configuration when an SRO Material Transaction is updated:
+Auto Synch: The system tries to add and remove configuration components without user intervention.
+Auto Append: The system tracks any additions or removals in a separate branch of the configuration tree.
+Prompt: Prompt users to determine whether they want to manually adjust the configuration.
+Never: The unit configuration is not affected by posted material transactions.
+Note: For more information about this field and the following two fields, see Unit Configuration Automation Control.
+Default Configuration Removal Reason
+Specify a default reason that the system uses when a component is removed through the Auto Sync or Auto Append method. This value is also used as the default reason on the Unit Configurations form when the Remove Date is manually specified for a component.
+Configuration Change History Branch
+If your system uses the Auto Append method for unit configuration updates, the value you specify here is used to determine the name of the branch in the configuration that holds components that are added or removed when SRO material transactions are posted. We recommend that you change this value every year, to track components in a separate node each year.
+Specify this information on the Other tab:
+Use Separate Consumer
+Select this check box to maintain consumer records in the consumer database instead of the customer database. If you select this check box, incidents will always be billed to customers and you will not have the option to bill an incident to a consumer. This check box is useful if your business is directed at consumers who are not invoiced for parts and services and you would prefer to market to consumers separately from customers.
+Default Customer
+Select the customer number to use by default on the Consumers form each time a new consumer record is created.
+Commission Due on Payment
+Select this check box to require a commission to be due when the invoice is fully paid. Or, when a customer makes a partial payment on the invoice, the a commission due payment is generated and prorated (although the invoice is not paid in full). Clear this check box to require a commission to be due when the order is invoiced.
+Enable Schedule Events
+Select this check box to enable event triggers for appointments, service orders, and service order operations.
+A system administrator determines the actions that are triggered and sets them up on the Event Handlers form.
+
+See the online help topics about application events and event triggers for more information about how to use event triggers.
+
+To use Extended Mapping Configuration, on the Other tab, specify this information:
+Map Provider
+Select Bing or Azure or Google as the map provider.
+Map API Key
+Specify the API key for the map. This is a license key that can be obtained from your Map Provider. This key permits access to the advanced mapping and route optimization capabilities.
+Map ID
+The unique ID that is obtained from the Google Maps provider. The map style and configuration settings are applied based on the Map ID that is stored in Google Cloud. This ID can be created for various platforms such as JavaScript, Android, iOS, and Web Services.
+
+Note: This field is displayed, only if the value in the Map Provider field is set to Google.
+Alternatively, to use Standard Mapping Configuration, on the Other tab, specify this information:
+Map URLs
+If using Bing, the URLs for the map and directions are displayed. If using a different Web browser, specify the URLs to use by default for the map and directions.
+Set to Google
+Click this button to configure your Web browser to use the predefined links for Google for the map and directions.
+Set to Bing
+Click this button to configure your Web browser to use the predefined links for Bing for the map and directions.
+See the Infor Service Management User and Administration Library (Cloud) and select Administrator > Map Administration > Map Configuration > Standard mapping configuration.
+
+Save the parameters.
+Related topics
+Setting up the System for Incidents
+Setting Up the System for Service Request Orders (SROs)
+Using an Incident to Create a Service Order
+About Incident Escalation
+Automating Updates to Unit Configurations
+Setting Up the Map Functionality
+
+The Management and your project team would like you to practice this and other processes so that the Go live is smooth or if your new to the company or are new to the role you can get proficient in the training environment As one becomes more proficient in this system it behooves us to share that knowledge and help other so the Company can  achieve its destiny ",,,No,PALCO,Service,ISMSetup,,../faq,PPS_ISMSetup_faq.html,ISM_Setup_FAQ's,,,
+C:\Users\scottuser\Documents\SonetLumier\WIP\PPS\ISMSetup\PPS_Service_ISMSetup_260103_1812.pptx,48,S999. You have successfully completed this SOP on ISM Setup at PPS,S999. You have successfully completed this SOP on ISM Setup at PPS,S999,You have successfully completed this SOP on ISM Setup at PPS,../images/ISMSetup/S999.png,,,,../images/ISMSetup/S999.png,You have successfully completed this SOP on ISM Setup at PPS,0,,,Thank you for completing this module on Generator Startup Procedure SOP .,"Thank you for completing this module on Generator Startup Procedure SOP . The ERP Project Team and Training Group appreciate your time, attention, and commitment to learning our new systems and processes.
+. More help is available at https://docs.infor.com/ism/2025.x/en-us/ismolh/default.html  
+To be confident in your day-to-day work—and to avoid surprises at Go Live or when you move into a new role—please set aside time to practice this SOP in the training environment. Working through realistic examples several times will help you:• Follow the steps in the correct sequence• Understand what the key fields and options do• Reduce errors when you work in the live system• Handle real customer and business situations with confidence
+
+The training environment is the safest place to practice, ask questions, and learn from mistakes—before they affect real orders, inventory, equipment, or customers. The more you use the training environment now, the smoother your work will be later in the live system.
+
+About the Help
+Downloading the Latest Help
+The latest help for this product is always available on www.docs.infor.com. If you are using this product on-premises and you need to have the help on-premises, see your product's installation guide for instructions.
+
+Copyrights and Trademarks
+All topics, screens, and code are protected by U.S. copyright laws and international treaties.
+
+Copyright Infor. All Rights Reserved. The word and design marks set forth herein are trademarks and/or registered trademarks of Infor and/or related affiliates and subsidiaries. All rights reserved. All other trademarks listed herein are the property of their respective owners. www.infor.com
+
+The fonts in C39Tools are copyright 2002 Jerry Whiting. Portions copyright 2002 Azalea Software, Inc. Seattle WA. All rights reserved. The fonts in C128Tools are copyright 2002 Azalea Software, Inc. Seattle WA. All rights reserved.
+
+Restricted Rights Legend
+Use, duplication, or disclosure by the Government is subject to restrictions as set forth in subparagraph (c)(1)(ii) of the Rights in Technical Data and Computer Software clause at DFARS 252.227-7013, and Rights in Data-General at FAR 52.227.14, as applicable. Name of Contractor: Infor, 13560 Morris Road, Suite 4100, Alpharetta, GA 30004 USA.
+
+Related topics
+Getting help on a form
+Getting help on a component of a form
+Getting general help
+Searching for a topic in the Help
+Getting form information
+Printing single help topics
+Printing help guides to PDF
+Using the Help",,,No,PALCO,Service,ISMSetup,, , , ,../quiz,PPS_ISMSetup_quiz.html,Test Your understanding of the SOP 

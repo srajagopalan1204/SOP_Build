@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>PPS – Service PMA – Preventive Maintenance Agreements – Knowledge Check</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.5rem;
+      line-height: 1.5;
+      background: #f7f7fb;
+    }
+    h1, h2 {
+      color: #111827;
+    }
+    .meta {
+      margin-bottom: 1rem;
+      padding: 0.75rem 1rem;
+      background: #e5e7eb;
+      border-radius: 6px;
+    }
+    .question {
+      margin-bottom: 1.75rem;
+      padding: 1rem 1.25rem;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+    .q-text {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    label {
+      display: block;
+      margin: 0.15rem 0;
+    }
+    button {
+      margin-top: 0.4rem;
+      margin-right: 0.4rem;
+      padding: 0.3rem 0.75rem;
+      border-radius: 4px;
+      border: 1px solid #4b5563;
+      background: #111827;
+      color: #ffffff;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+    button.secondary {
+      background: #ffffff;
+      color: #111827;
+    }
+    button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    .feedback {
+      margin-top: 0.4rem;
+      font-size: 0.85rem;
+      color: #065f46;
+    }
+    .feedback.error {
+      color: #b91c1c;
+    }
+    #scoreSummary {
+      font-weight: 600;
+      margin-top: 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+    .footer-actions {
+      margin-top: 1.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #d1d5db;
+    }
+    input[type="text"], input[type="email"] {
+      padding: 0.25rem 0.4rem;
+      margin-right: 0.5rem;
+      border-radius: 4px;
+      border: 1px solid #9ca3af;
+    }
+  </style>
+</head>
+<body>
+  <h1>PPS – Service PMA – Preventive Maintenance Agreements – Knowledge Check</h1>
+
+  <div class="meta">
+    <p>
+      Please complete this quiz after you have gone through the
+      <strong>PPS Service PMA – PMA Contract to Service Order</strong> SOP module.
+      You may answer each question up to <strong>two times</strong>. Your attempts and timestamps
+      will be captured in a CSV log you can download at the end.
+    </p>
+    <p>
+      <em>Note:</em> Question 1 is about the background of Scott Electric.
+      Questions 2–10 are about the <strong>PMA process</strong>
+      (contract setup, schedule, billing, SRO generator, SRO creation, and hand‑off to the
+      Service Order SOP).
+    </p>
+  </div>
+
+  <section>
+    <h2>Learner Information</h2>
+    <p>
+      <label>
+        Your Name:
+        <input type="text" id="learnerName" placeholder="Type your name">
+      </label>
+      <label>
+        Your Email:
+        <input type="email" id="learnerEmail" placeholder="name@example.com">
+      </label>
+    </p>
+  </section>
+
+  <section id="quiz">
+    <h2>Quiz Questions</h2>
+
+    <!-- Q1 – Scott Electric background -->
+    <div class="question" data-qid="q1">
+      <p class="q-text">
+        <strong>Q1.</strong> Which statement best describes Scott Electric’s history and role in the
+        markets it serves?
+      </p>
+      <label><input type="radio" name="q1" value="0">
+        A. Scott Electric is a brand‑new startup with one small store and no distribution network.</label>
+      <label><input type="radio" name="q1" value="1">
+        B. Scott Electric is a long‑established regional wholesale electrical distributor headquartered in western Pennsylvania, with multiple branches and divisions serving customers in several states.</label>
+      <label><input type="radio" name="q1" value="2">
+        C. Scott Electric is only a software company that provides ERPs to other distributors.</label>
+      <label><input type="radio" name="q1" value="3">
+        D. Scott Electric is a small residential contractor that does not operate any warehouses.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q1')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q1')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q1"></div>
+    </div>
+
+    <!-- Q2 – Purpose of PMA SOP -->
+    <div class="question" data-qid="q2">
+      <p class="q-text">
+        <strong>Q2.</strong> What is the main purpose of the
+        <strong>PPS Service PMA</strong> SOP?
+      </p>
+      <label><input type="radio" name="q2" value="0">
+        A. To track technician overtime only for internal reporting.</label>
+      <label><input type="radio" name="q2" value="1">
+        B. To manage preventive maintenance agreements (PMAs) for generators from contract setup and schedule through creation of next‑month PMA Service Orders that then feed into the main Service Order process.</label>
+      <label><input type="radio" name="q2" value="2">
+        C. To manage re‑rent of generators from vendors.</label>
+      <label><input type="radio" name="q2" value="3">
+        D. To replace all generator rental contracts.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q2')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q2')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q2"></div>
+    </div>
+
+    <!-- Q3 – SOP start/end -->
+    <div class="question" data-qid="q3">
+      <p class="q-text">
+        <strong>Q3.</strong> Which statement best describes the
+        <strong>start and end</strong> points of this PMA SOP?
+      </p>
+      <label><input type="radio" name="q3" value="0">
+        A. It starts when the technician arrives onsite and ends when the technician leaves.</label>
+      <label><input type="radio" name="q3" value="1">
+        B. It starts when the SRO generator is run and ends when the customer’s invoice is posted.</label>
+      <label><input type="radio" name="q3" value="2">
+        C. It starts when the PMA contract is created using a template and the maintenance schedule is entered (S1–S2), and ends when the Contract SRO generator has been run and SROs are created for all required PMA services in the next month (S4–S5), at which point control passes to the Service Order SOP (S6).</label>
+      <label><input type="radio" name="q3" value="3">
+        D. It starts when a vendor PO is created and ends when the PO is paid.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q3')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q3')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q3"></div>
+    </div>
+
+    <!-- Q4 – S1 Contract & Line/SN -->
+    <div class="question" data-qid="q4">
+      <p class="q-text">
+        <strong>Q4.</strong> Why is
+        <strong>S1. Contract is created using a template and a Line/SN is added</strong>
+        important?
+      </p>
+      <label><input type="radio" name="q4" value="0">
+        A. It is optional documentation and has no link to the actual equipment.</label>
+      <label><input type="radio" name="q4" value="1">
+        B. It ensures the PMA contract is created from the correct template and linked to a specific generator (line/serial number) so that scheduling and SROs apply to the right unit.</label>
+      <label><input type="radio" name="q4" value="2">
+        C. It is only used to record tax codes.</label>
+      <label><input type="radio" name="q4" value="3">
+        D. It is used only for internal technician notes.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q4')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q4')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q4"></div>
+    </div>
+
+    <!-- Q5 – S2 Schedule -->
+    <div class="question" data-qid="q5">
+      <p class="q-text">
+        <strong>Q5.</strong> In
+        <strong>S2. Contract Maintenance schedule is filled out</strong>, which of the
+        following best describes how the schedule date is used?
+      </p>
+      <label><input type="radio" name="q5" value="0">
+        A. You pick a random date so that PMAs are spread across the calendar.</label>
+      <label><input type="radio" name="q5" value="1">
+        B. You use the first day of the month in which service is requested so that the SRO generator can pick up all PMAs due in that month.</label>
+      <label><input type="radio" name="q5" value="2">
+        C. You always use the generator installation date, regardless of the requested service timing.</label>
+      <label><input type="radio" name="q5" value="3">
+        D. You always use year‑end to simplify reporting.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q5')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q5')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q5"></div>
+    </div>
+
+    <!-- Q6 – S3 Fixed billing total -->
+    <div class="question" data-qid="q6">
+      <p class="q-text">
+        <strong>Q6.</strong> What is the purpose of
+        <strong>S3. Fixed billing total is entered</strong>?
+      </p>
+      <label><input type="radio" name="q6" value="0">
+        A. To estimate expected fuel usage for the generator.</label>
+      <label><input type="radio" name="q6" value="1">
+        B. To capture the agreed fixed billing total for the PMA so that billing can be generated consistently over the life of the agreement.</label>
+      <label><input type="radio" name="q6" value="2">
+        C. To store the technician’s hourly rate only.</label>
+      <label><input type="radio" name="q6" value="3">
+        D. To calculate freight for outbound shipments.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q6')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q6')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q6"></div>
+    </div>
+
+    <!-- Q7 – S4 Contract SRO generator -->
+    <div class="question" data-qid="q7">
+      <p class="q-text">
+        <strong>Q7.</strong> When and why is
+        <strong>S4. Contract SRO generator utility</strong> run?
+      </p>
+      <label><input type="radio" name="q7" value="0">
+        A. Once per year to generate all PMAs for the next five years.</label>
+      <label><input type="radio" name="q7" value="1">
+        B. In the middle of each month to generate SROs for all PMA services due in the following month.</label>
+      <label><input type="radio" name="q7" value="2">
+        C. After every service call so that every visit becomes a PMA.</label>
+      <label><input type="radio" name="q7" value="3">
+        D. Only at system go‑live and never again.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q7')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q7')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q7"></div>
+    </div>
+
+    <!-- Q8 – S5 SRO creation -->
+    <div class="question" data-qid="q8">
+      <p class="q-text">
+        <strong>Q8.</strong> What is the outcome of
+        <strong>S5. SRO is generated for all required PMA services in the next month</strong>?
+      </p>
+      <label><input type="radio" name="q8" value="0">
+        A. The PMA contract is closed and no further work is needed.</label>
+      <label><input type="radio" name="q8" value="1">
+        B. Invoices are created for all PMA work completed in the prior month.</label>
+      <label><input type="radio" name="q8" value="2">
+        C. Service Orders (SROs) are created for all required PMA visits in the next month so that scheduling and execution can proceed in the Service Order SOP.</label>
+      <label><input type="radio" name="q8" value="3">
+        D. An automatic email is sent to the vendor to confirm parts availability.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q8')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q8')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q8"></div>
+    </div>
+
+    <!-- Q9 – S6 Link to Service Order SOP -->
+    <div class="question" data-qid="q9">
+      <p class="q-text">
+        <strong>Q9.</strong> What does
+        <strong>S6. See Service Order Process starting from Schedule</strong> mean
+        in practical terms?
+      </p>
+      <label><input type="radio" name="q9" value="0">
+        A. Nothing more happens; technicians check the PMA list manually and schedule themselves.</label>
+      <label><input type="radio" name="q9" value="1">
+        B. Once the SROs are created, you follow the standard Service Order SOP starting at the Schedule step, using those SROs to plan, dispatch, perform, and complete the work.</label>
+      <label><input type="radio" name="q9" value="2">
+        C. You return to the PMA contract and re‑enter the schedule each month.</label>
+      <label><input type="radio" name="q9" value="3">
+        D. You close the PMA immediately, regardless of whether the service has been performed.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q9')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q9')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q9"></div>
+    </div>
+
+    <!-- Q10 – How PMA opportunities are initiated -->
+    <div class="question" data-qid="q10">
+      <p class="q-text">
+        <strong>Q10.</strong> Based on the PMA process description, how do PMA opportunities
+        most often get started?
+      </p>
+      <label><input type="radio" name="q10" value="0">
+        A. Only through random marketing emails sent by head office.</label>
+      <label><input type="radio" name="q10" value="1">
+        B. Only when customers browse the Scott Electric website and sign themselves up.</label>
+      <label><input type="radio" name="q10" value="2">
+        C. Either when PMA Sales staff proactively contact customers, or when a customer with a recently installed generator calls in based on a technician’s suggestion.</label>
+      <label><input type="radio" name="q10" value="3">
+        D. Only when a vendor requires a PMA as a condition of warranty.</label>
+      <div>
+        <button type="button" onclick="submitQuestion('q10')">Submit Answer</button>
+        <button type="button" class="secondary" onclick="redoQuestion('q10')">Redo Question</button>
+      </div>
+      <div class="feedback" id="feedback-q10"></div>
+    </div>
+  </section>
+
+  <section class="footer-actions">
+    <p id="scoreSummary">Score will appear here after you submit at least one question.</p>
+    <button type="button" onclick="calculateScore()">Calculate Score</button>
+    <button type="button" onclick="downloadCsv()">Download Attempt Log (CSV)</button>
+  </section>
+
+  <script>
+    const quizStart = new Date().toISOString();
+    const questionIds = ["q1","q2","q3","q4","q5","q6","q7","q8","q9","q10"];
+    const maxAttempts = 2;
+
+    const correctAnswers = {
+      q1: 1,
+      q2: 1,
+      q3: 2,
+      q4: 1,
+      q5: 1,
+      q6: 1,
+      q7: 1,
+      q8: 2,
+      q9: 1,
+      q10: 2
+    };
+
+    const responseLog = {};
+
+    document.querySelectorAll('input[type="radio"]').forEach(input => {
+      input.addEventListener('change', handleOptionChange);
+    });
+
+    function handleOptionChange(event) {
+      const qid = event.target.name;
+      const answerIndex = parseInt(event.target.value, 10);
+      const now = new Date().toISOString();
+
+      if (!responseLog[qid]) {
+        responseLog[qid] = { attempts: [], currentAttempt: null };
+      }
+      const qEntry = responseLog[qid];
+
+      if (!qEntry.currentAttempt && qEntry.attempts.length >= maxAttempts) {
+        event.target.checked = false;
+        const fb = document.getElementById(`feedback-${qid}`);
+        if (fb) {
+          fb.classList.add("error");
+          fb.textContent = "You have already used both attempts for this question.";
+        }
+        return;
+      }
+
+      if (!qEntry.currentAttempt) {
+        qEntry.currentAttempt = {
+          attemptNumber: qEntry.attempts.length + 1,
+          startedAt: now,
+          finishedAt: null,
+          answerIndex: answerIndex,
+          isCorrect: null
+        };
+      } else {
+        qEntry.currentAttempt.answerIndex = answerIndex;
+      }
+    }
+
+    function submitQuestion(qid) {
+      const now = new Date().toISOString();
+      if (!responseLog[qid]) {
+        responseLog[qid] = { attempts: [], currentAttempt: null };
+      }
+      const qEntry = responseLog[qid];
+      const fb = document.getElementById(`feedback-${qid}`);
+
+      const selected = document.querySelector(`input[name="${qid}"]:checked`);
+      if (!selected) {
+        if (fb) {
+          fb.classList.add("error");
+          fb.textContent = "Please select an answer before submitting.";
+        }
+        return;
+      }
+
+      if (!qEntry.currentAttempt) {
+        if (qEntry.attempts.length >= maxAttempts) {
+          if (fb) {
+            fb.classList.add("error");
+            fb.textContent = "You have already used both attempts for this question.";
+          }
+          return;
+        }
+        qEntry.currentAttempt = {
+          attemptNumber: qEntry.attempts.length + 1,
+          startedAt: now,
+          finishedAt: null,
+          answerIndex: parseInt(selected.value, 10),
+          isCorrect: null
+        };
+      }
+
+      const attempt = qEntry.currentAttempt;
+
+      if (attempt.finishedAt) {
+        if (fb) {
+          fb.classList.add("error");
+          fb.textContent = "This attempt has already been submitted.";
+        }
+        return;
+      }
+
+      attempt.finishedAt = now;
+      attempt.isCorrect = (attempt.answerIndex === correctAnswers[qid]);
+      qEntry.attempts.push(attempt);
+      qEntry.currentAttempt = null;
+
+      if (fb) {
+        fb.classList.remove("error");
+        const attemptLabel = attempt.attemptNumber === 1 ? "First attempt" : "Second attempt";
+        fb.textContent = `${attemptLabel}: ${attempt.isCorrect ? "Correct" : "Incorrect"} (started ${attempt.startedAt}, finished ${attempt.finishedAt}).`;
+        if (qEntry.attempts.length >= maxAttempts) {
+          fb.textContent += " You have used both attempts for this question.";
+        }
+      }
+
+      calculateScore();
+    }
+
+    function redoQuestion(qid) {
+      const qEntry = responseLog[qid];
+      const fb = document.getElementById(`feedback-${qid}`);
+
+      if (!qEntry || qEntry.attempts.length === 0) {
+        if (fb) {
+          fb.classList.add("error");
+          fb.textContent = "You must submit the question once before redoing it.";
+        }
+        return;
+      }
+
+      if (qEntry.attempts.length >= maxAttempts) {
+        if (fb) {
+          fb.classList.add("error");
+          fb.textContent = "You have already used your redo for this question.";
+        }
+        return;
+      }
+
+      document.querySelectorAll(`input[name="${qid}"]`).forEach(input => {
+        input.checked = false;
+      });
+
+      qEntry.currentAttempt = null;
+
+      if (fb) {
+        fb.classList.remove("error");
+        fb.textContent = "You may redo this question now. Make a new selection and click Submit Answer.";
+      }
+    }
+
+    function calculateScore() {
+      let correctCount = 0;
+      let totalCount = questionIds.length;
+
+      questionIds.forEach(qid => {
+        const qEntry = responseLog[qid];
+        if (!qEntry || qEntry.attempts.length === 0) {
+          return;
+        }
+        const lastAttempt = qEntry.attempts[qEntry.attempts.length - 1];
+        if (lastAttempt.isCorrect) {
+          correctCount += 1;
+        }
+      });
+
+      const scoreEl = document.getElementById("scoreSummary");
+      if (scoreEl) {
+        scoreEl.textContent = `Current score (based on your latest attempt for each question): ${correctCount} / ${totalCount}`;
+      }
+    }
+
+    function downloadCsv() {
+      const learnerName = (document.getElementById("learnerName").value || "").replace(/"/g, '""');
+      const learnerEmail = (document.getElementById("learnerEmail").value || "").replace(/"/g, '""');
+      const now = new Date().toISOString();
+
+      const lines = [];
+      lines.push('Quiz Name,"PPS – Service PMA – Preventive Maintenance Agreements – Knowledge Check"');
+      lines.push(`Learner Name,"${learnerName}"`);
+      lines.push(`Learner Email,"${learnerEmail}"`);
+      lines.push(`Quiz Start,"${quizStart}"`);
+      lines.push(`Log Generated At,"${now}"`);
+      lines.push("");
+      lines.push("Question ID,Question Text,Attempt #,Started At,Finished At,Answer Index,Answer Text,Correct?");
+
+      questionIds.forEach(qid => {
+        const qEntry = responseLog[qid];
+        if (!qEntry || !qEntry.attempts || qEntry.attempts.length === 0) {
+          return;
+        }
+
+        const qContainer = document.querySelector(`.question[data-qid="${qid}"]`);
+        let qText = "";
+        if (qContainer) {
+          const qTextEl = qContainer.querySelector(".q-text");
+          if (qTextEl) {
+            qText = qTextEl.innerText.trim().replace(/"/g, '""');
+          }
+        }
+
+        qEntry.attempts.forEach(att => {
+          let answerText = "";
+          const radio = document.querySelector(`input[name="${qid}"][value="${att.answerIndex}"]`);
+          if (radio && radio.parentElement) {
+            answerText = radio.parentElement.textContent.trim().replace(/"/g, '""');
+          }
+          const correctLabel = att.isCorrect ? "Yes" : "No";
+          lines.push(
+            `"${qid}","${qText}",${att.attemptNumber},` +
+            `"${att.startedAt || ""}","${att.finishedAt || ""}",` +
+            `${att.answerIndex},"${answerText}",${correctLabel}`
+          );
+        });
+      });
+
+      const csvContent = lines.join("\n");
+      const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "PPS_PMA_Quiz_Attempts.csv";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+  </script>
+</body>
+</html>

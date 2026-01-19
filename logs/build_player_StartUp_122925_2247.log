@@ -1,0 +1,6 @@
+[2025-12-29 17:47:42] build_player.py SOP_BUILD_build_player_v1.1 (2025-12-29 17:47 EST)
+[2025-12-29 17:47:42] Story: /workspaces/SOP_Build/docs/outputs/story/StartUp/story.json
+[2025-12-29 17:47:42] Template: /workspaces/SOP_Build/src/templates/sop_player.html
+[2025-12-29 17:47:42] Out: /workspaces/SOP_Build/docs/outputs/players/StartUp_player.html
+[2025-12-29 17:47:42] Wrote: /workspaces/SOP_Build/docs/outputs/players/StartUp_player.html (98966 bytes)
+[2025-12-29 17:47:42] Done.

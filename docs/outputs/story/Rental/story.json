@@ -1,0 +1,949 @@
+{
+  "sop_id": "Rental",
+  "start_code": "S000",
+  "frames": [
+    {
+      "sop_id": "Rental",
+      "frame_code": "S000",
+      "title": "S000. Opening Slide for PPS - Service - Rental Process (Owned Fleet)",
+      "image": "../images/Rental/S000.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S001",
+          "label": "Go to About Palco Power Systems and Scott Electric and a Welcome to Training"
+        }
+      ],
+      "narr1": "Slide S000. Opening Slide for PPS   Opening Slide for PPS.",
+      "narr2": "Welcome to the Process of renting Generator to customers both those that we onw (our Fleet) and those that we source for our customers from other Rental fleet ownere",
+      "narr3": "Welcome to the Process of renting Generator to customers both those that we onw (our Fleet) and those that we source for our customers from other Rental fleet ownere",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_Rental_faq.html",
+      "FAQ_Label": "FAQ on Rental",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "Rental"
+      }
+    },
+    {
+      "sop_id": "Rental",
+      "frame_code": "S001",
+      "title": "S001. About Palco Power Systems and Scott Electric and a Welcome to Training",
+      "image": "../images/Rental/S001.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S002",
+          "label": "Go to Palco Power Systems"
+        }
+      ],
+      "narr1": "Slide S001. About Palco Power Systems and Scott Electric and a Welcome to Training   About Palco Power Systems and Scott Electric and a Welcome to Training.",
+      "narr2": "Palco Power Systems is a specialized power solutions provider and an authorized KOHLER distributor, serving customers across western Pennsylvania, West Virginia, and western Maryland. Since 1972, Palco has supplied reliable generator systems and power equipment to industrial, commercial, municipal, healthcare, and residential customers who depend on uninterrupted power",
+      "narr3": "Palco Power Systems is a specialized power solutions provider and an authorized KOHLER distributor, serving customers across western Pennsylvania, West Virginia, and western Maryland. Since 1972, Palco has supplied reliable generator systems and power equipment to industrial, commercial, municipal, healthcare, and residential customers who depend on uninterrupted power.\nAs part of the Scott Electric family since 1993, Palco Power Systems combines deep technical expertise with the broader resources of a leading independent electrical distributor. Our portfolio includes KOHLER industrial, mobile (towable), residential, and portable generator systems; pumps; other power systems and components; Honda portable units; transfer equipment; and related accessories, including ASCO and PSP components.\nOver the years, Palco’s territory and responsibilities have grown along with its reputation:\u000b• 1972 – Palco becomes an authorized KOHLER distributor in western Pennsylvania.\u000b• 1984 – Territory expands to include West Virginia and western Maryland.\u000b• 1989 – Area of responsibility further expands to include western New York State.\u000b• 1993 – Scott Electric Company acquires Palco.\u000b• 2001 – Territory is adjusted with the removal of western New York State.\nMost recently, Palco Power Systems was the first Scott Electric division to host a Conference Room Pilot (CRP) for the new Infor CloudSuite software, demonstrating leadership and innovation in how we use technology to support customers and internal operations.",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_Rental_faq.html",
+      "FAQ_Label": "FAQ on Rental",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "Rental"
+      }
+    },
+    {
+      "sop_id": "Rental",
+      "frame_code": "S002",
+      "title": "S002. Palco Power Systems - Service to Cash Work Flow",
+      "image": "../images/Rental/S002.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S003",
+          "label": "Go to Pictorial representation of Quote to Cash similar to Service to Cash"
+        }
+      ],
+      "narr1": "Slide S002. Palco Power Systems   Palco Power Systems.",
+      "narr2": "",
+      "narr3": "This is the overall Work flow on how a service request is processed at Palco Power System. This covers the business process that starts from a request from a customer or based on a contract the need for a routine service that need to be performed. Request from customers could be for a break fix , a warranty question or request for additional work suggest as a nice to perform during the most recent visit by a very well trained and efficient Service technician crea at PPS. This transistions through the various business sections of Service writes Service  , schedulers , technicians , parts department, purchasing , billing and finally collection of payment. Hence the term Service to Cash is ofen used to succinctly name it",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_Rental_faq.html",
+      "FAQ_Label": "FAQ on Rental",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "Rental"
+      }
+    },
+    {
+      "sop_id": "Rental",
+      "frame_code": "S003",
+      "title": "S003. Pictorial representation of Quote to Cash similar to Service to Cash - At PPS Service",
+      "image": "../images/Rental/S003.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "M1",
+          "label": "Go to Rental SOP"
+        }
+      ],
+      "narr1": "Slide S003. Pictorial representation of Quote to Cash similar to Service to Cash   Pictorial representation of Quote to Cash similar to Service to Cash.",
+      "narr2": "This is the overall Work flow on how a service request is processed at Palco Power System. This covers the business process that starts from a request from a customer or based on a contract the need for a routine service that need to be performed. Request from customers could be for a break fix , a warranty question or request for additional work suggest as a nice to perform during the most recent visit by a very well trained and efficient Service technician crea at PPS",
+      "narr3": "This is the overall Work flow on how a service request is processed at Palco Power System. This covers the business process that starts from a request from a customer or based on a contract the need for a routine service that need to be performed. Request from customers could be for a break fix , a warranty question or request for additional work suggest as a nice to perform during the most recent visit by a very well trained and efficient Service technician crea at PPS. This transistions through the various business sections of Service writes Service  , schedulers , technicians , parts department, purchasing , billing and finally collection of payment. Hence the term Service to Cash is ofen used to succinctly name it. This is process displayed by Infor in its process intelligence page. to picotrially dipict the service (quote) to cash process",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_Rental_faq.html",
+      "FAQ_Label": "FAQ on Rental",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "Rental"
+      }
+    },
+    {
+      "sop_id": "Rental",
+      "frame_code": "M1",
+      "title": "M1. Rental SOP - PPS Service Rental",
+      "image": "../images/Rental/M1.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S1",
+          "label": "Go to Customer Places an order for a Rental Unit"
+        }
+      ],
+      "narr1": "Slide M1. Rental SOP   Rental SOP.",
+      "narr2": "This process cover the steps taken to satisfy the a customer wanting to rent a genertor from us. It starts from the receipt of a request from the customer, understanding their needs and identifying a suitable unit writing up a contract, ensure that the rental would be covered by insurance while at the renter's possesion and finally process the return and final bill",
+      "narr3": "This process cover the steps taken to satisfy the a customer wanting to rent a genertor from us. It starts from the receipt of a request from the customer, understanding their needs and identifying a suitable unit writing up a contract, ensure that the rental would be covered by insurance while at the renter's possesion and finally process the return and final bill. I also takes into account the process to procure a rental unit from another Rentor to satisfy the customer needs especially when we do not have one that meets the specs or availbility requested.",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_Rental_faq.html",
+      "FAQ_Label": "FAQ on Rental",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "Rental"
+      }
+    },
+    {
+      "sop_id": "Rental",
+      "frame_code": "S1",
+      "title": "S1. Customer Places an order for a Rental Unit - PPS Service Rental",
+      "image": "../images/Rental/S1.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S2",
+          "label": "Go to Create Rental Contract"
+        }
+      ],
+      "narr1": "Slide S1. Customer Places an order for a Rental Unit   Customer Places an order for a Rental Unit.",
+      "narr2": "The customer call or email an order for a rental . The assumption here is that this is a known customer or that the customer has been created in CSD and all credit checks etc have been performed",
+      "narr3": "The customer call or email an order for a rental . The assumption here is that this is a known customer or that the customer has been created in CSD and all credit checks etc have been performed",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/6a232c55-881c-4e95-a92d-41463a462f1b?contextId=882556fc-990c-47d1-8881-6e7c2d02fd72&bypassGroupFiltering=false",
+      "uap_label": "01_Create Rental Contract",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_Rental_faq.html",
+      "FAQ_Label": "FAQ on Rental",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "Rental"
+      }
+    },
+    {
+      "sop_id": "Rental",
+      "frame_code": "S2",
+      "title": "S2. Create Rental Contract - PPS Service Rental",
+      "image": "../images/Rental/S2.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "D1",
+          "label": "Go to Decision Is a unit in Our Fleet available"
+        }
+      ],
+      "narr1": "Slide S2. Create Rental Contract   Create Rental Contract.",
+      "narr2": "Using a rental contract template a contract is created",
+      "narr3": "Using a rental contract template a contract is created",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/6a232c55-881c-4e95-a92d-41463a462f1b?contextId=882556fc-990c-47d1-8881-6e7c2d02fd72&bypassGroupFiltering=false",
+      "uap_label": "01_Create Rental Contract",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_Rental_faq.html",
+      "FAQ_Label": "FAQ on Rental",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "Rental"
+      }
+    },
+    {
+      "sop_id": "Rental",
+      "frame_code": "D1",
+      "title": "D1. Decision Is a unit in Our Fleet available - PPS Service Rental",
+      "image": "../images/Rental/D1.png",
+      "decision_question": "Is this unit Available from our fleet",
+      "choices": [
+        {
+          "to": "Y1",
+          "label": "Go to Yes, Our Fleet unit is available"
+        },
+        {
+          "to": "N1",
+          "label": "Go to No we do not have one of our fleet generator available"
+        }
+      ],
+      "narr1": "Slide D1. Decision Is a unit in Our Fleet available   Decision Is a unit in Our Fleet available.",
+      "narr2": "User has to determine if a unit that meets the requirements is available at the time requested by the customer",
+      "narr3": "User has to determine if a unit that meets the requirements is available at the time requested by the customer",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_Rental_faq.html",
+      "FAQ_Label": "FAQ on Rental",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "Rental"
+      }
+    },
+    {
+      "sop_id": "Rental",
+      "frame_code": "Y1",
+      "title": "Y1. Yes, Our Fleet unit is available - PPS Service Rental",
+      "image": "../images/Rental/Y1.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S4",
+          "label": "Go to Add the Owned unit to the contract"
+        }
+      ],
+      "narr1": "Slide Y1. Yes, Our Fleet unit is available   Yes, Our Fleet unit is available.",
+      "narr2": "It is determined and confirmed that the unit in our fleet meets the requirement of the customer",
+      "narr3": "It is determined and confirmed that the unit in our fleet meets the requirement of the customer",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_Rental_faq.html",
+      "FAQ_Label": "FAQ on Rental",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "Rental"
+      }
+    },
+    {
+      "sop_id": "Rental",
+      "frame_code": "S4",
+      "title": "S4. Add the Owned unit to the contract- PPS Service Rental",
+      "image": "../images/Rental/S4.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S8",
+          "label": "Go to Change or Check Billing details"
+        }
+      ],
+      "narr1": "Slide S4. Add the Owned unit to the contract   Add the Owned unit to the contract.",
+      "narr2": "The unit is added to the contract using the OPM Add rental item is used to add the unit that meets the customers request",
+      "narr3": "The unit is added to the contract using the OPM Add rental item is used to add the unit that meets the customers request",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/a9a5712a-571f-41b5-bd78-d16c4fc26a1f?contextId=882556fc-990c-47d1-8881-6e7c2d02fd72&bypassGroupFiltering=false",
+      "uap_label": "02_Add Rental Items",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_Rental_faq.html",
+      "FAQ_Label": "FAQ on Rental",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "Rental"
+      }
+    },
+    {
+      "sop_id": "Rental",
+      "frame_code": "S8",
+      "title": "S8. Change or Check Billing details - PPS Service Rental",
+      "image": "../images/Rental/S8.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "D2",
+          "label": "Go to Decision Are we Charging freight"
+        }
+      ],
+      "narr1": "Slide S8. Change or Check Billing details   Change or Check Billing details.",
+      "narr2": "Change or Check Billing details",
+      "narr3": "Change or Check Billing details",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/852a7e47-6cec-45e9-b695-8896bfb5457c?contextId=882556fc-990c-47d1-8881-6e7c2d02fd72&bypassGroupFiltering=false",
+      "uap_label": "11_Change Billing Details",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_Rental_faq.html",
+      "FAQ_Label": "FAQ on Rental",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "Rental"
+      }
+    },
+    {
+      "sop_id": "Rental",
+      "frame_code": "D2",
+      "title": "D2. Decision Are we Charging freight - PPS Service Rental",
+      "image": "../images/Rental/D2.png",
+      "decision_question": "Are we going to charge Freight?",
+      "choices": [
+        {
+          "to": "Y2",
+          "label": "Go to Yes we are Charging freight"
+        },
+        {
+          "to": "N2",
+          "label": "Go to No we are not charging freight"
+        }
+      ],
+      "narr1": "Slide D2. Decision Are we Charging freight   Decision Are we Charging freight.",
+      "narr2": "Are we charging Freight  adetermination on whether a freight need to be charged is based on some of the following factors are they pick ing up and dropping it off or are using their carrier to pick up and drop off",
+      "narr3": "Are we charging Freight  adetermination on whether a freight need to be charged is based on some of the following factors are they pick ing up and dropping it off or are using their carrier to pick up and drop off",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_Rental_faq.html",
+      "FAQ_Label": "FAQ on Rental",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "Rental"
+      }
+    },
+    {
+      "sop_id": "Rental",
+      "frame_code": "Y2",
+      "title": "Y2. Yes we are Charging freight - PPS Service Rental",
+      "image": "../images/Rental/Y2.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S9",
+          "label": "Go to Add Freight to contract"
+        }
+      ],
+      "narr1": "Slide Y2. Yes we are Charging freight   Yes we are Charging freight.",
+      "narr2": "Yes Freight needs to be added to this contract",
+      "narr3": "Yes Freight needs to be added to this contract",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_Rental_faq.html",
+      "FAQ_Label": "FAQ on Rental",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "Rental"
+      }
+    },
+    {
+      "sop_id": "Rental",
+      "frame_code": "S9",
+      "title": "S9. Add Freight to contract - PPS Service Rental",
+      "image": "../images/Rental/S9.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S10",
+          "label": "Go to Print Rental Agreement"
+        }
+      ],
+      "narr1": "Slide S9. Add Freight to contract   Add Freight to contract.",
+      "narr2": "Add Freight to contract   opm -  in Add Freight to rental as available in 13_Add Freight to Rental",
+      "narr3": "Add Freight to contract   opm -  in Add Freight to rental as available in 13_Add Freight to Rental",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/935d5ab3-02aa-49c4-a33f-c671a15f300b?contextId=882556fc-990c-47d1-8881-6e7c2d02fd72&bypassGroupFiltering=false",
+      "uap_label": "13_Add Freight to Rental",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_Rental_faq.html",
+      "FAQ_Label": "FAQ on Rental",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "Rental"
+      }
+    },
+    {
+      "sop_id": "Rental",
+      "frame_code": "S10",
+      "title": "S10. Print Rental Agreement - PPS Service Rental",
+      "image": "../images/Rental/S10.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S11",
+          "label": "Go to Check out Rental unit"
+        }
+      ],
+      "narr1": "Slide S10. Print Rental Agreement   Print Rental Agreement.",
+      "narr2": "Print Rental Agreement - after review the final rental agreement is printed",
+      "narr3": "Print Rental Agreement - after review the final rental agreement is printed",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/ff169717-dcdb-4ef5-85e2-4376740a24a2?contextId=882556fc-990c-47d1-8881-6e7c2d02fd72&bypassGroupFiltering=false",
+      "uap_label": "03_Print Rental Agreement",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_Rental_faq.html",
+      "FAQ_Label": "FAQ on Rental",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "Rental"
+      }
+    },
+    {
+      "sop_id": "Rental",
+      "frame_code": "S11",
+      "title": "S11. Check out Rental unit - PPS Service Rental",
+      "image": "../images/Rental/S11.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S12",
+          "label": "Go to Check in Rental unit"
+        }
+      ],
+      "narr1": "Slide S11. Check out Rental unit   Check out Rental unit.",
+      "narr2": "Check out Rental unit on the agreed upon date the rental unit is given an inspection as per Standard procedure and all key values are noted and finally the unit is checked out of available and handed over to the customer. It should be noted that a verification of COI or certificate of insurance is on file or a rental insurance is added",
+      "narr3": "Check out Rental unit on the agreed upon date the rental unit is given an inspection as per Standard procedure and all key values are noted and finally the unit is checked out of available and handed over to the customer. It should be noted that a verification of COI or certificate of insurance is on file or a rental insurance is added",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/0a169ac7-fa74-44f6-a6ba-c646a76dcbfe?contextId=882556fc-990c-47d1-8881-6e7c2d02fd72&bypassGroupFiltering=false",
+      "uap_label": "08_Check Out Rental",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_Rental_faq.html",
+      "FAQ_Label": "FAQ on Rental",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "Rental"
+      }
+    },
+    {
+      "sop_id": "Rental",
+      "frame_code": "S12",
+      "title": "S12. Check in Rental unit - PPS Service Rental",
+      "image": "../images/Rental/S12.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "D3",
+          "label": "Go to Is this a Re"
+        }
+      ],
+      "narr1": "Slide S12. Check in Rental unit   Check in Rental unit.",
+      "narr2": "Check in Rental unit  - It should be noted based on rental frequency the billing will be done till it it is time to for the unit to be returned and this is covered in OPM 09_Check In Rental",
+      "narr3": "Check in Rental unit  - It should be noted based on rental frequency the billing will be done till it it is time to for the unit to be returned and this is covered in OPM 09_Check In Rental",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/2f4a800a-dfad-42bb-85d1-53e86098dba2?contextId=882556fc-990c-47d1-8881-6e7c2d02fd72&bypassGroupFiltering=false",
+      "uap_label": "09_Check In Rental",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_Rental_faq.html",
+      "FAQ_Label": "FAQ on Rental",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "Rental"
+      }
+    },
+    {
+      "sop_id": "Rental",
+      "frame_code": "D3",
+      "title": "D3. Is this a Re-Rent unit - PPS Service Rental",
+      "image": "../images/Rental/D3.png",
+      "decision_question": "Is this a Re- rent Situation",
+      "choices": [
+        {
+          "to": "Y3",
+          "label": "Go to Yes this is a Re"
+        },
+        {
+          "to": "N3",
+          "label": "Go to No this is not a re"
+        }
+      ],
+      "narr1": "Slide D3. Is this a Re   Is this a Re.",
+      "narr2": "Is this a re rent in other word is this a unit that is not one from our fleet and we rented it from other rentors",
+      "narr3": "Is this a re rent in other word is this a unit that is not one from our fleet and we rented it from other rentors",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_Rental_faq.html",
+      "FAQ_Label": "FAQ on Rental",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "Rental"
+      }
+    },
+    {
+      "sop_id": "Rental",
+      "frame_code": "Y3",
+      "title": "Y3. Yes this is a Re-Rent unit - PPS Service Rental",
+      "image": "../images/Rental/Y3.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S13",
+          "label": "Go to Print Return Merchandise PO"
+        }
+      ],
+      "narr1": "Slide Y3. Yes this is a Re   Yes this is a Re.",
+      "narr2": "",
+      "narr3": "",
+      "uap_url": "",
+      "uap_label": "",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_Rental_faq.html",
+      "FAQ_Label": "FAQ on Rental",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "Rental"
+      }
+    },
+    {
+      "sop_id": "Rental",
+      "frame_code": "S13",
+      "title": "S13. Print Return Merchandise PO - PPS Service Rental",
+      "image": "../images/Rental/S13.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S14",
+          "label": "Go to Receive Vendor Return Merchandise PO"
+        }
+      ],
+      "narr1": "Slide S13. Print Return Merchandise PO   Print Return Merchandise PO.",
+      "narr2": "Print Return Merchandise PO this uses standard PO crete process only marked as return",
+      "narr3": "Print Return Merchandise PO this uses standard PO crete process only marked as return",
+      "uap_url": "0",
+      "uap_label": "none found",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_Rental_faq.html",
+      "FAQ_Label": "FAQ on Rental",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "Rental"
+      }
+    },
+    {
+      "sop_id": "Rental",
+      "frame_code": "S14",
+      "title": "S14. Receive Vendor Return Merchandise PO - PPS Service Rental",
+      "image": "../images/Rental/S14.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S15",
+          "label": "Go to Close rental Contract"
+        }
+      ],
+      "narr1": "Slide S14. Receive Vendor Return Merchandise PO   Receive Vendor Return Merchandise PO.",
+      "narr2": "Receive Vendor Return Merchandise PO this is process to record the unit was returned to the Rentor and that it was received in good condition this OPM will follow Scott electric return to vendor process",
+      "narr3": "Receive Vendor Return Merchandise PO this is process to record the unit was returned to the Rentor and that it was received in good condition this OPM will follow Scott electric return to vendor process",
+      "uap_url": "0",
+      "uap_label": "none found",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_Rental_faq.html",
+      "FAQ_Label": "FAQ on Rental",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "Rental"
+      }
+    },
+    {
+      "sop_id": "Rental",
+      "frame_code": "S15",
+      "title": "S15. Close rental Contract - PPS Service Rental",
+      "image": "../images/Rental/S15.png",
+      "decision_question": "Would you like to go to the end of the SOP or End of this Path ?",
+      "choices": [
+        {
+          "to": "S999",
+          "label": "Go to the End of the path slide"
+        },
+        {
+          "to": "S998",
+          "label": "Go to No we do not have one of our fleet generator available"
+        }
+      ],
+      "narr1": "Slide S15. Close rental Contract   Go to the end of the SOP as you have exhaused all paths.",
+      "narr2": "Close rental Contract  having crossed all the \"t\" and dotted all the I's time to close the rental agreement",
+      "narr3": "Close rental Contract  having crossed all the \"t\" and dotted all the I's time to close the rental agreement",
+      "uap_url": "0",
+      "uap_label": "10_Close Rental",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_Rental_faq.html",
+      "FAQ_Label": "FAQ on Rental",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "Rental"
+      }
+    },
+    {
+      "sop_id": "Rental",
+      "frame_code": "N1",
+      "title": "N1. No we do not have one of our fleet generator available - PPS Service Rental",
+      "image": "../images/Rental/N1.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S3",
+          "label": "Go to Add a Re"
+        }
+      ],
+      "narr1": "Slide N1. No we do not have one of our fleet generator available   No we do not have one of our fleet generator available.",
+      "narr2": "No we do not have one of our fleet generator available",
+      "narr3": "No we do not have one of our fleet generator available",
+      "uap_url": "0",
+      "uap_label": "0",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_Rental_faq.html",
+      "FAQ_Label": "FAQ on Rental",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "Rental"
+      }
+    },
+    {
+      "sop_id": "Rental",
+      "frame_code": "S3",
+      "title": "S3. Add a Re-Rent Item - PPS Service Rental",
+      "image": "../images/Rental/S3.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S5",
+          "label": "Go to Raise Re"
+        }
+      ],
+      "narr1": "Slide S3. Add a Re   Add a Re.",
+      "narr2": "Add a Re-Rent Item",
+      "narr3": "Add a Re-Rent Item",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/4deaa884-498a-4dcc-8c9b-eb3ec5e13449?contextId=882556fc-990c-47d1-8881-6e7c2d02fd72&bypassGroupFiltering=false",
+      "uap_label": "04_Add Re Rent Items",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_Rental_faq.html",
+      "FAQ_Label": "FAQ on Rental",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "Rental"
+      }
+    },
+    {
+      "sop_id": "Rental",
+      "frame_code": "S5",
+      "title": "S5. Raise Re-Rent PO - PPS Service Rental",
+      "image": "../images/Rental/S5.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S6",
+          "label": "Go to Print Re"
+        }
+      ],
+      "narr1": "Slide S5. Raise Re   Raise Re.",
+      "narr2": "Raise Re-Rent PO - it is determined that the only way to satisfy the request is to re-rent i.e rent from another Rentor and offer it to our customer",
+      "narr3": "Raise Re-Rent PO - it is determined that the only way to satisfy the request is to re-rent i.e rent from another Rentor and offer it to our customer",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/dd7e9d0f-46fc-4032-9cc0-97883f16531e?contextId=d8a3b962-08bf-4d5f-bdaa-cd31b1159dc8&bypassGroupFiltering=false",
+      "uap_label": "01_Create Purchase Order (SE)",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_Rental_faq.html",
+      "FAQ_Label": "FAQ on Rental",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "Rental"
+      }
+    },
+    {
+      "sop_id": "Rental",
+      "frame_code": "S6",
+      "title": "S6. Print Re-Rent Purchase Order (PO) - PPS Service Rental",
+      "image": "../images/Rental/S6.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S7",
+          "label": "Go to Receive Re"
+        }
+      ],
+      "narr1": "Slide S6. Print Re   Print Re.",
+      "narr2": "Print Re-Rent Purchase Order (PO) This assumes that all the terms are satisfied and this is a know vendor",
+      "narr3": "Print Re-Rent Purchase Order (PO) This assumes that all the terms are satisfied and this is a know vendor",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/dd7e9d0f-46fc-4032-9cc0-97883f16531e?contextId=d8a3b962-08bf-4d5f-bdaa-cd31b1159dc8&bypassGroupFiltering=false",
+      "uap_label": "06_Print Re Rent PO",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_Rental_faq.html",
+      "FAQ_Label": "FAQ on Rental",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "Rental"
+      }
+    },
+    {
+      "sop_id": "Rental",
+      "frame_code": "S7",
+      "title": "S7. Receive Re-Rent Purchase Order (PO) - PPS Service Rental",
+      "image": "../images/Rental/S7.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "N2",
+          "label": "Go to No we are not charging freight"
+        }
+      ],
+      "narr1": "Slide S7. Receive Re   Receive Re.",
+      "narr2": "Receive Re-Rent  Purchase Order (PO) When the time is right and as per our purchase order the rental unit from the re rentor is received so that it could be then rented out to our customer",
+      "narr3": "Receive Re-Rent  Purchase Order (PO) When the time is right and as per our purchase order the rental unit from the re rentor is received so that it could be then rented out to our customer",
+      "uap_url": "0",
+      "uap_label": "0",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_Rental_faq.html",
+      "FAQ_Label": "FAQ on Rental",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "Rental"
+      }
+    },
+    {
+      "sop_id": "Rental",
+      "frame_code": "N2",
+      "title": "N2. No we are not charging freight - PPS Service Rental",
+      "image": "../images/Rental/N2.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S10a",
+          "label": "Go to Print Rental Agreement"
+        }
+      ],
+      "narr1": "Slide N2. No we are not charging freight   No we are not charging freight.",
+      "narr2": "No we are not charging freight",
+      "narr3": "No we are not charging freight",
+      "uap_url": "0",
+      "uap_label": "0",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_Rental_faq.html",
+      "FAQ_Label": "FAQ on Rental",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "Rental"
+      }
+    },
+    {
+      "sop_id": "Rental",
+      "frame_code": "S10a",
+      "title": "S10. Print Rental Agreement - PPS Service Rental",
+      "image": "../images/Rental/S10.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "N3",
+          "label": "Go to No this is not a re"
+        }
+      ],
+      "narr1": "Slide S10. Print Rental Agreement   Print Rental Agreement.",
+      "narr2": "Print Rental Agreement - after review the final rental agreement is printed",
+      "narr3": "Print Rental Agreement - after review the final rental agreement is printed",
+      "uap_url": "https://scottelectricusa.uap.infor.com/#/content/ff169717-dcdb-4ef5-85e2-4376740a24a2?contextId=882556fc-990c-47d1-8881-6e7c2d02fd72&bypassGroupFiltering=false",
+      "uap_label": "03_Print Rental Agreement",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_Rental_faq.html",
+      "FAQ_Label": "FAQ on Rental",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "Rental"
+      }
+    },
+    {
+      "sop_id": "Rental",
+      "frame_code": "N3",
+      "title": "N3. No this is not a re-rent but one of ours- PPS Service Rental",
+      "image": "../images/Rental/N3.png",
+      "decision_question": "Would you like to go to close the Rental contract or to the End of the path ?",
+      "choices": [
+        {
+          "to": "S15",
+          "label": "Go to the Close Rental step"
+        },
+        {
+          "to": "S998",
+          "label": "Go to the End of the path slide"
+        }
+      ],
+      "narr1": "Slide N3. No this is not a re   No this is not a re- rerent unit.",
+      "narr2": "No this is not a re-rent but one of ours",
+      "narr3": "No this is not a re-rent but one of ours",
+      "uap_url": "0",
+      "uap_label": "0",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_Rental_faq.html",
+      "FAQ_Label": "FAQ on Rental",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "Rental"
+      }
+    },
+    {
+      "sop_id": "Rental",
+      "frame_code": "S998",
+      "title": "S998. Exit - You have come to the end of the path selected in the - Rental Process",
+      "image": "../images/Rental/S998.png",
+      "decision_question": "",
+      "choices": [
+        {
+          "to": "S999",
+          "label": "Go to You have successfully completed this SOP"
+        }
+      ],
+      "narr1": "Slide S998. Exit   Exit.",
+      "narr2": "",
+      "narr3": "You have completed this path and are at the end of it you have two option to either pick any decsions marked with a \"D\" and follow the path not taken or if you have exhaused all path you could click to go to the end of the SOP and take a quiz",
+      "uap_url": "0",
+      "uap_label": "0",
+      "FAQ_Loc": "../faq",
+      "FAQ_File": "PPS_Rental_faq.html",
+      "FAQ_Label": "FAQ on Rental",
+      "Quiz_Loc": "",
+      "Quiz_File": "",
+      "Quiz_Label": "",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "Rental"
+      }
+    },
+    {
+      "sop_id": "Rental",
+      "frame_code": "S999",
+      "title": "S999. You have successfully completed this SOP",
+      "image": "../images/Rental/S999.png",
+      "decision_question": "",
+      "choices": [],
+      "narr1": "Slide S999. You have successfully completed this SOP   You have successfully completed this SOP.",
+      "narr2": "",
+      "narr3": "You have arrived at the end of this SOP time to take a quick quiz to see your understanding on the subject",
+      "uap_url": "0",
+      "uap_label": "0",
+      "FAQ_Loc": "",
+      "FAQ_File": "",
+      "FAQ_Label": "",
+      "Quiz_Loc": "../quiz",
+      "Quiz_File": "PPS_Rental_quiz.html",
+      "Quiz_Label": "Rental SOP Quiz",
+      "meta": {
+        "entity": "Palco",
+        "function": "Service",
+        "subentity": "Rental"
+      }
+    }
+  ]
+}

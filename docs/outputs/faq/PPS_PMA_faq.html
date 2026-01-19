@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>PPS – Service PMA – Preventive Maintenance Agreements – FAQ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.5rem;
+      line-height: 1.6;
+      background: #f7f7fb;
+    }
+    h1, h2 {
+      color: #111827;
+    }
+    .intro {
+      margin-bottom: 1rem;
+      padding: 0.75rem 1rem;
+      background: #e5e7eb;
+      border-radius: 6px;
+      font-size: 0.95rem;
+    }
+    details {
+      margin-bottom: 0.75rem;
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+    summary {
+      cursor: pointer;
+      font-weight: 600;
+      color: #111827;
+    }
+    summary::-webkit-details-marker {
+      margin-right: 0.5rem;
+    }
+    p {
+      margin: 0.4rem 0;
+    }
+    ul {
+      margin: 0.4rem 0 0.4rem 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>PPS – Service PMA – Preventive Maintenance Agreements – Frequently Asked Questions</h1>
+
+  <div class="intro">
+    <p>
+      This FAQ supports the <strong>PPS Service PMA – PMA Contract to Service Order</strong> SOP.
+      It explains the key steps and decisions in the process, including contract setup, schedule,
+      fixed billing, the Contract SRO generator, SRO creation, and the hand‑off into the main
+      Service Order SOP.
+    </p>
+  </div>
+
+  <section aria-label="FAQ list">
+    <h2>Questions &amp; Answers</h2>
+
+    <details open>
+      <summary>1. What is the purpose of the PPS Service PMA SOP?</summary>
+      <p>
+        The PPS Service PMA SOP defines the end‑to‑end process for managing preventive maintenance
+        agreements (PMAs) for generators. It covers creating the PMA contract from a template,
+        linking it to the correct generator, defining the maintenance schedule, entering the fixed
+        billing total, running the Contract SRO generator, and creating SROs for upcoming PMA visits
+        that then flow into the main Service Order SOP.
+      </p>
+    </details>
+
+    <details>
+      <summary>2. Where does this SOP start and end?</summary>
+      <p>
+        The process starts at
+        <strong>S1. Contract is created using a template and a Line/SN is added</strong>
+        and <strong>S2. Contract Maintenance schedule is filled out</strong>.
+      </p>
+      <p>
+        It ends at <strong>S5. SRO is generated for all required PMA services in the next month</strong>
+        and <strong>S6. See Service Order Process starting from Schedule</strong>, where control
+        passes to the standard Service Order SOP for scheduling and executing the work.
+      </p>
+    </details>
+
+    <details>
+      <summary>3. Why is it important to create the PMA contract from a template and add the Line/SN?</summary>
+      <p>
+        In <strong>S1</strong>, the user creates the contract from a standard template and adds the
+        line/serial number of the generator covered by the PMA. This:
+      </p>
+      <ul>
+        <li>Ensures the correct PMA structure (billing, terms, and fields) is used.</li>
+        <li>Links the PMA to a specific generator so that future SROs and maintenance activity clearly reference the right unit.</li>
+        <li>Improves traceability for both the customer and PPS/Palco.</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>4. How is the maintenance schedule determined and recorded?</summary>
+      <p>
+        In <strong>S2. Contract Maintenance schedule is filled out</strong>, the user records when
+        service is required for the generator. The schedule typically uses the
+        <strong>first day of the month</strong> for whichever month the service is requested. This:
+      </p>
+      <ul>
+        <li>Aligns all PMA services due in a given month to a single reference date.</li>
+        <li>Makes it easy for the Contract SRO generator to pick up all PMAs due in that month.</li>
+      </ul>
+      <p>
+        Any detailed cadence (annual, semi‑annual, quarterly, etc.) is reflected in the schedule
+        pattern chosen on the contract.
+      </p>
+    </details>
+
+    <details>
+      <summary>5. What is the role of the fixed billing total?</summary>
+      <p>
+        In <strong>S3. Fixed billing total is entered</strong>, the user records the agreed
+        fixed billing total for the PMA. This amount is used so that:
+      </p>
+      <ul>
+        <li>Billing for the PMA can be generated consistently (for example, monthly or annually) without recalculating each time.</li>
+        <li>Finance and sales share a single agreed amount for the contract.</li>
+      </ul>
+      <p>
+        This step improves financial accuracy and avoids surprises later.
+      </p>
+    </details>
+
+    <details>
+      <summary>6. Why is the Contract SRO generator run in the middle of each month?</summary>
+      <p>
+        In <strong>S4. Contract SRO generator utility is run in the middle of each month</strong>,
+        the system looks ahead and creates SROs for PMA services due in the next month. Running it
+        mid‑month:
+      </p>
+      <ul>
+        <li>Gives planners time to review the upcoming workload.</li>
+        <li>Allows schedulers to contact customers early and coordinate access to the equipment.</li>
+        <li>Helps balance technician loading by seeing next‑month PMA work in advance.</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>7. What happens when SROs are generated for PMA services?</summary>
+      <p>
+        In <strong>S5. SRO is generated for all required PMA services in the next month</strong>,
+        the system creates Service Orders (SROs) for each PMA visit due in that upcoming month.
+        These SROs:
+      </p>
+      <ul>
+        <li>Represent the actual work that technicians will perform in the field.</li>
+        <li>Form the bridge from PMA contract planning into the day‑to‑day Service Order SOP.</li>
+      </ul>
+      <p>
+        After this point, scheduling, dispatch, execution, and completion are managed using the
+        standard Service Order process.
+      </p>
+    </details>
+
+    <details>
+      <summary>8. How does the PMA SOP link to the main Service Order SOP?</summary>
+      <p>
+        <strong>S6. See Service Order Process starting from Schedule</strong> means that once the
+        SROs exist, you follow the <strong>standard Service Order SOP</strong> starting at the
+        Schedule step. In practice, that means:
+      </p>
+      <ul>
+        <li>Using the newly created PMA SROs in the Schedule step.</li>
+        <li>Dispatching technicians, performing the work, capturing labor and materials, and completing the SRO as normal.</li>
+      </ul>
+      <p>
+        The PMA SOP sets up the work; the Service Order SOP executes it.
+      </p>
+    </details>
+
+    <details>
+      <summary>9. Who typically initiates PMA opportunities?</summary>
+      <p>
+        PMA opportunities are often initiated in two ways:
+      </p>
+      <ul>
+        <li>PMA Sales staff proactively contact customers who are good candidates for preventive maintenance agreements.</li>
+        <li>Customers with recently installed generators call in on the suggestion of a technician, who recommends a PMA to protect their investment.</li>
+      </ul>
+      <p>
+        This combination of proactive outreach and technician guidance helps build a healthy PMA base.
+      </p>
+    </details>
+
+    <details>
+      <summary>10. How does PMA activity support the overall business and the customer?</summary>
+      <p>
+        A well‑run PMA process:
+      </p>
+      <ul>
+        <li>Helps customers avoid unplanned outages by keeping generators maintained on a predictable schedule.</li>
+        <li>Provides more stable and predictable workload for technicians.</li>
+        <li>Produces steady, relatively predictable revenue from PMA billing.</li>
+        <li>Feeds accurate data into the Service Order SOP for analysis of PM work volume, profitability, and staffing needs.</li>
+      </ul>
+      <p>
+        In short, the PMA SOP turns one‑time installs into long‑term, proactive service relationships.
+      </p>
+    </details>
+  </section>
+</body>
+</html>

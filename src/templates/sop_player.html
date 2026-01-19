@@ -1,13 +1,12 @@
 <!doctype html>
 <!--
-  SOP_player.html
-  Version: v20251213_2315 (America/New_York)
+  SOP_player.html (TEMPLATE)
+  Version: v20251227_0408 (America/New_York)
   Owner: Subi
-  Fixes:
-   - Breadcrumbs clickable (non-current)
-   - Narration pane close button + ESC
-   - Fix FAQ/Quiz href building so loc like "outputs/faq" doesn't become /outputs/outputs/faq
-   - Defensive fix: if story.json image is "/../images/..." we strip the leading "/" before setting src
+  Key fixes:
+   - Home/Entity URLs default to ../../index.html (web-safe for /outputs/players/)
+   - Normalize paths so ../outputs/... does NOT become /outputs/outputs/...
+   - Applies to FAQ/Quiz hrefs AND image src
 -->
 <html lang="en">
 <head>
@@ -22,28 +21,35 @@
       --muted: #6b7280;
       --line: #e5e7eb;
 
+      /* Primary brand (Next + decisions) */
       --brand: #0b5fff;
       --brand-ink: #ffffff;
 
+      /* UAP distinct color (strong) */
       --uap: #059669;
       --uap-hover: #047857;
 
+      /* Nav buttons: lightest blue */
       --nav-bg: #eff6ff;
       --nav-hover: #dbeafe;
       --nav-text: #1e3a8a;
 
+      /* FAQ/Quiz: light blue (a bit stronger than nav, still lighter than primary) */
       --faq-bg: #dbeafe;
       --faq-hover: #bfdbfe;
       --faq-text: #1e3a8a;
 
+      /* Read buttons: very light green */
       --read-bg: #dcfce7;
       --read-hover: #bbf7d0;
       --read-text: #065f46;
 
+      /* Hear buttons: slightly darker green (but softer than UAP) */
       --hear-bg: #a7f3d0;
       --hear-hover: #6ee7b7;
       --hear-text: #065f46;
 
+      /* Neutral buttons (Stop / Close) */
       --neutral-bg: #f3f4f6;
       --neutral-hover: #e5e7eb;
       --neutral-text: #111827;
@@ -103,6 +109,7 @@
       outline: none;
     }
 
+    /* clickable crumbs */
     .crumb-link { cursor: pointer; }
     .crumb-link:hover {
       background: #eef2ff;
@@ -142,7 +149,11 @@
       gap: 8px;
     }
 
-    .slide-row { display: flex; flex-direction: column; gap: 8px; }
+    .slide-row {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
 
     .slide-visual {
       border-radius: 10px;
@@ -169,6 +180,8 @@
       border-radius: 8px;
       border: 1px solid var(--line);
       background: #ffffff;
+
+      /* Cap vertical height so nav stays visible */
       max-height: 55vh;
       object-fit: contain;
     }
@@ -182,9 +195,16 @@
       margin-top: 2px;
     }
 
-    .narration-row button { font-size: 0.78rem; padding: 6px 10px; }
+    .narration-row button {
+      font-size: 0.78rem;
+      padding: 6px 10px;
+    }
 
-    .uap-hint { font-size: 0.78rem; color: var(--muted); margin-left: 6px; }
+    .uap-hint {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-left: 6px;
+    }
 
     .narr-text {
       font-size: 0.78rem;
@@ -196,7 +216,7 @@
       max-height: 120px;
       overflow-y: auto;
       white-space: pre-wrap;
-      display: none;
+      display: none; /* hidden by default */
     }
 
     .decision-block {
@@ -205,13 +225,30 @@
       border-top: 1px solid var(--line);
     }
 
-    .decision-question { font-size: 0.85rem; font-weight: 600; margin: 0 0 4px; text-align: left; }
+    .decision-question {
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin: 0 0 4px;
+      text-align: left;
+    }
 
-    .decision-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+    .decision-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+    }
 
-    .decision-hint { font-size: 0.78rem; color: var(--muted); margin-right: 2px; }
+    .decision-hint {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-right: 2px;
+    }
 
-    .decision-actions button { font-size: 0.8rem; padding: 6px 10px; }
+    .decision-actions button {
+      font-size: 0.8rem;
+      padding: 6px 10px;
+    }
 
     .nav-row {
       display: flex;
@@ -224,8 +261,13 @@
     }
 
     .nav-row .nav-main-group,
-    .nav-row .nav-secondary-group { display: flex; flex-wrap: wrap; gap: 6px; }
+    .nav-row .nav-secondary-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
 
+    /* Base button */
     button {
       border-radius: 999px;
       border: 1px solid var(--line);
@@ -234,35 +276,86 @@
       padding: 6px 14px;
       font-size: 0.8rem;
       cursor: pointer;
-      transition: background 0.12s ease, box-shadow 0.12s ease, transform 0.08s ease, border-color 0.12s ease;
+      transition: background 0.12s ease, box-shadow 0.12s ease,
+        transform 0.08s ease, border-color 0.12s ease;
       white-space: nowrap;
     }
 
-    button:hover { box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08); border-color: #bfdbfe; }
-    button:active { transform: translateY(1px); box-shadow: 0 1px 4px rgba(15, 23, 42, 0.12); }
+    button:hover {
+      box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+      border-color: #bfdbfe;
+    }
 
-    button.primary { background: var(--brand); color: var(--brand-ink); border-color: transparent; }
-    button.primary:hover { background: #2563eb; border-color: #1d4ed8; }
+    button:active {
+      transform: translateY(1px);
+      box-shadow: 0 1px 4px rgba(15, 23, 42, 0.12);
+    }
 
-    button.uap { background: var(--uap); color: #ffffff; border-color: transparent; }
-    button.uap:hover { background: var(--uap-hover); border-color: transparent; }
+    /* Primary (Next + decision choices) */
+    button.primary {
+      background: var(--brand);
+      color: var(--brand-ink);
+      border-color: transparent;
+    }
+    button.primary:hover {
+      background: #2563eb;
+      border-color: #1d4ed8;
+    }
 
-    button.btn-nav { background: var(--nav-bg); color: var(--nav-text); border-color: #bfdbfe; }
+    /* UAP */
+    button.uap {
+      background: var(--uap);
+      color: #ffffff;
+      border-color: transparent;
+    }
+    button.uap:hover {
+      background: var(--uap-hover);
+      border-color: transparent;
+    }
+
+    /* Color scheme classes */
+    button.btn-nav {
+      background: var(--nav-bg);
+      color: var(--nav-text);
+      border-color: #bfdbfe;
+    }
     button.btn-nav:hover { background: var(--nav-hover); }
 
-    button.btn-faqquiz { background: var(--faq-bg); color: var(--faq-text); border-color: #93c5fd; }
+    button.btn-faqquiz {
+      background: var(--faq-bg);
+      color: var(--faq-text);
+      border-color: #93c5fd;
+    }
     button.btn-faqquiz:hover { background: var(--faq-hover); }
 
-    button.btn-read { background: var(--read-bg); color: var(--read-text); border-color: #86efac; }
+    button.btn-read {
+      background: var(--read-bg);
+      color: var(--read-text);
+      border-color: #86efac;
+    }
     button.btn-read:hover { background: var(--read-hover); }
 
-    button.btn-hear { background: var(--hear-bg); color: var(--hear-text); border-color: #34d399; }
+    button.btn-hear {
+      background: var(--hear-bg);
+      color: var(--hear-text);
+      border-color: #34d399;
+    }
     button.btn-hear:hover { background: var(--hear-hover); }
 
-    button.btn-neutral { background: var(--neutral-bg); color: var(--neutral-text); border-color: #e5e7eb; }
+    button.btn-neutral {
+      background: var(--neutral-bg);
+      color: var(--neutral-text);
+      border-color: #e5e7eb;
+    }
     button.btn-neutral:hover { background: var(--neutral-hover); }
 
-    button:disabled { opacity: 0.5; cursor: default; box-shadow: none; transform: none; }
+    /* Disabled */
+    button:disabled {
+      opacity: 0.5;
+      cursor: default;
+      box-shadow: none;
+      transform: none;
+    }
 
     @media (max-width: 768px) {
       .page { padding: 12px; }
@@ -307,7 +400,9 @@
           <div class="decision-block" id="decisionBlock" style="display:none;">
             <p class="decision-question" id="decisionQuestion"></p>
             <div class="decision-actions">
-              <span class="decision-hint" id="decisionHint">Click on the button as appropriate:</span>
+              <span class="decision-hint" id="decisionHint">
+                Click on the button as appropriate:
+              </span>
               <button id="choiceBtn1" class="primary"></button>
               <button id="choiceBtn2" class="primary"></button>
             </div>
@@ -338,17 +433,23 @@ __STORY_JSON__
   </script>
 
   <script>
-    // Version: v20251213_2315 (America/New_York)
-    const HOME_URL = "index.html";
-    const ENTITY_MENU_URL = "index.html#entity-menu";
+    // Version: v20251227_0408 (America/New_York)
 
-    const story = JSON.parse(document.getElementById("story-data").textContent.trim());
+    // Web-safe defaults (player files live under outputs/players/)
+    const HOME_URL = "../../index.html";
+    const ENTITY_MENU_URL = "../../index.html#entities";
+
+    const story = JSON.parse(
+      document.getElementById("story-data").textContent.trim()
+    );
+
     const framesByCode = new Map();
     story.frames.forEach(f => framesByCode.set(f.frame_code, f));
 
     let currentCode = story.start_code || story.frames[0].frame_code;
     const pathStack = [currentCode];
 
+    // DOM
     const breadcrumbTrailEl = document.getElementById("breadcrumbTrail");
     const slideImgEl = document.getElementById("slideImage");
 
@@ -378,11 +479,17 @@ __STORY_JSON__
     const btnQuiz = document.getElementById("btnQuiz");
     const btnNext = document.getElementById("btnNext");
 
-    function currentFrame() { return framesByCode.get(currentCode); }
+    function currentFrame() {
+      return framesByCode.get(currentCode);
+    }
 
+    // Narration pane controls
     function openNarr(text) {
       const t = (text || "").trim();
-      if (!t) { closeNarr(); return; }
+      if (!t) {
+        closeNarr();
+        return;
+      }
       narrTextEl.textContent = t;
       narrTextEl.style.display = "block";
       btnCloseNarr.style.display = "inline-block";
@@ -394,29 +501,19 @@ __STORY_JSON__
       btnCloseNarr.style.display = "none";
     }
 
-    function stopSpeech() {
-      if ("speechSynthesis" in window) window.speechSynthesis.cancel();
-    }
-
-    function speak(text) {
-      if (!("speechSynthesis" in window)) return;
-      stopSpeech();
-      const t = (text || "").trim();
-      if (!t) return;
-      window.speechSynthesis.speak(new SpeechSynthesisUtterance(t));
-    }
-
+    // Breadcrumb jump
     function goToBreadcrumbIndex(idx) {
       if (idx < 0 || idx >= pathStack.length) return;
       stopSpeech();
       closeNarr();
       currentCode = pathStack[idx];
-      pathStack.length = idx + 1;
+      pathStack.length = idx + 1; // truncate stack
       renderFrame();
     }
 
     function updateBreadcrumb() {
       breadcrumbTrailEl.innerHTML = "";
+
       for (let i = 0; i < pathStack.length; i++) {
         const code = pathStack[i];
 
@@ -429,6 +526,7 @@ __STORY_JSON__
 
         const span = document.createElement("span");
         const isCurrent = (i === pathStack.length - 1);
+
         span.className = "crumb" + (isCurrent ? " crumb-current" : " crumb-link");
         span.textContent = code;
 
@@ -451,29 +549,82 @@ __STORY_JSON__
     }
 
     function normalizeHrefForOutputs(loc, file) {
-      // Goal: open docs relative to /outputs/players
-      // Accepts loc values like: "faq", "outputs/faq", "/outputs/faq"
-      let L = (loc || "").trim().replace(/\\/g, "/");
-      let F = (file || "").trim();
+      // Goal: links must work in BOTH:
+      //  - local dev server started from /docs (e.g., http://localhost:8080/)
+      //  - GitHub Pages where this player lives under /outputs/players/
+      //
+      // Common mistake: providing loc as "../outputs/faq" from the READY CSV.
+      // From /outputs/players/, that becomes /outputs/outputs/faq/... (wrong).
+      //
+      // Fix strategy:
+      //  - If loc starts with "../outputs/", strip that "outputs/" layer.
+      //  - If loc starts with "outputs/", also strip it.
+      //  - Keep absolute URLs and http(s) untouched.
+
+      const L = (loc || "").trim();
+      const F = (file || "").trim();
       if (!L || !F) return "";
 
-      // drop leading /
-      L = L.replace(/^\/+/, "");
+      // Absolute URLs: leave alone
+      if (/^https?:\/\//i.test(L)) {
+        return L.replace(/\/+$/, "") + "/" + F.replace(/^\/+/, "");
+      }
 
-      // if it starts with outputs/, strip that
-      if (L.startsWith("outputs/")) L = L.slice("outputs/".length);
+      // Normalize slashes
+      let locNorm = L.replace(/\\/g, "/").replace(/\/+$/, "");
+      const fileNorm = F.replace(/\\/g, "/").replace(/^\/+/, "");
 
-      // now resolve relative from players -> ../<loc>/<file>
-      L = L.replace(/\/+$/, "");
-      return "../" + L + "/" + F;
+      // Remove leading "./"
+      locNorm = locNorm.replace(/^\.\//, "");
+
+      // Key: strip a leading "../outputs/" or "outputs/" (prevents /outputs/outputs/... when opened from /outputs/players/)
+      if (locNorm.startsWith("../outputs/")) {
+        locNorm = "../" + locNorm.substring("../outputs/".length);
+      } else if (locNorm.startsWith("outputs/")) {
+        locNorm = "../" + locNorm.substring("outputs/".length);
+      } else if (locNorm === "../outputs") {
+        locNorm = "..";
+      } else if (locNorm === "outputs") {
+        locNorm = "..";
+      }
+
+      // Build href
+      return locNorm + "/" + fileNorm;
+    }
+
+    function normalizeAssetSrc(src) {
+      // Similar to normalizeHrefForOutputs, but for image src values.
+      // If the CSV/JSON uses "../outputs/images/...", this prevents "/outputs/outputs/images/..." when opened from /outputs/players/.
+      const S = (src || "").trim();
+      if (!S) return "";
+
+      // Keep absolute http(s) as-is
+      if (/^https?:\/\//i.test(S)) return S;
+
+      let s = S.replace(/\\/g, "/");
+
+      // Special case: "/../images/..." -> "../images/..."
+      if (s.startsWith("/../")) s = s.substring(1);
+
+      // Strip leading "../outputs/" or "outputs/"
+      if (s.startsWith("../outputs/")) {
+        s = "../" + s.substring("../outputs/".length);
+      } else if (s.startsWith("outputs/")) {
+        s = "../" + s.substring("outputs/".length);
+      } else if (s === "../outputs") {
+        s = "..";
+      } else if (s === "outputs") {
+        s = "..";
+      }
+
+      // Collapse accidental double slashes (but keep "http://")
+      while (s.includes("//")) s = s.replaceAll("//", "/");
+
+      return s;
     }
 
     function setImage(frame) {
-      let src = (frame.image || "").trim();
-
-      // Defensive: fix legacy "/../images/..." => "../images/..."
-      if (src.startsWith("/../")) src = src.slice(1);
-
+      const src = normalizeAssetSrc(frame.image || "");
       slideImgEl.src = src;
       slideImgEl.alt = "Process step";
     }
@@ -481,6 +632,7 @@ __STORY_JSON__
     function setUap(frame) {
       const url = (frame.uap_url || "").trim();
       const label = (frame.uap_label || "").trim();
+
       if (url && label) {
         uapHint.style.display = "inline";
         btnUap.style.display = "inline-block";
@@ -496,13 +648,16 @@ __STORY_JSON__
 
     function setDecisionAndNext(frame) {
       const choices = frame.choices || [];
+
       if (choices.length >= 2) {
         decisionBlock.style.display = "block";
         const q = (frame.decision_question || "").trim();
         decisionQuestionEl.textContent = q || "What would you like to do next?";
         decisionHintEl.style.display = "inline";
 
-        const c1 = choices[0], c2 = choices[1];
+        const c1 = choices[0];
+        const c2 = choices[1];
+
         choiceBtn1.textContent = c1.label || "Option 1";
         choiceBtn1.onclick = () => goTo(c1.to);
 
@@ -512,6 +667,7 @@ __STORY_JSON__
         btnNext.style.display = "none";
       } else if (choices.length === 1) {
         decisionBlock.style.display = "none";
+        decisionQuestionEl.textContent = "";
         decisionHintEl.style.display = "none";
         choiceBtn1.onclick = null;
         choiceBtn2.onclick = null;
@@ -522,6 +678,7 @@ __STORY_JSON__
         btnNext.style.display = "inline-block";
       } else {
         decisionBlock.style.display = "none";
+        decisionQuestionEl.textContent = "";
         decisionHintEl.style.display = "none";
         choiceBtn1.onclick = null;
         choiceBtn2.onclick = null;
@@ -531,24 +688,28 @@ __STORY_JSON__
     }
 
     function setFaqQuiz(frame) {
-      const faqHref = normalizeHrefForOutputs(frame.FAQ_Loc, frame.FAQ_File);
+      const faqLoc = (frame.FAQ_Loc || "").trim();
+      const faqFile = (frame.FAQ_File || "").trim();
       const faqLabel = (frame.FAQ_Label || "FAQ & Tips").trim();
 
-      const quizHref = normalizeHrefForOutputs(frame.Quiz_Loc, frame.Quiz_File);
+      const quizLoc = (frame.Quiz_Loc || "").trim();
+      const quizFile = (frame.Quiz_File || "").trim();
       const quizLabel = (frame.Quiz_Label || "Knowledge Check").trim();
 
-      if (faqHref) {
+      if (faqLoc && faqFile) {
         btnFaq.disabled = false;
         btnFaq.textContent = faqLabel || "FAQ & Tips";
+        const faqHref = normalizeHrefForOutputs(faqLoc, faqFile);
         btnFaq.onclick = () => window.open(faqHref, "_blank", "noopener");
       } else {
         btnFaq.disabled = true;
         btnFaq.onclick = null;
       }
 
-      if (quizHref) {
+      if (quizLoc && quizFile) {
         btnQuiz.disabled = false;
         btnQuiz.textContent = quizLabel || "Knowledge Check";
+        const quizHref = normalizeHrefForOutputs(quizLoc, quizFile);
         btnQuiz.onclick = () => window.open(quizHref, "_blank", "noopener");
       } else {
         btnQuiz.disabled = true;
@@ -559,11 +720,14 @@ __STORY_JSON__
     function renderFrame() {
       const frame = currentFrame();
       if (!frame) return;
+
       setImage(frame);
       setUap(frame);
       setDecisionAndNext(frame);
       setFaqQuiz(frame);
       updateBreadcrumb();
+
+      // Pane stays closed unless Read buttons used.
       closeNarr();
     }
 
@@ -598,23 +762,61 @@ __STORY_JSON__
       renderFrame();
     }
 
+    function stopSpeech() {
+      if ("speechSynthesis" in window) window.speechSynthesis.cancel();
+    }
+
+    function speak(text) {
+      if (!("speechSynthesis" in window)) return;
+      stopSpeech();
+      const t = (text || "").trim();
+      if (!t) return;
+      window.speechSynthesis.speak(new SpeechSynthesisUtterance(t));
+    }
+
+    // Buttons
     btnBack.addEventListener("click", goBack);
     btnRestart.addEventListener("click", restart);
     btnHome.addEventListener("click", () => window.location.href = HOME_URL);
     btnEntityMenu.addEventListener("click", () => window.location.href = ENTITY_MENU_URL);
 
-    btnHear1.addEventListener("click", () => { const f = currentFrame(); speak(f.narr1 || ""); });
-    btnHear2.addEventListener("click", () => { const f = currentFrame(); speak(f.narr3 || ""); });
+    // Hear me -> narr1 (TTS only)
+    btnHear1.addEventListener("click", () => {
+      const f = currentFrame();
+      speak(f.narr1 || "");
+    });
 
-    btnRead1.addEventListener("click", () => { const f = currentFrame(); openNarr(f.narr2 || ""); });
-    btnRead2.addEventListener("click", () => { const f = currentFrame(); openNarr(f.narr3 || ""); });
+    // Hear more -> narr3 (TTS)
+    btnHear2.addEventListener("click", () => {
+      const f = currentFrame();
+      speak(f.narr3 || "");
+    });
+
+    // Read me -> narr2 (pane)
+    btnRead1.addEventListener("click", () => {
+      const f = currentFrame();
+      openNarr(f.narr2 || "");
+    });
+
+    // Read more -> narr3 (pane)
+    btnRead2.addEventListener("click", () => {
+      const f = currentFrame();
+      openNarr(f.narr3 || "");
+    });
 
     btnStop.addEventListener("click", stopSpeech);
 
-    btnCloseNarr.addEventListener("click", () => { stopSpeech(); closeNarr(); });
+    btnCloseNarr.addEventListener("click", () => {
+      stopSpeech();
+      closeNarr();
+    });
 
+    // ESC closes narration pane
     document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") { stopSpeech(); closeNarr(); }
+      if (e.key === "Escape") {
+        stopSpeech();
+        closeNarr();
+      }
     });
 
     renderFrame();
